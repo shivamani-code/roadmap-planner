@@ -4,9 +4,6 @@ import { type NextRequest, NextResponse } from "next/server";
 export function proxy(request: NextRequest) {
   const nonce = Buffer.from(crypto.randomUUID()).toString("base64");
   const development = process.env.NODE_ENV === "development";
-  const apiOrigin = new URL(
-    process.env.NEXT_PUBLIC_API_URL ?? "http://localhost:4000/api/v1",
-  ).origin;
   const policy = [
     "default-src 'self'",
     "base-uri 'self'",
@@ -17,7 +14,7 @@ export function proxy(request: NextRequest) {
     "style-src 'self' 'unsafe-inline'",
     "img-src 'self' blob: data: https:",
     "font-src 'self'",
-    `connect-src 'self' ${apiOrigin}`,
+    "connect-src 'self'",
     ...(development ? [] : ["upgrade-insecure-requests"]),
   ].join("; ");
   const requestHeaders = new Headers(request.headers);

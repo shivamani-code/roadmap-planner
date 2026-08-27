@@ -942,6 +942,44 @@ h3 {
   gap: 24px;
 }
 
+.download-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 0.7rem;
+  padding: 1rem;
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  background: linear-gradient(135deg, #eef1ff, #fff);
+}
+
+@media print {
+  .app-header,
+  .onboarding-header,
+  .gap-section-nav,
+  .download-actions,
+  .gap-final-action,
+  .offline-notice {
+    display: none !important;
+  }
+
+  .shell {
+    width: 100%;
+    max-width: none;
+  }
+
+  .gap-report,
+  .roadmap-view {
+    gap: 14px;
+  }
+
+  .skill-path-card,
+  .subject-roadmap-grid > article,
+  .term-card {
+    break-inside: avoid;
+  }
+}
+
 .gap-section-nav {
   position: sticky;
   z-index: 20;

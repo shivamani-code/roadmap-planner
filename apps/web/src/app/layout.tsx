@@ -1,9 +1,8 @@
 import type { Metadata, Viewport } from "next";
-import { connection } from "next/server";
 import type { ReactNode } from "react";
 import "./globals.css";
 import { OfflineNotice } from "../components/offline-notice";
-import { LocalSessionGate } from "../components/local-session-gate";
+import { PlannerProvider } from "../components/planner-provider";
 
 export const metadata: Metadata = {
   title: { default: "StudentOS for JNTUH R25", template: "%s · StudentOS" },
@@ -17,15 +16,14 @@ export const viewport: Viewport = {
   colorScheme: "light",
 };
 
-export default async function RootLayout({
+export default function RootLayout({
   children,
 }: Readonly<{ children: ReactNode }>) {
-  await connection();
   return (
     <html lang="en-IN" data-scroll-behavior="smooth">
       <body>
         <OfflineNotice />
-        <LocalSessionGate>{children}</LocalSessionGate>
+        <PlannerProvider>{children}</PlannerProvider>
       </body>
     </html>
   );

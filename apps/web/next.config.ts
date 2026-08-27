@@ -4,6 +4,32 @@ const config: NextConfig = {
   poweredByHeader: false,
   reactStrictMode: true,
   experimental: { optimizePackageImports: ["@studentos/contracts"] },
+  async redirects() {
+    return [
+      { source: "/sign-in", destination: "/onboarding", permanent: false },
+      {
+        source: "/auth/callback",
+        destination: "/onboarding",
+        permanent: false,
+      },
+      ...[
+        "/today",
+        "/plan/week",
+        "/progress",
+        "/skills",
+        "/projects",
+        "/placement",
+        "/review",
+        "/calendar",
+        "/recalculate",
+        "/notifications",
+      ].map((source) => ({
+        source,
+        destination: "/roadmap",
+        permanent: false,
+      })),
+    ];
+  },
   async headers() {
     return [
       {

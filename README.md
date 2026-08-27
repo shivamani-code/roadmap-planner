@@ -6,6 +6,8 @@ StudentOS is a curriculum-aware academic and career planning platform for B.Tech
 
 Phases 0–10 are complete at the engineering level. The connected product covers reviewed curriculum and career knowledge, onboarding, conservative gap analysis, deterministic capacity-safe planning, evidence/projects/readiness, exam-aware adaptation, consented revisions, bounded AI wording, opt-in notifications, CSRF/rate-limit/security headers, self-service export/deletion/recovery, retention/tombstone purge, pilot feedback/metrics, offline guidance, and accessibility/operational gates. It runs as a pnpm/Turborepo monorepo with Next.js web/admin applications, a NestJS API, a transactional outbox worker, shared domain packages, Prisma 7/PostgreSQL persistence, passwordless development authentication, and automated quality gates.
 
+The current public `apps/web` product is intentionally browser-only: it bundles the reviewed catalog, keeps visitor answers only in React memory, calculates the gap and roadmap locally, and provides HTML download plus Print/Save-PDF controls. It requires no login, API, worker, database, or production environment variable. The older full-stack services remain in the repository as an undeployed expansion path.
+
 Key evidence:
 
 - [`Phase 0 brief`](./docs/phase-briefs/PHASE_0_PRODUCT_ARCHITECTURE.md)
@@ -46,6 +48,6 @@ This monorepo contains two different Next.js applications:
 - `apps/web` is the student-facing StudentOS product.
 - `apps/admin` is the internal content-operations console.
 
-For a Vercel student-frontend project, set **Root Directory** to `apps/web`, keep **Include source files outside of the Root Directory** enabled for workspace packages, and set `NEXT_PUBLIC_API_URL` to the public API URL ending in `/api/v1`. The checked-in `apps/web/vercel.json` supplies the workspace-aware install and build commands.
+For the public Vercel project, set **Root Directory** to `apps/web` and keep **Include source files outside of the Root Directory** enabled for workspace packages. The checked-in `apps/web/vercel.json` supplies the workspace-aware install, build, and output settings. No backend URL or database is required.
 
-The frontend is not a standalone deployment. Deploy `apps/api` and PostgreSQL separately, configure the production variables in `.env.production.example`, run database migrations and the release seed, and then point the web project at that API. The complete container deployment is documented in [`docs/runbooks/PRODUCTION_DEPLOYMENT.md`](./docs/runbooks/PRODUCTION_DEPLOYMENT.md).
+The legacy full-stack API/admin/worker deployment is optional and documented in [`docs/runbooks/PRODUCTION_DEPLOYMENT.md`](./docs/runbooks/PRODUCTION_DEPLOYMENT.md); it is not used by the public browser-only roadmap flow.

@@ -1,4 +1,4 @@
-import { act, cleanup, render, screen, waitFor } from "@testing-library/react";
+import { act, cleanup, render, screen } from "@testing-library/react";
 import axe from "axe-core";
 import { afterEach, describe, expect, it, vi } from "vitest";
 import PrivacyPage from "../src/app/privacy/page";
@@ -12,22 +12,11 @@ afterEach(() => {
 });
 
 describe("accessibility and resilient browser states", () => {
-  it("has no automated critical accessibility violations on privacy controls", async () => {
-    vi.stubGlobal(
-      "fetch",
-      vi.fn().mockResolvedValue({
-        ok: true,
-        json: () => Promise.resolve({ analyticsConsent: false }),
-      }),
-    );
+  it("has no automated critical accessibility violations on browser-only privacy guidance", async () => {
     render(<PrivacyPage />);
-    await waitFor(() =>
-      expect(
-        screen.getByRole("checkbox", {
-          name: /share pseudonymous product-usage analytics/i,
-        }),
-      ).toBeTruthy(),
-    );
+    expect(
+      screen.getByRole("heading", { name: /no account. no student database/i }),
+    ).toBeTruthy();
     const result = await axe.run(document.body, {
       runOnly: { type: "tag", values: ["wcag2a", "wcag2aa", "wcag22aa"] },
       rules: { "color-contrast": { enabled: false } },

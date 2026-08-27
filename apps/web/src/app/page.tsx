@@ -22,8 +22,7 @@ const today = [
 ];
 
 export default function LandingPage() {
-  const startHref =
-    process.env.NODE_ENV === "development" ? "/onboarding" : "/sign-in";
+  const startHref = "/onboarding";
 
   return (
     <main>
@@ -61,8 +60,8 @@ export default function LandingPage() {
             </a>
           </div>
           <p className="support-note">
-            Initial release: JNTUH R25 B.Tech CSE at non-autonomous affiliated
-            colleges, with four focused career roles.
+            No login or student database. Your answers stay in the open page;
+            download the finished roadmap before leaving.
           </p>
         </div>
 
@@ -125,8 +124,8 @@ export default function LandingPage() {
             <span>College coverage is reused at the right depth.</span>
           </p>
           <p>
-            <strong>No impossible weeks</strong>
-            <span>Plans stay inside declared capacity.</span>
+            <strong>No account required</strong>
+            <span>Build privately, then download your plan.</span>
           </p>
         </div>
       </section>
@@ -136,9 +135,8 @@ export default function LandingPage() {
           <p className="eyebrow">How it works</p>
           <h2>From your current semester to an executable day.</h2>
           <p>
-            Structured academic and career data define the truth. Deterministic
-            planning makes it feasible. AI may explain, but it never invents
-            your requirements.
+            Reviewed academic and career data are bundled into the website. The
+            roadmap is calculated directly in your browser without an API.
           </p>
         </div>
         <ol className="steps">
@@ -162,8 +160,8 @@ export default function LandingPage() {
             <span>03</span>
             <h3>Work the next horizon</h3>
             <p>
-              Open Today first, review each week, and adapt future work around
-              exams.
+              Review the daily, weekly and monthly plan, then download it or
+              save it as a PDF.
             </p>
           </li>
         </ol>

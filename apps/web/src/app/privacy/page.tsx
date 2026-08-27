@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { PrivacyCenter } from "../../components/privacy-center";
 
 export default function PrivacyPage() {
   return (
@@ -10,19 +9,20 @@ export default function PrivacyPage() {
         </span>
         StudentOS
       </Link>
-      <h1>Privacy and pilot controls</h1>
+      <p className="eyebrow">Browser-only privacy</p>
+      <h1>No account. No student database.</h1>
       <p>
-        StudentOS collects only the academic, goal, availability, and progress
-        data needed to create the plan. CGPA and backlog count are optional. The
-        MVP does not collect government IDs, exact address, caste, religion,
-        family income, health data, or biometric data.
+        StudentOS uses the answers you enter only in the memory of the current
+        open page to calculate your gap report and roadmap. The student website
+        does not send those answers to an API and does not save a profile.
       </p>
       <p>
-        Essential planning continues when optional analytics and AI processing
-        are off. Notification, analytics, and AI choices are separate and
-        revocable.
+        Refreshing or closing the page removes the temporary plan. Use the
+        download button if you want to keep a copy on your own device.
       </p>
-      <PrivacyCenter />
+      <Link className="button button-primary" href="/onboarding">
+        Build a private roadmap
+      </Link>
     </main>
   );
 }

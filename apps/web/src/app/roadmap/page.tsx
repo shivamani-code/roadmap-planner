@@ -1,28 +1,19 @@
 import { AppHeader } from "../../components/app-header";
 import { RoadmapView } from "../../components/roadmap-view";
-import { GroundedExplanation } from "../../components/grounded-explanation";
 
-export default async function RoadmapPage({
-  searchParams,
-}: {
-  searchParams: Promise<{ gap?: string }>;
-}) {
-  const { gap } = await searchParams;
+export default function RoadmapPage() {
   return (
     <main className="roadmap-page shell">
       <AppHeader active="roadmap" />
       <section className="roadmap-heading" aria-labelledby="roadmap-title">
-        <p className="eyebrow">Prerequisite-safe strategy</p>
+        <p className="eyebrow">Browser-generated strategy</p>
         <h1 id="roadmap-title">Your path to the target</h1>
         <p>
-          The full horizon is here for inspection. Daily execution will still
-          begin with the smallest feasible next action.
+          Inspect the full learning horizon, weekly checkpoints and daily study
+          rhythm, then download it before leaving.
         </p>
       </section>
-      <RoadmapView gapAnalysisId={gap} />
-      <div className="communication-section">
-        <GroundedExplanation useCase="roadmap" />
-      </div>
+      <RoadmapView />
     </main>
   );
 }
