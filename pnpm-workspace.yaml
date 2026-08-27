@@ -3,9 +3,11 @@ packages:
   - "packages/*"
   - "prototype"
 
-onlyBuiltDependencies:
-  - "@prisma/engines"
-  - "prisma"
+allowBuilds:
+  "@prisma/engines": true
+  "@scarf/scarf": false
+  esbuild: true
+  prisma: true
 
 overrides:
   deepmerge-ts: 8.0.2
