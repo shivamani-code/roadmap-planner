@@ -1,0 +1,311 @@
+{
+  "schemaVersion": "1.0.0",
+  "datasetVersion": "2026.08.1",
+  "synthetic": true,
+  "review": {
+    "editorId": "synthetic-career-editor",
+    "reviewerId": "synthetic-career-reviewer",
+    "reviewedAt": "2026-08-24T00:00:00Z",
+    "rationale": "Synthetic knowledge graph exists solely to validate Phase 0 contracts and algorithms."
+  },
+  "skills": [
+    {
+      "key": "programming.basics",
+      "name": "Programming foundations",
+      "category": "PROGRAMMING",
+      "rubricVersion": 1,
+      "evidenceDecayDays": null,
+      "prerequisites": []
+    },
+    {
+      "key": "programming.oop",
+      "name": "Object-oriented programming",
+      "category": "PROGRAMMING",
+      "rubricVersion": 1,
+      "evidenceDecayDays": 730,
+      "prerequisites": [
+        { "skillKey": "programming.basics", "type": "HARD", "threshold": 0.4 }
+      ]
+    },
+    {
+      "key": "dsa.arrays",
+      "name": "Arrays and patterns",
+      "category": "DSA",
+      "rubricVersion": 1,
+      "evidenceDecayDays": 365,
+      "prerequisites": [
+        { "skillKey": "programming.basics", "type": "HARD", "threshold": 0.4 }
+      ]
+    },
+    {
+      "key": "dsa.trees",
+      "name": "Trees and graph foundations",
+      "category": "DSA",
+      "rubricVersion": 1,
+      "evidenceDecayDays": 365,
+      "prerequisites": [
+        { "skillKey": "dsa.arrays", "type": "HARD", "threshold": 0.5 }
+      ]
+    },
+    {
+      "key": "db.sql",
+      "name": "Relational SQL",
+      "category": "DATABASES",
+      "rubricVersion": 1,
+      "evidenceDecayDays": 730,
+      "prerequisites": []
+    },
+    {
+      "key": "backend.rest",
+      "name": "HTTP and REST APIs",
+      "category": "DEVELOPMENT",
+      "rubricVersion": 1,
+      "evidenceDecayDays": 730,
+      "prerequisites": [
+        { "skillKey": "programming.oop", "type": "HARD", "threshold": 0.5 }
+      ]
+    },
+    {
+      "key": "backend.framework",
+      "name": "Backend framework",
+      "category": "DEVELOPMENT",
+      "rubricVersion": 1,
+      "evidenceDecayDays": 540,
+      "prerequisites": [
+        { "skillKey": "backend.rest", "type": "HARD", "threshold": 0.45 },
+        { "skillKey": "db.sql", "type": "HARD", "threshold": 0.4 }
+      ]
+    },
+    {
+      "key": "tools.git",
+      "name": "Git and GitHub",
+      "category": "TOOLS",
+      "rubricVersion": 1,
+      "evidenceDecayDays": null,
+      "prerequisites": []
+    },
+    {
+      "key": "data.statistics",
+      "name": "Applied statistics",
+      "category": "DATA",
+      "rubricVersion": 1,
+      "evidenceDecayDays": 730,
+      "prerequisites": []
+    },
+    {
+      "key": "data.bi",
+      "name": "BI and dashboards",
+      "category": "DATA",
+      "rubricVersion": 1,
+      "evidenceDecayDays": 540,
+      "prerequisites": [
+        { "skillKey": "db.sql", "type": "HARD", "threshold": 0.4 }
+      ]
+    }
+  ],
+  "roles": [
+    {
+      "key": "backend-engineer",
+      "name": "Backend Engineer",
+      "domainKey": "software-development",
+      "version": 1,
+      "targetLevels": [
+        {
+          "level": "PRODUCT_PLACEMENT",
+          "requirements": [
+            {
+              "skillKey": "programming.basics",
+              "requiredDepth": 0.7,
+              "importance": 0.9,
+              "placementRelevance": 0.8,
+              "required": true,
+              "requiredByDaysBeforeDeadline": 240,
+              "hours": { "p25": 20, "p50": 35, "p75": 50 },
+              "rationale": "Programming fluency is a prerequisite for the synthetic backend role path."
+            },
+            {
+              "skillKey": "programming.oop",
+              "requiredDepth": 0.75,
+              "importance": 0.85,
+              "placementRelevance": 0.8,
+              "required": true,
+              "requiredByDaysBeforeDeadline": 210,
+              "hours": { "p25": 15, "p50": 25, "p75": 40 },
+              "rationale": "OOP is used by framework work and synthetic interview preparation."
+            },
+            {
+              "skillKey": "dsa.arrays",
+              "requiredDepth": 0.8,
+              "importance": 0.9,
+              "placementRelevance": 1,
+              "required": true,
+              "requiredByDaysBeforeDeadline": 90,
+              "hours": { "p25": 30, "p50": 50, "p75": 80 },
+              "rationale": "Core problem-solving patterns are required for the selected placement level."
+            },
+            {
+              "skillKey": "dsa.trees",
+              "requiredDepth": 0.7,
+              "importance": 0.75,
+              "placementRelevance": 0.95,
+              "required": true,
+              "requiredByDaysBeforeDeadline": 60,
+              "hours": { "p25": 24, "p50": 40, "p75": 65 },
+              "rationale": "Tree patterns extend synthetic product-placement problem solving depth."
+            },
+            {
+              "skillKey": "db.sql",
+              "requiredDepth": 0.75,
+              "importance": 0.85,
+              "placementRelevance": 0.8,
+              "required": true,
+              "requiredByDaysBeforeDeadline": 150,
+              "hours": { "p25": 14, "p50": 24, "p75": 36 },
+              "rationale": "Relational query ability supports backend implementation and interviews."
+            },
+            {
+              "skillKey": "backend.rest",
+              "requiredDepth": 0.7,
+              "importance": 0.9,
+              "placementRelevance": 0.7,
+              "required": true,
+              "requiredByDaysBeforeDeadline": 150,
+              "hours": { "p25": 20, "p50": 35, "p75": 55 },
+              "rationale": "HTTP and API behavior is central to the synthetic backend role."
+            },
+            {
+              "skillKey": "backend.framework",
+              "requiredDepth": 0.7,
+              "importance": 0.9,
+              "placementRelevance": 0.65,
+              "required": true,
+              "requiredByDaysBeforeDeadline": 90,
+              "hours": { "p25": 35, "p50": 55, "p75": 80 },
+              "rationale": "Framework application produces role-specific implementation evidence."
+            },
+            {
+              "skillKey": "tools.git",
+              "requiredDepth": 0.55,
+              "importance": 0.65,
+              "placementRelevance": 0.45,
+              "required": true,
+              "requiredByDaysBeforeDeadline": 180,
+              "hours": { "p25": 6, "p50": 10, "p75": 16 },
+              "rationale": "Version control is required to build and present project work."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "data-analyst",
+      "name": "Data Analyst",
+      "domainKey": "data",
+      "version": 1,
+      "targetLevels": [
+        {
+          "level": "INTERNSHIP_READY",
+          "requirements": [
+            {
+              "skillKey": "db.sql",
+              "requiredDepth": 0.7,
+              "importance": 1,
+              "placementRelevance": 0.8,
+              "required": true,
+              "requiredByDaysBeforeDeadline": 90,
+              "hours": { "p25": 15, "p50": 25, "p75": 40 },
+              "rationale": "SQL is the primary data retrieval tool in the synthetic analyst role."
+            },
+            {
+              "skillKey": "data.statistics",
+              "requiredDepth": 0.6,
+              "importance": 0.85,
+              "placementRelevance": 0.7,
+              "required": true,
+              "requiredByDaysBeforeDeadline": 75,
+              "hours": { "p25": 18, "p50": 30, "p75": 50 },
+              "rationale": "Applied statistics supports correct interpretation of synthetic analyses."
+            },
+            {
+              "skillKey": "data.bi",
+              "requiredDepth": 0.6,
+              "importance": 0.9,
+              "placementRelevance": 0.65,
+              "required": true,
+              "requiredByDaysBeforeDeadline": 45,
+              "hours": { "p25": 20, "p50": 32, "p75": 48 },
+              "rationale": "Dashboard work provides visible portfolio evidence for an analyst internship."
+            },
+            {
+              "skillKey": "tools.git",
+              "requiredDepth": 0.4,
+              "importance": 0.4,
+              "placementRelevance": 0.25,
+              "required": false,
+              "requiredByDaysBeforeDeadline": 30,
+              "hours": { "p25": 4, "p50": 7, "p75": 12 },
+              "rationale": "Version control is useful but optional at this synthetic target depth."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "learningUnits": [
+    {
+      "key": "learn.programming-foundation",
+      "type": "TEACH",
+      "skillKeys": ["programming.basics"],
+      "fromDepth": 0,
+      "toDepth": 0.4,
+      "estimatedMinutes": 1200,
+      "difficulty": "FOUNDATION",
+      "splitPointsMinutes": [45, 60],
+      "reasonCodes": ["ROLE_REQUIRED"]
+    },
+    {
+      "key": "practice.dsa-arrays",
+      "type": "PRACTICE",
+      "skillKeys": ["dsa.arrays"],
+      "fromDepth": 0.4,
+      "toDepth": 0.8,
+      "estimatedMinutes": 1800,
+      "difficulty": "INTERMEDIATE",
+      "splitPointsMinutes": [45, 60],
+      "reasonCodes": ["ROLE_REQUIRED", "ACADEMIC_EXTENSION"]
+    },
+    {
+      "key": "learn.sql-foundation",
+      "type": "TEACH",
+      "skillKeys": ["db.sql"],
+      "fromDepth": 0,
+      "toDepth": 0.55,
+      "estimatedMinutes": 900,
+      "difficulty": "FOUNDATION",
+      "splitPointsMinutes": [45, 60],
+      "reasonCodes": ["ROLE_REQUIRED", "ACADEMIC_SYNC"]
+    },
+    {
+      "key": "learn.rest",
+      "type": "TEACH",
+      "skillKeys": ["backend.rest"],
+      "fromDepth": 0,
+      "toDepth": 0.7,
+      "estimatedMinutes": 1500,
+      "difficulty": "INTERMEDIATE",
+      "splitPointsMinutes": [60, 90],
+      "reasonCodes": ["CAREER_ONLY", "PREREQUISITE_OF"]
+    },
+    {
+      "key": "learn.git",
+      "type": "PRACTICE",
+      "skillKeys": ["tools.git"],
+      "fromDepth": 0,
+      "toDepth": 0.55,
+      "estimatedMinutes": 480,
+      "difficulty": "FOUNDATION",
+      "splitPointsMinutes": [30, 45],
+      "reasonCodes": ["CAREER_ONLY", "PROJECT_EVIDENCE"]
+    }
+  ]
+}

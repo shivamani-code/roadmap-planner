@@ -1,0 +1,223 @@
+:root {
+  --canvas: #f7f7f5;
+  --surface: #fff;
+  --text: #142033;
+  --muted: #556273;
+  --border: #d9dee7;
+  --brand: #3849c6;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  background: var(--canvas);
+  color: var(--text);
+  font:
+    16px/1.5 Inter,
+    ui-sans-serif,
+    system-ui,
+    sans-serif;
+}
+.admin-shell {
+  width: min(calc(100% - 40px), 1120px);
+  margin: auto;
+  padding-bottom: 80px;
+}
+header {
+  height: 76px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--border);
+}
+header > div {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+header small {
+  color: var(--muted);
+  padding-left: 9px;
+  border-left: 1px solid var(--border);
+}
+.admin-mark {
+  display: grid;
+  place-items: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 8px;
+  color: white;
+  background: var(--brand);
+  font-weight: 800;
+}
+.environment {
+  padding: 5px 9px;
+  border: 1px solid var(--border);
+  border-radius: 99px;
+  color: var(--muted);
+  font-size: 12px;
+}
+.admin-hero {
+  padding: 80px 0 50px;
+  max-width: 790px;
+}
+.admin-hero p {
+  color: var(--brand);
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+.admin-hero h1 {
+  margin: 0 0 20px;
+  font-size: clamp(38px, 5vw, 58px);
+  line-height: 1.06;
+  letter-spacing: -0.045em;
+}
+.admin-hero > span {
+  color: var(--muted);
+  font-size: 18px;
+}
+.capability-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px;
+}
+.capability-grid article,
+.policy-card {
+  padding: 24px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: var(--surface);
+}
+.capability-grid article > span {
+  color: #16734a;
+}
+.capability-grid h2 {
+  margin: 28px 0 7px;
+  font-size: 19px;
+}
+.capability-grid p,
+.policy-card p {
+  margin: 0;
+  color: var(--muted);
+}
+.policy-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 14px;
+}
+.policy-card > div + div {
+  padding-left: 24px;
+  border-left: 1px solid var(--border);
+}
+.policy-card strong {
+  display: block;
+  margin-top: 3px;
+}
+.workflow-grid {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 14px;
+}
+.admin-section-heading {
+  margin: 64px 0 20px;
+}
+.admin-section-heading p {
+  margin: 0;
+  color: var(--brand);
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.admin-section-heading h2 {
+  margin: 5px 0 0;
+  font-size: 28px;
+}
+.workflow-card {
+  display: grid;
+  align-content: start;
+  gap: 12px;
+  min-width: 0;
+  padding: 24px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: var(--surface);
+}
+.workflow-card > p {
+  margin: 0;
+  color: var(--brand);
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.workflow-card h2 {
+  margin: 0 0 10px;
+  font-size: 22px;
+}
+.workflow-card label {
+  font-size: 14px;
+  font-weight: 700;
+}
+.workflow-card textarea,
+.workflow-card input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #bfc7d3;
+  border-radius: 8px;
+  font: inherit;
+}
+.workflow-card textarea {
+  resize: vertical;
+  font-family: ui-monospace, SFMono-Regular, Consolas, monospace;
+  font-size: 13px;
+}
+.workflow-card button {
+  min-height: 44px;
+  border: 0;
+  border-radius: 8px;
+  background: var(--brand);
+  color: white;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+}
+.review-checks {
+  display: grid;
+  gap: 8px;
+  padding: 18px;
+  border-radius: 8px;
+  background: #f2f4f8;
+  color: var(--muted);
+  font-size: 14px;
+}
+.workflow-result {
+  grid-column: 1 / -1;
+  margin: 0;
+  padding: 14px;
+  border-radius: 8px;
+  background: #eef7f2;
+  color: #125b3c;
+}
+@media (max-width: 680px) {
+  .admin-shell {
+    width: calc(100% - 28px);
+  }
+  .capability-grid,
+  .policy-card,
+  .workflow-grid {
+    grid-template-columns: 1fr;
+  }
+  .policy-card > div + div {
+    margin-top: 20px;
+    padding: 20px 0 0;
+    border-left: 0;
+    border-top: 1px solid var(--border);
+  }
+  header small {
+    display: none;
+  }
+}

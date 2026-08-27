@@ -1,0 +1,293 @@
+{
+  "schemaVersion": "1.0.0",
+  "mappingVersion": 2,
+  "curriculumDatasetVersion": "2026.08.2",
+  "careerDatasetVersion": "2026.08.2",
+  "review": {
+    "editorId": "studentos-content-editor",
+    "reviewerId": "studentos-content-reviewer",
+    "reviewedAt": "2026-08-26T00:00:00Z"
+  },
+  "mappings": [
+    {
+      "curriculumTopicKey": "jntuh.r25.cse-networks.cs103es.scope",
+      "skillKey": "programming.fundamentals",
+      "breadth": 0.72,
+      "depth": 0.58,
+      "confidence": 0.86,
+      "practiceRequired": true,
+      "evidencePotential": 0.48,
+      "rationale": "Programming for Problem Solving in the official JNTUH R25 course structure directly supports programming fundamentals; applied evidence is still required for career readiness."
+    },
+    {
+      "curriculumTopicKey": "jntuh.r25.cse-networks.me105es.scope",
+      "skillKey": "mechanical.design",
+      "breadth": 0.72,
+      "depth": 0.58,
+      "confidence": 0.86,
+      "practiceRequired": true,
+      "evidencePotential": 0.48,
+      "rationale": "Engineering Drawing and Computer Aided Drafting in the official JNTUH R25 course structure directly supports mechanical design; applied evidence is still required for career readiness."
+    },
+    {
+      "curriculumTopicKey": "jntuh.r25.cse-networks.cs107es.scope",
+      "skillKey": "programming.fundamentals",
+      "breadth": 0.55,
+      "depth": 0.62,
+      "confidence": 0.86,
+      "practiceRequired": true,
+      "evidencePotential": 0.72,
+      "rationale": "Programming for Problem Solving Lab in the official JNTUH R25 course structure directly supports programming fundamentals; applied evidence is still required for career readiness."
+    },
+    {
+      "curriculumTopicKey": "jntuh.r25.cse-networks.cs109es.scope",
+      "skillKey": "programming.fundamentals",
+      "breadth": 0.55,
+      "depth": 0.62,
+      "confidence": 0.86,
+      "practiceRequired": true,
+      "evidencePotential": 0.72,
+      "rationale": "Python Programming Lab in the official JNTUH R25 course structure directly supports programming fundamentals; applied evidence is still required for career readiness."
+    },
+    {
+      "curriculumTopicKey": "jntuh.r25.cse-networks.cs203es.scope",
+      "skillKey": "dsa.core",
+      "breadth": 0.72,
+      "depth": 0.58,
+      "confidence": 0.86,
+      "practiceRequired": true,
+      "evidencePotential": 0.48,
+      "rationale": "Data Structures in the official JNTUH R25 course structure directly supports dsa core; applied evidence is still required for career readiness."
+    },
+    {
+      "curriculumTopicKey": "jntuh.r25.cse-networks.ec204es.scope",
+      "skillKey": "electronics.circuits",
+      "breadth": 0.72,
+      "depth": 0.58,
+      "confidence": 0.86,
+      "practiceRequired": true,
+      "evidencePotential": 0.48,
+      "rationale": "Electronic Devices and Circuits in the official JNTUH R25 course structure directly supports electronics circuits; applied evidence is still required for career readiness."
+    },
+    {
+      "curriculumTopicKey": "jntuh.r25.cse-networks.en205hs.scope",
+      "skillKey": "communication.technical",
+      "breadth": 0.72,
+      "depth": 0.58,
+      "confidence": 0.86,
+      "practiceRequired": true,
+      "evidencePotential": 0.48,
+      "rationale": "English for Skill Enhancement in the official JNTUH R25 course structure directly supports communication technical; applied evidence is still required for career readiness."
+    },
+    {
+      "curriculumTopicKey": "jntuh.r25.cse-networks.cs207es.scope",
+      "skillKey": "dsa.core",
+      "breadth": 0.55,
+      "depth": 0.62,
+      "confidence": 0.86,
+      "practiceRequired": true,
+      "evidencePotential": 0.72,
+      "rationale": "Data Structures Lab in the official JNTUH R25 course structure directly supports dsa core; applied evidence is still required for career readiness."
+    },
+    {
+      "curriculumTopicKey": "jntuh.r25.cse-networks.en208hs.scope",
+      "skillKey": "communication.technical",
+      "breadth": 0.55,
+      "depth": 0.62,
+      "confidence": 0.86,
+      "practiceRequired": true,
+      "evidencePotential": 0.72,
+      "rationale": "English Language and Communication Skills Lab in the official JNTUH R25 course structure directly supports communication technical; applied evidence is still required for career readiness."
+    },
+    {
+      "curriculumTopicKey": "jntuh.r25.cse-networks.cn302pc.scope",
+      "skillKey": "core.architecture",
+      "breadth": 0.72,
+      "depth": 0.58,
+      "confidence": 0.86,
+      "practiceRequired": true,
+      "evidencePotential": 0.48,
+      "rationale": "Computer Organization in the official JNTUH R25 course structure directly supports core architecture; applied evidence is still required for career readiness."
+    },
+    {
+      "curriculumTopicKey": "jntuh.r25.cse-networks.cn303pc.scope",
+      "skillKey": "programming.fundamentals",
+      "breadth": 0.72,
+      "depth": 0.58,
+      "confidence": 0.86,
+      "practiceRequired": true,
+      "evidencePotential": 0.48,
+      "rationale": "Java Programming in the official JNTUH R25 course structure directly supports programming fundamentals; applied evidence is still required for career readiness."
+    },
+    {
+      "curriculumTopicKey": "jntuh.r25.cse-networks.cs304pc.scope",
+      "skillKey": "engineering.software",
+      "breadth": 0.72,
+      "depth": 0.58,
+      "confidence": 0.86,
+      "practiceRequired": true,
+      "evidencePotential": 0.48,
+      "rationale": "Software Engineering in the official JNTUH R25 course structure directly supports engineering software; applied evidence is still required for career readiness."
+    },
+    {
+      "curriculumTopicKey": "jntuh.r25.cse-networks.cs305pc.scope",
+      "skillKey": "db.relational",
+      "breadth": 0.72,
+      "depth": 0.58,
+      "confidence": 0.86,
+      "practiceRequired": true,
+      "evidencePotential": 0.48,
+      "rationale": "Database Management Systems in the official JNTUH R25 course structure directly supports db relational; applied evidence is still required for career readiness."
+    },
+    {
+      "curriculumTopicKey": "jntuh.r25.cse-networks.cn307pc.scope",
+      "skillKey": "programming.fundamentals",
+      "breadth": 0.55,
+      "depth": 0.62,
+      "confidence": 0.86,
+      "practiceRequired": true,
+      "evidencePotential": 0.72,
+      "rationale": "Java Programming Lab in the official JNTUH R25 course structure directly supports programming fundamentals; applied evidence is still required for career readiness."
+    },
+    {
+      "curriculumTopicKey": "jntuh.r25.cse-networks.cs308pc.scope",
+      "skillKey": "engineering.software",
+      "breadth": 0.55,
+      "depth": 0.62,
+      "confidence": 0.86,
+      "practiceRequired": true,
+      "evidencePotential": 0.72,
+      "rationale": "Software Engineering Lab in the official JNTUH R25 course structure directly supports engineering software; applied evidence is still required for career readiness."
+    },
+    {
+      "curriculumTopicKey": "jntuh.r25.cse-networks.cs309pc.scope",
+      "skillKey": "db.relational",
+      "breadth": 0.55,
+      "depth": 0.62,
+      "confidence": 0.86,
+      "practiceRequired": true,
+      "evidencePotential": 0.72,
+      "rationale": "Database Management Systems Lab in the official JNTUH R25 course structure directly supports db relational; applied evidence is still required for career readiness."
+    },
+    {
+      "curriculumTopicKey": "jntuh.r25.cse-networks.cn310sd.scope",
+      "skillKey": "programming.fundamentals",
+      "breadth": 0.72,
+      "depth": 0.58,
+      "confidence": 0.86,
+      "practiceRequired": true,
+      "evidencePotential": 0.48,
+      "rationale": "Data Visualization-R Programming/Power BI/ Tableau/Google Chart in the official JNTUH R25 course structure directly supports programming fundamentals; applied evidence is still required for career readiness."
+    },
+    {
+      "curriculumTopicKey": "jntuh.r25.cse-networks.cn310sd.scope",
+      "skillKey": "data.analysis",
+      "breadth": 0.72,
+      "depth": 0.58,
+      "confidence": 0.86,
+      "practiceRequired": true,
+      "evidencePotential": 0.48,
+      "rationale": "Data Visualization-R Programming/Power BI/ Tableau/Google Chart in the official JNTUH R25 course structure directly supports data analysis; applied evidence is still required for career readiness."
+    },
+    {
+      "curriculumTopicKey": "jntuh.r25.cse-networks.cs402pc.scope",
+      "skillKey": "core.os",
+      "breadth": 0.72,
+      "depth": 0.58,
+      "confidence": 0.86,
+      "practiceRequired": true,
+      "evidencePotential": 0.48,
+      "rationale": "Operating Systems in the official JNTUH R25 course structure directly supports core os; applied evidence is still required for career readiness."
+    },
+    {
+      "curriculumTopicKey": "jntuh.r25.cse-networks.cn403pc.scope",
+      "skillKey": "programming.fundamentals",
+      "breadth": 0.72,
+      "depth": 0.58,
+      "confidence": 0.86,
+      "practiceRequired": true,
+      "evidencePotential": 0.48,
+      "rationale": "Web Programming in the official JNTUH R25 course structure directly supports programming fundamentals; applied evidence is still required for career readiness."
+    },
+    {
+      "curriculumTopicKey": "jntuh.r25.cse-networks.cn403pc.scope",
+      "skillKey": "web.frontend",
+      "breadth": 0.72,
+      "depth": 0.58,
+      "confidence": 0.86,
+      "practiceRequired": true,
+      "evidencePotential": 0.48,
+      "rationale": "Web Programming in the official JNTUH R25 course structure directly supports web frontend; applied evidence is still required for career readiness."
+    },
+    {
+      "curriculumTopicKey": "jntuh.r25.cse-networks.cn405pc.scope",
+      "skillKey": "core.networks",
+      "breadth": 0.72,
+      "depth": 0.58,
+      "confidence": 0.86,
+      "practiceRequired": true,
+      "evidencePotential": 0.48,
+      "rationale": "Data Communications in the official JNTUH R25 course structure directly supports core networks; applied evidence is still required for career readiness."
+    },
+    {
+      "curriculumTopicKey": "jntuh.r25.cse-networks.cn405pc.scope",
+      "skillKey": "communication.technical",
+      "breadth": 0.72,
+      "depth": 0.58,
+      "confidence": 0.86,
+      "practiceRequired": true,
+      "evidencePotential": 0.48,
+      "rationale": "Data Communications in the official JNTUH R25 course structure directly supports communication technical; applied evidence is still required for career readiness."
+    },
+    {
+      "curriculumTopicKey": "jntuh.r25.cse-networks.cn407pc.scope",
+      "skillKey": "core.os",
+      "breadth": 0.55,
+      "depth": 0.62,
+      "confidence": 0.86,
+      "practiceRequired": true,
+      "evidencePotential": 0.72,
+      "rationale": "Operating System Laboratory in the official JNTUH R25 course structure directly supports core os; applied evidence is still required for career readiness."
+    },
+    {
+      "curriculumTopicKey": "jntuh.r25.cse-networks.cn408pc.scope",
+      "skillKey": "programming.fundamentals",
+      "breadth": 0.55,
+      "depth": 0.62,
+      "confidence": 0.86,
+      "practiceRequired": true,
+      "evidencePotential": 0.72,
+      "rationale": "Web Programming Laboratory in the official JNTUH R25 course structure directly supports programming fundamentals; applied evidence is still required for career readiness."
+    },
+    {
+      "curriculumTopicKey": "jntuh.r25.cse-networks.cn408pc.scope",
+      "skillKey": "web.frontend",
+      "breadth": 0.55,
+      "depth": 0.62,
+      "confidence": 0.86,
+      "practiceRequired": true,
+      "evidencePotential": 0.72,
+      "rationale": "Web Programming Laboratory in the official JNTUH R25 course structure directly supports web frontend; applied evidence is still required for career readiness."
+    },
+    {
+      "curriculumTopicKey": "jntuh.r25.cse-networks.cn409pc.scope",
+      "skillKey": "programming.fundamentals",
+      "breadth": 0.55,
+      "depth": 0.62,
+      "confidence": 0.86,
+      "practiceRequired": true,
+      "evidencePotential": 0.72,
+      "rationale": "Linux Programming Laboratory in the official JNTUH R25 course structure directly supports programming fundamentals; applied evidence is still required for career readiness."
+    },
+    {
+      "curriculumTopicKey": "jntuh.r25.cse-networks.cn410sd.scope",
+      "skillKey": "web.frontend",
+      "breadth": 0.72,
+      "depth": 0.58,
+      "confidence": 0.86,
+      "practiceRequired": true,
+      "evidencePotential": 0.48,
+      "rationale": "Node JS/ React JS/ Django, UI Design - Flutter in the official JNTUH R25 course structure directly supports web frontend; applied evidence is still required for career readiness."
+    }
+  ]
+}

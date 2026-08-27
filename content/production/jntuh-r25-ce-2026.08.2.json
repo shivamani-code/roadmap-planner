@@ -1,0 +1,1824 @@
+{
+  "schemaVersion": "1.0.0",
+  "dataset": {
+    "universityCode": "JNTUH",
+    "regulationCode": "R25",
+    "degreeCode": "BTECH",
+    "branchCode": "CE",
+    "datasetVersion": "2026.08.2",
+    "effectiveFrom": "2025-07-01",
+    "effectiveTo": null,
+    "source": {
+      "documentId": "jntuh-r25-ce-course-structure",
+      "title": "JNTUH R25 B.Tech. Civil Engineering Course Structure and Syllabus",
+      "sourceUrl": "https://jntuh.ac.in/uploads/academics/R25B.Tech.CivilEngg.IIIYearSyllabusV2.pdf",
+      "sha256": "909277844dcc52d3e5e5042cb97e5e722ebde56b1f2222c2af64f4b9d5cb5418",
+      "publishedAt": "2025-08-11",
+      "retrievedAt": "2026-08-26T00:00:00Z",
+      "usagePermission": "PUBLIC_OFFICIAL"
+    },
+    "synthetic": false
+  },
+  "semesters": [
+    {
+      "number": 1,
+      "academicYear": 1,
+      "subjects": [
+        {
+          "code": "MA101BS",
+          "title": "Matrices and Calculus",
+          "credits": 4.0,
+          "type": "THEORY",
+          "contactHoursPerWeek": 4.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.ce.ma101bs.scope",
+                  "title": "Matrices and Calculus",
+                  "sourcePage": 1,
+                  "academicDepth": 0.55,
+                  "estimatedAcademicHours": 48.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "PH102BS",
+          "title": "Advanced Engineering Physics",
+          "credits": 3.0,
+          "type": "THEORY",
+          "contactHoursPerWeek": 3.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.ce.ph102bs.scope",
+                  "title": "Advanced Engineering Physics",
+                  "sourcePage": 1,
+                  "academicDepth": 0.55,
+                  "estimatedAcademicHours": 36.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "ME103ES",
+          "title": "C Programming and Data Structures",
+          "credits": 3.0,
+          "type": "THEORY",
+          "contactHoursPerWeek": 3.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.ce.me103es.scope",
+                  "title": "C Programming and Data Structures",
+                  "sourcePage": 1,
+                  "academicDepth": 0.55,
+                  "estimatedAcademicHours": 36.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "EN104HS",
+          "title": "English for Skill Enhancement",
+          "credits": 3.0,
+          "type": "THEORY",
+          "contactHoursPerWeek": 3.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.ce.en104hs.scope",
+                  "title": "English for Skill Enhancement",
+                  "sourcePage": 1,
+                  "academicDepth": 0.55,
+                  "estimatedAcademicHours": 36.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "ME105ES",
+          "title": "Engineering Drawing and Computer Aided Drafting",
+          "credits": 3.0,
+          "type": "THEORY",
+          "contactHoursPerWeek": 4.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.ce.me105es.scope",
+                  "title": "Engineering Drawing and Computer Aided Drafting",
+                  "sourcePage": 1,
+                  "academicDepth": 0.55,
+                  "estimatedAcademicHours": 36.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "PH106BS",
+          "title": "Advanced Engineering Physics Lab",
+          "credits": 1.0,
+          "type": "LAB",
+          "contactHoursPerWeek": 2.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.ce.ph106bs.scope",
+                  "title": "Advanced Engineering Physics Lab",
+                  "sourcePage": 1,
+                  "academicDepth": 0.65,
+                  "estimatedAcademicHours": 12.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "CS107ES",
+          "title": "C Programming and Data Structures Lab",
+          "credits": 1.0,
+          "type": "LAB",
+          "contactHoursPerWeek": 2.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.ce.cs107es.scope",
+                  "title": "C Programming and Data Structures Lab",
+                  "sourcePage": 1,
+                  "academicDepth": 0.65,
+                  "estimatedAcademicHours": 12.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "ME108ES",
+          "title": "Engineering Workshop",
+          "credits": 1.0,
+          "type": "LAB",
+          "contactHoursPerWeek": 2.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.ce.me108es.scope",
+                  "title": "Engineering Workshop",
+                  "sourcePage": 1,
+                  "academicDepth": 0.65,
+                  "estimatedAcademicHours": 12.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "EN109HS",
+          "title": "English Language and Communication Skills Lab",
+          "credits": 1.0,
+          "type": "LAB",
+          "contactHoursPerWeek": 2.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.ce.en109hs.scope",
+                  "title": "English Language and Communication Skills Lab",
+                  "sourcePage": 1,
+                  "academicDepth": 0.65,
+                  "estimatedAcademicHours": 12.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": true
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "academicYear": 1,
+      "subjects": [
+        {
+          "code": "MA201BS",
+          "title": "Ordinary Differential Equations and Vector Calculus",
+          "credits": 3.0,
+          "type": "THEORY",
+          "contactHoursPerWeek": 3.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.ce.ma201bs.scope",
+                  "title": "Ordinary Differential Equations and Vector Calculus",
+                  "sourcePage": 1,
+                  "academicDepth": 0.55,
+                  "estimatedAcademicHours": 36.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "CH202BS",
+          "title": "Applied Chemistry",
+          "credits": 3.0,
+          "type": "THEORY",
+          "contactHoursPerWeek": 3.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.ce.ch202bs.scope",
+                  "title": "Applied Chemistry",
+                  "sourcePage": 1,
+                  "academicDepth": 0.55,
+                  "estimatedAcademicHours": 36.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "CS203ES",
+          "title": "Python Programming",
+          "credits": 3.0,
+          "type": "THEORY",
+          "contactHoursPerWeek": 3.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.ce.cs203es.scope",
+                  "title": "Python Programming",
+                  "sourcePage": 1,
+                  "academicDepth": 0.55,
+                  "estimatedAcademicHours": 36.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "EE204ES",
+          "title": "Elements of Electrical and Electronics Engineering",
+          "credits": 3.0,
+          "type": "THEORY",
+          "contactHoursPerWeek": 3.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.ce.ee204es.scope",
+                  "title": "Elements of Electrical and Electronics Engineering",
+                  "sourcePage": 1,
+                  "academicDepth": 0.55,
+                  "estimatedAcademicHours": 36.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "CE205PC",
+          "title": "Building Planning and Construction",
+          "credits": 3.0,
+          "type": "THEORY",
+          "contactHoursPerWeek": 3.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.ce.ce205pc.scope",
+                  "title": "Building Planning and Construction",
+                  "sourcePage": 1,
+                  "academicDepth": 0.55,
+                  "estimatedAcademicHours": 36.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "CE206PC",
+          "title": "Engineering Mechanics for Civil Engineers",
+          "credits": 3.0,
+          "type": "THEORY",
+          "contactHoursPerWeek": 3.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.ce.ce206pc.scope",
+                  "title": "Engineering Mechanics for Civil Engineers",
+                  "sourcePage": 1,
+                  "academicDepth": 0.55,
+                  "estimatedAcademicHours": 36.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "CH207BS",
+          "title": "Chemistry Lab for Engineers",
+          "credits": 1.0,
+          "type": "LAB",
+          "contactHoursPerWeek": 2.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.ce.ch207bs.scope",
+                  "title": "Chemistry Lab for Engineers",
+                  "sourcePage": 1,
+                  "academicDepth": 0.65,
+                  "estimatedAcademicHours": 12.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "CS208ES",
+          "title": "Python Programming Lab",
+          "credits": 1.0,
+          "type": "LAB",
+          "contactHoursPerWeek": 2.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.ce.cs208es.scope",
+                  "title": "Python Programming Lab",
+                  "sourcePage": 1,
+                  "academicDepth": 0.65,
+                  "estimatedAcademicHours": 12.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "EE209ES",
+          "title": "Elements of Electrical and Electronics Engineering Lab",
+          "credits": 1.0,
+          "type": "LAB",
+          "contactHoursPerWeek": 2.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.ce.ee209es.scope",
+                  "title": "Elements of Electrical and Electronics Engineering Lab",
+                  "sourcePage": 1,
+                  "academicDepth": 0.65,
+                  "estimatedAcademicHours": 12.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": true
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "academicYear": 2,
+      "subjects": [
+        {
+          "code": "MA301BS",
+          "title": "Probability and Statistics",
+          "credits": 3.0,
+          "type": "THEORY",
+          "contactHoursPerWeek": 3.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.ce.ma301bs.scope",
+                  "title": "Probability and Statistics",
+                  "sourcePage": 1,
+                  "academicDepth": 0.55,
+                  "estimatedAcademicHours": 36.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "CE302PC",
+          "title": "Building Materials and Concrete Technology",
+          "credits": 3.0,
+          "type": "THEORY",
+          "contactHoursPerWeek": 3.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.ce.ce302pc.scope",
+                  "title": "Building Materials and Concrete Technology",
+                  "sourcePage": 1,
+                  "academicDepth": 0.55,
+                  "estimatedAcademicHours": 36.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "CE303PC",
+          "title": "Strength of Materials",
+          "credits": 3.0,
+          "type": "THEORY",
+          "contactHoursPerWeek": 3.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.ce.ce303pc.scope",
+                  "title": "Strength of Materials",
+                  "sourcePage": 1,
+                  "academicDepth": 0.55,
+                  "estimatedAcademicHours": 36.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "CE304PC",
+          "title": "Surveying and Geomatics",
+          "credits": 3.0,
+          "type": "THEORY",
+          "contactHoursPerWeek": 3.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.ce.ce304pc.scope",
+                  "title": "Surveying and Geomatics",
+                  "sourcePage": 1,
+                  "academicDepth": 0.55,
+                  "estimatedAcademicHours": 36.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "CE305PC",
+          "title": "Fluid Mechanics",
+          "credits": 3.0,
+          "type": "THEORY",
+          "contactHoursPerWeek": 3.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.ce.ce305pc.scope",
+                  "title": "Fluid Mechanics",
+                  "sourcePage": 1,
+                  "academicDepth": 0.55,
+                  "estimatedAcademicHours": 36.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "MA306PC",
+          "title": "Computational Mathematics Lab",
+          "credits": 1.0,
+          "type": "LAB",
+          "contactHoursPerWeek": 2.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.ce.ma306pc.scope",
+                  "title": "Computational Mathematics Lab",
+                  "sourcePage": 1,
+                  "academicDepth": 0.65,
+                  "estimatedAcademicHours": 12.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "CE307PC",
+          "title": "Material Testing Lab",
+          "credits": 1.0,
+          "type": "LAB",
+          "contactHoursPerWeek": 2.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.ce.ce307pc.scope",
+                  "title": "Material Testing Lab",
+                  "sourcePage": 1,
+                  "academicDepth": 0.65,
+                  "estimatedAcademicHours": 12.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "CE308PC",
+          "title": "Strength of Materials Lab",
+          "credits": 1.0,
+          "type": "LAB",
+          "contactHoursPerWeek": 2.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.ce.ce308pc.scope",
+                  "title": "Strength of Materials Lab",
+                  "sourcePage": 1,
+                  "academicDepth": 0.65,
+                  "estimatedAcademicHours": 12.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "CE309PC",
+          "title": "Surveying & Geomatics Lab",
+          "credits": 1.0,
+          "type": "LAB",
+          "contactHoursPerWeek": 2.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.ce.ce309pc.scope",
+                  "title": "Surveying & Geomatics Lab",
+                  "sourcePage": 1,
+                  "academicDepth": 0.65,
+                  "estimatedAcademicHours": 12.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "CE310SD",
+          "title": "Design Thinking and Tinkering Lab",
+          "credits": 1.0,
+          "type": "LAB",
+          "contactHoursPerWeek": 2.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.ce.ce310sd.scope",
+                  "title": "Design Thinking and Tinkering Lab",
+                  "sourcePage": 1,
+                  "academicDepth": 0.65,
+                  "estimatedAcademicHours": 12.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": true
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "academicYear": 2,
+      "subjects": [
+        {
+          "code": "CE401PC",
+          "title": "Structural Mechanics",
+          "credits": 3.0,
+          "type": "THEORY",
+          "contactHoursPerWeek": 3.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.ce.ce401pc.scope",
+                  "title": "Structural Mechanics",
+                  "sourcePage": 2,
+                  "academicDepth": 0.55,
+                  "estimatedAcademicHours": 36.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "CE402PC",
+          "title": "Water Resources and Irrigation Engineering",
+          "credits": 3.0,
+          "type": "THEORY",
+          "contactHoursPerWeek": 3.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.ce.ce402pc.scope",
+                  "title": "Water Resources and Irrigation Engineering",
+                  "sourcePage": 2,
+                  "academicDepth": 0.55,
+                  "estimatedAcademicHours": 36.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "CE403PC",
+          "title": "Hydraulics & Hydraulic Machinery",
+          "credits": 3.0,
+          "type": "THEORY",
+          "contactHoursPerWeek": 3.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.ce.ce403pc.scope",
+                  "title": "Hydraulics & Hydraulic Machinery",
+                  "sourcePage": 2,
+                  "academicDepth": 0.55,
+                  "estimatedAcademicHours": 36.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "CE404PC",
+          "title": "Theory of Structures",
+          "credits": 3.0,
+          "type": "THEORY",
+          "contactHoursPerWeek": 3.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.ce.ce404pc.scope",
+                  "title": "Theory of Structures",
+                  "sourcePage": 2,
+                  "academicDepth": 0.55,
+                  "estimatedAcademicHours": 36.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "CE405PC",
+          "title": "Engineering Geology",
+          "credits": 2.0,
+          "type": "THEORY",
+          "contactHoursPerWeek": 2.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.ce.ce405pc.scope",
+                  "title": "Engineering Geology",
+                  "sourcePage": 2,
+                  "academicDepth": 0.55,
+                  "estimatedAcademicHours": 24.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "MS406HS",
+          "title": "Innovation and Entrepreneurship",
+          "credits": 2.0,
+          "type": "THEORY",
+          "contactHoursPerWeek": 2.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.ce.ms406hs.scope",
+                  "title": "Innovation and Entrepreneurship",
+                  "sourcePage": 2,
+                  "academicDepth": 0.55,
+                  "estimatedAcademicHours": 24.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "CE407PC",
+          "title": "Engineering Geology Lab",
+          "credits": 1.0,
+          "type": "LAB",
+          "contactHoursPerWeek": 2.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.ce.ce407pc.scope",
+                  "title": "Engineering Geology Lab",
+                  "sourcePage": 2,
+                  "academicDepth": 0.65,
+                  "estimatedAcademicHours": 12.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "CE408PC",
+          "title": "Hydraulics & Hydraulic Machinery Lab",
+          "credits": 1.0,
+          "type": "LAB",
+          "contactHoursPerWeek": 2.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.ce.ce408pc.scope",
+                  "title": "Hydraulics & Hydraulic Machinery Lab",
+                  "sourcePage": 2,
+                  "academicDepth": 0.65,
+                  "estimatedAcademicHours": 12.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "CE409PC",
+          "title": "Computer Aided Building Drafting Lab",
+          "credits": 1.0,
+          "type": "LAB",
+          "contactHoursPerWeek": 2.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.ce.ce409pc.scope",
+                  "title": "Computer Aided Building Drafting Lab",
+                  "sourcePage": 2,
+                  "academicDepth": 0.65,
+                  "estimatedAcademicHours": 12.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "CE410SD",
+          "title": "Digital Surveying Lab",
+          "credits": 1.0,
+          "type": "LAB",
+          "contactHoursPerWeek": 2.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.ce.ce410sd.scope",
+                  "title": "Digital Surveying Lab",
+                  "sourcePage": 2,
+                  "academicDepth": 0.65,
+                  "estimatedAcademicHours": 12.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "VA400HS",
+          "title": "Indian Knowledge System",
+          "credits": 1.0,
+          "type": "THEORY",
+          "contactHoursPerWeek": 1.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.ce.va400hs.scope",
+                  "title": "Indian Knowledge System",
+                  "sourcePage": 2,
+                  "academicDepth": 0.55,
+                  "estimatedAcademicHours": 12.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "academicYear": 3,
+      "subjects": [
+        {
+          "code": "CE501PC",
+          "title": "Environmental Engineering",
+          "credits": 3.0,
+          "type": "THEORY",
+          "contactHoursPerWeek": 3.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.ce.ce501pc.scope",
+                  "title": "Environmental Engineering",
+                  "sourcePage": 2,
+                  "academicDepth": 0.55,
+                  "estimatedAcademicHours": 36.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "CE502PC",
+          "title": "Design of Reinforced Concrete Members",
+          "credits": 3.0,
+          "type": "THEORY",
+          "contactHoursPerWeek": 3.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.ce.ce502pc.scope",
+                  "title": "Design of Reinforced Concrete Members",
+                  "sourcePage": 2,
+                  "academicDepth": 0.55,
+                  "estimatedAcademicHours": 36.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "CE503PC",
+          "title": "Transportation Engineering",
+          "credits": 3.0,
+          "type": "THEORY",
+          "contactHoursPerWeek": 3.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.ce.ce503pc.scope",
+                  "title": "Transportation Engineering",
+                  "sourcePage": 2,
+                  "academicDepth": 0.55,
+                  "estimatedAcademicHours": 36.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "COURSE504",
+          "title": "Professional Elective-I",
+          "credits": 3.0,
+          "type": "ELECTIVE",
+          "contactHoursPerWeek": 3.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.ce.course504.scope",
+                  "title": "Professional Elective-I",
+                  "sourcePage": 2,
+                  "academicDepth": 0.65,
+                  "estimatedAcademicHours": 36.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "COURSE505",
+          "title": "Open Elective-I",
+          "credits": 2.0,
+          "type": "ELECTIVE",
+          "contactHoursPerWeek": 2.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.ce.course505.scope",
+                  "title": "Open Elective-I",
+                  "sourcePage": 2,
+                  "academicDepth": 0.65,
+                  "estimatedAcademicHours": 24.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "CE504PC",
+          "title": "Environmental Engineering Lab",
+          "credits": 1.0,
+          "type": "LAB",
+          "contactHoursPerWeek": 2.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.ce.ce504pc.scope",
+                  "title": "Environmental Engineering Lab",
+                  "sourcePage": 2,
+                  "academicDepth": 0.65,
+                  "estimatedAcademicHours": 12.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "CE505PC",
+          "title": "Computer Aided Design Lab",
+          "credits": 1.0,
+          "type": "LAB",
+          "contactHoursPerWeek": 2.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.ce.ce505pc.scope",
+                  "title": "Computer Aided Design Lab",
+                  "sourcePage": 2,
+                  "academicDepth": 0.65,
+                  "estimatedAcademicHours": 12.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "CE506PC",
+          "title": "Highway Materials Lab",
+          "credits": 1.0,
+          "type": "LAB",
+          "contactHoursPerWeek": 2.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.ce.ce506pc.scope",
+                  "title": "Highway Materials Lab",
+                  "sourcePage": 2,
+                  "academicDepth": 0.65,
+                  "estimatedAcademicHours": 12.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "CE507PC",
+          "title": "Field Based Project/ Internship",
+          "credits": 2.0,
+          "type": "PROJECT",
+          "contactHoursPerWeek": 4.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.ce.ce507pc.scope",
+                  "title": "Field Based Project/ Internship",
+                  "sourcePage": 2,
+                  "academicDepth": 0.65,
+                  "estimatedAcademicHours": 24.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "CE508SD",
+          "title": "Building Information Modelling Lab",
+          "credits": 1.0,
+          "type": "LAB",
+          "contactHoursPerWeek": 2.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.ce.ce508sd.scope",
+                  "title": "Building Information Modelling Lab",
+                  "sourcePage": 2,
+                  "academicDepth": 0.65,
+                  "estimatedAcademicHours": 12.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "COURSE511",
+          "title": "VA500HS/ VS501HS Gender Sensitization*/ Human Values and Professional Ethics*",
+          "credits": 1.0,
+          "type": "THEORY",
+          "contactHoursPerWeek": 1.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.ce.course511.scope",
+                  "title": "VA500HS/ VS501HS Gender Sensitization*/ Human Values and Professional Ethics*",
+                  "sourcePage": 2,
+                  "academicDepth": 0.55,
+                  "estimatedAcademicHours": 12.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 6,
+      "academicYear": 3,
+      "subjects": [
+        {
+          "code": "CE601PC",
+          "title": "Geotechnical Engineering",
+          "credits": 3.0,
+          "type": "THEORY",
+          "contactHoursPerWeek": 3.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.ce.ce601pc.scope",
+                  "title": "Geotechnical Engineering",
+                  "sourcePage": 2,
+                  "academicDepth": 0.55,
+                  "estimatedAcademicHours": 36.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "CE602PC",
+          "title": "Design of Steel Structures",
+          "credits": 3.0,
+          "type": "THEORY",
+          "contactHoursPerWeek": 3.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.ce.ce602pc.scope",
+                  "title": "Design of Steel Structures",
+                  "sourcePage": 2,
+                  "academicDepth": 0.55,
+                  "estimatedAcademicHours": 36.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "CE603PC",
+          "title": "Business Economics and Financial Analysis",
+          "credits": 3.0,
+          "type": "THEORY",
+          "contactHoursPerWeek": 3.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.ce.ce603pc.scope",
+                  "title": "Business Economics and Financial Analysis",
+                  "sourcePage": 2,
+                  "academicDepth": 0.55,
+                  "estimatedAcademicHours": 36.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "COURSE604",
+          "title": "Professional Elective-II",
+          "credits": 3.0,
+          "type": "ELECTIVE",
+          "contactHoursPerWeek": 3.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.ce.course604.scope",
+                  "title": "Professional Elective-II",
+                  "sourcePage": 2,
+                  "academicDepth": 0.65,
+                  "estimatedAcademicHours": 36.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "COURSE605",
+          "title": "Open Elective \u2013 II",
+          "credits": 2.0,
+          "type": "ELECTIVE",
+          "contactHoursPerWeek": 2.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.ce.course605.scope",
+                  "title": "Open Elective \u2013 II",
+                  "sourcePage": 2,
+                  "academicDepth": 0.65,
+                  "estimatedAcademicHours": 24.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "CE604PC",
+          "title": "Geotechnical Engineering Lab",
+          "credits": 1.0,
+          "type": "LAB",
+          "contactHoursPerWeek": 2.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.ce.ce604pc.scope",
+                  "title": "Geotechnical Engineering Lab",
+                  "sourcePage": 2,
+                  "academicDepth": 0.65,
+                  "estimatedAcademicHours": 12.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "CE605PC",
+          "title": "GIS Lab",
+          "credits": 1.0,
+          "type": "LAB",
+          "contactHoursPerWeek": 2.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.ce.ce605pc.scope",
+                  "title": "GIS Lab",
+                  "sourcePage": 2,
+                  "academicDepth": 0.65,
+                  "estimatedAcademicHours": 12.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "CE606PC",
+          "title": "Civil Engineering Software Lab",
+          "credits": 1.0,
+          "type": "LAB",
+          "contactHoursPerWeek": 2.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.ce.ce606pc.scope",
+                  "title": "Civil Engineering Software Lab",
+                  "sourcePage": 2,
+                  "academicDepth": 0.65,
+                  "estimatedAcademicHours": 12.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "EN607HS",
+          "title": "English for Employability Skills Lab",
+          "credits": 1.0,
+          "type": "LAB",
+          "contactHoursPerWeek": 2.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.ce.en607hs.scope",
+                  "title": "English for Employability Skills Lab",
+                  "sourcePage": 2,
+                  "academicDepth": 0.65,
+                  "estimatedAcademicHours": 12.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "CE608SD",
+          "title": "Project Management Software Lab",
+          "credits": 1.0,
+          "type": "PROJECT",
+          "contactHoursPerWeek": 2.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.ce.ce608sd.scope",
+                  "title": "Project Management Software Lab",
+                  "sourcePage": 2,
+                  "academicDepth": 0.65,
+                  "estimatedAcademicHours": 12.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "VS600ES",
+          "title": "Environmental Science",
+          "credits": 1.0,
+          "type": "THEORY",
+          "contactHoursPerWeek": 1.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.ce.vs600es.scope",
+                  "title": "Environmental Science",
+                  "sourcePage": 3,
+                  "academicDepth": 0.55,
+                  "estimatedAcademicHours": 12.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 7,
+      "academicYear": 4,
+      "subjects": [
+        {
+          "code": "CE701PC",
+          "title": "Estimation Quantity Surveying & Valuation",
+          "credits": 3.0,
+          "type": "THEORY",
+          "contactHoursPerWeek": 3.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.ce.ce701pc.scope",
+                  "title": "Estimation Quantity Surveying & Valuation",
+                  "sourcePage": 3,
+                  "academicDepth": 0.55,
+                  "estimatedAcademicHours": 36.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "CE702PC",
+          "title": "Foundation Engineering",
+          "credits": 3.0,
+          "type": "THEORY",
+          "contactHoursPerWeek": 3.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.ce.ce702pc.scope",
+                  "title": "Foundation Engineering",
+                  "sourcePage": 3,
+                  "academicDepth": 0.55,
+                  "estimatedAcademicHours": 36.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "MS703HS",
+          "title": "Fundamentals of Management",
+          "credits": 3.0,
+          "type": "THEORY",
+          "contactHoursPerWeek": 3.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.ce.ms703hs.scope",
+                  "title": "Fundamentals of Management",
+                  "sourcePage": 3,
+                  "academicDepth": 0.55,
+                  "estimatedAcademicHours": 36.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "COURSE704",
+          "title": "Professional Elective-III",
+          "credits": 3.0,
+          "type": "ELECTIVE",
+          "contactHoursPerWeek": 3.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.ce.course704.scope",
+                  "title": "Professional Elective-III",
+                  "sourcePage": 3,
+                  "academicDepth": 0.65,
+                  "estimatedAcademicHours": 36.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "COURSE705",
+          "title": "Professional Elective \u2013 IV",
+          "credits": 3.0,
+          "type": "ELECTIVE",
+          "contactHoursPerWeek": 3.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.ce.course705.scope",
+                  "title": "Professional Elective \u2013 IV",
+                  "sourcePage": 3,
+                  "academicDepth": 0.65,
+                  "estimatedAcademicHours": 36.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "COURSE706",
+          "title": "Open Elective \u2013 III",
+          "credits": 2.0,
+          "type": "ELECTIVE",
+          "contactHoursPerWeek": 2.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.ce.course706.scope",
+                  "title": "Open Elective \u2013 III",
+                  "sourcePage": 3,
+                  "academicDepth": 0.65,
+                  "estimatedAcademicHours": 24.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "CE704PC",
+          "title": "Quantity Surveying Laboratory",
+          "credits": 1.0,
+          "type": "LAB",
+          "contactHoursPerWeek": 2.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.ce.ce704pc.scope",
+                  "title": "Quantity Surveying Laboratory",
+                  "sourcePage": 3,
+                  "academicDepth": 0.65,
+                  "estimatedAcademicHours": 12.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "CE705PC",
+          "title": "Computational Lab / IOT Lab",
+          "credits": 1.0,
+          "type": "LAB",
+          "contactHoursPerWeek": 2.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.ce.ce705pc.scope",
+                  "title": "Computational Lab / IOT Lab",
+                  "sourcePage": 3,
+                  "academicDepth": 0.65,
+                  "estimatedAcademicHours": 12.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "CE706PC",
+          "title": "Industry Oriented Mini Project/ Summer Internship",
+          "credits": 2.0,
+          "type": "PROJECT",
+          "contactHoursPerWeek": 4.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.ce.ce706pc.scope",
+                  "title": "Industry Oriented Mini Project/ Summer Internship",
+                  "sourcePage": 3,
+                  "academicDepth": 0.65,
+                  "estimatedAcademicHours": 24.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": true
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 8,
+      "academicYear": 4,
+      "subjects": [
+        {
+          "code": "COURSE801",
+          "title": "Professional Elective \u2013 V",
+          "credits": 3.0,
+          "type": "ELECTIVE",
+          "contactHoursPerWeek": 3.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.ce.course801.scope",
+                  "title": "Professional Elective \u2013 V",
+                  "sourcePage": 3,
+                  "academicDepth": 0.65,
+                  "estimatedAcademicHours": 36.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "COURSE802",
+          "title": "Professional Elective \u2013 VI",
+          "credits": 3.0,
+          "type": "ELECTIVE",
+          "contactHoursPerWeek": 3.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.ce.course802.scope",
+                  "title": "Professional Elective \u2013 VI",
+                  "sourcePage": 3,
+                  "academicDepth": 0.65,
+                  "estimatedAcademicHours": 36.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "CE801PC",
+          "title": "Project Work",
+          "credits": 14.0,
+          "type": "PROJECT",
+          "contactHoursPerWeek": 40,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.ce.ce801pc.scope",
+                  "title": "Project Work",
+                  "sourcePage": 3,
+                  "academicDepth": 0.65,
+                  "estimatedAcademicHours": 168.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": true
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

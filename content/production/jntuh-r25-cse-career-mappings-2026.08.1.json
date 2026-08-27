@@ -1,0 +1,253 @@
+{
+  "schemaVersion": "1.0.0",
+  "mappingVersion": 1,
+  "curriculumDatasetVersion": "2026.08.1",
+  "careerDatasetVersion": "2026.08.1",
+  "review": {
+    "editorId": "studentos-content-editor",
+    "reviewerId": "studentos-content-reviewer",
+    "reviewedAt": "2026-08-26T00:00:00Z"
+  },
+  "mappings": [
+    {
+      "curriculumTopicKey": "jntuh.r25.cse.cs105es.unit-1",
+      "skillKey": "programming.fundamentals",
+      "breadth": 0.55,
+      "depth": 0.48,
+      "confidence": 0.95,
+      "practiceRequired": true,
+      "evidencePotential": 0.4,
+      "rationale": "The published JNTUH R25 CSE topic directly supports programming fundamentals; independent applied evidence remains required for career readiness."
+    },
+    {
+      "curriculumTopicKey": "jntuh.r25.cse.cs303pc.unit-1",
+      "skillKey": "programming.oop",
+      "breadth": 0.75,
+      "depth": 0.65,
+      "confidence": 0.95,
+      "practiceRequired": true,
+      "evidencePotential": 0.57,
+      "rationale": "The published JNTUH R25 CSE topic directly supports programming oop; independent applied evidence remains required for career readiness."
+    },
+    {
+      "curriculumTopicKey": "jntuh.r25.cse.cs205es.unit-1",
+      "skillKey": "dsa.core",
+      "breadth": 0.8,
+      "depth": 0.62,
+      "confidence": 0.95,
+      "practiceRequired": true,
+      "evidencePotential": 0.54,
+      "rationale": "The published JNTUH R25 CSE topic directly supports dsa core; independent applied evidence remains required for career readiness."
+    },
+    {
+      "curriculumTopicKey": "jntuh.r25.cse.cs403pc.unit-1",
+      "skillKey": "dsa.problem-solving",
+      "breadth": 0.7,
+      "depth": 0.68,
+      "confidence": 0.92,
+      "practiceRequired": true,
+      "evidencePotential": 0.6,
+      "rationale": "The published JNTUH R25 CSE topic directly supports dsa problem-solving; independent applied evidence remains required for career readiness."
+    },
+    {
+      "curriculumTopicKey": "jntuh.r25.cse.cs402pc.unit-1",
+      "skillKey": "core.os",
+      "breadth": 0.7,
+      "depth": 0.62,
+      "confidence": 0.94,
+      "practiceRequired": true,
+      "evidencePotential": 0.54,
+      "rationale": "The published JNTUH R25 CSE topic directly supports core os; independent applied evidence remains required for career readiness."
+    },
+    {
+      "curriculumTopicKey": "jntuh.r25.cse.cs404pc.unit-1",
+      "skillKey": "core.networks",
+      "breadth": 0.7,
+      "depth": 0.62,
+      "confidence": 0.94,
+      "practiceRequired": true,
+      "evidencePotential": 0.54,
+      "rationale": "The published JNTUH R25 CSE topic directly supports core networks; independent applied evidence remains required for career readiness."
+    },
+    {
+      "curriculumTopicKey": "jntuh.r25.cse.cs305pc.unit-1",
+      "skillKey": "db.relational",
+      "breadth": 0.78,
+      "depth": 0.66,
+      "confidence": 0.95,
+      "practiceRequired": true,
+      "evidencePotential": 0.58,
+      "rationale": "The published JNTUH R25 CSE topic directly supports db relational; independent applied evidence remains required for career readiness."
+    },
+    {
+      "curriculumTopicKey": "jntuh.r25.cse.cs304pc.unit-1",
+      "skillKey": "engineering.software",
+      "breadth": 0.7,
+      "depth": 0.58,
+      "confidence": 0.94,
+      "practiceRequired": true,
+      "evidencePotential": 0.5,
+      "rationale": "The published JNTUH R25 CSE topic directly supports engineering software; independent applied evidence remains required for career readiness."
+    },
+    {
+      "curriculumTopicKey": "jntuh.r25.cse.cs308pc.scope",
+      "skillKey": "engineering.testing",
+      "breadth": 0.6,
+      "depth": 0.56,
+      "confidence": 0.82,
+      "practiceRequired": true,
+      "evidencePotential": 0.48,
+      "rationale": "The published JNTUH R25 CSE topic directly supports engineering testing; independent applied evidence remains required for career readiness."
+    },
+    {
+      "curriculumTopicKey": "jntuh.r25.cse.cs210es.scope",
+      "skillKey": "tools.git",
+      "breadth": 0.4,
+      "depth": 0.35,
+      "confidence": 0.75,
+      "practiceRequired": true,
+      "evidencePotential": 0.35,
+      "rationale": "The published JNTUH R25 CSE topic directly supports tools git; independent applied evidence remains required for career readiness."
+    },
+    {
+      "curriculumTopicKey": "jntuh.r25.cse.cs310sd.scope",
+      "skillKey": "web.fundamentals",
+      "breadth": 0.5,
+      "depth": 0.48,
+      "confidence": 0.8,
+      "practiceRequired": true,
+      "evidencePotential": 0.4,
+      "rationale": "The published JNTUH R25 CSE topic directly supports web fundamentals; independent applied evidence remains required for career readiness."
+    },
+    {
+      "curriculumTopicKey": "jntuh.r25.cse.cs310sd.scope",
+      "skillKey": "web.javascript",
+      "breadth": 0.65,
+      "depth": 0.58,
+      "confidence": 0.82,
+      "practiceRequired": true,
+      "evidencePotential": 0.5,
+      "rationale": "The published JNTUH R25 CSE topic directly supports web javascript; independent applied evidence remains required for career readiness."
+    },
+    {
+      "curriculumTopicKey": "jntuh.r25.cse.cs310sd.scope",
+      "skillKey": "web.react",
+      "breadth": 0.65,
+      "depth": 0.58,
+      "confidence": 0.82,
+      "practiceRequired": true,
+      "evidencePotential": 0.5,
+      "rationale": "The published JNTUH R25 CSE topic directly supports web react; independent applied evidence remains required for career readiness."
+    },
+    {
+      "curriculumTopicKey": "jntuh.r25.cse.cs310sd.scope",
+      "skillKey": "backend.api",
+      "breadth": 0.55,
+      "depth": 0.5,
+      "confidence": 0.8,
+      "practiceRequired": true,
+      "evidencePotential": 0.42,
+      "rationale": "The published JNTUH R25 CSE topic directly supports backend api; independent applied evidence remains required for career readiness."
+    },
+    {
+      "curriculumTopicKey": "jntuh.r25.cse.cs601pc.scope",
+      "skillKey": "backend.security",
+      "breadth": 0.7,
+      "depth": 0.62,
+      "confidence": 0.78,
+      "practiceRequired": true,
+      "evidencePotential": 0.54,
+      "rationale": "The published JNTUH R25 CSE topic directly supports backend security; independent applied evidence remains required for career readiness."
+    },
+    {
+      "curriculumTopicKey": "jntuh.r25.cse.cs503pc.scope",
+      "skillKey": "deployment.devops",
+      "breadth": 0.72,
+      "depth": 0.62,
+      "confidence": 0.78,
+      "practiceRequired": true,
+      "evidencePotential": 0.54,
+      "rationale": "The published JNTUH R25 CSE topic directly supports deployment devops; independent applied evidence remains required for career readiness."
+    },
+    {
+      "curriculumTopicKey": "jntuh.r25.cse.cs208es.scope",
+      "skillKey": "data.python",
+      "breadth": 0.68,
+      "depth": 0.55,
+      "confidence": 0.82,
+      "practiceRequired": true,
+      "evidencePotential": 0.47,
+      "rationale": "The published JNTUH R25 CSE topic directly supports data python; independent applied evidence remains required for career readiness."
+    },
+    {
+      "curriculumTopicKey": "jntuh.r25.cse.ma401pc.unit-1",
+      "skillKey": "data.statistics",
+      "breadth": 0.75,
+      "depth": 0.65,
+      "confidence": 0.93,
+      "practiceRequired": true,
+      "evidencePotential": 0.57,
+      "rationale": "The published JNTUH R25 CSE topic directly supports data statistics; independent applied evidence remains required for career readiness."
+    },
+    {
+      "curriculumTopicKey": "jntuh.r25.cse.cs405pc.unit-1",
+      "skillKey": "data.analysis",
+      "breadth": 0.62,
+      "depth": 0.56,
+      "confidence": 0.9,
+      "practiceRequired": true,
+      "evidencePotential": 0.48,
+      "rationale": "The published JNTUH R25 CSE topic directly supports data analysis; independent applied evidence remains required for career readiness."
+    },
+    {
+      "curriculumTopicKey": "jntuh.r25.cse.cs410sd.scope",
+      "skillKey": "data.visualization",
+      "breadth": 0.75,
+      "depth": 0.65,
+      "confidence": 0.82,
+      "practiceRequired": true,
+      "evidencePotential": 0.57,
+      "rationale": "The published JNTUH R25 CSE topic directly supports data visualization; independent applied evidence remains required for career readiness."
+    },
+    {
+      "curriculumTopicKey": "jntuh.r25.cse.en607hs.scope",
+      "skillKey": "communication.technical",
+      "breadth": 0.65,
+      "depth": 0.55,
+      "confidence": 0.76,
+      "practiceRequired": true,
+      "evidencePotential": 0.47,
+      "rationale": "The published JNTUH R25 CSE topic directly supports communication technical; independent applied evidence remains required for career readiness."
+    },
+    {
+      "curriculumTopicKey": "jntuh.r25.cse.cs801pc.scope",
+      "skillKey": "projects.delivery",
+      "breadth": 0.8,
+      "depth": 0.72,
+      "confidence": 0.78,
+      "practiceRequired": true,
+      "evidencePotential": 0.64,
+      "rationale": "The published JNTUH R25 CSE topic directly supports projects delivery; independent applied evidence remains required for career readiness."
+    },
+    {
+      "curriculumTopicKey": "jntuh.r25.cse.cs606pc.scope",
+      "skillKey": "interview.coding",
+      "breadth": 0.48,
+      "depth": 0.5,
+      "confidence": 0.74,
+      "practiceRequired": true,
+      "evidencePotential": 0.42,
+      "rationale": "The published JNTUH R25 CSE topic directly supports interview coding; independent applied evidence remains required for career readiness."
+    },
+    {
+      "curriculumTopicKey": "jntuh.r25.cse.ma101bs.unit-1",
+      "skillKey": "placement.aptitude",
+      "breadth": 0.35,
+      "depth": 0.32,
+      "confidence": 0.72,
+      "practiceRequired": true,
+      "evidencePotential": 0.35,
+      "rationale": "The published JNTUH R25 CSE topic directly supports placement aptitude; independent applied evidence remains required for career readiness."
+    }
+  ]
+}

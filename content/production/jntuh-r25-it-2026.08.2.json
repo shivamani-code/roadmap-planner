@@ -1,0 +1,1848 @@
+{
+  "schemaVersion": "1.0.0",
+  "dataset": {
+    "universityCode": "JNTUH",
+    "regulationCode": "R25",
+    "degreeCode": "BTECH",
+    "branchCode": "IT",
+    "datasetVersion": "2026.08.2",
+    "effectiveFrom": "2025-07-01",
+    "effectiveTo": null,
+    "source": {
+      "documentId": "jntuh-r25-it-course-structure",
+      "title": "JNTUH R25 B.Tech. Information Technology Course Structure and Syllabus",
+      "sourceUrl": "https://jntuh.ac.in/uploads/academics/R25B.Tech.ITIIIYearSyllabus.pdf",
+      "sha256": "755f3caf11683d1d6ea601129a13ca26e7d25305edf9d2754fc32b1910cb0b30",
+      "publishedAt": "2025-08-11",
+      "retrievedAt": "2026-08-26T00:00:00Z",
+      "usagePermission": "PUBLIC_OFFICIAL"
+    },
+    "synthetic": false
+  },
+  "semesters": [
+    {
+      "number": 1,
+      "academicYear": 1,
+      "subjects": [
+        {
+          "code": "MA101BS",
+          "title": "Matrices and Calculus",
+          "credits": 4.0,
+          "type": "THEORY",
+          "contactHoursPerWeek": 4.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.it.ma101bs.scope",
+                  "title": "Matrices and Calculus",
+                  "sourcePage": 1,
+                  "academicDepth": 0.55,
+                  "estimatedAcademicHours": 48.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "PH102BS",
+          "title": "Advanced Engineering Physics",
+          "credits": 3.0,
+          "type": "THEORY",
+          "contactHoursPerWeek": 3.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.it.ph102bs.scope",
+                  "title": "Advanced Engineering Physics",
+                  "sourcePage": 1,
+                  "academicDepth": 0.55,
+                  "estimatedAcademicHours": 36.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "CS103ES",
+          "title": "Programming for Problem Solving",
+          "credits": 3.0,
+          "type": "THEORY",
+          "contactHoursPerWeek": 3.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.it.cs103es.scope",
+                  "title": "Programming for Problem Solving",
+                  "sourcePage": 1,
+                  "academicDepth": 0.55,
+                  "estimatedAcademicHours": 36.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "EE104ES",
+          "title": "Basic Electrical Engineering",
+          "credits": 3.0,
+          "type": "THEORY",
+          "contactHoursPerWeek": 3.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.it.ee104es.scope",
+                  "title": "Basic Electrical Engineering",
+                  "sourcePage": 1,
+                  "academicDepth": 0.55,
+                  "estimatedAcademicHours": 36.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "ME105ES",
+          "title": "Engineering Drawing and Computer Aided Drafting",
+          "credits": 3.0,
+          "type": "THEORY",
+          "contactHoursPerWeek": 4.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.it.me105es.scope",
+                  "title": "Engineering Drawing and Computer Aided Drafting",
+                  "sourcePage": 1,
+                  "academicDepth": 0.55,
+                  "estimatedAcademicHours": 36.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "PH106BS",
+          "title": "Advanced Engineering Physics Lab",
+          "credits": 1.0,
+          "type": "LAB",
+          "contactHoursPerWeek": 2.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.it.ph106bs.scope",
+                  "title": "Advanced Engineering Physics Lab",
+                  "sourcePage": 1,
+                  "academicDepth": 0.65,
+                  "estimatedAcademicHours": 12.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "CS107ES",
+          "title": "Programming for Problem Solving Lab",
+          "credits": 1.0,
+          "type": "LAB",
+          "contactHoursPerWeek": 2.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.it.cs107es.scope",
+                  "title": "Programming for Problem Solving Lab",
+                  "sourcePage": 1,
+                  "academicDepth": 0.65,
+                  "estimatedAcademicHours": 12.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "EE108ES",
+          "title": "Basic Electrical Engineering Lab",
+          "credits": 1.0,
+          "type": "LAB",
+          "contactHoursPerWeek": 2.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.it.ee108es.scope",
+                  "title": "Basic Electrical Engineering Lab",
+                  "sourcePage": 1,
+                  "academicDepth": 0.65,
+                  "estimatedAcademicHours": 12.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "CS109ES",
+          "title": "Python Programming Lab",
+          "credits": 1.0,
+          "type": "LAB",
+          "contactHoursPerWeek": 2.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.it.cs109es.scope",
+                  "title": "Python Programming Lab",
+                  "sourcePage": 1,
+                  "academicDepth": 0.65,
+                  "estimatedAcademicHours": 12.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": true
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "academicYear": 1,
+      "subjects": [
+        {
+          "code": "MA201BS",
+          "title": "Ordinary Differential Equations and Vector Calculus",
+          "credits": 3.0,
+          "type": "THEORY",
+          "contactHoursPerWeek": 3.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.it.ma201bs.scope",
+                  "title": "Ordinary Differential Equations and Vector Calculus",
+                  "sourcePage": 1,
+                  "academicDepth": 0.55,
+                  "estimatedAcademicHours": 36.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "CH202BS",
+          "title": "Engineering Chemistry",
+          "credits": 3.0,
+          "type": "THEORY",
+          "contactHoursPerWeek": 3.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.it.ch202bs.scope",
+                  "title": "Engineering Chemistry",
+                  "sourcePage": 1,
+                  "academicDepth": 0.55,
+                  "estimatedAcademicHours": 36.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "CS203ES",
+          "title": "Data Structures",
+          "credits": 3.0,
+          "type": "THEORY",
+          "contactHoursPerWeek": 3.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.it.cs203es.scope",
+                  "title": "Data Structures",
+                  "sourcePage": 1,
+                  "academicDepth": 0.55,
+                  "estimatedAcademicHours": 36.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "EC204ES",
+          "title": "Electronic Devices and Circuits",
+          "credits": 3.0,
+          "type": "THEORY",
+          "contactHoursPerWeek": 3.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.it.ec204es.scope",
+                  "title": "Electronic Devices and Circuits",
+                  "sourcePage": 1,
+                  "academicDepth": 0.55,
+                  "estimatedAcademicHours": 36.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "EN205HS",
+          "title": "English for Skill Enhancement",
+          "credits": 3.0,
+          "type": "THEORY",
+          "contactHoursPerWeek": 3.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.it.en205hs.scope",
+                  "title": "English for Skill Enhancement",
+                  "sourcePage": 1,
+                  "academicDepth": 0.55,
+                  "estimatedAcademicHours": 36.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "CH206BS",
+          "title": "Engineering Chemistry Lab",
+          "credits": 1.0,
+          "type": "LAB",
+          "contactHoursPerWeek": 2.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.it.ch206bs.scope",
+                  "title": "Engineering Chemistry Lab",
+                  "sourcePage": 1,
+                  "academicDepth": 0.65,
+                  "estimatedAcademicHours": 12.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "CS207ES",
+          "title": "Data Structures Lab",
+          "credits": 1.0,
+          "type": "LAB",
+          "contactHoursPerWeek": 2.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.it.cs207es.scope",
+                  "title": "Data Structures Lab",
+                  "sourcePage": 1,
+                  "academicDepth": 0.65,
+                  "estimatedAcademicHours": 12.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "EN208HS",
+          "title": "English Language and Communication Skills Lab",
+          "credits": 1.0,
+          "type": "LAB",
+          "contactHoursPerWeek": 2.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.it.en208hs.scope",
+                  "title": "English Language and Communication Skills Lab",
+                  "sourcePage": 1,
+                  "academicDepth": 0.65,
+                  "estimatedAcademicHours": 12.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "ME209ES",
+          "title": "Engineering Workshop",
+          "credits": 1.0,
+          "type": "LAB",
+          "contactHoursPerWeek": 2.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.it.me209es.scope",
+                  "title": "Engineering Workshop",
+                  "sourcePage": 1,
+                  "academicDepth": 0.65,
+                  "estimatedAcademicHours": 12.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "CS210ES",
+          "title": "IT Workshop",
+          "credits": 1.0,
+          "type": "LAB",
+          "contactHoursPerWeek": 2.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.it.cs210es.scope",
+                  "title": "IT Workshop",
+                  "sourcePage": 1,
+                  "academicDepth": 0.65,
+                  "estimatedAcademicHours": 12.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": true
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "academicYear": 2,
+      "subjects": [
+        {
+          "code": "MA301BS",
+          "title": "Mathematical and Statistical Foundations",
+          "credits": 3.0,
+          "type": "THEORY",
+          "contactHoursPerWeek": 3.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.it.ma301bs.scope",
+                  "title": "Mathematical and Statistical Foundations",
+                  "sourcePage": 1,
+                  "academicDepth": 0.55,
+                  "estimatedAcademicHours": 36.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "IT302PC",
+          "title": "Computer Organization and Microprocessor",
+          "credits": 3.0,
+          "type": "THEORY",
+          "contactHoursPerWeek": 3.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.it.it302pc.scope",
+                  "title": "Computer Organization and Microprocessor",
+                  "sourcePage": 1,
+                  "academicDepth": 0.55,
+                  "estimatedAcademicHours": 36.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "IT303PC",
+          "title": "Java Programming",
+          "credits": 3.0,
+          "type": "THEORY",
+          "contactHoursPerWeek": 3.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.it.it303pc.scope",
+                  "title": "Java Programming",
+                  "sourcePage": 1,
+                  "academicDepth": 0.55,
+                  "estimatedAcademicHours": 36.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "IT304PC",
+          "title": "Operating Systems",
+          "credits": 3.0,
+          "type": "THEORY",
+          "contactHoursPerWeek": 3.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.it.it304pc.scope",
+                  "title": "Operating Systems",
+                  "sourcePage": 1,
+                  "academicDepth": 0.55,
+                  "estimatedAcademicHours": 36.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "IT305PC",
+          "title": "Introduction to IoT",
+          "credits": 3.0,
+          "type": "THEORY",
+          "contactHoursPerWeek": 3.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.it.it305pc.scope",
+                  "title": "Introduction to IoT",
+                  "sourcePage": 1,
+                  "academicDepth": 0.55,
+                  "estimatedAcademicHours": 36.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "MA306PC",
+          "title": "Computational Mathematics Lab",
+          "credits": 1.0,
+          "type": "LAB",
+          "contactHoursPerWeek": 2.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.it.ma306pc.scope",
+                  "title": "Computational Mathematics Lab",
+                  "sourcePage": 1,
+                  "academicDepth": 0.65,
+                  "estimatedAcademicHours": 12.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "IT307PC",
+          "title": "Java Programming Lab",
+          "credits": 1.0,
+          "type": "LAB",
+          "contactHoursPerWeek": 2.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.it.it307pc.scope",
+                  "title": "Java Programming Lab",
+                  "sourcePage": 1,
+                  "academicDepth": 0.65,
+                  "estimatedAcademicHours": 12.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "IT308PC",
+          "title": "Operating Systems Lab",
+          "credits": 1.0,
+          "type": "LAB",
+          "contactHoursPerWeek": 2.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.it.it308pc.scope",
+                  "title": "Operating Systems Lab",
+                  "sourcePage": 1,
+                  "academicDepth": 0.65,
+                  "estimatedAcademicHours": 12.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "IT309PC",
+          "title": "Internet of Things Lab",
+          "credits": 1.0,
+          "type": "LAB",
+          "contactHoursPerWeek": 2.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.it.it309pc.scope",
+                  "title": "Internet of Things Lab",
+                  "sourcePage": 1,
+                  "academicDepth": 0.65,
+                  "estimatedAcademicHours": 12.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "IT310SD",
+          "title": "Data Visualization-R Programming/Power BI/ Tableau/Google Chart",
+          "credits": 1.0,
+          "type": "THEORY",
+          "contactHoursPerWeek": 2.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.it.it310sd.scope",
+                  "title": "Data Visualization-R Programming/Power BI/ Tableau/Google Chart",
+                  "sourcePage": 1,
+                  "academicDepth": 0.55,
+                  "estimatedAcademicHours": 12.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "academicYear": 2,
+      "subjects": [
+        {
+          "code": "CS401PC",
+          "title": "Discrete Mathematics",
+          "credits": 3.0,
+          "type": "THEORY",
+          "contactHoursPerWeek": 3.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.it.cs401pc.scope",
+                  "title": "Discrete Mathematics",
+                  "sourcePage": 2,
+                  "academicDepth": 0.55,
+                  "estimatedAcademicHours": 36.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "IT402PC",
+          "title": "Data Communications and Computer Networks",
+          "credits": 3.0,
+          "type": "THEORY",
+          "contactHoursPerWeek": 3.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.it.it402pc.scope",
+                  "title": "Data Communications and Computer Networks",
+                  "sourcePage": 2,
+                  "academicDepth": 0.55,
+                  "estimatedAcademicHours": 36.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "IT403PC",
+          "title": "Formal Languages and Automata Theory",
+          "credits": 3.0,
+          "type": "THEORY",
+          "contactHoursPerWeek": 3.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.it.it403pc.scope",
+                  "title": "Formal Languages and Automata Theory",
+                  "sourcePage": 2,
+                  "academicDepth": 0.55,
+                  "estimatedAcademicHours": 36.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "IT404PC",
+          "title": "Database Management Systems",
+          "credits": 3.0,
+          "type": "THEORY",
+          "contactHoursPerWeek": 3.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.it.it404pc.scope",
+                  "title": "Database Management Systems",
+                  "sourcePage": 2,
+                  "academicDepth": 0.55,
+                  "estimatedAcademicHours": 36.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "IT405PC",
+          "title": "Web Programming",
+          "credits": 3.0,
+          "type": "THEORY",
+          "contactHoursPerWeek": 3.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.it.it405pc.scope",
+                  "title": "Web Programming",
+                  "sourcePage": 2,
+                  "academicDepth": 0.55,
+                  "estimatedAcademicHours": 36.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "MS406HS",
+          "title": "Innovation and Entrepreneurship",
+          "credits": 2.0,
+          "type": "THEORY",
+          "contactHoursPerWeek": 2.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.it.ms406hs.scope",
+                  "title": "Innovation and Entrepreneurship",
+                  "sourcePage": 2,
+                  "academicDepth": 0.55,
+                  "estimatedAcademicHours": 24.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "IT407PC",
+          "title": "Computer Networks lab",
+          "credits": 1.0,
+          "type": "LAB",
+          "contactHoursPerWeek": 2.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.it.it407pc.scope",
+                  "title": "Computer Networks lab",
+                  "sourcePage": 2,
+                  "academicDepth": 0.65,
+                  "estimatedAcademicHours": 12.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "IT408PC",
+          "title": "Database Management Systems Lab",
+          "credits": 1.0,
+          "type": "LAB",
+          "contactHoursPerWeek": 2.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.it.it408pc.scope",
+                  "title": "Database Management Systems Lab",
+                  "sourcePage": 2,
+                  "academicDepth": 0.65,
+                  "estimatedAcademicHours": 12.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "IT409PC",
+          "title": "Web Programming Lab",
+          "credits": 1.0,
+          "type": "LAB",
+          "contactHoursPerWeek": 2.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.it.it409pc.scope",
+                  "title": "Web Programming Lab",
+                  "sourcePage": 2,
+                  "academicDepth": 0.65,
+                  "estimatedAcademicHours": 12.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "IT410SD",
+          "title": "Node JS/ React JS/ Django, UI Design - Flutter",
+          "credits": 1.0,
+          "type": "THEORY",
+          "contactHoursPerWeek": 2.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.it.it410sd.scope",
+                  "title": "Node JS/ React JS/ Django, UI Design - Flutter",
+                  "sourcePage": 2,
+                  "academicDepth": 0.55,
+                  "estimatedAcademicHours": 12.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "VA400HS",
+          "title": "Indian Knowledge System",
+          "credits": 1.0,
+          "type": "THEORY",
+          "contactHoursPerWeek": 1.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.it.va400hs.scope",
+                  "title": "Indian Knowledge System",
+                  "sourcePage": 2,
+                  "academicDepth": 0.55,
+                  "estimatedAcademicHours": 12.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "academicYear": 3,
+      "subjects": [
+        {
+          "code": "IT501PC",
+          "title": "Software Engineering",
+          "credits": 3.0,
+          "type": "THEORY",
+          "contactHoursPerWeek": 3.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.it.it501pc.scope",
+                  "title": "Software Engineering",
+                  "sourcePage": 2,
+                  "academicDepth": 0.55,
+                  "estimatedAcademicHours": 36.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "IT502PC",
+          "title": "Machine Learning",
+          "credits": 3.0,
+          "type": "THEORY",
+          "contactHoursPerWeek": 3.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.it.it502pc.scope",
+                  "title": "Machine Learning",
+                  "sourcePage": 2,
+                  "academicDepth": 0.55,
+                  "estimatedAcademicHours": 36.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "IT503PC",
+          "title": "Algorithm Design and Analysis",
+          "credits": 3.0,
+          "type": "THEORY",
+          "contactHoursPerWeek": 3.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.it.it503pc.scope",
+                  "title": "Algorithm Design and Analysis",
+                  "sourcePage": 2,
+                  "academicDepth": 0.55,
+                  "estimatedAcademicHours": 36.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "COURSE504",
+          "title": "Professional Elective-I",
+          "credits": 3.0,
+          "type": "ELECTIVE",
+          "contactHoursPerWeek": 3.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.it.course504.scope",
+                  "title": "Professional Elective-I",
+                  "sourcePage": 2,
+                  "academicDepth": 0.65,
+                  "estimatedAcademicHours": 36.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "COURSE505",
+          "title": "Open Elective-I",
+          "credits": 2.0,
+          "type": "ELECTIVE",
+          "contactHoursPerWeek": 2.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.it.course505.scope",
+                  "title": "Open Elective-I",
+                  "sourcePage": 2,
+                  "academicDepth": 0.65,
+                  "estimatedAcademicHours": 24.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "IT504PC",
+          "title": "Software Engineering Lab",
+          "credits": 1.0,
+          "type": "LAB",
+          "contactHoursPerWeek": 2.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.it.it504pc.scope",
+                  "title": "Software Engineering Lab",
+                  "sourcePage": 2,
+                  "academicDepth": 0.65,
+                  "estimatedAcademicHours": 12.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "IT505PC",
+          "title": "Machine Learning Lab",
+          "credits": 1.0,
+          "type": "LAB",
+          "contactHoursPerWeek": 2.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.it.it505pc.scope",
+                  "title": "Machine Learning Lab",
+                  "sourcePage": 2,
+                  "academicDepth": 0.65,
+                  "estimatedAcademicHours": 12.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "IT506PC",
+          "title": "Algorithm Design and Analysis Lab",
+          "credits": 1.0,
+          "type": "LAB",
+          "contactHoursPerWeek": 2.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.it.it506pc.scope",
+                  "title": "Algorithm Design and Analysis Lab",
+                  "sourcePage": 2,
+                  "academicDepth": 0.65,
+                  "estimatedAcademicHours": 12.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "IT507PC",
+          "title": "Field Based Project/ Internship",
+          "credits": 2.0,
+          "type": "PROJECT",
+          "contactHoursPerWeek": 4.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.it.it507pc.scope",
+                  "title": "Field Based Project/ Internship",
+                  "sourcePage": 2,
+                  "academicDepth": 0.65,
+                  "estimatedAcademicHours": 24.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "IT508SD",
+          "title": "Full Stack Development",
+          "credits": 1.0,
+          "type": "THEORY",
+          "contactHoursPerWeek": 2.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.it.it508sd.scope",
+                  "title": "Full Stack Development",
+                  "sourcePage": 2,
+                  "academicDepth": 0.55,
+                  "estimatedAcademicHours": 12.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "COURSE511",
+          "title": "VA500HS/ VA501HS Gender Sensitization*/ Human Values and Professional Ethics*",
+          "credits": 1.0,
+          "type": "THEORY",
+          "contactHoursPerWeek": 1.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.it.course511.scope",
+                  "title": "VA500HS/ VA501HS Gender Sensitization*/ Human Values and Professional Ethics*",
+                  "sourcePage": 2,
+                  "academicDepth": 0.55,
+                  "estimatedAcademicHours": 12.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 6,
+      "academicYear": 3,
+      "subjects": [
+        {
+          "code": "IT601PC",
+          "title": "Compiler Design",
+          "credits": 3.0,
+          "type": "THEORY",
+          "contactHoursPerWeek": 3.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.it.it601pc.scope",
+                  "title": "Compiler Design",
+                  "sourcePage": 2,
+                  "academicDepth": 0.55,
+                  "estimatedAcademicHours": 36.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "IT602PC",
+          "title": "Deep Learning",
+          "credits": 3.0,
+          "type": "THEORY",
+          "contactHoursPerWeek": 3.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.it.it602pc.scope",
+                  "title": "Deep Learning",
+                  "sourcePage": 2,
+                  "academicDepth": 0.55,
+                  "estimatedAcademicHours": 36.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "MS603HS",
+          "title": "Business Economics and Financial Analysis",
+          "credits": 3.0,
+          "type": "THEORY",
+          "contactHoursPerWeek": 3.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.it.ms603hs.scope",
+                  "title": "Business Economics and Financial Analysis",
+                  "sourcePage": 2,
+                  "academicDepth": 0.55,
+                  "estimatedAcademicHours": 36.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "COURSE604",
+          "title": "Professional Elective-II",
+          "credits": 3.0,
+          "type": "ELECTIVE",
+          "contactHoursPerWeek": 3.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.it.course604.scope",
+                  "title": "Professional Elective-II",
+                  "sourcePage": 2,
+                  "academicDepth": 0.65,
+                  "estimatedAcademicHours": 36.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "COURSE605",
+          "title": "Open Elective-II",
+          "credits": 2.0,
+          "type": "ELECTIVE",
+          "contactHoursPerWeek": 2.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.it.course605.scope",
+                  "title": "Open Elective-II",
+                  "sourcePage": 2,
+                  "academicDepth": 0.65,
+                  "estimatedAcademicHours": 24.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "IT604PC",
+          "title": "Compiler Design Lab",
+          "credits": 1.0,
+          "type": "LAB",
+          "contactHoursPerWeek": 2.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.it.it604pc.scope",
+                  "title": "Compiler Design Lab",
+                  "sourcePage": 2,
+                  "academicDepth": 0.65,
+                  "estimatedAcademicHours": 12.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "IT605PC",
+          "title": "Deep Learning Lab",
+          "credits": 1.0,
+          "type": "LAB",
+          "contactHoursPerWeek": 2.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.it.it605pc.scope",
+                  "title": "Deep Learning Lab",
+                  "sourcePage": 2,
+                  "academicDepth": 0.65,
+                  "estimatedAcademicHours": 12.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "IT606PC",
+          "title": "Development Operations (DevOps) Lab",
+          "credits": 1.0,
+          "type": "LAB",
+          "contactHoursPerWeek": 2.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.it.it606pc.scope",
+                  "title": "Development Operations (DevOps) Lab",
+                  "sourcePage": 2,
+                  "academicDepth": 0.65,
+                  "estimatedAcademicHours": 12.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "EN607HS",
+          "title": "English for Employability Skills Lab",
+          "credits": 1.0,
+          "type": "LAB",
+          "contactHoursPerWeek": 2.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.it.en607hs.scope",
+                  "title": "English for Employability Skills Lab",
+                  "sourcePage": 2,
+                  "academicDepth": 0.65,
+                  "estimatedAcademicHours": 12.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "IT608SD",
+          "title": "Big data-Spark",
+          "credits": 1.0,
+          "type": "THEORY",
+          "contactHoursPerWeek": 2.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.it.it608sd.scope",
+                  "title": "Big data-Spark",
+                  "sourcePage": 2,
+                  "academicDepth": 0.55,
+                  "estimatedAcademicHours": 12.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "VA600ES",
+          "title": "Environmental Science",
+          "credits": 1.0,
+          "type": "THEORY",
+          "contactHoursPerWeek": 1.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.it.va600es.scope",
+                  "title": "Environmental Science",
+                  "sourcePage": 2,
+                  "academicDepth": 0.55,
+                  "estimatedAcademicHours": 12.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 7,
+      "academicYear": 4,
+      "subjects": [
+        {
+          "code": "IT701PC",
+          "title": "Information Security",
+          "credits": 3.0,
+          "type": "THEORY",
+          "contactHoursPerWeek": 3.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.it.it701pc.scope",
+                  "title": "Information Security",
+                  "sourcePage": 3,
+                  "academicDepth": 0.55,
+                  "estimatedAcademicHours": 36.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "IT702PC",
+          "title": "Natural Language Processing",
+          "credits": 3.0,
+          "type": "THEORY",
+          "contactHoursPerWeek": 3.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.it.it702pc.scope",
+                  "title": "Natural Language Processing",
+                  "sourcePage": 3,
+                  "academicDepth": 0.55,
+                  "estimatedAcademicHours": 36.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "MS703HS",
+          "title": "Fundamentals of Management",
+          "credits": 3.0,
+          "type": "THEORY",
+          "contactHoursPerWeek": 3.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.it.ms703hs.scope",
+                  "title": "Fundamentals of Management",
+                  "sourcePage": 3,
+                  "academicDepth": 0.55,
+                  "estimatedAcademicHours": 36.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "COURSE704",
+          "title": "Professional Elective-III",
+          "credits": 3.0,
+          "type": "ELECTIVE",
+          "contactHoursPerWeek": 3.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.it.course704.scope",
+                  "title": "Professional Elective-III",
+                  "sourcePage": 3,
+                  "academicDepth": 0.65,
+                  "estimatedAcademicHours": 36.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "COURSE705",
+          "title": "Professional Elective-IV",
+          "credits": 3.0,
+          "type": "ELECTIVE",
+          "contactHoursPerWeek": 3.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.it.course705.scope",
+                  "title": "Professional Elective-IV",
+                  "sourcePage": 3,
+                  "academicDepth": 0.65,
+                  "estimatedAcademicHours": 36.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "COURSE706",
+          "title": "Open Elective \u2013 III",
+          "credits": 2.0,
+          "type": "ELECTIVE",
+          "contactHoursPerWeek": 2.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.it.course706.scope",
+                  "title": "Open Elective \u2013 III",
+                  "sourcePage": 3,
+                  "academicDepth": 0.65,
+                  "estimatedAcademicHours": 24.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "IT704PC",
+          "title": "Information Security Lab",
+          "credits": 1.0,
+          "type": "LAB",
+          "contactHoursPerWeek": 2.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.it.it704pc.scope",
+                  "title": "Information Security Lab",
+                  "sourcePage": 3,
+                  "academicDepth": 0.65,
+                  "estimatedAcademicHours": 12.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "IT705PC",
+          "title": "Natural Language Processing Lab",
+          "credits": 1.0,
+          "type": "LAB",
+          "contactHoursPerWeek": 2.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.it.it705pc.scope",
+                  "title": "Natural Language Processing Lab",
+                  "sourcePage": 3,
+                  "academicDepth": 0.65,
+                  "estimatedAcademicHours": 12.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "IT706PC",
+          "title": "Industry Oriented Mini Project/ Internship",
+          "credits": 2.0,
+          "type": "PROJECT",
+          "contactHoursPerWeek": 4.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.it.it706pc.scope",
+                  "title": "Industry Oriented Mini Project/ Internship",
+                  "sourcePage": 3,
+                  "academicDepth": 0.65,
+                  "estimatedAcademicHours": 24.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": true
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 8,
+      "academicYear": 4,
+      "subjects": [
+        {
+          "code": "COURSE801",
+          "title": "Professional Elective \u2013 V",
+          "credits": 3.0,
+          "type": "ELECTIVE",
+          "contactHoursPerWeek": 3.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.it.course801.scope",
+                  "title": "Professional Elective \u2013 V",
+                  "sourcePage": 3,
+                  "academicDepth": 0.65,
+                  "estimatedAcademicHours": 36.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "COURSE802",
+          "title": "Professional Elective \u2013 VI",
+          "credits": 3.0,
+          "type": "ELECTIVE",
+          "contactHoursPerWeek": 3.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.it.course802.scope",
+                  "title": "Professional Elective \u2013 VI",
+                  "sourcePage": 3,
+                  "academicDepth": 0.65,
+                  "estimatedAcademicHours": 36.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "COURSE80101",
+          "title": "Java Programming 2 Mathematics for Machine Learning Open Elective-II: 1 Full Stack development 2 Scripting Languages Open Elective-III: 1 Big Data Technologies 2 Development and Operations (DevOps) R2",
+          "credits": 4.0,
+          "type": "ELECTIVE",
+          "contactHoursPerWeek": 4.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.it.course80101.scope",
+                  "title": "Java Programming 2 Mathematics for Machine Learning Open Elective-II: 1 Full Stack development 2 Scripting Languages Open Elective-III: 1 Big Data Technologies 2 Development and Operations (DevOps) R2",
+                  "sourcePage": 4,
+                  "academicDepth": 0.65,
+                  "estimatedAcademicHours": 48.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

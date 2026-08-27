@@ -1,0 +1,99 @@
+{
+  "schemaVersion": "1.0.0",
+  "dataset": {
+    "universityCode": "SYNTHETIC_U",
+    "regulationCode": "TEST25",
+    "degreeCode": "BTECH",
+    "branchCode": "CSE",
+    "datasetVersion": "2026.08.1",
+    "effectiveFrom": "2026-07-01",
+    "effectiveTo": null,
+    "source": {
+      "documentId": "synthetic-curriculum-fixture",
+      "title": "Synthetic curriculum for automated tests — not authoritative",
+      "sourceUrl": "https://example.invalid/studentos/synthetic-curriculum",
+      "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+      "publishedAt": "2026-07-01",
+      "retrievedAt": "2026-08-24T00:00:00Z",
+      "usagePermission": "PERMISSION_RECORDED"
+    },
+    "synthetic": true
+  },
+  "semesters": [
+    {
+      "number": 3,
+      "academicYear": 2,
+      "subjects": [
+        {
+          "code": "SYN-CS301",
+          "title": "Synthetic Data Structures",
+          "credits": 3,
+          "type": "THEORY",
+          "contactHoursPerWeek": 3,
+          "units": [
+            {
+              "number": 1,
+              "title": "Linear structures",
+              "topics": [
+                {
+                  "key": "synthetic.dsa.arrays",
+                  "title": "Arrays and complexity basics",
+                  "sourcePage": 10,
+                  "academicDepth": 0.5,
+                  "estimatedAcademicHours": 5,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            },
+            {
+              "number": 2,
+              "title": "Non-linear structures",
+              "topics": [
+                {
+                  "key": "synthetic.dsa.trees",
+                  "title": "Trees and traversals",
+                  "sourcePage": 12,
+                  "academicDepth": 0.5,
+                  "estimatedAcademicHours": 6,
+                  "prerequisiteTopicKeys": ["synthetic.dsa.arrays"],
+                  "lab": false
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "academicYear": 2,
+      "subjects": [
+        {
+          "code": "SYN-CS401",
+          "title": "Synthetic Database Systems",
+          "credits": 4,
+          "type": "INTEGRATED",
+          "contactHoursPerWeek": 5,
+          "units": [
+            {
+              "number": 1,
+              "title": "Relational queries",
+              "topics": [
+                {
+                  "key": "synthetic.db.sql",
+                  "title": "SQL selection, joins, and aggregation",
+                  "sourcePage": 20,
+                  "academicDepth": 0.55,
+                  "estimatedAcademicHours": 8,
+                  "prerequisiteTopicKeys": [],
+                  "lab": true
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1720 @@
+generator client {
+  provider = "prisma-client"
+  output   = "../src/generated"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+enum UserStatus {
+  ACTIVE
+  SUSPENDED
+  DELETION_PENDING
+  DELETED
+}
+
+enum VerificationPurpose {
+  SIGN_IN
+  EMAIL_CHANGE
+}
+
+enum OutboxStatus {
+  PENDING
+  PROCESSING
+  PROCESSED
+  FAILED
+}
+
+enum AuditActorType {
+  USER
+  ADMIN
+  SYSTEM
+}
+
+enum ContentStatus {
+  DRAFT
+  VALIDATING
+  IN_REVIEW
+  PUBLISHED
+  SUPERSEDED
+  ARCHIVED
+}
+
+enum CoverageStatus {
+  SUPPORTED
+  PARTIAL
+  UNSUPPORTED
+}
+
+enum SubjectType {
+  THEORY
+  LAB
+  INTEGRATED
+  PROJECT
+  SEMINAR
+  ELECTIVE
+}
+
+enum OnboardingStatus {
+  ACADEMIC
+  GOAL
+  ASSESSMENT
+  AVAILABILITY
+  REVIEW
+  COMPLETE
+}
+
+enum AdminRole {
+  CONTENT_EDITOR
+  CONTENT_REVIEWER
+  SUPPORT
+  ANALYST
+  SUPER_ADMIN
+}
+
+enum SkillCategory {
+  PROGRAMMING
+  DSA
+  CORE_CS
+  DEVELOPMENT
+  DATABASES
+  TOOLS
+  DATA
+  PROJECTS
+  APTITUDE
+  COMMUNICATION
+  RESUME
+  INTERVIEW
+}
+
+enum PrerequisiteType {
+  HARD
+  SOFT
+}
+
+enum TargetLevel {
+  INTERNSHIP_READY
+  SERVICE_PLACEMENT
+  PRODUCT_PLACEMENT
+}
+
+enum LearningUnitType {
+  TEACH
+  PRACTICE
+  ASSESS
+  REVISE
+}
+
+enum Difficulty {
+  FOUNDATION
+  INTERMEDIATE
+  ADVANCED
+}
+
+enum CareerGoalStatus {
+  ACTIVE
+  SUPERSEDED
+  ARCHIVED
+}
+
+enum AssessmentStatus {
+  OPEN
+  SUBMITTED
+  SCORED
+}
+
+enum EvidenceSource {
+  SELF_REPORT
+  COURSE_COMPLETION
+  EXERCISE
+  DIAGNOSTIC
+  TASK_COMPLETION
+  PROJECT_MILESTONE
+  MOCK_INTERVIEW
+}
+
+enum GapClassification {
+  MASTERED
+  COLLEGE_COVERED
+  EXTENSION
+  INDEPENDENT
+  CAREER_ONLY
+  DEFERRED
+  UNKNOWN
+}
+
+enum GapAnalysisStatus {
+  READY
+  INSUFFICIENT_CAPACITY
+  UNSUPPORTED
+}
+
+enum RoadmapLifecycleStatus {
+  ACTIVE
+  PAUSED
+  COMPLETED
+}
+
+enum RoadmapRevisionStatus {
+  DRAFT
+  VALIDATING
+  READY
+  ACTIVE
+  SUPERSEDED
+  FAILED
+}
+
+enum RoadmapTrack {
+  ACADEMIC
+  CAREER
+  PROJECT
+  PLACEMENT
+}
+
+enum RoadmapMilestoneStatus {
+  PLANNED
+  LOCKED
+  COMPLETED
+  EXCLUDED
+}
+
+enum GenerationJobStatus {
+  QUEUED
+  RUNNING
+  COMPLETED
+  FAILED
+}
+
+enum PlanningWeekStatus {
+  ACTIVE
+  LOCKED
+  SUPERSEDED
+}
+
+enum TaskOccurrenceStatus {
+  PLANNED
+  IN_PROGRESS
+  PARTIAL
+  COMPLETED
+  SKIPPED
+  RESCHEDULED
+}
+
+enum TaskSkipReason {
+  NO_TIME
+  TOO_DIFFICULT
+  ALREADY_KNEW
+  NOT_RELEVANT
+  OTHER
+}
+
+enum StudentProjectStatus {
+  ACTIVE
+  COMPLETED
+  PAUSED
+  ARCHIVED
+}
+
+enum ProjectMilestoneProgressStatus {
+  PLANNED
+  SUBMITTED
+  COMPLETED
+}
+
+enum WeeklyDifficulty {
+  TOO_EASY
+  GOOD
+  TOO_DIFFICULT
+}
+
+enum ExamPeriodType {
+  INTERNAL_EXAM
+  SEMESTER_EXAM
+  VACATION
+  PLACEMENT_WEEK
+}
+
+enum ExamPeriodProvenance {
+  STUDENT
+  UNIVERSITY_TEMPLATE
+  COLLEGE_TEMPLATE
+}
+
+enum RevisionKind {
+  WEEKLY
+  MATERIAL
+  ROLE
+  CONTENT
+  EXAM
+}
+
+enum AiUseCase {
+  ROADMAP_EXPLANATION
+  WEEKLY_COACHING
+}
+
+enum AiExplanationSource {
+  GENERATED
+  FALLBACK
+}
+
+enum NotificationType {
+  TODAY_PLAN
+  MISSED_PLAN
+  WEEKLY_REVIEW
+  UPCOMING_EXAM
+  MILESTONE
+  PLACEMENT_CHECKPOINT
+}
+
+enum NotificationChannel {
+  IN_APP
+  EMAIL
+}
+
+enum NotificationIntentStatus {
+  READY
+  SUPPRESSED
+  EXPIRED
+}
+
+enum NotificationDeliveryStatus {
+  PENDING
+  DELIVERED
+  SUPPRESSED
+  FAILED
+}
+
+model User {
+  id                      String                       @id @db.Uuid
+  email                   String                       @unique @db.VarChar(320)
+  normalizedEmail         String                       @unique @map("normalized_email") @db.VarChar(320)
+  displayName             String?                      @map("display_name") @db.VarChar(120)
+  avatarUrl               String?                      @map("avatar_url") @db.VarChar(2048)
+  status                  UserStatus                   @default(ACTIVE)
+  locale                  String                       @default("en-IN") @db.VarChar(16)
+  timezone                String                       @default("Asia/Kolkata") @db.VarChar(64)
+  lastLoginAt             DateTime?                    @map("last_login_at") @db.Timestamptz(3)
+  deletedAt               DateTime?                    @map("deleted_at") @db.Timestamptz(3)
+  createdAt               DateTime                     @default(now()) @map("created_at") @db.Timestamptz(3)
+  updatedAt               DateTime                     @updatedAt @map("updated_at") @db.Timestamptz(3)
+  lockVersion             Int                          @default(1) @map("lock_version")
+  authAccounts            AuthAccount[]
+  sessions                Session[]
+  studentProfile          StudentProfile?
+  adminMembership         AdminMembership?
+  careerGoals             CareerGoal[]
+  skillAssessments        SkillAssessment[]
+  skillEvidence           SkillEvidence[]
+  studentSkills           StudentSkill[]
+  studyAvailability       StudyAvailability[]
+  gapAnalyses             GapAnalysis[]
+  roadmaps                Roadmap[]
+  generationJobs          GenerationJob[]
+  planningWeeks           PlanningWeek[]
+  roadmapTasks            RoadmapTask[]
+  taskOccurrences         TaskOccurrence[]
+  taskCommands            TaskCommandRecord[]
+  taskCompletions         TaskCompletion[]
+  studentProjects         StudentProject[]
+  projectMilestoneReviews ProjectMilestoneProgress[]   @relation("ProjectMilestoneReviewer")
+  placementMetrics        PlacementMetric[]
+  progressSnapshots       ProgressSnapshot[]
+  weeklyReviews           WeeklyReview[]
+  examPeriods             ExamPeriod[]
+  revisionDiffs           RoadmapRevisionDiff[]
+  placementProfile        PlacementProfile?
+  communicationPreference CommunicationPreference?
+  notificationPreferences NotificationTypePreference[]
+  notifications           NotificationIntent[]
+  aiExplanations          AiExplanationCache[]
+  aiRequestAudits         AiRequestAudit[]
+  pilotFeedback           PilotFeedback[]
+
+  @@index([status, deletedAt])
+  @@map("users")
+}
+
+model CareerDataset {
+  id               String                 @id @db.Uuid
+  datasetVersion   String                 @unique @map("dataset_version") @db.VarChar(32)
+  status           ContentStatus          @default(DRAFT)
+  synthetic        Boolean                @default(false)
+  editorId         String                 @map("editor_id") @db.Uuid
+  reviewerId       String?                @map("reviewer_id") @db.Uuid
+  reviewRationale  String                 @map("review_rationale") @db.VarChar(2000)
+  reviewedAt       DateTime?              @map("reviewed_at") @db.Timestamptz(3)
+  publishedAt      DateTime?              @map("published_at") @db.Timestamptz(3)
+  createdAt        DateTime               @default(now()) @map("created_at") @db.Timestamptz(3)
+  updatedAt        DateTime               @updatedAt @map("updated_at") @db.Timestamptz(3)
+  skills           Skill[]
+  domains          CareerDomain[]
+  roles            CareerRoleVersion[]
+  learningUnits    LearningUnitTemplate[]
+  goals            CareerGoal[]
+  imports          ContentImport[]
+  gapAnalyses      GapAnalysis[]
+  roadmapRevisions RoadmapRevision[]
+  projectDatasets  ProjectDataset[]
+
+  @@index([status, synthetic, publishedAt])
+  @@map("career_datasets")
+}
+
+model Skill {
+  id                       String                   @id @db.Uuid
+  datasetId                String                   @map("dataset_id") @db.Uuid
+  stableKey                String                   @map("stable_key") @db.VarChar(128)
+  name                     String                   @db.VarChar(160)
+  category                 SkillCategory
+  rubricVersion            Int                      @map("rubric_version")
+  evidenceDecayDays        Int?                     @map("evidence_decay_days")
+  dataset                  CareerDataset            @relation(fields: [datasetId], references: [id], onDelete: Cascade)
+  prerequisites            SkillPrerequisite[]      @relation("SkillDependents")
+  dependents               SkillPrerequisite[]      @relation("SkillPrerequisites")
+  roleRequirements         RoleSkillRequirement[]
+  learningUnitLinks        LearningUnitSkill[]
+  assessmentResponses      AssessmentResponse[]
+  evidence                 SkillEvidence[]
+  studentEstimates         StudentSkill[]
+  curriculumMappings       CurriculumSkillMapping[]
+  gapItems                 GapAnalysisItem[]
+  roadmapMilestones        RoadmapMilestone[]
+  roadmapTasks             RoadmapTask[]
+  projectPrerequisites     ProjectPrerequisite[]
+  projectMilestoneOutcomes ProjectMilestoneSkill[]
+
+  @@unique([datasetId, stableKey])
+  @@index([category, stableKey])
+  @@map("skills")
+}
+
+model SkillPrerequisite {
+  skillId        String           @map("skill_id") @db.Uuid
+  prerequisiteId String           @map("prerequisite_id") @db.Uuid
+  type           PrerequisiteType
+  threshold      Decimal          @db.Decimal(4, 3)
+  skill          Skill            @relation("SkillPrerequisites", fields: [skillId], references: [id], onDelete: Cascade)
+  prerequisite   Skill            @relation("SkillDependents", fields: [prerequisiteId], references: [id], onDelete: Cascade)
+
+  @@id([skillId, prerequisiteId])
+  @@map("skill_prerequisites")
+}
+
+model CareerDomain {
+  id        String              @id @db.Uuid
+  datasetId String              @map("dataset_id") @db.Uuid
+  stableKey String              @map("stable_key") @db.VarChar(128)
+  name      String              @db.VarChar(160)
+  dataset   CareerDataset       @relation(fields: [datasetId], references: [id], onDelete: Cascade)
+  roles     CareerRoleVersion[]
+
+  @@unique([datasetId, stableKey])
+  @@map("career_domains")
+}
+
+model CareerRoleVersion {
+  id               String                 @id @db.Uuid
+  datasetId        String                 @map("dataset_id") @db.Uuid
+  domainId         String                 @map("domain_id") @db.Uuid
+  stableKey        String                 @map("stable_key") @db.VarChar(128)
+  name             String                 @db.VarChar(160)
+  version          Int
+  dataset          CareerDataset          @relation(fields: [datasetId], references: [id], onDelete: Cascade)
+  domain           CareerDomain           @relation(fields: [domainId], references: [id], onDelete: Restrict)
+  requirements     RoleSkillRequirement[]
+  goals            CareerGoal[]
+  goalVersions     CareerGoalVersion[]
+  projectRoleFits  ProjectRoleFit[]
+  placementMetrics PlacementMetric[]
+
+  @@unique([datasetId, stableKey, version])
+  @@index([stableKey, version])
+  @@map("career_role_versions")
+}
+
+model RoleSkillRequirement {
+  id                           String             @id @db.Uuid
+  roleVersionId                String             @map("role_version_id") @db.Uuid
+  targetLevel                  TargetLevel        @map("target_level")
+  skillId                      String             @map("skill_id") @db.Uuid
+  requiredDepth                Decimal            @map("required_depth") @db.Decimal(4, 3)
+  importance                   Decimal            @db.Decimal(4, 3)
+  placementRelevance           Decimal            @map("placement_relevance") @db.Decimal(4, 3)
+  required                     Boolean
+  requiredByDaysBeforeDeadline Int                @map("required_by_days_before_deadline")
+  hoursP25                     Decimal            @map("hours_p25") @db.Decimal(8, 2)
+  hoursP50                     Decimal            @map("hours_p50") @db.Decimal(8, 2)
+  hoursP75                     Decimal            @map("hours_p75") @db.Decimal(8, 2)
+  rationale                    String             @db.VarChar(1000)
+  roleVersion                  CareerRoleVersion  @relation(fields: [roleVersionId], references: [id], onDelete: Cascade)
+  skill                        Skill              @relation(fields: [skillId], references: [id], onDelete: Restrict)
+  gapItems                     GapAnalysisItem[]
+  roadmapMilestones            RoadmapMilestone[]
+
+  @@unique([roleVersionId, targetLevel, skillId])
+  @@index([skillId, targetLevel])
+  @@map("role_skill_requirements")
+}
+
+model LearningUnitTemplate {
+  id                String              @id @db.Uuid
+  datasetId         String              @map("dataset_id") @db.Uuid
+  stableKey         String              @map("stable_key") @db.VarChar(128)
+  type              LearningUnitType
+  fromDepth         Decimal             @map("from_depth") @db.Decimal(4, 3)
+  toDepth           Decimal             @map("to_depth") @db.Decimal(4, 3)
+  estimatedMinutes  Int                 @map("estimated_minutes")
+  difficulty        Difficulty
+  splitPoints       Json                @map("split_points") @db.JsonB
+  reasonCodes       Json                @map("reason_codes") @db.JsonB
+  dataset           CareerDataset       @relation(fields: [datasetId], references: [id], onDelete: Cascade)
+  skills            LearningUnitSkill[]
+  roadmapMilestones RoadmapMilestone[]
+
+  @@unique([datasetId, stableKey])
+  @@map("learning_unit_templates")
+}
+
+model LearningUnitSkill {
+  learningUnitId String               @map("learning_unit_id") @db.Uuid
+  skillId        String               @map("skill_id") @db.Uuid
+  learningUnit   LearningUnitTemplate @relation(fields: [learningUnitId], references: [id], onDelete: Cascade)
+  skill          Skill                @relation(fields: [skillId], references: [id], onDelete: Restrict)
+
+  @@id([learningUnitId, skillId])
+  @@map("learning_unit_skills")
+}
+
+model CareerGoal {
+  id               String              @id @db.Uuid
+  userId           String              @map("user_id") @db.Uuid
+  datasetId        String              @map("dataset_id") @db.Uuid
+  roleVersionId    String              @map("role_version_id") @db.Uuid
+  targetLevel      TargetLevel         @map("target_level")
+  deadline         DateTime            @db.Date
+  deadlineBasis    String              @map("deadline_basis") @db.VarChar(64)
+  status           CareerGoalStatus    @default(ACTIVE)
+  lockVersion      Int                 @default(1) @map("lock_version")
+  createdAt        DateTime            @default(now()) @map("created_at") @db.Timestamptz(3)
+  updatedAt        DateTime            @updatedAt @map("updated_at") @db.Timestamptz(3)
+  user             User                @relation(fields: [userId], references: [id], onDelete: Cascade)
+  dataset          CareerDataset       @relation(fields: [datasetId], references: [id], onDelete: Restrict)
+  roleVersion      CareerRoleVersion   @relation(fields: [roleVersionId], references: [id], onDelete: Restrict)
+  versions         CareerGoalVersion[]
+  assessments      SkillAssessment[]
+  gapAnalyses      GapAnalysis[]
+  roadmaps         Roadmap[]
+  placementMetrics PlacementMetric[]
+
+  @@index([userId, status])
+  @@map("career_goals")
+}
+
+model SkillAssessment {
+  id            String               @id @db.Uuid
+  userId        String               @map("user_id") @db.Uuid
+  goalId        String               @map("goal_id") @db.Uuid
+  schemaVersion String               @map("schema_version") @db.VarChar(32)
+  status        AssessmentStatus     @default(OPEN)
+  startedAt     DateTime             @default(now()) @map("started_at") @db.Timestamptz(3)
+  submittedAt   DateTime?            @map("submitted_at") @db.Timestamptz(3)
+  scoredAt      DateTime?            @map("scored_at") @db.Timestamptz(3)
+  createdAt     DateTime             @default(now()) @map("created_at") @db.Timestamptz(3)
+  user          User                 @relation(fields: [userId], references: [id], onDelete: Cascade)
+  goal          CareerGoal           @relation(fields: [goalId], references: [id], onDelete: Restrict)
+  responses     AssessmentResponse[]
+  gapAnalyses   GapAnalysis[]
+
+  @@index([userId, status])
+  @@map("skill_assessments")
+}
+
+model AssessmentResponse {
+  id              String          @id @db.Uuid
+  assessmentId    String          @map("assessment_id") @db.Uuid
+  skillId         String          @map("skill_id") @db.Uuid
+  rawLevel        String          @map("raw_level") @db.VarChar(32)
+  normalizedValue Decimal?        @map("normalized_value") @db.Decimal(4, 3)
+  confidence      Decimal         @db.Decimal(4, 3)
+  updatedAt       DateTime        @updatedAt @map("updated_at") @db.Timestamptz(3)
+  assessment      SkillAssessment @relation(fields: [assessmentId], references: [id], onDelete: Cascade)
+  skill           Skill           @relation(fields: [skillId], references: [id], onDelete: Restrict)
+
+  @@unique([assessmentId, skillId])
+  @@map("assessment_responses")
+}
+
+model SkillEvidence {
+  id          String         @id @db.Uuid
+  userId      String         @map("user_id") @db.Uuid
+  skillId     String         @map("skill_id") @db.Uuid
+  sourceType  EvidenceSource @map("source_type")
+  sourceId    String         @map("source_id") @db.VarChar(128)
+  proficiency Decimal        @db.Decimal(4, 3)
+  confidence  Decimal        @db.Decimal(4, 3)
+  occurredAt  DateTime       @map("occurred_at") @db.Timestamptz(3)
+  expiresAt   DateTime?      @map("expires_at") @db.Timestamptz(3)
+  metadata    Json           @default("{}") @db.JsonB
+  createdAt   DateTime       @default(now()) @map("created_at") @db.Timestamptz(3)
+  user        User           @relation(fields: [userId], references: [id], onDelete: Cascade)
+  skill       Skill          @relation(fields: [skillId], references: [id], onDelete: Restrict)
+
+  @@unique([sourceType, sourceId, skillId])
+  @@index([userId, skillId, occurredAt])
+  @@map("skill_evidence")
+}
+
+model StudentSkill {
+  id                   String    @id @db.Uuid
+  userId               String    @map("user_id") @db.Uuid
+  skillId              String    @map("skill_id") @db.Uuid
+  proficiency          Decimal?  @db.Decimal(4, 3)
+  confidence           Decimal   @default(0) @db.Decimal(4, 3)
+  effectiveProficiency Decimal?  @map("effective_proficiency") @db.Decimal(4, 3)
+  algorithmVersion     String    @map("algorithm_version") @db.VarChar(32)
+  lastEvidencedAt      DateTime? @map("last_evidenced_at") @db.Timestamptz(3)
+  updatedAt            DateTime  @updatedAt @map("updated_at") @db.Timestamptz(3)
+  user                 User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+  skill                Skill     @relation(fields: [skillId], references: [id], onDelete: Restrict)
+
+  @@unique([userId, skillId])
+  @@map("student_skills")
+}
+
+model CurriculumSkillMapping {
+  id                String          @id @db.Uuid
+  curriculumTopicId String          @map("curriculum_topic_id") @db.Uuid
+  skillId           String          @map("skill_id") @db.Uuid
+  breadth           Decimal         @db.Decimal(4, 3)
+  depth             Decimal         @db.Decimal(4, 3)
+  confidence        Decimal         @db.Decimal(4, 3)
+  practiceRequired  Boolean         @map("practice_required")
+  evidencePotential Decimal         @map("evidence_potential") @db.Decimal(4, 3)
+  rationale         String          @db.VarChar(1000)
+  version           Int
+  reviewerId        String          @map("reviewer_id") @db.Uuid
+  publishedAt       DateTime        @map("published_at") @db.Timestamptz(3)
+  curriculumTopic   CurriculumTopic @relation(fields: [curriculumTopicId], references: [id], onDelete: Restrict)
+  skill             Skill           @relation(fields: [skillId], references: [id], onDelete: Restrict)
+
+  @@unique([curriculumTopicId, skillId, version])
+  @@index([skillId, confidence])
+  @@map("curriculum_skill_mappings")
+}
+
+model StudyAvailability {
+  id                String            @id @db.Uuid
+  userId            String            @map("user_id") @db.Uuid
+  timezone          String            @db.VarChar(64)
+  weeklyMinutes     Int               @map("weekly_minutes")
+  maxSessionMinutes Int               @map("max_session_minutes")
+  dayWindows        Json              @map("day_windows") @db.JsonB
+  effectiveFrom     DateTime          @map("effective_from") @db.Date
+  effectiveTo       DateTime?         @map("effective_to") @db.Date
+  createdAt         DateTime          @default(now()) @map("created_at") @db.Timestamptz(3)
+  user              User              @relation(fields: [userId], references: [id], onDelete: Cascade)
+  roadmapRevisions  RoadmapRevision[]
+  gapAnalyses       GapAnalysis[]
+  planningWeeks     PlanningWeek[]
+
+  @@unique([userId, effectiveFrom])
+  @@index([userId, effectiveTo])
+  @@map("study_availability")
+}
+
+model GapAnalysis {
+  id                  String            @id @db.Uuid
+  userId              String            @map("user_id") @db.Uuid
+  goalId              String            @map("goal_id") @db.Uuid
+  curriculumProgramId String            @map("curriculum_program_id") @db.Uuid
+  careerDatasetId     String            @map("career_dataset_id") @db.Uuid
+  assessmentId        String?           @map("assessment_id") @db.Uuid
+  availabilityId      String            @map("availability_id") @db.Uuid
+  rulesetVersion      String            @map("ruleset_version") @db.VarChar(32)
+  inputHash           String            @map("input_hash") @db.Char(64)
+  status              GapAnalysisStatus
+  currentContribution Decimal           @map("current_contribution") @db.Decimal(5, 2)
+  collegeContribution Decimal           @map("college_contribution") @db.Decimal(5, 2)
+  independentGap      Decimal           @map("independent_gap") @db.Decimal(5, 2)
+  effortP25Hours      Decimal           @map("effort_p25_hours") @db.Decimal(9, 2)
+  effortP50Hours      Decimal           @map("effort_p50_hours") @db.Decimal(9, 2)
+  effortP75Hours      Decimal           @map("effort_p75_hours") @db.Decimal(9, 2)
+  allocatableMinutes  Int               @map("allocatable_minutes")
+  requiredMinutes     Int               @map("required_minutes")
+  deficitMinutes      Int               @map("deficit_minutes")
+  warnings            Json              @default("[]") @db.JsonB
+  createdAt           DateTime          @default(now()) @map("created_at") @db.Timestamptz(3)
+  user                User              @relation(fields: [userId], references: [id], onDelete: Cascade)
+  goal                CareerGoal        @relation(fields: [goalId], references: [id], onDelete: Restrict)
+  curriculumProgram   CurriculumProgram @relation(fields: [curriculumProgramId], references: [id], onDelete: Restrict)
+  careerDataset       CareerDataset     @relation(fields: [careerDatasetId], references: [id], onDelete: Restrict)
+  assessment          SkillAssessment?  @relation(fields: [assessmentId], references: [id], onDelete: Restrict)
+  availability        StudyAvailability @relation(fields: [availabilityId], references: [id], onDelete: Restrict)
+  items               GapAnalysisItem[]
+  roadmapRevisions    RoadmapRevision[]
+  generationJobs      GenerationJob[]
+
+  @@unique([userId, inputHash])
+  @@index([userId, createdAt])
+  @@map("gap_analyses")
+}
+
+model GapAnalysisItem {
+  id                   String               @id @db.Uuid
+  analysisId           String               @map("analysis_id") @db.Uuid
+  requirementId        String               @map("requirement_id") @db.Uuid
+  skillId              String               @map("skill_id") @db.Uuid
+  classification       GapClassification
+  currentProficiency   Decimal?             @map("current_proficiency") @db.Decimal(4, 3)
+  evidenceConfidence   Decimal              @map("evidence_confidence") @db.Decimal(4, 3)
+  effectiveProficiency Decimal?             @map("effective_proficiency") @db.Decimal(4, 3)
+  curriculumDepth      Decimal              @map("curriculum_depth") @db.Decimal(4, 3)
+  mappingConfidence    Decimal              @map("mapping_confidence") @db.Decimal(4, 3)
+  currentRatio         Decimal              @map("current_ratio") @db.Decimal(5, 4)
+  collegeRatio         Decimal              @map("college_ratio") @db.Decimal(5, 4)
+  externalRatio        Decimal              @map("external_ratio") @db.Decimal(5, 4)
+  effortP25Hours       Decimal              @map("effort_p25_hours") @db.Decimal(9, 2)
+  effortP50Hours       Decimal              @map("effort_p50_hours") @db.Decimal(9, 2)
+  effortP75Hours       Decimal              @map("effort_p75_hours") @db.Decimal(9, 2)
+  reasonCodes          Json                 @map("reason_codes") @db.JsonB
+  trace                Json                 @db.JsonB
+  analysis             GapAnalysis          @relation(fields: [analysisId], references: [id], onDelete: Cascade)
+  requirement          RoleSkillRequirement @relation(fields: [requirementId], references: [id], onDelete: Restrict)
+  skill                Skill                @relation(fields: [skillId], references: [id], onDelete: Restrict)
+
+  @@unique([analysisId, requirementId])
+  @@map("gap_analysis_items")
+}
+
+model Roadmap {
+  id               String                 @id @db.Uuid
+  userId           String                 @map("user_id") @db.Uuid
+  goalId           String                 @map("goal_id") @db.Uuid
+  status           RoadmapLifecycleStatus @default(ACTIVE)
+  activeRevisionId String?                @unique @map("active_revision_id") @db.Uuid
+  createdAt        DateTime               @default(now()) @map("created_at") @db.Timestamptz(3)
+  updatedAt        DateTime               @updatedAt @map("updated_at") @db.Timestamptz(3)
+  user             User                   @relation(fields: [userId], references: [id], onDelete: Cascade)
+  goal             CareerGoal             @relation(fields: [goalId], references: [id], onDelete: Restrict)
+  activeRevision   RoadmapRevision?       @relation("ActiveRoadmapRevision", fields: [activeRevisionId], references: [id], onDelete: SetNull)
+  revisions        RoadmapRevision[]      @relation("RoadmapRevisions")
+  generationJobs   GenerationJob[]
+
+  @@unique([goalId])
+  @@index([userId, status])
+  @@map("roadmaps")
+}
+
+model RoadmapRevision {
+  id                  String                @id @db.Uuid
+  roadmapId           String                @map("roadmap_id") @db.Uuid
+  version             Int
+  status              RoadmapRevisionStatus @default(DRAFT)
+  trigger             String                @db.VarChar(64)
+  gapAnalysisId       String?               @map("gap_analysis_id") @db.Uuid
+  availabilityId      String                @map("availability_id") @db.Uuid
+  curriculumProgramId String                @map("curriculum_program_id") @db.Uuid
+  careerDatasetId     String                @map("career_dataset_id") @db.Uuid
+  supersedesId        String?               @map("supersedes_id") @db.Uuid
+  rulesetVersion      String                @map("ruleset_version") @db.VarChar(32)
+  seed                String                @db.VarChar(64)
+  inputHash           String                @map("input_hash") @db.Char(64)
+  inputSnapshot       Json                  @map("input_snapshot") @db.JsonB
+  summary             Json                  @db.JsonB
+  exclusions          Json                  @default("[]") @db.JsonB
+  risks               Json                  @default("[]") @db.JsonB
+  generatedAt         DateTime?             @map("generated_at") @db.Timestamptz(3)
+  activatedAt         DateTime?             @map("activated_at") @db.Timestamptz(3)
+  createdAt           DateTime              @default(now()) @map("created_at") @db.Timestamptz(3)
+  roadmap             Roadmap               @relation("RoadmapRevisions", fields: [roadmapId], references: [id], onDelete: Cascade)
+  activeForRoadmap    Roadmap?              @relation("ActiveRoadmapRevision")
+  gapAnalysis         GapAnalysis?          @relation(fields: [gapAnalysisId], references: [id], onDelete: Restrict)
+  availability        StudyAvailability     @relation(fields: [availabilityId], references: [id], onDelete: Restrict)
+  curriculumProgram   CurriculumProgram     @relation(fields: [curriculumProgramId], references: [id], onDelete: Restrict)
+  careerDataset       CareerDataset         @relation(fields: [careerDatasetId], references: [id], onDelete: Restrict)
+  supersedes          RoadmapRevision?      @relation("RoadmapRevisionLineage", fields: [supersedesId], references: [id], onDelete: Restrict)
+  supersededBy        RoadmapRevision[]     @relation("RoadmapRevisionLineage")
+  terms               RoadmapTerm[]
+  jobs                GenerationJob[]
+  planningWeeks       PlanningWeek[]
+  roadmapTasks        RoadmapTask[]
+  progressSnapshots   ProgressSnapshot[]
+  revisionDiff        RoadmapRevisionDiff?
+
+  @@unique([roadmapId, version])
+  @@unique([roadmapId, inputHash])
+  @@index([gapAnalysisId])
+  @@map("roadmap_revisions")
+}
+
+model RoadmapTerm {
+  id              String             @id @db.Uuid
+  revisionId      String             @map("revision_id") @db.Uuid
+  sequence        Int
+  semesterNumber  Int?               @map("semester_number")
+  label           String             @db.VarChar(120)
+  theme           String             @db.VarChar(240)
+  startDate       DateTime           @map("start_date") @db.Date
+  endDate         DateTime           @map("end_date") @db.Date
+  capacityMinutes Int                @map("capacity_minutes")
+  plannedMinutes  Int                @map("planned_minutes")
+  revision        RoadmapRevision    @relation(fields: [revisionId], references: [id], onDelete: Cascade)
+  milestones      RoadmapMilestone[]
+
+  @@unique([revisionId, sequence])
+  @@map("roadmap_terms")
+}
+
+model RoadmapMilestone {
+  id                     String                       @id @db.Uuid
+  termId                 String                       @map("term_id") @db.Uuid
+  skillId                String                       @map("skill_id") @db.Uuid
+  learningUnitTemplateId String                       @map("learning_unit_template_id") @db.Uuid
+  sourceRequirementId    String?                      @map("source_requirement_id") @db.Uuid
+  stableKey              String                       @map("stable_key") @db.VarChar(200)
+  title                  String                       @db.VarChar(240)
+  track                  RoadmapTrack
+  status                 RoadmapMilestoneStatus       @default(PLANNED)
+  estimatedMinutes       Int                          @map("estimated_minutes")
+  priority               Decimal                      @db.Decimal(6, 3)
+  requiredBy             DateTime                     @map("required_by") @db.Date
+  reasonCodes            Json                         @map("reason_codes") @db.JsonB
+  sourceTrace            Json                         @map("source_trace") @db.JsonB
+  term                   RoadmapTerm                  @relation(fields: [termId], references: [id], onDelete: Cascade)
+  skill                  Skill                        @relation(fields: [skillId], references: [id], onDelete: Restrict)
+  learningUnitTemplate   LearningUnitTemplate         @relation(fields: [learningUnitTemplateId], references: [id], onDelete: Restrict)
+  sourceRequirement      RoleSkillRequirement?        @relation(fields: [sourceRequirementId], references: [id], onDelete: Restrict)
+  prerequisites          RoadmapMilestoneDependency[] @relation("MilestoneDependents")
+  dependents             RoadmapMilestoneDependency[] @relation("MilestonePrerequisites")
+  tasks                  RoadmapTask[]
+
+  @@unique([termId, stableKey])
+  @@index([skillId, status])
+  @@map("roadmap_milestones")
+}
+
+model RoadmapMilestoneDependency {
+  milestoneId    String           @map("milestone_id") @db.Uuid
+  prerequisiteId String           @map("prerequisite_id") @db.Uuid
+  milestone      RoadmapMilestone @relation("MilestonePrerequisites", fields: [milestoneId], references: [id], onDelete: Cascade)
+  prerequisite   RoadmapMilestone @relation("MilestoneDependents", fields: [prerequisiteId], references: [id], onDelete: Restrict)
+
+  @@id([milestoneId, prerequisiteId])
+  @@map("roadmap_milestone_dependencies")
+}
+
+model GenerationJob {
+  id             String              @id @db.Uuid
+  userId         String              @map("user_id") @db.Uuid
+  roadmapId      String?             @map("roadmap_id") @db.Uuid
+  revisionId     String?             @map("revision_id") @db.Uuid
+  gapAnalysisId  String              @map("gap_analysis_id") @db.Uuid
+  idempotencyKey String              @map("idempotency_key") @db.VarChar(128)
+  inputHash      String              @map("input_hash") @db.Char(64)
+  status         GenerationJobStatus @default(QUEUED)
+  stage          String              @default("VALIDATING") @db.VarChar(32)
+  attemptCount   Int                 @default(0) @map("attempt_count")
+  errorCode      String?             @map("error_code") @db.VarChar(80)
+  errorDetail    String?             @map("error_detail") @db.VarChar(1000)
+  createdAt      DateTime            @default(now()) @map("created_at") @db.Timestamptz(3)
+  startedAt      DateTime?           @map("started_at") @db.Timestamptz(3)
+  completedAt    DateTime?           @map("completed_at") @db.Timestamptz(3)
+  user           User                @relation(fields: [userId], references: [id], onDelete: Cascade)
+  roadmap        Roadmap?            @relation(fields: [roadmapId], references: [id], onDelete: SetNull)
+  revision       RoadmapRevision?    @relation(fields: [revisionId], references: [id], onDelete: SetNull)
+  gapAnalysis    GapAnalysis         @relation(fields: [gapAnalysisId], references: [id], onDelete: Restrict)
+
+  @@unique([userId, idempotencyKey])
+  @@unique([userId, inputHash])
+  @@index([status, createdAt])
+  @@map("generation_jobs")
+}
+
+model PlanningWeek {
+  id                 String             @id @db.Uuid
+  userId             String             @map("user_id") @db.Uuid
+  revisionId         String             @map("revision_id") @db.Uuid
+  availabilityId     String             @map("availability_id") @db.Uuid
+  weekStart          DateTime           @map("week_start") @db.Date
+  timezone           String             @db.VarChar(64)
+  rawMinutes         Int                @map("raw_minutes")
+  allocatableMinutes Int                @map("allocatable_minutes")
+  scheduledMinutes   Int                @map("scheduled_minutes")
+  catchupMinutes     Int                @map("catchup_minutes")
+  planningMode       String             @default("NORMAL") @map("planning_mode") @db.VarChar(32)
+  modePolicy         Json               @default("{}") @map("mode_policy") @db.JsonB
+  status             PlanningWeekStatus @default(ACTIVE)
+  lockVersion        Int                @default(1) @map("lock_version")
+  createdAt          DateTime           @default(now()) @map("created_at") @db.Timestamptz(3)
+  updatedAt          DateTime           @updatedAt @map("updated_at") @db.Timestamptz(3)
+  user               User               @relation(fields: [userId], references: [id], onDelete: Cascade)
+  revision           RoadmapRevision    @relation(fields: [revisionId], references: [id], onDelete: Cascade)
+  availability       StudyAvailability  @relation(fields: [availabilityId], references: [id], onDelete: Restrict)
+  days               PlanningDay[]
+  occurrences        TaskOccurrence[]
+  weeklyReview       WeeklyReview?
+
+  @@unique([revisionId, weekStart])
+  @@index([userId, weekStart, status])
+  @@map("planning_weeks")
+}
+
+model PlanningDay {
+  id               String           @id @db.Uuid
+  weekId           String           @map("week_id") @db.Uuid
+  localDate        DateTime         @map("local_date") @db.Date
+  rawMinutes       Int              @map("raw_minutes")
+  scheduledMinutes Int              @map("scheduled_minutes")
+  week             PlanningWeek     @relation(fields: [weekId], references: [id], onDelete: Cascade)
+  occurrences      TaskOccurrence[]
+
+  @@unique([weekId, localDate])
+  @@map("planning_days")
+}
+
+model RoadmapTask {
+  id                      String           @id @db.Uuid
+  userId                  String           @map("user_id") @db.Uuid
+  revisionId              String           @map("revision_id") @db.Uuid
+  milestoneId             String           @map("milestone_id") @db.Uuid
+  skillId                 String           @map("skill_id") @db.Uuid
+  sequence                Int
+  title                   String           @db.VarChar(240)
+  track                   RoadmapTrack
+  estimatedMinutes        Int              @map("estimated_minutes")
+  reasonCodes             Json             @map("reason_codes") @db.JsonB
+  sourceTrace             Json             @map("source_trace") @db.JsonB
+  satisfiedByCompletionId String?          @map("satisfied_by_completion_id") @db.Uuid
+  createdAt               DateTime         @default(now()) @map("created_at") @db.Timestamptz(3)
+  user                    User             @relation(fields: [userId], references: [id], onDelete: Cascade)
+  revision                RoadmapRevision  @relation(fields: [revisionId], references: [id], onDelete: Cascade)
+  milestone               RoadmapMilestone @relation(fields: [milestoneId], references: [id], onDelete: Cascade)
+  skill                   Skill            @relation(fields: [skillId], references: [id], onDelete: Restrict)
+  occurrences             TaskOccurrence[]
+  retainedFromTaskId      String?          @map("retained_from_task_id") @db.Uuid
+  retainedFrom            RoadmapTask?     @relation("RetainedRoadmapTask", fields: [retainedFromTaskId], references: [id], onDelete: Restrict)
+  retainedBy              RoadmapTask[]    @relation("RetainedRoadmapTask")
+  satisfiedByCompletion   TaskCompletion?  @relation(fields: [satisfiedByCompletionId], references: [id], onDelete: Restrict)
+
+  @@unique([milestoneId, sequence])
+  @@index([revisionId, sequence])
+  @@index([userId, skillId])
+  @@index([retainedFromTaskId])
+  @@index([satisfiedByCompletionId])
+  @@map("roadmap_tasks")
+}
+
+model TaskOccurrence {
+  id                   String               @id @db.Uuid
+  userId               String               @map("user_id") @db.Uuid
+  taskId               String               @map("task_id") @db.Uuid
+  weekId               String               @map("week_id") @db.Uuid
+  dayId                String               @map("day_id") @db.Uuid
+  originalOccurrenceId String?              @unique @map("original_occurrence_id") @db.Uuid
+  scheduledDate        DateTime             @map("scheduled_date") @db.Date
+  startMinute          Int                  @map("start_minute")
+  endMinute            Int                  @map("end_minute")
+  estimatedMinutes     Int                  @map("estimated_minutes")
+  status               TaskOccurrenceStatus @default(PLANNED)
+  partialMinutes       Int                  @default(0) @map("partial_minutes")
+  skipReason           TaskSkipReason?      @map("skip_reason")
+  skipNote             String?              @map("skip_note") @db.VarChar(500)
+  lockVersion          Int                  @default(1) @map("lock_version")
+  createdAt            DateTime             @default(now()) @map("created_at") @db.Timestamptz(3)
+  updatedAt            DateTime             @updatedAt @map("updated_at") @db.Timestamptz(3)
+  user                 User                 @relation(fields: [userId], references: [id], onDelete: Cascade)
+  task                 RoadmapTask          @relation(fields: [taskId], references: [id], onDelete: Restrict)
+  week                 PlanningWeek         @relation(fields: [weekId], references: [id], onDelete: Cascade)
+  day                  PlanningDay          @relation(fields: [dayId], references: [id], onDelete: Cascade)
+  originalOccurrence   TaskOccurrence?      @relation("OccurrenceReplacement", fields: [originalOccurrenceId], references: [id], onDelete: Restrict)
+  replacement          TaskOccurrence?      @relation("OccurrenceReplacement")
+  commands             TaskCommandRecord[]
+  completion           TaskCompletion?
+
+  @@unique([taskId, scheduledDate, startMinute])
+  @@index([userId, scheduledDate, status])
+  @@map("task_occurrences")
+}
+
+model TaskCommandRecord {
+  id             String         @id @db.Uuid
+  userId         String         @map("user_id") @db.Uuid
+  occurrenceId   String         @map("occurrence_id") @db.Uuid
+  idempotencyKey String         @map("idempotency_key") @db.VarChar(128)
+  command        String         @db.VarChar(32)
+  requestHash    String         @map("request_hash") @db.Char(64)
+  response       Json           @db.JsonB
+  createdAt      DateTime       @default(now()) @map("created_at") @db.Timestamptz(3)
+  user           User           @relation(fields: [userId], references: [id], onDelete: Cascade)
+  occurrence     TaskOccurrence @relation(fields: [occurrenceId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, idempotencyKey])
+  @@index([occurrenceId, createdAt])
+  @@map("task_command_records")
+}
+
+model TaskCompletion {
+  id             String         @id @db.Uuid
+  userId         String         @map("user_id") @db.Uuid
+  occurrenceId   String         @unique @map("occurrence_id") @db.Uuid
+  idempotencyKey String         @map("idempotency_key") @db.VarChar(128)
+  requestHash    String         @map("request_hash") @db.Char(64)
+  actualMinutes  Int            @map("actual_minutes")
+  outcome        String         @db.VarChar(500)
+  artifactUrl    String?        @map("artifact_url") @db.VarChar(2048)
+  completedAt    DateTime       @default(now()) @map("completed_at") @db.Timestamptz(3)
+  user           User           @relation(fields: [userId], references: [id], onDelete: Cascade)
+  occurrence     TaskOccurrence @relation(fields: [occurrenceId], references: [id], onDelete: Restrict)
+  satisfiesTasks RoadmapTask[]
+
+  @@unique([userId, idempotencyKey])
+  @@map("task_completions")
+}
+
+model ProjectDataset {
+  id              String            @id @db.Uuid
+  careerDatasetId String            @map("career_dataset_id") @db.Uuid
+  sourceImportId  String            @unique @map("source_import_id") @db.Uuid
+  datasetVersion  String            @unique @map("dataset_version") @db.VarChar(32)
+  status          ContentStatus     @default(DRAFT)
+  synthetic       Boolean           @default(false)
+  editorId        String            @map("editor_id") @db.Uuid
+  reviewerId      String?           @map("reviewer_id") @db.Uuid
+  reviewRationale String            @map("review_rationale") @db.VarChar(2000)
+  publishedAt     DateTime?         @map("published_at") @db.Timestamptz(3)
+  createdAt       DateTime          @default(now()) @map("created_at") @db.Timestamptz(3)
+  careerDataset   CareerDataset     @relation(fields: [careerDatasetId], references: [id], onDelete: Restrict)
+  sourceImport    ContentImport     @relation(fields: [sourceImportId], references: [id], onDelete: Restrict)
+  projects        ProjectTemplate[]
+
+  @@index([status, publishedAt])
+  @@map("project_datasets")
+}
+
+model ProjectTemplate {
+  id                 String                     @id @db.Uuid
+  datasetId          String                     @map("dataset_id") @db.Uuid
+  stableKey          String                     @map("stable_key") @db.VarChar(128)
+  version            Int
+  title              String                     @db.VarChar(200)
+  goal               String                     @db.VarChar(1000)
+  difficulty         Difficulty
+  hoursP25           Decimal                    @map("hours_p25") @db.Decimal(8, 2)
+  hoursP50           Decimal                    @map("hours_p50") @db.Decimal(8, 2)
+  hoursP75           Decimal                    @map("hours_p75") @db.Decimal(8, 2)
+  portfolioValue     Decimal                    @map("portfolio_value") @db.Decimal(4, 3)
+  deliverables       Json                       @db.JsonB
+  deploymentRequired Boolean                    @map("deployment_required")
+  dataset            ProjectDataset             @relation(fields: [datasetId], references: [id], onDelete: Cascade)
+  roleFits           ProjectRoleFit[]
+  prerequisites      ProjectPrerequisite[]
+  milestones         ProjectMilestoneTemplate[]
+  studentProjects    StudentProject[]
+
+  @@unique([datasetId, stableKey, version])
+  @@map("project_templates")
+}
+
+model ProjectRoleFit {
+  projectId     String            @map("project_id") @db.Uuid
+  roleVersionId String            @map("role_version_id") @db.Uuid
+  fit           Decimal           @db.Decimal(4, 3)
+  project       ProjectTemplate   @relation(fields: [projectId], references: [id], onDelete: Cascade)
+  roleVersion   CareerRoleVersion @relation(fields: [roleVersionId], references: [id], onDelete: Restrict)
+
+  @@id([projectId, roleVersionId])
+  @@map("project_role_fits")
+}
+
+model ProjectPrerequisite {
+  projectId String           @map("project_id") @db.Uuid
+  skillId   String           @map("skill_id") @db.Uuid
+  threshold Decimal          @db.Decimal(4, 3)
+  type      PrerequisiteType
+  project   ProjectTemplate  @relation(fields: [projectId], references: [id], onDelete: Cascade)
+  skill     Skill            @relation(fields: [skillId], references: [id], onDelete: Restrict)
+
+  @@id([projectId, skillId])
+  @@map("project_prerequisites")
+}
+
+model ProjectMilestoneTemplate {
+  id                 String                     @id @db.Uuid
+  projectId          String                     @map("project_id") @db.Uuid
+  stableKey          String                     @map("stable_key") @db.VarChar(128)
+  title              String                     @db.VarChar(200)
+  sequence           Int
+  weight             Decimal                    @db.Decimal(5, 4)
+  estimatedMinutes   Int                        @map("estimated_minutes")
+  completionCriteria Json                       @map("completion_criteria") @db.JsonB
+  project            ProjectTemplate            @relation(fields: [projectId], references: [id], onDelete: Cascade)
+  skillOutcomes      ProjectMilestoneSkill[]
+  progress           ProjectMilestoneProgress[]
+
+  @@unique([projectId, stableKey])
+  @@unique([projectId, sequence])
+  @@map("project_milestone_templates")
+}
+
+model ProjectMilestoneSkill {
+  milestoneId String                   @map("milestone_id") @db.Uuid
+  skillId     String                   @map("skill_id") @db.Uuid
+  milestone   ProjectMilestoneTemplate @relation(fields: [milestoneId], references: [id], onDelete: Cascade)
+  skill       Skill                    @relation(fields: [skillId], references: [id], onDelete: Restrict)
+
+  @@id([milestoneId, skillId])
+  @@map("project_milestone_skills")
+}
+
+model StudentProject {
+  id          String                     @id @db.Uuid
+  userId      String                     @map("user_id") @db.Uuid
+  templateId  String                     @map("template_id") @db.Uuid
+  status      StudentProjectStatus       @default(ACTIVE)
+  startedAt   DateTime                   @default(now()) @map("started_at") @db.Timestamptz(3)
+  completedAt DateTime?                  @map("completed_at") @db.Timestamptz(3)
+  createdAt   DateTime                   @default(now()) @map("created_at") @db.Timestamptz(3)
+  user        User                       @relation(fields: [userId], references: [id], onDelete: Cascade)
+  template    ProjectTemplate            @relation(fields: [templateId], references: [id], onDelete: Restrict)
+  milestones  ProjectMilestoneProgress[]
+
+  @@index([userId, status])
+  @@map("student_projects")
+}
+
+model ProjectMilestoneProgress {
+  id               String                         @id @db.Uuid
+  studentProjectId String                         @map("student_project_id") @db.Uuid
+  milestoneId      String                         @map("milestone_id") @db.Uuid
+  status           ProjectMilestoneProgressStatus @default(PLANNED)
+  artifactUrl      String?                        @map("artifact_url") @db.VarChar(2048)
+  submissionNote   String?                        @map("submission_note") @db.VarChar(1000)
+  submittedAt      DateTime?                      @map("submitted_at") @db.Timestamptz(3)
+  reviewerId       String?                        @map("reviewer_id") @db.Uuid
+  rubricScore      Decimal?                       @map("rubric_score") @db.Decimal(4, 3)
+  reviewNote       String?                        @map("review_note") @db.VarChar(1000)
+  reviewedAt       DateTime?                      @map("reviewed_at") @db.Timestamptz(3)
+  completedAt      DateTime?                      @map("completed_at") @db.Timestamptz(3)
+  studentProject   StudentProject                 @relation(fields: [studentProjectId], references: [id], onDelete: Cascade)
+  milestone        ProjectMilestoneTemplate       @relation(fields: [milestoneId], references: [id], onDelete: Restrict)
+  reviewer         User?                          @relation("ProjectMilestoneReviewer", fields: [reviewerId], references: [id], onDelete: Restrict)
+
+  @@unique([studentProjectId, milestoneId])
+  @@index([status, submittedAt])
+  @@map("project_milestone_progress")
+}
+
+model PlacementProfile {
+  id              String   @id @db.Uuid
+  userId          String   @unique @map("user_id") @db.Uuid
+  resumeComplete  Boolean  @default(false) @map("resume_complete")
+  profileComplete Boolean  @default(false) @map("profile_complete")
+  updatedAt       DateTime @updatedAt @map("updated_at") @db.Timestamptz(3)
+  user            User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@map("placement_profiles")
+}
+
+model PlacementMetric {
+  id             String            @id @db.Uuid
+  userId         String            @map("user_id") @db.Uuid
+  goalId         String            @map("goal_id") @db.Uuid
+  roleVersionId  String            @map("role_version_id") @db.Uuid
+  rulesetVersion String            @map("ruleset_version") @db.VarChar(32)
+  inputHash      String            @map("input_hash") @db.Char(64)
+  score          Decimal           @db.Decimal(5, 2)
+  uncappedScore  Decimal           @map("uncapped_score") @db.Decimal(5, 2)
+  scoreCap       Int               @map("score_cap")
+  dimensions     Json              @db.JsonB
+  gates          Json              @db.JsonB
+  projection     Json              @db.JsonB
+  calculatedAt   DateTime          @default(now()) @map("calculated_at") @db.Timestamptz(3)
+  user           User              @relation(fields: [userId], references: [id], onDelete: Cascade)
+  goal           CareerGoal        @relation(fields: [goalId], references: [id], onDelete: Restrict)
+  roleVersion    CareerRoleVersion @relation(fields: [roleVersionId], references: [id], onDelete: Restrict)
+
+  @@unique([userId, inputHash])
+  @@index([userId, calculatedAt])
+  @@map("placement_metrics")
+}
+
+model ProgressSnapshot {
+  id                String          @id @db.Uuid
+  userId            String          @map("user_id") @db.Uuid
+  roadmapRevisionId String          @map("roadmap_revision_id") @db.Uuid
+  periodType        String          @map("period_type") @db.VarChar(16)
+  periodStart       DateTime        @map("period_start") @db.Date
+  metrics           Json            @db.JsonB
+  algorithmVersion  String          @map("algorithm_version") @db.VarChar(32)
+  createdAt         DateTime        @default(now()) @map("created_at") @db.Timestamptz(3)
+  user              User            @relation(fields: [userId], references: [id], onDelete: Cascade)
+  roadmapRevision   RoadmapRevision @relation(fields: [roadmapRevisionId], references: [id], onDelete: Restrict)
+
+  @@unique([userId, periodType, periodStart, roadmapRevisionId])
+  @@map("progress_snapshots")
+}
+
+model WeeklyReview {
+  id                   String           @id @db.Uuid
+  userId               String           @map("user_id") @db.Uuid
+  planningWeekId       String           @unique @map("planning_week_id") @db.Uuid
+  weekStart            DateTime         @map("week_start") @db.Date
+  difficulty           WeeklyDifficulty
+  upcomingChanges      Json             @default("[]") @map("upcoming_changes") @db.JsonB
+  plannedTaskCount     Int              @map("planned_task_count")
+  completedTaskCount   Int              @map("completed_task_count")
+  plannedMinutes       Int              @map("planned_minutes")
+  completedMinutes     Int              @map("completed_minutes")
+  actualMinutes        Int              @map("actual_minutes")
+  completionRate       Decimal          @map("completion_rate") @db.Decimal(6, 4)
+  minuteCompletionRate Decimal          @map("minute_completion_rate") @db.Decimal(6, 4)
+  durationRatio        Decimal          @map("duration_ratio") @db.Decimal(6, 4)
+  earlyFinish          Boolean          @default(false) @map("early_finish")
+  ewma                 Decimal?         @db.Decimal(6, 4)
+  multiplier           Decimal          @db.Decimal(4, 2)
+  action               String           @db.VarChar(32)
+  submittedAt          DateTime         @default(now()) @map("submitted_at") @db.Timestamptz(3)
+  user                 User             @relation(fields: [userId], references: [id], onDelete: Cascade)
+  planningWeek         PlanningWeek     @relation(fields: [planningWeekId], references: [id], onDelete: Restrict)
+
+  @@unique([userId, weekStart])
+  @@index([userId, submittedAt])
+  @@map("weekly_reviews")
+}
+
+model ExamPeriod {
+  id              String               @id @db.Uuid
+  userId          String               @map("user_id") @db.Uuid
+  type            ExamPeriodType
+  title           String               @db.VarChar(160)
+  startDate       DateTime             @map("start_date") @db.Date
+  endDate         DateTime             @map("end_date") @db.Date
+  provenance      ExamPeriodProvenance
+  confirmed       Boolean              @default(false)
+  sourceReference String?              @map("source_reference") @db.VarChar(500)
+  createdAt       DateTime             @default(now()) @map("created_at") @db.Timestamptz(3)
+  updatedAt       DateTime             @updatedAt @map("updated_at") @db.Timestamptz(3)
+  user            User                 @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, type, startDate, endDate, title])
+  @@index([userId, startDate, endDate])
+  @@map("exam_periods")
+}
+
+model CommunicationPreference {
+  userId              String                       @id @map("user_id") @db.Uuid
+  timezone            String                       @default("Asia/Kolkata") @db.VarChar(64)
+  dailyReminderMinute Int                          @default(1080) @map("daily_reminder_minute")
+  quietHoursEnabled   Boolean                      @default(true) @map("quiet_hours_enabled")
+  quietStartMinute    Int                          @default(1320) @map("quiet_start_minute")
+  quietEndMinute      Int                          @default(420) @map("quiet_end_minute")
+  lastActiveAt        DateTime?                    @map("last_active_at") @db.Timestamptz(3)
+  aiProcessingConsent Boolean                      @default(false) @map("ai_processing_consent")
+  aiConsentAt         DateTime?                    @map("ai_consent_at") @db.Timestamptz(3)
+  analyticsConsent    Boolean                      @default(false) @map("analytics_consent")
+  analyticsConsentAt  DateTime?                    @map("analytics_consent_at") @db.Timestamptz(3)
+  createdAt           DateTime                     @default(now()) @map("created_at") @db.Timestamptz(3)
+  updatedAt           DateTime                     @updatedAt @map("updated_at") @db.Timestamptz(3)
+  user                User                         @relation(fields: [userId], references: [id], onDelete: Cascade)
+  typePreferences     NotificationTypePreference[]
+
+  @@map("communication_preferences")
+}
+
+model PilotFeedback {
+  id        String   @id @db.Uuid
+  userId    String   @map("user_id") @db.Uuid
+  surface   String   @db.VarChar(32)
+  rating    Int
+  comment   String?  @db.VarChar(1000)
+  createdAt DateTime @default(now()) @map("created_at") @db.Timestamptz(3)
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId, createdAt])
+  @@index([surface, createdAt])
+  @@map("pilot_feedback")
+}
+
+model NotificationTypePreference {
+  id                   String                  @id @db.Uuid
+  userId               String                  @map("user_id") @db.Uuid
+  type                 NotificationType
+  inAppEnabled         Boolean                 @default(false) @map("in_app_enabled")
+  emailEnabled         Boolean                 @default(false) @map("email_enabled")
+  createdAt            DateTime                @default(now()) @map("created_at") @db.Timestamptz(3)
+  updatedAt            DateTime                @updatedAt @map("updated_at") @db.Timestamptz(3)
+  user                 User                    @relation(fields: [userId], references: [id], onDelete: Cascade, map: "notification_type_preferences_user_id_fkey")
+  communicationSetting CommunicationPreference @relation(fields: [userId], references: [userId], onDelete: Cascade, map: "notification_type_preferences_setting_fkey")
+
+  @@unique([userId, type])
+  @@index([type, inAppEnabled, emailEnabled])
+  @@map("notification_type_preferences")
+}
+
+model NotificationIntent {
+  id                String                   @id @db.Uuid
+  userId            String                   @map("user_id") @db.Uuid
+  type              NotificationType
+  dedupeKey         String                   @map("dedupe_key") @db.VarChar(96)
+  title             String                   @db.VarChar(160)
+  body              String                   @db.VarChar(1000)
+  actionUrl         String                   @map("action_url") @db.VarChar(500)
+  context           Json                     @default("{}") @db.JsonB
+  stateHash         String                   @map("state_hash") @db.Char(64)
+  status            NotificationIntentStatus @default(READY)
+  scheduledFor      DateTime                 @map("scheduled_for") @db.Timestamptz(3)
+  expiresAt         DateTime?                @map("expires_at") @db.Timestamptz(3)
+  readAt            DateTime?                @map("read_at") @db.Timestamptz(3)
+  suppressionReason String?                  @map("suppression_reason") @db.VarChar(64)
+  createdAt         DateTime                 @default(now()) @map("created_at") @db.Timestamptz(3)
+  updatedAt         DateTime                 @updatedAt @map("updated_at") @db.Timestamptz(3)
+  user              User                     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  deliveries        NotificationDelivery[]
+
+  @@unique([userId, dedupeKey])
+  @@index([userId, createdAt])
+  @@index([status, scheduledFor])
+  @@map("notification_intents")
+}
+
+model NotificationDelivery {
+  id                String                     @id @db.Uuid
+  notificationId    String                     @map("notification_id") @db.Uuid
+  channel           NotificationChannel
+  status            NotificationDeliveryStatus @default(PENDING)
+  attemptCount      Int                        @default(0) @map("attempt_count")
+  availableAt       DateTime                   @default(now()) @map("available_at") @db.Timestamptz(3)
+  deliveredAt       DateTime?                  @map("delivered_at") @db.Timestamptz(3)
+  suppressionReason String?                    @map("suppression_reason") @db.VarChar(64)
+  lastError         String?                    @map("last_error") @db.VarChar(2000)
+  providerMessageId String?                    @map("provider_message_id") @db.VarChar(255)
+  createdAt         DateTime                   @default(now()) @map("created_at") @db.Timestamptz(3)
+  updatedAt         DateTime                   @updatedAt @map("updated_at") @db.Timestamptz(3)
+  notification      NotificationIntent         @relation(fields: [notificationId], references: [id], onDelete: Cascade)
+
+  @@unique([notificationId, channel])
+  @@index([status, availableAt])
+  @@map("notification_deliveries")
+}
+
+model AiExplanationCache {
+  id            String              @id @db.Uuid
+  userId        String              @map("user_id") @db.Uuid
+  useCase       AiUseCase           @map("use_case")
+  inputHash     String              @map("input_hash") @db.Char(64)
+  promptVersion String              @map("prompt_version") @db.VarChar(64)
+  source        AiExplanationSource
+  provider      String              @db.VarChar(64)
+  model         String              @db.VarChar(128)
+  content       Json                @db.JsonB
+  expiresAt     DateTime            @map("expires_at") @db.Timestamptz(3)
+  createdAt     DateTime            @default(now()) @map("created_at") @db.Timestamptz(3)
+  updatedAt     DateTime            @updatedAt @map("updated_at") @db.Timestamptz(3)
+  user          User                @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, useCase, inputHash, promptVersion])
+  @@index([expiresAt])
+  @@map("ai_explanation_cache")
+}
+
+model AiRequestAudit {
+  id             String              @id @db.Uuid
+  userId         String              @map("user_id") @db.Uuid
+  useCase        AiUseCase           @map("use_case")
+  inputHash      String              @map("input_hash") @db.Char(64)
+  promptVersion  String              @map("prompt_version") @db.VarChar(64)
+  source         AiExplanationSource
+  provider       String              @db.VarChar(64)
+  model          String              @db.VarChar(128)
+  latencyMs      Int                 @map("latency_ms")
+  inputTokens    Int?                @map("input_tokens")
+  outputTokens   Int?                @map("output_tokens")
+  allowedIdCount Int                 @map("allowed_id_count")
+  sentFields     Json                @map("sent_fields") @db.JsonB
+  outputHash     String              @map("output_hash") @db.Char(64)
+  fallbackReason String?             @map("fallback_reason") @db.VarChar(64)
+  createdAt      DateTime            @default(now()) @map("created_at") @db.Timestamptz(3)
+  user           User                @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId, useCase, createdAt])
+  @@index([source, createdAt])
+  @@map("ai_request_audits")
+}
+
+model RoadmapRevisionDiff {
+  id                   String          @id @db.Uuid
+  userId               String          @map("user_id") @db.Uuid
+  revisionId           String          @unique @map("revision_id") @db.Uuid
+  kind                 RevisionKind
+  inputHash            String          @map("input_hash") @db.Char(64)
+  consentRequired      Boolean         @map("consent_required")
+  autoEligible         Boolean         @map("auto_eligible")
+  hoursMovedPercent    Decimal         @map("hours_moved_percent") @db.Decimal(6, 2)
+  milestoneDateChanges Int             @map("milestone_date_changes")
+  retained             Json            @default("[]") @db.JsonB
+  changed              Json            @default("[]") @db.JsonB
+  newTasks             Json            @default("[]") @map("new_tasks") @db.JsonB
+  noLongerRequired     Json            @default("[]") @map("no_longer_required") @db.JsonB
+  summary              Json            @db.JsonB
+  expiresAt            DateTime        @map("expires_at") @db.Timestamptz(3)
+  acceptedAt           DateTime?       @map("accepted_at") @db.Timestamptz(3)
+  rejectedAt           DateTime?       @map("rejected_at") @db.Timestamptz(3)
+  createdAt            DateTime        @default(now()) @map("created_at") @db.Timestamptz(3)
+  user                 User            @relation(fields: [userId], references: [id], onDelete: Cascade)
+  revision             RoadmapRevision @relation(fields: [revisionId], references: [id], onDelete: Cascade)
+
+  @@index([userId, createdAt])
+  @@map("roadmap_revision_diffs")
+}
+
+model CareerGoalVersion {
+  id            String            @id @db.Uuid
+  goalId        String            @map("goal_id") @db.Uuid
+  version       Int
+  roleVersionId String            @map("role_version_id") @db.Uuid
+  targetLevel   TargetLevel       @map("target_level")
+  deadline      DateTime          @db.Date
+  deadlineBasis String            @map("deadline_basis") @db.VarChar(64)
+  createdAt     DateTime          @default(now()) @map("created_at") @db.Timestamptz(3)
+  goal          CareerGoal        @relation(fields: [goalId], references: [id], onDelete: Cascade)
+  roleVersion   CareerRoleVersion @relation(fields: [roleVersionId], references: [id], onDelete: Restrict)
+
+  @@unique([goalId, version])
+  @@map("career_goal_versions")
+}
+
+model AdminMembership {
+  id        String    @id @db.Uuid
+  userId    String    @unique @map("user_id") @db.Uuid
+  role      AdminRole
+  active    Boolean   @default(true)
+  createdAt DateTime  @default(now()) @map("created_at") @db.Timestamptz(3)
+  updatedAt DateTime  @updatedAt @map("updated_at") @db.Timestamptz(3)
+  user      User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@map("admin_memberships")
+}
+
+model University {
+  id          String              @id @db.Uuid
+  code        String              @unique @db.VarChar(32)
+  name        String              @db.VarChar(200)
+  createdAt   DateTime            @default(now()) @map("created_at") @db.Timestamptz(3)
+  updatedAt   DateTime            @updatedAt @map("updated_at") @db.Timestamptz(3)
+  regulations Regulation[]
+  programs    CurriculumProgram[]
+
+  @@map("universities")
+}
+
+model Regulation {
+  id           String              @id @db.Uuid
+  universityId String              @map("university_id") @db.Uuid
+  code         String              @db.VarChar(32)
+  title        String              @db.VarChar(200)
+  createdAt    DateTime            @default(now()) @map("created_at") @db.Timestamptz(3)
+  university   University          @relation(fields: [universityId], references: [id], onDelete: Restrict)
+  programs     CurriculumProgram[]
+
+  @@unique([universityId, code])
+  @@map("regulations")
+}
+
+model Degree {
+  id        String              @id @db.Uuid
+  code      String              @unique @db.VarChar(32)
+  name      String              @db.VarChar(120)
+  createdAt DateTime            @default(now()) @map("created_at") @db.Timestamptz(3)
+  programs  CurriculumProgram[]
+
+  @@map("degrees")
+}
+
+model Branch {
+  id        String              @id @db.Uuid
+  code      String              @unique @db.VarChar(32)
+  name      String              @db.VarChar(160)
+  createdAt DateTime            @default(now()) @map("created_at") @db.Timestamptz(3)
+  programs  CurriculumProgram[]
+
+  @@map("branches")
+}
+
+model CurriculumProgram {
+  id               String                   @id @db.Uuid
+  universityId     String                   @map("university_id") @db.Uuid
+  regulationId     String                   @map("regulation_id") @db.Uuid
+  degreeId         String                   @map("degree_id") @db.Uuid
+  branchId         String                   @map("branch_id") @db.Uuid
+  datasetVersion   String                   @map("dataset_version") @db.VarChar(32)
+  status           ContentStatus            @default(DRAFT)
+  coverageStatus   CoverageStatus           @default(PARTIAL) @map("coverage_status")
+  sourceDocumentId String                   @map("source_document_id") @db.VarChar(128)
+  sourceTitle      String                   @map("source_title") @db.VarChar(300)
+  sourceUrl        String?                  @map("source_url") @db.VarChar(2048)
+  sourceChecksum   String                   @map("source_checksum") @db.Char(64)
+  usagePermission  String?                  @map("usage_permission") @db.VarChar(64)
+  synthetic        Boolean                  @default(false)
+  effectiveFrom    DateTime                 @map("effective_from") @db.Date
+  effectiveTo      DateTime?                @map("effective_to") @db.Date
+  editorId         String                   @map("editor_id") @db.Uuid
+  reviewerId       String?                  @map("reviewer_id") @db.Uuid
+  publishedAt      DateTime?                @map("published_at") @db.Timestamptz(3)
+  createdAt        DateTime                 @default(now()) @map("created_at") @db.Timestamptz(3)
+  updatedAt        DateTime                 @updatedAt @map("updated_at") @db.Timestamptz(3)
+  university       University               @relation(fields: [universityId], references: [id], onDelete: Restrict)
+  regulation       Regulation               @relation(fields: [regulationId], references: [id], onDelete: Restrict)
+  degree           Degree                   @relation(fields: [degreeId], references: [id], onDelete: Restrict)
+  branch           Branch                   @relation(fields: [branchId], references: [id], onDelete: Restrict)
+  semesters        CurriculumSemester[]
+  topics           CurriculumTopic[]
+  imports          ContentImport[]
+  studentProfiles  StudentProfile[]
+  profileVersions  AcademicProfileVersion[]
+  gapAnalyses      GapAnalysis[]
+  roadmapRevisions RoadmapRevision[]
+
+  @@unique([universityId, regulationId, degreeId, branchId, datasetVersion])
+  @@index([status, synthetic, effectiveFrom])
+  @@map("curriculum_programs")
+}
+
+model CurriculumSemester {
+  id           String            @id @db.Uuid
+  programId    String            @map("program_id") @db.Uuid
+  number       Int
+  academicYear Int               @map("academic_year")
+  program      CurriculumProgram @relation(fields: [programId], references: [id], onDelete: Cascade)
+  subjects     AcademicSubject[]
+
+  @@unique([programId, number])
+  @@map("curriculum_semesters")
+}
+
+model AcademicSubject {
+  id                  String             @id @db.Uuid
+  semesterId          String             @map("semester_id") @db.Uuid
+  code                String             @db.VarChar(32)
+  title               String             @db.VarChar(200)
+  credits             Decimal            @db.Decimal(5, 2)
+  type                SubjectType
+  contactHoursPerWeek Decimal?           @map("contact_hours_per_week") @db.Decimal(5, 2)
+  semester            CurriculumSemester @relation(fields: [semesterId], references: [id], onDelete: Cascade)
+  units               SubjectUnit[]
+
+  @@unique([semesterId, code])
+  @@map("academic_subjects")
+}
+
+model SubjectUnit {
+  id        String            @id @db.Uuid
+  subjectId String            @map("subject_id") @db.Uuid
+  number    Int
+  title     String            @db.VarChar(200)
+  subject   AcademicSubject   @relation(fields: [subjectId], references: [id], onDelete: Cascade)
+  topics    CurriculumTopic[]
+
+  @@unique([subjectId, number])
+  @@map("subject_units")
+}
+
+model CurriculumTopic {
+  id                     String                        @id @db.Uuid
+  programId              String                        @map("program_id") @db.Uuid
+  unitId                 String                        @map("unit_id") @db.Uuid
+  stableKey              String                        @map("stable_key") @db.VarChar(128)
+  title                  String                        @db.VarChar(240)
+  sourcePage             Int                           @map("source_page")
+  academicDepth          Decimal                       @map("academic_depth") @db.Decimal(4, 3)
+  estimatedAcademicHours Decimal                       @map("estimated_academic_hours") @db.Decimal(7, 2)
+  lab                    Boolean                       @default(false)
+  program                CurriculumProgram             @relation(fields: [programId], references: [id], onDelete: Cascade)
+  unit                   SubjectUnit                   @relation(fields: [unitId], references: [id], onDelete: Cascade)
+  prerequisites          CurriculumTopicPrerequisite[] @relation("TopicDependents")
+  dependents             CurriculumTopicPrerequisite[] @relation("TopicPrerequisites")
+  skillMappings          CurriculumSkillMapping[]
+
+  @@unique([programId, stableKey])
+  @@map("curriculum_topics")
+}
+
+model CurriculumTopicPrerequisite {
+  topicId        String          @map("topic_id") @db.Uuid
+  prerequisiteId String          @map("prerequisite_id") @db.Uuid
+  topic          CurriculumTopic @relation("TopicPrerequisites", fields: [topicId], references: [id], onDelete: Cascade)
+  prerequisite   CurriculumTopic @relation("TopicDependents", fields: [prerequisiteId], references: [id], onDelete: Cascade)
+
+  @@id([topicId, prerequisiteId])
+  @@map("curriculum_topic_prerequisites")
+}
+
+model ContentImport {
+  id                String                    @id @db.Uuid
+  datasetType       String                    @map("dataset_type") @db.VarChar(64)
+  datasetVersion    String?                   @map("dataset_version") @db.VarChar(32)
+  sourceChecksum    String?                   @map("source_checksum") @db.Char(64)
+  status            ContentStatus             @default(DRAFT)
+  editorId          String                    @map("editor_id") @db.Uuid
+  reviewerId        String?                   @map("reviewer_id") @db.Uuid
+  payload           Json                      @db.JsonB
+  programId         String?                   @map("program_id") @db.Uuid
+  careerDatasetId   String?                   @map("career_dataset_id") @db.Uuid
+  createdAt         DateTime                  @default(now()) @map("created_at") @db.Timestamptz(3)
+  updatedAt         DateTime                  @updatedAt @map("updated_at") @db.Timestamptz(3)
+  program           CurriculumProgram?        @relation(fields: [programId], references: [id], onDelete: SetNull)
+  careerDataset     CareerDataset?            @relation(fields: [careerDatasetId], references: [id], onDelete: SetNull)
+  validationResults ContentValidationResult[]
+  projectDataset    ProjectDataset?
+
+  @@index([datasetType, status, createdAt])
+  @@map("content_imports")
+}
+
+model ContentValidationResult {
+  id        String        @id @db.Uuid
+  importId  String        @map("import_id") @db.Uuid
+  code      String        @db.VarChar(80)
+  path      String        @db.VarChar(500)
+  message   String        @db.VarChar(1000)
+  severity  String        @default("ERROR") @db.VarChar(16)
+  createdAt DateTime      @default(now()) @map("created_at") @db.Timestamptz(3)
+  import    ContentImport @relation(fields: [importId], references: [id], onDelete: Cascade)
+
+  @@index([importId, severity])
+  @@map("content_validation_results")
+}
+
+model StudentProfile {
+  id                  String                   @id @db.Uuid
+  userId              String                   @unique @map("user_id") @db.Uuid
+  curriculumProgramId String?                  @map("curriculum_program_id") @db.Uuid
+  currentSemester     Int?                     @map("current_semester")
+  expectedGraduation  DateTime?                @map("expected_graduation") @db.Date
+  cgpa                Decimal?                 @db.Decimal(4, 2)
+  backlogCount        Int?                     @map("backlog_count")
+  onboardingStatus    OnboardingStatus         @default(ACADEMIC) @map("onboarding_status")
+  lockVersion         Int                      @default(1) @map("lock_version")
+  createdAt           DateTime                 @default(now()) @map("created_at") @db.Timestamptz(3)
+  updatedAt           DateTime                 @updatedAt @map("updated_at") @db.Timestamptz(3)
+  user                User                     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  curriculumProgram   CurriculumProgram?       @relation(fields: [curriculumProgramId], references: [id], onDelete: Restrict)
+  versions            AcademicProfileVersion[]
+
+  @@index([curriculumProgramId])
+  @@map("student_profiles")
+}
+
+model AcademicProfileVersion {
+  id                  String            @id @db.Uuid
+  profileId           String            @map("profile_id") @db.Uuid
+  version             Int
+  curriculumProgramId String            @map("curriculum_program_id") @db.Uuid
+  currentSemester     Int               @map("current_semester")
+  expectedGraduation  DateTime          @map("expected_graduation") @db.Date
+  cgpa                Decimal?          @db.Decimal(4, 2)
+  backlogCount        Int?              @map("backlog_count")
+  createdAt           DateTime          @default(now()) @map("created_at") @db.Timestamptz(3)
+  profile             StudentProfile    @relation(fields: [profileId], references: [id], onDelete: Cascade)
+  curriculumProgram   CurriculumProgram @relation(fields: [curriculumProgramId], references: [id], onDelete: Restrict)
+
+  @@unique([profileId, version])
+  @@map("academic_profile_versions")
+}
+
+model AuthAccount {
+  id              String   @id @db.Uuid
+  userId          String   @map("user_id") @db.Uuid
+  provider        String   @db.VarChar(64)
+  providerSubject String   @map("provider_subject") @db.VarChar(255)
+  createdAt       DateTime @default(now()) @map("created_at") @db.Timestamptz(3)
+  updatedAt       DateTime @updatedAt @map("updated_at") @db.Timestamptz(3)
+  user            User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([provider, providerSubject])
+  @@index([userId])
+  @@map("auth_accounts")
+}
+
+model Session {
+  id            String    @id @db.Uuid
+  userId        String    @map("user_id") @db.Uuid
+  tokenHash     String    @unique @map("token_hash") @db.Char(64)
+  expiresAt     DateTime  @map("expires_at") @db.Timestamptz(3)
+  lastSeenAt    DateTime  @default(now()) @map("last_seen_at") @db.Timestamptz(3)
+  revokedAt     DateTime? @map("revoked_at") @db.Timestamptz(3)
+  userAgentHash String?   @map("user_agent_hash") @db.Char(64)
+  ipHash        String?   @map("ip_hash") @db.Char(64)
+  createdAt     DateTime  @default(now()) @map("created_at") @db.Timestamptz(3)
+  user          User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId, expiresAt])
+  @@index([expiresAt, revokedAt])
+  @@map("sessions")
+}
+
+model VerificationToken {
+  id              String              @id @db.Uuid
+  normalizedEmail String              @map("normalized_email") @db.VarChar(320)
+  tokenHash       String              @unique @map("token_hash") @db.Char(64)
+  purpose         VerificationPurpose
+  expiresAt       DateTime            @map("expires_at") @db.Timestamptz(3)
+  consumedAt      DateTime?           @map("consumed_at") @db.Timestamptz(3)
+  attemptCount    Int                 @default(0) @map("attempt_count")
+  createdAt       DateTime            @default(now()) @map("created_at") @db.Timestamptz(3)
+
+  @@index([normalizedEmail, purpose, expiresAt])
+  @@map("verification_tokens")
+}
+
+model OutboxEvent {
+  id            String       @id @db.Uuid
+  aggregateType String       @map("aggregate_type") @db.VarChar(80)
+  aggregateId   String       @map("aggregate_id") @db.VarChar(128)
+  eventType     String       @map("event_type") @db.VarChar(160)
+  payload       Json         @db.JsonB
+  status        OutboxStatus @default(PENDING)
+  attemptCount  Int          @default(0) @map("attempt_count")
+  availableAt   DateTime     @default(now()) @map("available_at") @db.Timestamptz(3)
+  processedAt   DateTime?    @map("processed_at") @db.Timestamptz(3)
+  lastError     String?      @map("last_error") @db.VarChar(2000)
+  createdAt     DateTime     @default(now()) @map("created_at") @db.Timestamptz(3)
+  updatedAt     DateTime     @updatedAt @map("updated_at") @db.Timestamptz(3)
+
+  @@index([status, availableAt, createdAt])
+  @@index([aggregateType, aggregateId])
+  @@map("outbox_events")
+}
+
+model AuditLog {
+  id         String         @id @db.Uuid
+  actorType  AuditActorType @map("actor_type")
+  actorId    String?        @map("actor_id") @db.VarChar(128)
+  action     String         @db.VarChar(160)
+  targetType String         @map("target_type") @db.VarChar(80)
+  targetId   String         @map("target_id") @db.VarChar(128)
+  beforeHash String?        @map("before_hash") @db.Char(64)
+  afterHash  String?        @map("after_hash") @db.Char(64)
+  requestId  String         @map("request_id") @db.VarChar(128)
+  ipHash     String?        @map("ip_hash") @db.Char(64)
+  createdAt  DateTime       @default(now()) @map("created_at") @db.Timestamptz(3)
+
+  @@index([targetType, targetId, createdAt])
+  @@index([actorType, actorId, createdAt])
+  @@map("audit_logs")
+}
+
+model AccountDeletionTombstone {
+  userId      String    @id @map("user_id") @db.Uuid
+  status      String    @db.VarChar(16)
+  requestedAt DateTime  @map("requested_at") @db.Timestamptz(3)
+  purgeAfter  DateTime  @map("purge_after") @db.Timestamptz(3)
+  recoveredAt DateTime? @map("recovered_at") @db.Timestamptz(3)
+  purgedAt    DateTime? @map("purged_at") @db.Timestamptz(3)
+  requestId   String    @map("request_id") @db.VarChar(128)
+  updatedAt   DateTime  @updatedAt @map("updated_at") @db.Timestamptz(3)
+
+  @@index([status, purgeAfter])
+  @@map("account_deletion_tombstones")
+}

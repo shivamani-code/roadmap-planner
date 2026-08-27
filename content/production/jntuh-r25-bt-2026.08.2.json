@@ -1,0 +1,1008 @@
+{
+  "schemaVersion": "1.0.0",
+  "dataset": {
+    "universityCode": "JNTUH",
+    "regulationCode": "R25",
+    "degreeCode": "BTECH",
+    "branchCode": "BT",
+    "datasetVersion": "2026.08.2",
+    "effectiveFrom": "2025-07-01",
+    "effectiveTo": null,
+    "source": {
+      "documentId": "jntuh-r25-bt-course-structure",
+      "title": "JNTUH R25 B.Tech. Biotechnology Course Structure and Syllabus",
+      "sourceUrl": "https://jntuh.ac.in/uploads/academics/R25B.Tech.BiotechnologyIIIYearSyllabus.pdf",
+      "sha256": "4fcaff1cc89c4ed3421bae0cdf5ec53bda330286a2e9f72fc68a2a18f387cf71",
+      "publishedAt": "2026-08-12",
+      "retrievedAt": "2026-08-26T00:00:00Z",
+      "usagePermission": "PUBLIC_OFFICIAL"
+    },
+    "synthetic": false
+  },
+  "semesters": [
+    {
+      "number": 1,
+      "academicYear": 1,
+      "subjects": [
+        {
+          "code": "COURSE101",
+          "title": "BT101BS/ BT102BS Basic Mathematics/ Fundamentals of Biology",
+          "credits": 4.0,
+          "type": "THEORY",
+          "contactHoursPerWeek": 4.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.bt.course101.scope",
+                  "title": "BT101BS/ BT102BS Basic Mathematics/ Fundamentals of Biology",
+                  "sourcePage": 1,
+                  "academicDepth": 0.55,
+                  "estimatedAcademicHours": 48.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "PH102BS",
+          "title": "Advanced Engineering Physics",
+          "credits": 3.0,
+          "type": "THEORY",
+          "contactHoursPerWeek": 3.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.bt.ph102bs.scope",
+                  "title": "Advanced Engineering Physics",
+                  "sourcePage": 1,
+                  "academicDepth": 0.55,
+                  "estimatedAcademicHours": 36.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "ME103ES",
+          "title": "C Programming and Data Structures",
+          "credits": 3.0,
+          "type": "THEORY",
+          "contactHoursPerWeek": 3.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.bt.me103es.scope",
+                  "title": "C Programming and Data Structures",
+                  "sourcePage": 1,
+                  "academicDepth": 0.55,
+                  "estimatedAcademicHours": 36.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "ME104ES",
+          "title": "Engineering Mechanics",
+          "credits": 3.0,
+          "type": "THEORY",
+          "contactHoursPerWeek": 3.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.bt.me104es.scope",
+                  "title": "Engineering Mechanics",
+                  "sourcePage": 1,
+                  "academicDepth": 0.55,
+                  "estimatedAcademicHours": 36.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "EN105HS",
+          "title": "English for Skill Enhancement",
+          "credits": 3.0,
+          "type": "THEORY",
+          "contactHoursPerWeek": 3.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.bt.en105hs.scope",
+                  "title": "English for Skill Enhancement",
+                  "sourcePage": 1,
+                  "academicDepth": 0.55,
+                  "estimatedAcademicHours": 36.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "PH106BS",
+          "title": "Advanced Engineering Physics Lab",
+          "credits": 1.0,
+          "type": "LAB",
+          "contactHoursPerWeek": 2.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.bt.ph106bs.scope",
+                  "title": "Advanced Engineering Physics Lab",
+                  "sourcePage": 1,
+                  "academicDepth": 0.65,
+                  "estimatedAcademicHours": 12.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "CS107ES",
+          "title": "C Programming and Data Structures Lab",
+          "credits": 1.0,
+          "type": "LAB",
+          "contactHoursPerWeek": 2.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.bt.cs107es.scope",
+                  "title": "C Programming and Data Structures Lab",
+                  "sourcePage": 1,
+                  "academicDepth": 0.65,
+                  "estimatedAcademicHours": 12.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "ME108ES",
+          "title": "Engineering Workshop",
+          "credits": 1.0,
+          "type": "LAB",
+          "contactHoursPerWeek": 2.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.bt.me108es.scope",
+                  "title": "Engineering Workshop",
+                  "sourcePage": 1,
+                  "academicDepth": 0.65,
+                  "estimatedAcademicHours": 12.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "EN109HS",
+          "title": "English Language and Communication Skills Lab",
+          "credits": 1.0,
+          "type": "LAB",
+          "contactHoursPerWeek": 2.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.bt.en109hs.scope",
+                  "title": "English Language and Communication Skills Lab",
+                  "sourcePage": 1,
+                  "academicDepth": 0.65,
+                  "estimatedAcademicHours": 12.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": true
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "academicYear": 1,
+      "subjects": [
+        {
+          "code": "BT201BS",
+          "title": "Mathematics \u2013 II for Biotechnology",
+          "credits": 3.0,
+          "type": "THEORY",
+          "contactHoursPerWeek": 3.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.bt.bt201bs.scope",
+                  "title": "Mathematics \u2013 II for Biotechnology",
+                  "sourcePage": 1,
+                  "academicDepth": 0.55,
+                  "estimatedAcademicHours": 36.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "CH202BS",
+          "title": "Applied Chemistry",
+          "credits": 3.0,
+          "type": "THEORY",
+          "contactHoursPerWeek": 3.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.bt.ch202bs.scope",
+                  "title": "Applied Chemistry",
+                  "sourcePage": 1,
+                  "academicDepth": 0.55,
+                  "estimatedAcademicHours": 36.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "CS203ES",
+          "title": "Python Programming",
+          "credits": 3.0,
+          "type": "THEORY",
+          "contactHoursPerWeek": 3.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.bt.cs203es.scope",
+                  "title": "Python Programming",
+                  "sourcePage": 1,
+                  "academicDepth": 0.55,
+                  "estimatedAcademicHours": 36.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "EE204ES",
+          "title": "Elements of Electrical and Electronics Engineering",
+          "credits": 3.0,
+          "type": "THEORY",
+          "contactHoursPerWeek": 3.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.bt.ee204es.scope",
+                  "title": "Elements of Electrical and Electronics Engineering",
+                  "sourcePage": 1,
+                  "academicDepth": 0.55,
+                  "estimatedAcademicHours": 36.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "BT205ES",
+          "title": "Cell Biology",
+          "credits": 3.0,
+          "type": "THEORY",
+          "contactHoursPerWeek": 3.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.bt.bt205es.scope",
+                  "title": "Cell Biology",
+                  "sourcePage": 1,
+                  "academicDepth": 0.55,
+                  "estimatedAcademicHours": 36.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "ME206ES",
+          "title": "Engineering Drawing and Computer Aided Drafting",
+          "credits": 3.0,
+          "type": "THEORY",
+          "contactHoursPerWeek": 4.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.bt.me206es.scope",
+                  "title": "Engineering Drawing and Computer Aided Drafting",
+                  "sourcePage": 1,
+                  "academicDepth": 0.55,
+                  "estimatedAcademicHours": 36.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "CH207BS",
+          "title": "Chemistry Lab for Engineers",
+          "credits": 1.0,
+          "type": "LAB",
+          "contactHoursPerWeek": 2.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.bt.ch207bs.scope",
+                  "title": "Chemistry Lab for Engineers",
+                  "sourcePage": 1,
+                  "academicDepth": 0.65,
+                  "estimatedAcademicHours": 12.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "CS208ES",
+          "title": "Python Programming Lab",
+          "credits": 1.0,
+          "type": "LAB",
+          "contactHoursPerWeek": 2.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.bt.cs208es.scope",
+                  "title": "Python Programming Lab",
+                  "sourcePage": 1,
+                  "academicDepth": 0.65,
+                  "estimatedAcademicHours": 12.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "EE209ES",
+          "title": "Elements of Electrical and Electronics Engineering Lab",
+          "credits": 1.0,
+          "type": "LAB",
+          "contactHoursPerWeek": 2.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.bt.ee209es.scope",
+                  "title": "Elements of Electrical and Electronics Engineering Lab",
+                  "sourcePage": 1,
+                  "academicDepth": 0.65,
+                  "estimatedAcademicHours": 12.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": true
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "academicYear": 2,
+      "subjects": [
+        {
+          "code": "BT301BS",
+          "title": "Mathematics \u2013 III for Biotechnology",
+          "credits": 3.0,
+          "type": "THEORY",
+          "contactHoursPerWeek": 3.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.bt.bt301bs.scope",
+                  "title": "Mathematics \u2013 III for Biotechnology",
+                  "sourcePage": 1,
+                  "academicDepth": 0.55,
+                  "estimatedAcademicHours": 36.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "BT302PC",
+          "title": "Biochemistry",
+          "credits": 3.0,
+          "type": "THEORY",
+          "contactHoursPerWeek": 3.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.bt.bt302pc.scope",
+                  "title": "Biochemistry",
+                  "sourcePage": 1,
+                  "academicDepth": 0.55,
+                  "estimatedAcademicHours": 36.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "BT303PC",
+          "title": "Microbiology",
+          "credits": 3.0,
+          "type": "THEORY",
+          "contactHoursPerWeek": 3.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.bt.bt303pc.scope",
+                  "title": "Microbiology",
+                  "sourcePage": 1,
+                  "academicDepth": 0.55,
+                  "estimatedAcademicHours": 36.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "BT304PC",
+          "title": "Fluid Mechanics & Heat Transfer",
+          "credits": 3.0,
+          "type": "THEORY",
+          "contactHoursPerWeek": 3.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.bt.bt304pc.scope",
+                  "title": "Fluid Mechanics & Heat Transfer",
+                  "sourcePage": 1,
+                  "academicDepth": 0.55,
+                  "estimatedAcademicHours": 36.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "BT305PC",
+          "title": "Genetics & Molecular Biology",
+          "credits": 3.0,
+          "type": "THEORY",
+          "contactHoursPerWeek": 3.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.bt.bt305pc.scope",
+                  "title": "Genetics & Molecular Biology",
+                  "sourcePage": 1,
+                  "academicDepth": 0.55,
+                  "estimatedAcademicHours": 36.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "BT306BS",
+          "title": "Mathematics \u2013 III for Biotechnology Lab",
+          "credits": 1.0,
+          "type": "LAB",
+          "contactHoursPerWeek": 2.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.bt.bt306bs.scope",
+                  "title": "Mathematics \u2013 III for Biotechnology Lab",
+                  "sourcePage": 1,
+                  "academicDepth": 0.65,
+                  "estimatedAcademicHours": 12.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "BT307PC",
+          "title": "Biochemistry and Microbiology Lab",
+          "credits": 1.0,
+          "type": "LAB",
+          "contactHoursPerWeek": 2.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.bt.bt307pc.scope",
+                  "title": "Biochemistry and Microbiology Lab",
+                  "sourcePage": 1,
+                  "academicDepth": 0.65,
+                  "estimatedAcademicHours": 12.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "BT308PC",
+          "title": "Fluid Mechanics & Heat Transfer Lab",
+          "credits": 1.0,
+          "type": "LAB",
+          "contactHoursPerWeek": 2.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.bt.bt308pc.scope",
+                  "title": "Fluid Mechanics & Heat Transfer Lab",
+                  "sourcePage": 1,
+                  "academicDepth": 0.65,
+                  "estimatedAcademicHours": 12.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "BT309PC",
+          "title": "Molecular Biology Lab",
+          "credits": 1.0,
+          "type": "LAB",
+          "contactHoursPerWeek": 2.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.bt.bt309pc.scope",
+                  "title": "Molecular Biology Lab",
+                  "sourcePage": 1,
+                  "academicDepth": 0.65,
+                  "estimatedAcademicHours": 12.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "BT310SD",
+          "title": "R Programming",
+          "credits": 1.0,
+          "type": "THEORY",
+          "contactHoursPerWeek": 2.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.bt.bt310sd.scope",
+                  "title": "R Programming",
+                  "sourcePage": 1,
+                  "academicDepth": 0.55,
+                  "estimatedAcademicHours": 12.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "academicYear": 2,
+      "subjects": [
+        {
+          "code": "BT401PC",
+          "title": "Analytical Techniques in Biotechnology",
+          "credits": 3.0,
+          "type": "THEORY",
+          "contactHoursPerWeek": 3.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.bt.bt401pc.scope",
+                  "title": "Analytical Techniques in Biotechnology",
+                  "sourcePage": 2,
+                  "academicDepth": 0.55,
+                  "estimatedAcademicHours": 36.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "BT402PC",
+          "title": "Genetic Engineering",
+          "credits": 3.0,
+          "type": "THEORY",
+          "contactHoursPerWeek": 3.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.bt.bt402pc.scope",
+                  "title": "Genetic Engineering",
+                  "sourcePage": 2,
+                  "academicDepth": 0.55,
+                  "estimatedAcademicHours": 36.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "BT403PC",
+          "title": "Chemical and Biochemical Thermodynamics",
+          "credits": 3.0,
+          "type": "THEORY",
+          "contactHoursPerWeek": 3.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.bt.bt403pc.scope",
+                  "title": "Chemical and Biochemical Thermodynamics",
+                  "sourcePage": 2,
+                  "academicDepth": 0.55,
+                  "estimatedAcademicHours": 36.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "BT404PC",
+          "title": "Enzyme Engineering and Technology",
+          "credits": 3.0,
+          "type": "THEORY",
+          "contactHoursPerWeek": 3.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.bt.bt404pc.scope",
+                  "title": "Enzyme Engineering and Technology",
+                  "sourcePage": 2,
+                  "academicDepth": 0.55,
+                  "estimatedAcademicHours": 36.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "BT405PC",
+          "title": "Artificial Intelligence and Machine Learning",
+          "credits": 2.0,
+          "type": "THEORY",
+          "contactHoursPerWeek": 2.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.bt.bt405pc.scope",
+                  "title": "Artificial Intelligence and Machine Learning",
+                  "sourcePage": 2,
+                  "academicDepth": 0.55,
+                  "estimatedAcademicHours": 24.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "MS406HS",
+          "title": "Innovation and Entrepreneurship",
+          "credits": 2.0,
+          "type": "THEORY",
+          "contactHoursPerWeek": 2.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.bt.ms406hs.scope",
+                  "title": "Innovation and Entrepreneurship",
+                  "sourcePage": 2,
+                  "academicDepth": 0.55,
+                  "estimatedAcademicHours": 24.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "BT407PC",
+          "title": "Analytical Techniques & Enzyme Engineering and Technology Lab",
+          "credits": 1.0,
+          "type": "LAB",
+          "contactHoursPerWeek": 2.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.bt.bt407pc.scope",
+                  "title": "Analytical Techniques & Enzyme Engineering and Technology Lab",
+                  "sourcePage": 2,
+                  "academicDepth": 0.65,
+                  "estimatedAcademicHours": 12.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "BT408PC",
+          "title": "Genetic Engineering Lab",
+          "credits": 1.0,
+          "type": "LAB",
+          "contactHoursPerWeek": 2.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.bt.bt408pc.scope",
+                  "title": "Genetic Engineering Lab",
+                  "sourcePage": 2,
+                  "academicDepth": 0.65,
+                  "estimatedAcademicHours": 12.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "BT409PC",
+          "title": "Artificial Intelligence and Machine Learning Lab",
+          "credits": 1.0,
+          "type": "LAB",
+          "contactHoursPerWeek": 2.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.bt.bt409pc.scope",
+                  "title": "Artificial Intelligence and Machine Learning Lab",
+                  "sourcePage": 2,
+                  "academicDepth": 0.65,
+                  "estimatedAcademicHours": 12.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "BT410SD",
+          "title": "Industrial Biotechnology",
+          "credits": 1.0,
+          "type": "THEORY",
+          "contactHoursPerWeek": 2.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.bt.bt410sd.scope",
+                  "title": "Industrial Biotechnology",
+                  "sourcePage": 2,
+                  "academicDepth": 0.55,
+                  "estimatedAcademicHours": 12.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "VA400HS",
+          "title": "Indian Knowledge System",
+          "credits": 1.0,
+          "type": "THEORY",
+          "contactHoursPerWeek": 1.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.bt.va400hs.scope",
+                  "title": "Indian Knowledge System",
+                  "sourcePage": 2,
+                  "academicDepth": 0.55,
+                  "estimatedAcademicHours": 12.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "COURSE412",
+          "title": "SDG 12: Responsible Consumption and Production 13. SDG 13: Climate Action 14. SDG 14: Life Below Water 15. SDG 15: Life on Land 16. SDG 16: Peace, Justice, and Strong Institutions 17. SDG 17: Partners",
+          "credits": 4.0,
+          "type": "THEORY",
+          "contactHoursPerWeek": 4.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.bt.course412.scope",
+                  "title": "SDG 12: Responsible Consumption and Production 13. SDG 13: Climate Action 14. SDG 14: Life Below Water 15. SDG 15: Life on Land 16. SDG 16: Peace, Justice, and Strong Institutions 17. SDG 17: Partners",
+                  "sourcePage": 4,
+                  "academicDepth": 0.55,
+                  "estimatedAcademicHours": 48.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

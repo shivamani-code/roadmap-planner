@@ -1,0 +1,333 @@
+{
+  "schemaVersion": "1.0.0",
+  "mappingVersion": 2,
+  "curriculumDatasetVersion": "2026.08.2",
+  "careerDatasetVersion": "2026.08.2",
+  "review": {
+    "editorId": "studentos-content-editor",
+    "reviewerId": "studentos-content-reviewer",
+    "reviewedAt": "2026-08-26T00:00:00Z"
+  },
+  "mappings": [
+    {
+      "curriculumTopicKey": "jntuh.r25.mining.me103es.scope",
+      "skillKey": "programming.fundamentals",
+      "breadth": 0.72,
+      "depth": 0.58,
+      "confidence": 0.86,
+      "practiceRequired": true,
+      "evidencePotential": 0.48,
+      "rationale": "C Programming and Data Structures in the official JNTUH R25 course structure directly supports programming fundamentals; applied evidence is still required for career readiness."
+    },
+    {
+      "curriculumTopicKey": "jntuh.r25.mining.me103es.scope",
+      "skillKey": "dsa.core",
+      "breadth": 0.72,
+      "depth": 0.58,
+      "confidence": 0.86,
+      "practiceRequired": true,
+      "evidencePotential": 0.48,
+      "rationale": "C Programming and Data Structures in the official JNTUH R25 course structure directly supports dsa core; applied evidence is still required for career readiness."
+    },
+    {
+      "curriculumTopicKey": "jntuh.r25.mining.me104es.scope",
+      "skillKey": "mechanical.mechanics",
+      "breadth": 0.72,
+      "depth": 0.58,
+      "confidence": 0.86,
+      "practiceRequired": true,
+      "evidencePotential": 0.48,
+      "rationale": "Engineering Mechanics in the official JNTUH R25 course structure directly supports mechanical mechanics; applied evidence is still required for career readiness."
+    },
+    {
+      "curriculumTopicKey": "jntuh.r25.mining.en105hs.scope",
+      "skillKey": "communication.technical",
+      "breadth": 0.72,
+      "depth": 0.58,
+      "confidence": 0.86,
+      "practiceRequired": true,
+      "evidencePotential": 0.48,
+      "rationale": "English for Skill Enhancement in the official JNTUH R25 course structure directly supports communication technical; applied evidence is still required for career readiness."
+    },
+    {
+      "curriculumTopicKey": "jntuh.r25.mining.cs107es.scope",
+      "skillKey": "programming.fundamentals",
+      "breadth": 0.55,
+      "depth": 0.62,
+      "confidence": 0.86,
+      "practiceRequired": true,
+      "evidencePotential": 0.72,
+      "rationale": "C Programming and Data Structures Lab in the official JNTUH R25 course structure directly supports programming fundamentals; applied evidence is still required for career readiness."
+    },
+    {
+      "curriculumTopicKey": "jntuh.r25.mining.cs107es.scope",
+      "skillKey": "dsa.core",
+      "breadth": 0.55,
+      "depth": 0.62,
+      "confidence": 0.86,
+      "practiceRequired": true,
+      "evidencePotential": 0.72,
+      "rationale": "C Programming and Data Structures Lab in the official JNTUH R25 course structure directly supports dsa core; applied evidence is still required for career readiness."
+    },
+    {
+      "curriculumTopicKey": "jntuh.r25.mining.en109hs.scope",
+      "skillKey": "communication.technical",
+      "breadth": 0.55,
+      "depth": 0.62,
+      "confidence": 0.86,
+      "practiceRequired": true,
+      "evidencePotential": 0.72,
+      "rationale": "English Language and Communication Skills Lab in the official JNTUH R25 course structure directly supports communication technical; applied evidence is still required for career readiness."
+    },
+    {
+      "curriculumTopicKey": "jntuh.r25.mining.cs203es.scope",
+      "skillKey": "programming.fundamentals",
+      "breadth": 0.72,
+      "depth": 0.58,
+      "confidence": 0.86,
+      "practiceRequired": true,
+      "evidencePotential": 0.48,
+      "rationale": "Python Programming in the official JNTUH R25 course structure directly supports programming fundamentals; applied evidence is still required for career readiness."
+    },
+    {
+      "curriculumTopicKey": "jntuh.r25.mining.mn205es.scope",
+      "skillKey": "mining.operations",
+      "breadth": 0.72,
+      "depth": 0.58,
+      "confidence": 0.86,
+      "practiceRequired": true,
+      "evidencePotential": 0.48,
+      "rationale": "Introduction to Mining Engineering in the official JNTUH R25 course structure directly supports mining operations; applied evidence is still required for career readiness."
+    },
+    {
+      "curriculumTopicKey": "jntuh.r25.mining.me206es.scope",
+      "skillKey": "mechanical.design",
+      "breadth": 0.72,
+      "depth": 0.58,
+      "confidence": 0.86,
+      "practiceRequired": true,
+      "evidencePotential": 0.48,
+      "rationale": "Engineering Drawing and Computer Aided Drafting in the official JNTUH R25 course structure directly supports mechanical design; applied evidence is still required for career readiness."
+    },
+    {
+      "curriculumTopicKey": "jntuh.r25.mining.cs208es.scope",
+      "skillKey": "programming.fundamentals",
+      "breadth": 0.55,
+      "depth": 0.62,
+      "confidence": 0.86,
+      "practiceRequired": true,
+      "evidencePotential": 0.72,
+      "rationale": "Python Programming Lab in the official JNTUH R25 course structure directly supports programming fundamentals; applied evidence is still required for career readiness."
+    },
+    {
+      "curriculumTopicKey": "jntuh.r25.mining.mn301bs.scope",
+      "skillKey": "data.statistics",
+      "breadth": 0.72,
+      "depth": 0.58,
+      "confidence": 0.86,
+      "practiceRequired": true,
+      "evidencePotential": 0.48,
+      "rationale": "Probability, Statistics and Complex Variables in the official JNTUH R25 course structure directly supports data statistics; applied evidence is still required for career readiness."
+    },
+    {
+      "curriculumTopicKey": "jntuh.r25.mining.course302.scope",
+      "skillKey": "civil.surveying",
+      "breadth": 0.72,
+      "depth": 0.58,
+      "confidence": 0.86,
+      "practiceRequired": true,
+      "evidencePotential": 0.48,
+      "rationale": "DC Mine Surveying-I in the official JNTUH R25 course structure directly supports civil surveying; applied evidence is still required for career readiness."
+    },
+    {
+      "curriculumTopicKey": "jntuh.r25.mining.course302.scope",
+      "skillKey": "mining.survey",
+      "breadth": 0.72,
+      "depth": 0.58,
+      "confidence": 0.86,
+      "practiceRequired": true,
+      "evidencePotential": 0.48,
+      "rationale": "DC Mine Surveying-I in the official JNTUH R25 course structure directly supports mining survey; applied evidence is still required for career readiness."
+    },
+    {
+      "curriculumTopicKey": "jntuh.r25.mining.course303.scope",
+      "skillKey": "mining.operations",
+      "breadth": 0.72,
+      "depth": 0.58,
+      "confidence": 0.86,
+      "practiceRequired": true,
+      "evidencePotential": 0.48,
+      "rationale": "DC Development of Mineral Deposits in the official JNTUH R25 course structure directly supports mining operations; applied evidence is still required for career readiness."
+    },
+    {
+      "curriculumTopicKey": "jntuh.r25.mining.course304.scope",
+      "skillKey": "mining.operations",
+      "breadth": 0.72,
+      "depth": 0.58,
+      "confidence": 0.86,
+      "practiceRequired": true,
+      "evidencePotential": 0.48,
+      "rationale": "DC Mining Geology in the official JNTUH R25 course structure directly supports mining operations; applied evidence is still required for career readiness."
+    },
+    {
+      "curriculumTopicKey": "jntuh.r25.mining.course307.scope",
+      "skillKey": "civil.surveying",
+      "breadth": 0.55,
+      "depth": 0.62,
+      "confidence": 0.86,
+      "practiceRequired": true,
+      "evidencePotential": 0.72,
+      "rationale": "DCL Mine Surveying- I Lab in the official JNTUH R25 course structure directly supports civil surveying; applied evidence is still required for career readiness."
+    },
+    {
+      "curriculumTopicKey": "jntuh.r25.mining.course307.scope",
+      "skillKey": "mining.survey",
+      "breadth": 0.55,
+      "depth": 0.62,
+      "confidence": 0.86,
+      "practiceRequired": true,
+      "evidencePotential": 0.72,
+      "rationale": "DCL Mine Surveying- I Lab in the official JNTUH R25 course structure directly supports mining survey; applied evidence is still required for career readiness."
+    },
+    {
+      "curriculumTopicKey": "jntuh.r25.mining.course308.scope",
+      "skillKey": "mining.operations",
+      "breadth": 0.55,
+      "depth": 0.62,
+      "confidence": 0.86,
+      "practiceRequired": true,
+      "evidencePotential": 0.72,
+      "rationale": "DCL Mining Geology Laboratory in the official JNTUH R25 course structure directly supports mining operations; applied evidence is still required for career readiness."
+    },
+    {
+      "curriculumTopicKey": "jntuh.r25.mining.course310.scope",
+      "skillKey": "projects.delivery",
+      "breadth": 0.55,
+      "depth": 0.62,
+      "confidence": 0.86,
+      "practiceRequired": true,
+      "evidencePotential": 0.72,
+      "rationale": "SDC Industrial Training-I in the official JNTUH R25 course structure directly supports projects delivery; applied evidence is still required for career readiness."
+    },
+    {
+      "curriculumTopicKey": "jntuh.r25.mining.course401.scope",
+      "skillKey": "mining.operations",
+      "breadth": 0.72,
+      "depth": 0.58,
+      "confidence": 0.86,
+      "practiceRequired": true,
+      "evidencePotential": 0.48,
+      "rationale": "DC Surface Mining Technology in the official JNTUH R25 course structure directly supports mining operations; applied evidence is still required for career readiness."
+    },
+    {
+      "curriculumTopicKey": "jntuh.r25.mining.course402.scope",
+      "skillKey": "mining.ventilation",
+      "breadth": 0.72,
+      "depth": 0.58,
+      "confidence": 0.86,
+      "practiceRequired": true,
+      "evidencePotential": 0.48,
+      "rationale": "DC Mine Ventilation in the official JNTUH R25 course structure directly supports mining ventilation; applied evidence is still required for career readiness."
+    },
+    {
+      "curriculumTopicKey": "jntuh.r25.mining.course403.scope",
+      "skillKey": "civil.surveying",
+      "breadth": 0.72,
+      "depth": 0.58,
+      "confidence": 0.86,
+      "practiceRequired": true,
+      "evidencePotential": 0.48,
+      "rationale": "DC Mine surveying-II in the official JNTUH R25 course structure directly supports civil surveying; applied evidence is still required for career readiness."
+    },
+    {
+      "curriculumTopicKey": "jntuh.r25.mining.course403.scope",
+      "skillKey": "mining.survey",
+      "breadth": 0.72,
+      "depth": 0.58,
+      "confidence": 0.86,
+      "practiceRequired": true,
+      "evidencePotential": 0.48,
+      "rationale": "DC Mine surveying-II in the official JNTUH R25 course structure directly supports mining survey; applied evidence is still required for career readiness."
+    },
+    {
+      "curriculumTopicKey": "jntuh.r25.mining.course404.scope",
+      "skillKey": "mining.ventilation",
+      "breadth": 0.72,
+      "depth": 0.58,
+      "confidence": 0.86,
+      "practiceRequired": true,
+      "evidencePotential": 0.48,
+      "rationale": "DC Mine Mechanization-I in the official JNTUH R25 course structure directly supports mining ventilation; applied evidence is still required for career readiness."
+    },
+    {
+      "curriculumTopicKey": "jntuh.r25.mining.course405.scope",
+      "skillKey": "mining.operations",
+      "breadth": 0.72,
+      "depth": 0.58,
+      "confidence": 0.86,
+      "practiceRequired": true,
+      "evidencePotential": 0.48,
+      "rationale": "DC Underground Coal Mining Technology in the official JNTUH R25 course structure directly supports mining operations; applied evidence is still required for career readiness."
+    },
+    {
+      "curriculumTopicKey": "jntuh.r25.mining.course407.scope",
+      "skillKey": "civil.surveying",
+      "breadth": 0.55,
+      "depth": 0.62,
+      "confidence": 0.86,
+      "practiceRequired": true,
+      "evidencePotential": 0.72,
+      "rationale": "DCL Mine Surveying -II Lab in the official JNTUH R25 course structure directly supports civil surveying; applied evidence is still required for career readiness."
+    },
+    {
+      "curriculumTopicKey": "jntuh.r25.mining.course407.scope",
+      "skillKey": "mining.survey",
+      "breadth": 0.55,
+      "depth": 0.62,
+      "confidence": 0.86,
+      "practiceRequired": true,
+      "evidencePotential": 0.72,
+      "rationale": "DCL Mine Surveying -II Lab in the official JNTUH R25 course structure directly supports mining survey; applied evidence is still required for career readiness."
+    },
+    {
+      "curriculumTopicKey": "jntuh.r25.mining.course408.scope",
+      "skillKey": "mining.ventilation",
+      "breadth": 0.55,
+      "depth": 0.62,
+      "confidence": 0.86,
+      "practiceRequired": true,
+      "evidencePotential": 0.72,
+      "rationale": "DCL Mine Ventilation Lab in the official JNTUH R25 course structure directly supports mining ventilation; applied evidence is still required for career readiness."
+    },
+    {
+      "curriculumTopicKey": "jntuh.r25.mining.course409.scope",
+      "skillKey": "mining.ventilation",
+      "breadth": 0.55,
+      "depth": 0.62,
+      "confidence": 0.86,
+      "practiceRequired": true,
+      "evidencePotential": 0.72,
+      "rationale": "DCL Mine Mechanization- I lab in the official JNTUH R25 course structure directly supports mining ventilation; applied evidence is still required for career readiness."
+    },
+    {
+      "curriculumTopicKey": "jntuh.r25.mining.course410.scope",
+      "skillKey": "data.analysis",
+      "breadth": 0.72,
+      "depth": 0.58,
+      "confidence": 0.86,
+      "practiceRequired": true,
+      "evidencePotential": 0.48,
+      "rationale": "SDC Introduction to Data Science for Mining Engineering in the official JNTUH R25 course structure directly supports data analysis; applied evidence is still required for career readiness."
+    },
+    {
+      "curriculumTopicKey": "jntuh.r25.mining.course410.scope",
+      "skillKey": "mining.operations",
+      "breadth": 0.72,
+      "depth": 0.58,
+      "confidence": 0.86,
+      "practiceRequired": true,
+      "evidencePotential": 0.48,
+      "rationale": "SDC Introduction to Data Science for Mining Engineering in the official JNTUH R25 course structure directly supports mining operations; applied evidence is still required for career readiness."
+    }
+  ]
+}

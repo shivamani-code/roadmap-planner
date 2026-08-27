@@ -1,0 +1,31 @@
+{
+  "compilerOptions": {
+    "target": "ES2023",
+    "lib": ["ES2023", "DOM", "DOM.Iterable"],
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "baseUrl": ".",
+    "paths": {
+      "@studentos/academic": ["packages/academic/src/index.ts"],
+      "@studentos/career": ["packages/career/src/index.ts"],
+      "@studentos/contracts": ["packages/contracts/src/index.ts"],
+      "@studentos/domain": ["packages/domain/src/index.ts"],
+      "@studentos/database": ["packages/database/src/index.ts"],
+      "@studentos/observability": ["packages/observability/src/index.ts"],
+      "@studentos/planning": ["packages/planning/src/index.ts"]
+    },
+    "strict": true,
+    "noUncheckedIndexedAccess": true,
+    "exactOptionalPropertyTypes": true,
+    "noImplicitOverride": true,
+    "useUnknownInCatchVariables": true,
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "declaration": true,
+    "declarationMap": true,
+    "sourceMap": true,
+    "isolatedModules": true
+  }
+}

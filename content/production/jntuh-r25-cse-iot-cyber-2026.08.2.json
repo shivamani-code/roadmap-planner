@@ -1,0 +1,1008 @@
+{
+  "schemaVersion": "1.0.0",
+  "dataset": {
+    "universityCode": "JNTUH",
+    "regulationCode": "R25",
+    "degreeCode": "BTECH",
+    "branchCode": "CSE_IOT_CYBER",
+    "datasetVersion": "2026.08.2",
+    "effectiveFrom": "2025-07-01",
+    "effectiveTo": null,
+    "source": {
+      "documentId": "jntuh-r25-cse-iot-cyber-course-structure",
+      "title": "JNTUH R25 B.Tech. CSE (IoT and Cyber Security including Blockchain) Course Structure and Syllabus",
+      "sourceUrl": "https://jntuh.ac.in/uploads/academics/R25B.Tech.CSE(IoTandCyberSecurityIncludingBlockchainTechnology)IIIYearSyllabus.pdf",
+      "sha256": "9d02d08322424a32794b0c58295191e3e6553341b9aecb9ad8dacb0c4b5bae43",
+      "publishedAt": "2026-08-12",
+      "retrievedAt": "2026-08-26T00:00:00Z",
+      "usagePermission": "PUBLIC_OFFICIAL"
+    },
+    "synthetic": false
+  },
+  "semesters": [
+    {
+      "number": 1,
+      "academicYear": 1,
+      "subjects": [
+        {
+          "code": "MA101BS",
+          "title": "Matrices and Calculus",
+          "credits": 4.0,
+          "type": "THEORY",
+          "contactHoursPerWeek": 4.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.cse-iot-cyber.ma101bs.scope",
+                  "title": "Matrices and Calculus",
+                  "sourcePage": 1,
+                  "academicDepth": 0.55,
+                  "estimatedAcademicHours": 48.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "PH102BS",
+          "title": "Advanced Engineering Physics",
+          "credits": 3.0,
+          "type": "THEORY",
+          "contactHoursPerWeek": 3.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.cse-iot-cyber.ph102bs.scope",
+                  "title": "Advanced Engineering Physics",
+                  "sourcePage": 1,
+                  "academicDepth": 0.55,
+                  "estimatedAcademicHours": 36.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "CS103ES",
+          "title": "Programming for Problem Solving",
+          "credits": 3.0,
+          "type": "THEORY",
+          "contactHoursPerWeek": 3.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.cse-iot-cyber.cs103es.scope",
+                  "title": "Programming for Problem Solving",
+                  "sourcePage": 1,
+                  "academicDepth": 0.55,
+                  "estimatedAcademicHours": 36.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "EE104ES",
+          "title": "Basic Electrical Engineering",
+          "credits": 3.0,
+          "type": "THEORY",
+          "contactHoursPerWeek": 3.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.cse-iot-cyber.ee104es.scope",
+                  "title": "Basic Electrical Engineering",
+                  "sourcePage": 1,
+                  "academicDepth": 0.55,
+                  "estimatedAcademicHours": 36.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "ME105ES",
+          "title": "Engineering Drawing and Computer Aided Drafting",
+          "credits": 3.0,
+          "type": "THEORY",
+          "contactHoursPerWeek": 4.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.cse-iot-cyber.me105es.scope",
+                  "title": "Engineering Drawing and Computer Aided Drafting",
+                  "sourcePage": 1,
+                  "academicDepth": 0.55,
+                  "estimatedAcademicHours": 36.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "PH106BS",
+          "title": "Advanced Engineering Physics Lab",
+          "credits": 1.0,
+          "type": "LAB",
+          "contactHoursPerWeek": 2.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.cse-iot-cyber.ph106bs.scope",
+                  "title": "Advanced Engineering Physics Lab",
+                  "sourcePage": 1,
+                  "academicDepth": 0.65,
+                  "estimatedAcademicHours": 12.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "CS107ES",
+          "title": "Programming for Problem Solving Lab",
+          "credits": 1.0,
+          "type": "LAB",
+          "contactHoursPerWeek": 2.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.cse-iot-cyber.cs107es.scope",
+                  "title": "Programming for Problem Solving Lab",
+                  "sourcePage": 1,
+                  "academicDepth": 0.65,
+                  "estimatedAcademicHours": 12.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "EE108ES",
+          "title": "Basic Electrical Engineering Lab",
+          "credits": 1.0,
+          "type": "LAB",
+          "contactHoursPerWeek": 2.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.cse-iot-cyber.ee108es.scope",
+                  "title": "Basic Electrical Engineering Lab",
+                  "sourcePage": 1,
+                  "academicDepth": 0.65,
+                  "estimatedAcademicHours": 12.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "CS109ES",
+          "title": "Python Programming Lab",
+          "credits": 1.0,
+          "type": "LAB",
+          "contactHoursPerWeek": 2.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.cse-iot-cyber.cs109es.scope",
+                  "title": "Python Programming Lab",
+                  "sourcePage": 1,
+                  "academicDepth": 0.65,
+                  "estimatedAcademicHours": 12.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": true
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "academicYear": 1,
+      "subjects": [
+        {
+          "code": "MA201BS",
+          "title": "Ordinary Differential Equations and Vector Calculus",
+          "credits": 3.0,
+          "type": "THEORY",
+          "contactHoursPerWeek": 3.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.cse-iot-cyber.ma201bs.scope",
+                  "title": "Ordinary Differential Equations and Vector Calculus",
+                  "sourcePage": 1,
+                  "academicDepth": 0.55,
+                  "estimatedAcademicHours": 36.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "CH202BS",
+          "title": "Engineering Chemistry",
+          "credits": 3.0,
+          "type": "THEORY",
+          "contactHoursPerWeek": 3.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.cse-iot-cyber.ch202bs.scope",
+                  "title": "Engineering Chemistry",
+                  "sourcePage": 1,
+                  "academicDepth": 0.55,
+                  "estimatedAcademicHours": 36.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "CS203ES",
+          "title": "Data Structures",
+          "credits": 3.0,
+          "type": "THEORY",
+          "contactHoursPerWeek": 3.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.cse-iot-cyber.cs203es.scope",
+                  "title": "Data Structures",
+                  "sourcePage": 1,
+                  "academicDepth": 0.55,
+                  "estimatedAcademicHours": 36.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "EC204ES",
+          "title": "Electronic Devices and Circuits",
+          "credits": 3.0,
+          "type": "THEORY",
+          "contactHoursPerWeek": 3.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.cse-iot-cyber.ec204es.scope",
+                  "title": "Electronic Devices and Circuits",
+                  "sourcePage": 1,
+                  "academicDepth": 0.55,
+                  "estimatedAcademicHours": 36.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "EN205HS",
+          "title": "English for Skill Enhancement",
+          "credits": 3.0,
+          "type": "THEORY",
+          "contactHoursPerWeek": 3.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.cse-iot-cyber.en205hs.scope",
+                  "title": "English for Skill Enhancement",
+                  "sourcePage": 1,
+                  "academicDepth": 0.55,
+                  "estimatedAcademicHours": 36.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "CH206BS",
+          "title": "Engineering Chemistry Lab",
+          "credits": 1.0,
+          "type": "LAB",
+          "contactHoursPerWeek": 2.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.cse-iot-cyber.ch206bs.scope",
+                  "title": "Engineering Chemistry Lab",
+                  "sourcePage": 1,
+                  "academicDepth": 0.65,
+                  "estimatedAcademicHours": 12.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "CS207ES",
+          "title": "Data Structures Lab",
+          "credits": 1.0,
+          "type": "LAB",
+          "contactHoursPerWeek": 2.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.cse-iot-cyber.cs207es.scope",
+                  "title": "Data Structures Lab",
+                  "sourcePage": 1,
+                  "academicDepth": 0.65,
+                  "estimatedAcademicHours": 12.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "EN208HS",
+          "title": "English Language and Communication Skills Lab",
+          "credits": 1.0,
+          "type": "LAB",
+          "contactHoursPerWeek": 2.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.cse-iot-cyber.en208hs.scope",
+                  "title": "English Language and Communication Skills Lab",
+                  "sourcePage": 1,
+                  "academicDepth": 0.65,
+                  "estimatedAcademicHours": 12.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "ME209ES",
+          "title": "Engineering Workshop",
+          "credits": 1.0,
+          "type": "LAB",
+          "contactHoursPerWeek": 2.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.cse-iot-cyber.me209es.scope",
+                  "title": "Engineering Workshop",
+                  "sourcePage": 1,
+                  "academicDepth": 0.65,
+                  "estimatedAcademicHours": 12.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "CS210ES",
+          "title": "IT Workshop",
+          "credits": 1.0,
+          "type": "LAB",
+          "contactHoursPerWeek": 2.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.cse-iot-cyber.cs210es.scope",
+                  "title": "IT Workshop",
+                  "sourcePage": 1,
+                  "academicDepth": 0.65,
+                  "estimatedAcademicHours": 12.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": true
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "academicYear": 2,
+      "subjects": [
+        {
+          "code": "MA301BS",
+          "title": "Mathematical and Statistical Foundation",
+          "credits": 3.0,
+          "type": "THEORY",
+          "contactHoursPerWeek": 3.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.cse-iot-cyber.ma301bs.scope",
+                  "title": "Mathematical and Statistical Foundation",
+                  "sourcePage": 1,
+                  "academicDepth": 0.55,
+                  "estimatedAcademicHours": 36.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "IC302PC",
+          "title": "Computer Organization",
+          "credits": 3.0,
+          "type": "THEORY",
+          "contactHoursPerWeek": 3.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.cse-iot-cyber.ic302pc.scope",
+                  "title": "Computer Organization",
+                  "sourcePage": 1,
+                  "academicDepth": 0.55,
+                  "estimatedAcademicHours": 36.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "IC303PC",
+          "title": "Java Programming",
+          "credits": 3.0,
+          "type": "THEORY",
+          "contactHoursPerWeek": 3.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.cse-iot-cyber.ic303pc.scope",
+                  "title": "Java Programming",
+                  "sourcePage": 1,
+                  "academicDepth": 0.55,
+                  "estimatedAcademicHours": 36.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "CS304PC",
+          "title": "Software Engineering",
+          "credits": 3.0,
+          "type": "THEORY",
+          "contactHoursPerWeek": 3.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.cse-iot-cyber.cs304pc.scope",
+                  "title": "Software Engineering",
+                  "sourcePage": 1,
+                  "academicDepth": 0.55,
+                  "estimatedAcademicHours": 36.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "IC305PC",
+          "title": "Introduction to IoT",
+          "credits": 3.0,
+          "type": "THEORY",
+          "contactHoursPerWeek": 3.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.cse-iot-cyber.ic305pc.scope",
+                  "title": "Introduction to IoT",
+                  "sourcePage": 1,
+                  "academicDepth": 0.55,
+                  "estimatedAcademicHours": 36.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "MA306PC",
+          "title": "Computational Mathematics Lab",
+          "credits": 1.0,
+          "type": "LAB",
+          "contactHoursPerWeek": 2.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.cse-iot-cyber.ma306pc.scope",
+                  "title": "Computational Mathematics Lab",
+                  "sourcePage": 1,
+                  "academicDepth": 0.65,
+                  "estimatedAcademicHours": 12.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "IC307PC",
+          "title": "Java Programming Lab",
+          "credits": 1.0,
+          "type": "LAB",
+          "contactHoursPerWeek": 2.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.cse-iot-cyber.ic307pc.scope",
+                  "title": "Java Programming Lab",
+                  "sourcePage": 1,
+                  "academicDepth": 0.65,
+                  "estimatedAcademicHours": 12.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "CS308PC",
+          "title": "Software Engineering Lab",
+          "credits": 1.0,
+          "type": "LAB",
+          "contactHoursPerWeek": 2.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.cse-iot-cyber.cs308pc.scope",
+                  "title": "Software Engineering Lab",
+                  "sourcePage": 1,
+                  "academicDepth": 0.65,
+                  "estimatedAcademicHours": 12.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "IC309PC",
+          "title": "Introduction to IoT Lab",
+          "credits": 1.0,
+          "type": "LAB",
+          "contactHoursPerWeek": 2.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.cse-iot-cyber.ic309pc.scope",
+                  "title": "Introduction to IoT Lab",
+                  "sourcePage": 1,
+                  "academicDepth": 0.65,
+                  "estimatedAcademicHours": 12.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "IC310SD",
+          "title": "Data Visualization-R Programming/Power BI/ Tableau/Google Chart",
+          "credits": 1.0,
+          "type": "THEORY",
+          "contactHoursPerWeek": 2.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.cse-iot-cyber.ic310sd.scope",
+                  "title": "Data Visualization-R Programming/Power BI/ Tableau/Google Chart",
+                  "sourcePage": 1,
+                  "academicDepth": 0.55,
+                  "estimatedAcademicHours": 12.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "academicYear": 2,
+      "subjects": [
+        {
+          "code": "CS401PC",
+          "title": "Discrete Mathematics",
+          "credits": 3.0,
+          "type": "THEORY",
+          "contactHoursPerWeek": 3.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.cse-iot-cyber.cs401pc.scope",
+                  "title": "Discrete Mathematics",
+                  "sourcePage": 2,
+                  "academicDepth": 0.55,
+                  "estimatedAcademicHours": 36.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "CS402PC",
+          "title": "Operating Systems",
+          "credits": 3.0,
+          "type": "THEORY",
+          "contactHoursPerWeek": 3.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.cse-iot-cyber.cs402pc.scope",
+                  "title": "Operating Systems",
+                  "sourcePage": 2,
+                  "academicDepth": 0.55,
+                  "estimatedAcademicHours": 36.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "IC403PC",
+          "title": "Computer Networks",
+          "credits": 3.0,
+          "type": "THEORY",
+          "contactHoursPerWeek": 3.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.cse-iot-cyber.ic403pc.scope",
+                  "title": "Computer Networks",
+                  "sourcePage": 2,
+                  "academicDepth": 0.55,
+                  "estimatedAcademicHours": 36.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "IC404PC",
+          "title": "Cyber Security Essentials",
+          "credits": 3.0,
+          "type": "THEORY",
+          "contactHoursPerWeek": 3.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.cse-iot-cyber.ic404pc.scope",
+                  "title": "Cyber Security Essentials",
+                  "sourcePage": 2,
+                  "academicDepth": 0.55,
+                  "estimatedAcademicHours": 36.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "IC405PC",
+          "title": "Sensors and Devices",
+          "credits": 3.0,
+          "type": "THEORY",
+          "contactHoursPerWeek": 3.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.cse-iot-cyber.ic405pc.scope",
+                  "title": "Sensors and Devices",
+                  "sourcePage": 2,
+                  "academicDepth": 0.55,
+                  "estimatedAcademicHours": 36.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "MS406HS",
+          "title": "Innovation and Entrepreneurship",
+          "credits": 2.0,
+          "type": "THEORY",
+          "contactHoursPerWeek": 2.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.cse-iot-cyber.ms406hs.scope",
+                  "title": "Innovation and Entrepreneurship",
+                  "sourcePage": 2,
+                  "academicDepth": 0.55,
+                  "estimatedAcademicHours": 24.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "CS407PC",
+          "title": "Operating Systems Lab",
+          "credits": 1.0,
+          "type": "LAB",
+          "contactHoursPerWeek": 2.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.cse-iot-cyber.cs407pc.scope",
+                  "title": "Operating Systems Lab",
+                  "sourcePage": 2,
+                  "academicDepth": 0.65,
+                  "estimatedAcademicHours": 12.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "CS408PC",
+          "title": "Computer Networks Lab",
+          "credits": 1.0,
+          "type": "LAB",
+          "contactHoursPerWeek": 2.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.cse-iot-cyber.cs408pc.scope",
+                  "title": "Computer Networks Lab",
+                  "sourcePage": 2,
+                  "academicDepth": 0.65,
+                  "estimatedAcademicHours": 12.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "IC409PC",
+          "title": "Sensors and Devices Lab",
+          "credits": 1.0,
+          "type": "LAB",
+          "contactHoursPerWeek": 2.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.cse-iot-cyber.ic409pc.scope",
+                  "title": "Sensors and Devices Lab",
+                  "sourcePage": 2,
+                  "academicDepth": 0.65,
+                  "estimatedAcademicHours": 12.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "IC410SD",
+          "title": "Node JS/React JS/Django",
+          "credits": 1.0,
+          "type": "THEORY",
+          "contactHoursPerWeek": 2.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.cse-iot-cyber.ic410sd.scope",
+                  "title": "Node JS/React JS/Django",
+                  "sourcePage": 2,
+                  "academicDepth": 0.55,
+                  "estimatedAcademicHours": 12.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "VA400HS",
+          "title": "Indian Knowledge System",
+          "credits": 1.0,
+          "type": "THEORY",
+          "contactHoursPerWeek": 1.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.cse-iot-cyber.va400hs.scope",
+                  "title": "Indian Knowledge System",
+                  "sourcePage": 2,
+                  "academicDepth": 0.55,
+                  "estimatedAcademicHours": 12.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

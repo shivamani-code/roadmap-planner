@@ -1,0 +1,81 @@
+{
+  "schemaVersion": "1.0.0",
+  "datasetVersion": "2026.08.1",
+  "synthetic": true,
+  "projects": [
+    {
+      "key": "project.synthetic-task-api",
+      "version": 1,
+      "title": "Synthetic Task Management API",
+      "goal": "Demonstrate API, database, testing, version-control, and deployment evidence using synthetic requirements.",
+      "roleKeys": ["backend-engineer"],
+      "difficulty": "INTERMEDIATE",
+      "estimatedHours": { "p25": 35, "p50": 48, "p75": 65 },
+      "portfolioValue": 0.8,
+      "prerequisites": [
+        { "skillKey": "programming.oop", "threshold": 0.55, "type": "HARD" },
+        { "skillKey": "backend.rest", "threshold": 0.45, "type": "HARD" },
+        { "skillKey": "db.sql", "threshold": 0.4, "type": "HARD" },
+        { "skillKey": "tools.git", "threshold": 0.35, "type": "HARD" }
+      ],
+      "deliverables": [
+        "Source repository",
+        "API contract",
+        "Automated test report",
+        "Deployment URL",
+        "README and demo"
+      ],
+      "deploymentRequired": true,
+      "milestones": [
+        {
+          "key": "project.synthetic-task-api.schema",
+          "title": "Schema and API contract",
+          "sequence": 1,
+          "weight": 0.2,
+          "estimatedMinutes": 480,
+          "skillOutcomes": ["db.sql", "backend.rest"],
+          "completionCriteria": [
+            "Schema captures required entities",
+            "API contract lists validation and error behavior"
+          ]
+        },
+        {
+          "key": "project.synthetic-task-api.crud",
+          "title": "Core API implementation",
+          "sequence": 2,
+          "weight": 0.3,
+          "estimatedMinutes": 960,
+          "skillOutcomes": ["programming.oop", "backend.rest", "db.sql"],
+          "completionCriteria": [
+            "Required operations work",
+            "Inputs and ownership rules are validated"
+          ]
+        },
+        {
+          "key": "project.synthetic-task-api.quality",
+          "title": "Tests and quality",
+          "sequence": 3,
+          "weight": 0.25,
+          "estimatedMinutes": 600,
+          "skillOutcomes": ["programming.oop", "tools.git"],
+          "completionCriteria": [
+            "Core behavior has automated tests",
+            "Repository history and documentation are reviewable"
+          ]
+        },
+        {
+          "key": "project.synthetic-task-api.deploy",
+          "title": "Deploy and present",
+          "sequence": 4,
+          "weight": 0.25,
+          "estimatedMinutes": 720,
+          "skillOutcomes": ["backend.rest", "tools.git"],
+          "completionCriteria": [
+            "Service is deployed",
+            "README explains setup, architecture, and demo"
+          ]
+        }
+      ]
+    }
+  ]
+}

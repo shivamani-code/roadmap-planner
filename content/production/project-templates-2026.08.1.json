@@ -1,0 +1,683 @@
+{
+  "schemaVersion": "1.0.0",
+  "datasetVersion": "2026.08.1",
+  "synthetic": false,
+  "projects": [
+    {
+      "key": "project.campus-placement-tracker",
+      "version": 1,
+      "title": "Campus Placement Tracker",
+      "goal": "Build a tested application that tracks employers, applications, interviews, and outcomes for a placement cell.",
+      "roleKeys": ["software-engineer", "full-stack-engineer"],
+      "difficulty": "FOUNDATION",
+      "estimatedHours": {
+        "p25": 18,
+        "p50": 28,
+        "p75": 42
+      },
+      "portfolioValue": 0.76,
+      "prerequisites": [
+        {
+          "skillKey": "programming.oop",
+          "threshold": 0.35,
+          "type": "HARD"
+        },
+        {
+          "skillKey": "db.relational",
+          "threshold": 0.35,
+          "type": "HARD"
+        }
+      ],
+      "deliverables": [
+        "Version-controlled source repository",
+        "Automated validation evidence",
+        "Architecture and decision notes",
+        "Published case study"
+      ],
+      "deploymentRequired": true,
+      "milestones": [
+        {
+          "key": "project.campus-placement-tracker.scope",
+          "title": "Scope and evidence plan",
+          "sequence": 1,
+          "weight": 0.15,
+          "estimatedMinutes": 240,
+          "skillOutcomes": ["programming.oop"],
+          "completionCriteria": [
+            "A reviewer can trace requirements, users, risks, and acceptance criteria."
+          ]
+        },
+        {
+          "key": "project.campus-placement-tracker.build",
+          "title": "Working implementation",
+          "sequence": 2,
+          "weight": 0.45,
+          "estimatedMinutes": 900,
+          "skillOutcomes": [
+            "programming.oop",
+            "db.relational",
+            "engineering.testing",
+            "tools.git"
+          ],
+          "completionCriteria": [
+            "The primary user journey works from persisted input to verified output."
+          ]
+        },
+        {
+          "key": "project.campus-placement-tracker.quality",
+          "title": "Quality and validation",
+          "sequence": 3,
+          "weight": 0.25,
+          "estimatedMinutes": 480,
+          "skillOutcomes": ["engineering.testing", "tools.git"],
+          "completionCriteria": [
+            "Tests, validation, accessibility or data-quality checks cover the documented risks."
+          ]
+        },
+        {
+          "key": "project.campus-placement-tracker.release",
+          "title": "Release and case study",
+          "sequence": 4,
+          "weight": 0.15,
+          "estimatedMinutes": 300,
+          "skillOutcomes": ["projects.delivery", "communication.technical"],
+          "completionCriteria": [
+            "A deployed result, reproducible setup, and concise case study are publicly reviewable."
+          ]
+        }
+      ]
+    },
+    {
+      "key": "project.issue-triage-service",
+      "version": 1,
+      "title": "Issue Triage Service",
+      "goal": "Build a documented service that accepts, prioritizes, assigns, and reports software issues with an auditable workflow.",
+      "roleKeys": ["software-engineer", "backend-engineer"],
+      "difficulty": "FOUNDATION",
+      "estimatedHours": {
+        "p25": 20,
+        "p50": 31,
+        "p75": 46
+      },
+      "portfolioValue": 0.785,
+      "prerequisites": [
+        {
+          "skillKey": "backend.api",
+          "threshold": 0.35,
+          "type": "HARD"
+        },
+        {
+          "skillKey": "db.relational",
+          "threshold": 0.35,
+          "type": "HARD"
+        }
+      ],
+      "deliverables": [
+        "Version-controlled source repository",
+        "Automated validation evidence",
+        "Architecture and decision notes",
+        "Published case study"
+      ],
+      "deploymentRequired": true,
+      "milestones": [
+        {
+          "key": "project.issue-triage-service.scope",
+          "title": "Scope and evidence plan",
+          "sequence": 1,
+          "weight": 0.15,
+          "estimatedMinutes": 270,
+          "skillOutcomes": ["backend.api"],
+          "completionCriteria": [
+            "A reviewer can trace requirements, users, risks, and acceptance criteria."
+          ]
+        },
+        {
+          "key": "project.issue-triage-service.build",
+          "title": "Working implementation",
+          "sequence": 2,
+          "weight": 0.45,
+          "estimatedMinutes": 930,
+          "skillOutcomes": [
+            "backend.api",
+            "db.relational",
+            "engineering.testing",
+            "communication.technical"
+          ],
+          "completionCriteria": [
+            "The primary user journey works from persisted input to verified output."
+          ]
+        },
+        {
+          "key": "project.issue-triage-service.quality",
+          "title": "Quality and validation",
+          "sequence": 3,
+          "weight": 0.25,
+          "estimatedMinutes": 510,
+          "skillOutcomes": ["engineering.testing", "communication.technical"],
+          "completionCriteria": [
+            "Tests, validation, accessibility or data-quality checks cover the documented risks."
+          ]
+        },
+        {
+          "key": "project.issue-triage-service.release",
+          "title": "Release and case study",
+          "sequence": 4,
+          "weight": 0.15,
+          "estimatedMinutes": 330,
+          "skillOutcomes": ["projects.delivery", "communication.technical"],
+          "completionCriteria": [
+            "A deployed result, reproducible setup, and concise case study are publicly reviewable."
+          ]
+        }
+      ]
+    },
+    {
+      "key": "project.jntuh-study-planner-api",
+      "version": 1,
+      "title": "JNTUH Study Planner API",
+      "goal": "Build and deploy a secure REST API for semester subjects, study sessions, deadlines, and completion evidence.",
+      "roleKeys": ["backend-engineer"],
+      "difficulty": "INTERMEDIATE",
+      "estimatedHours": {
+        "p25": 22,
+        "p50": 34,
+        "p75": 50
+      },
+      "portfolioValue": 0.81,
+      "prerequisites": [
+        {
+          "skillKey": "backend.api",
+          "threshold": 0.35,
+          "type": "HARD"
+        },
+        {
+          "skillKey": "db.relational",
+          "threshold": 0.35,
+          "type": "HARD"
+        }
+      ],
+      "deliverables": [
+        "Version-controlled source repository",
+        "Automated validation evidence",
+        "Architecture and decision notes",
+        "Published case study"
+      ],
+      "deploymentRequired": true,
+      "milestones": [
+        {
+          "key": "project.jntuh-study-planner-api.scope",
+          "title": "Scope and evidence plan",
+          "sequence": 1,
+          "weight": 0.15,
+          "estimatedMinutes": 300,
+          "skillOutcomes": ["backend.api"],
+          "completionCriteria": [
+            "A reviewer can trace requirements, users, risks, and acceptance criteria."
+          ]
+        },
+        {
+          "key": "project.jntuh-study-planner-api.build",
+          "title": "Working implementation",
+          "sequence": 2,
+          "weight": 0.45,
+          "estimatedMinutes": 960,
+          "skillOutcomes": [
+            "backend.api",
+            "db.relational",
+            "backend.security",
+            "deployment.devops"
+          ],
+          "completionCriteria": [
+            "The primary user journey works from persisted input to verified output."
+          ]
+        },
+        {
+          "key": "project.jntuh-study-planner-api.quality",
+          "title": "Quality and validation",
+          "sequence": 3,
+          "weight": 0.25,
+          "estimatedMinutes": 540,
+          "skillOutcomes": ["backend.security", "deployment.devops"],
+          "completionCriteria": [
+            "Tests, validation, accessibility or data-quality checks cover the documented risks."
+          ]
+        },
+        {
+          "key": "project.jntuh-study-planner-api.release",
+          "title": "Release and case study",
+          "sequence": 4,
+          "weight": 0.15,
+          "estimatedMinutes": 360,
+          "skillOutcomes": ["projects.delivery", "communication.technical"],
+          "completionCriteria": [
+            "A deployed result, reproducible setup, and concise case study are publicly reviewable."
+          ]
+        }
+      ]
+    },
+    {
+      "key": "project.secure-file-metadata-api",
+      "version": 1,
+      "title": "Secure File Metadata API",
+      "goal": "Build a secure metadata service with authorization, validation, automated tests, observability, and deployment documentation.",
+      "roleKeys": ["backend-engineer"],
+      "difficulty": "INTERMEDIATE",
+      "estimatedHours": {
+        "p25": 24,
+        "p50": 37,
+        "p75": 54
+      },
+      "portfolioValue": 0.835,
+      "prerequisites": [
+        {
+          "skillKey": "backend.api",
+          "threshold": 0.35,
+          "type": "HARD"
+        },
+        {
+          "skillKey": "backend.security",
+          "threshold": 0.35,
+          "type": "HARD"
+        }
+      ],
+      "deliverables": [
+        "Version-controlled source repository",
+        "Automated validation evidence",
+        "Architecture and decision notes",
+        "Published case study"
+      ],
+      "deploymentRequired": true,
+      "milestones": [
+        {
+          "key": "project.secure-file-metadata-api.scope",
+          "title": "Scope and evidence plan",
+          "sequence": 1,
+          "weight": 0.15,
+          "estimatedMinutes": 330,
+          "skillOutcomes": ["backend.api"],
+          "completionCriteria": [
+            "A reviewer can trace requirements, users, risks, and acceptance criteria."
+          ]
+        },
+        {
+          "key": "project.secure-file-metadata-api.build",
+          "title": "Working implementation",
+          "sequence": 2,
+          "weight": 0.45,
+          "estimatedMinutes": 990,
+          "skillOutcomes": [
+            "backend.api",
+            "backend.security",
+            "engineering.testing",
+            "deployment.devops"
+          ],
+          "completionCriteria": [
+            "The primary user journey works from persisted input to verified output."
+          ]
+        },
+        {
+          "key": "project.secure-file-metadata-api.quality",
+          "title": "Quality and validation",
+          "sequence": 3,
+          "weight": 0.25,
+          "estimatedMinutes": 570,
+          "skillOutcomes": ["engineering.testing", "deployment.devops"],
+          "completionCriteria": [
+            "Tests, validation, accessibility or data-quality checks cover the documented risks."
+          ]
+        },
+        {
+          "key": "project.secure-file-metadata-api.release",
+          "title": "Release and case study",
+          "sequence": 4,
+          "weight": 0.15,
+          "estimatedMinutes": 390,
+          "skillOutcomes": ["projects.delivery", "communication.technical"],
+          "completionCriteria": [
+            "A deployed result, reproducible setup, and concise case study are publicly reviewable."
+          ]
+        }
+      ]
+    },
+    {
+      "key": "project.student-progress-portal",
+      "version": 1,
+      "title": "Student Progress Portal",
+      "goal": "Build an accessible full-stack portal that turns course and task records into clear weekly progress views.",
+      "roleKeys": ["full-stack-engineer"],
+      "difficulty": "INTERMEDIATE",
+      "estimatedHours": {
+        "p25": 26,
+        "p50": 40,
+        "p75": 58
+      },
+      "portfolioValue": 0.86,
+      "prerequisites": [
+        {
+          "skillKey": "web.fundamentals",
+          "threshold": 0.35,
+          "type": "HARD"
+        },
+        {
+          "skillKey": "web.javascript",
+          "threshold": 0.35,
+          "type": "HARD"
+        }
+      ],
+      "deliverables": [
+        "Version-controlled source repository",
+        "Automated validation evidence",
+        "Architecture and decision notes",
+        "Published case study"
+      ],
+      "deploymentRequired": true,
+      "milestones": [
+        {
+          "key": "project.student-progress-portal.scope",
+          "title": "Scope and evidence plan",
+          "sequence": 1,
+          "weight": 0.15,
+          "estimatedMinutes": 360,
+          "skillOutcomes": ["web.fundamentals"],
+          "completionCriteria": [
+            "A reviewer can trace requirements, users, risks, and acceptance criteria."
+          ]
+        },
+        {
+          "key": "project.student-progress-portal.build",
+          "title": "Working implementation",
+          "sequence": 2,
+          "weight": 0.45,
+          "estimatedMinutes": 1020,
+          "skillOutcomes": [
+            "web.fundamentals",
+            "web.javascript",
+            "web.react",
+            "backend.api",
+            "db.relational"
+          ],
+          "completionCriteria": [
+            "The primary user journey works from persisted input to verified output."
+          ]
+        },
+        {
+          "key": "project.student-progress-portal.quality",
+          "title": "Quality and validation",
+          "sequence": 3,
+          "weight": 0.25,
+          "estimatedMinutes": 600,
+          "skillOutcomes": ["backend.api", "db.relational"],
+          "completionCriteria": [
+            "Tests, validation, accessibility or data-quality checks cover the documented risks."
+          ]
+        },
+        {
+          "key": "project.student-progress-portal.release",
+          "title": "Release and case study",
+          "sequence": 4,
+          "weight": 0.15,
+          "estimatedMinutes": 420,
+          "skillOutcomes": ["projects.delivery", "communication.technical"],
+          "completionCriteria": [
+            "A deployed result, reproducible setup, and concise case study are publicly reviewable."
+          ]
+        }
+      ]
+    },
+    {
+      "key": "project.college-event-platform",
+      "version": 1,
+      "title": "College Event Platform",
+      "goal": "Build a responsive event discovery and registration platform with role-based administration and production deployment.",
+      "roleKeys": ["full-stack-engineer", "software-engineer"],
+      "difficulty": "INTERMEDIATE",
+      "estimatedHours": {
+        "p25": 28,
+        "p50": 43,
+        "p75": 62
+      },
+      "portfolioValue": 0.885,
+      "prerequisites": [
+        {
+          "skillKey": "web.react",
+          "threshold": 0.35,
+          "type": "HARD"
+        },
+        {
+          "skillKey": "backend.api",
+          "threshold": 0.35,
+          "type": "HARD"
+        }
+      ],
+      "deliverables": [
+        "Version-controlled source repository",
+        "Automated validation evidence",
+        "Architecture and decision notes",
+        "Published case study"
+      ],
+      "deploymentRequired": true,
+      "milestones": [
+        {
+          "key": "project.college-event-platform.scope",
+          "title": "Scope and evidence plan",
+          "sequence": 1,
+          "weight": 0.15,
+          "estimatedMinutes": 390,
+          "skillOutcomes": ["web.react"],
+          "completionCriteria": [
+            "A reviewer can trace requirements, users, risks, and acceptance criteria."
+          ]
+        },
+        {
+          "key": "project.college-event-platform.build",
+          "title": "Working implementation",
+          "sequence": 2,
+          "weight": 0.45,
+          "estimatedMinutes": 1050,
+          "skillOutcomes": [
+            "web.react",
+            "backend.api",
+            "backend.security",
+            "engineering.testing",
+            "deployment.devops"
+          ],
+          "completionCriteria": [
+            "The primary user journey works from persisted input to verified output."
+          ]
+        },
+        {
+          "key": "project.college-event-platform.quality",
+          "title": "Quality and validation",
+          "sequence": 3,
+          "weight": 0.25,
+          "estimatedMinutes": 630,
+          "skillOutcomes": ["engineering.testing", "deployment.devops"],
+          "completionCriteria": [
+            "Tests, validation, accessibility or data-quality checks cover the documented risks."
+          ]
+        },
+        {
+          "key": "project.college-event-platform.release",
+          "title": "Release and case study",
+          "sequence": 4,
+          "weight": 0.15,
+          "estimatedMinutes": 450,
+          "skillOutcomes": ["projects.delivery", "communication.technical"],
+          "completionCriteria": [
+            "A deployed result, reproducible setup, and concise case study are publicly reviewable."
+          ]
+        }
+      ]
+    },
+    {
+      "key": "project.placement-insights-dashboard",
+      "version": 1,
+      "title": "Placement Insights Dashboard",
+      "goal": "Analyze a documented placement dataset and publish a reproducible dashboard that explains trends, limitations, and decisions.",
+      "roleKeys": ["data-analyst"],
+      "difficulty": "ADVANCED",
+      "estimatedHours": {
+        "p25": 30,
+        "p50": 46,
+        "p75": 66
+      },
+      "portfolioValue": 0.91,
+      "prerequisites": [
+        {
+          "skillKey": "data.python",
+          "threshold": 0.35,
+          "type": "HARD"
+        },
+        {
+          "skillKey": "data.statistics",
+          "threshold": 0.35,
+          "type": "HARD"
+        }
+      ],
+      "deliverables": [
+        "Version-controlled source repository",
+        "Automated validation evidence",
+        "Architecture and decision notes",
+        "Published case study"
+      ],
+      "deploymentRequired": true,
+      "milestones": [
+        {
+          "key": "project.placement-insights-dashboard.scope",
+          "title": "Scope and evidence plan",
+          "sequence": 1,
+          "weight": 0.15,
+          "estimatedMinutes": 420,
+          "skillOutcomes": ["data.python"],
+          "completionCriteria": [
+            "A reviewer can trace requirements, users, risks, and acceptance criteria."
+          ]
+        },
+        {
+          "key": "project.placement-insights-dashboard.build",
+          "title": "Working implementation",
+          "sequence": 2,
+          "weight": 0.45,
+          "estimatedMinutes": 1080,
+          "skillOutcomes": [
+            "data.python",
+            "data.statistics",
+            "data.analysis",
+            "data.visualization",
+            "communication.technical"
+          ],
+          "completionCriteria": [
+            "The primary user journey works from persisted input to verified output."
+          ]
+        },
+        {
+          "key": "project.placement-insights-dashboard.quality",
+          "title": "Quality and validation",
+          "sequence": 3,
+          "weight": 0.25,
+          "estimatedMinutes": 660,
+          "skillOutcomes": ["data.visualization", "communication.technical"],
+          "completionCriteria": [
+            "Tests, validation, accessibility or data-quality checks cover the documented risks."
+          ]
+        },
+        {
+          "key": "project.placement-insights-dashboard.release",
+          "title": "Release and case study",
+          "sequence": 4,
+          "weight": 0.15,
+          "estimatedMinutes": 480,
+          "skillOutcomes": ["projects.delivery", "communication.technical"],
+          "completionCriteria": [
+            "A deployed result, reproducible setup, and concise case study are publicly reviewable."
+          ]
+        }
+      ]
+    },
+    {
+      "key": "project.telangana-open-data-study",
+      "version": 1,
+      "title": "Telangana Open Data Study",
+      "goal": "Create a reproducible analysis of a public Telangana dataset with data-quality checks, visual findings, and a decision brief.",
+      "roleKeys": ["data-analyst"],
+      "difficulty": "ADVANCED",
+      "estimatedHours": {
+        "p25": 32,
+        "p50": 49,
+        "p75": 70
+      },
+      "portfolioValue": 0.935,
+      "prerequisites": [
+        {
+          "skillKey": "db.relational",
+          "threshold": 0.35,
+          "type": "HARD"
+        },
+        {
+          "skillKey": "data.python",
+          "threshold": 0.35,
+          "type": "HARD"
+        }
+      ],
+      "deliverables": [
+        "Version-controlled source repository",
+        "Automated validation evidence",
+        "Architecture and decision notes",
+        "Published case study"
+      ],
+      "deploymentRequired": true,
+      "milestones": [
+        {
+          "key": "project.telangana-open-data-study.scope",
+          "title": "Scope and evidence plan",
+          "sequence": 1,
+          "weight": 0.15,
+          "estimatedMinutes": 450,
+          "skillOutcomes": ["db.relational"],
+          "completionCriteria": [
+            "A reviewer can trace requirements, users, risks, and acceptance criteria."
+          ]
+        },
+        {
+          "key": "project.telangana-open-data-study.build",
+          "title": "Working implementation",
+          "sequence": 2,
+          "weight": 0.45,
+          "estimatedMinutes": 1110,
+          "skillOutcomes": [
+            "db.relational",
+            "data.python",
+            "data.analysis",
+            "data.visualization",
+            "projects.delivery"
+          ],
+          "completionCriteria": [
+            "The primary user journey works from persisted input to verified output."
+          ]
+        },
+        {
+          "key": "project.telangana-open-data-study.quality",
+          "title": "Quality and validation",
+          "sequence": 3,
+          "weight": 0.25,
+          "estimatedMinutes": 690,
+          "skillOutcomes": ["data.visualization", "projects.delivery"],
+          "completionCriteria": [
+            "Tests, validation, accessibility or data-quality checks cover the documented risks."
+          ]
+        },
+        {
+          "key": "project.telangana-open-data-study.release",
+          "title": "Release and case study",
+          "sequence": 4,
+          "weight": 0.15,
+          "estimatedMinutes": 510,
+          "skillOutcomes": ["projects.delivery", "communication.technical"],
+          "completionCriteria": [
+            "A deployed result, reproducible setup, and concise case study are publicly reviewable."
+          ]
+        }
+      ]
+    }
+  ]
+}

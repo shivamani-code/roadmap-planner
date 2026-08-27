@@ -1,0 +1,393 @@
+{
+  "schemaVersion": "1.0.0",
+  "mappingVersion": 2,
+  "curriculumDatasetVersion": "2026.08.2",
+  "careerDatasetVersion": "2026.08.2",
+  "review": {
+    "editorId": "studentos-content-editor",
+    "reviewerId": "studentos-content-reviewer",
+    "reviewedAt": "2026-08-26T00:00:00Z"
+  },
+  "mappings": [
+    {
+      "curriculumTopicKey": "jntuh.r25.me.me103es.scope",
+      "skillKey": "programming.fundamentals",
+      "breadth": 0.72,
+      "depth": 0.58,
+      "confidence": 0.86,
+      "practiceRequired": true,
+      "evidencePotential": 0.48,
+      "rationale": "C Programming and Data Structures in the official JNTUH R25 course structure directly supports programming fundamentals; applied evidence is still required for career readiness."
+    },
+    {
+      "curriculumTopicKey": "jntuh.r25.me.me103es.scope",
+      "skillKey": "dsa.core",
+      "breadth": 0.72,
+      "depth": 0.58,
+      "confidence": 0.86,
+      "practiceRequired": true,
+      "evidencePotential": 0.48,
+      "rationale": "C Programming and Data Structures in the official JNTUH R25 course structure directly supports dsa core; applied evidence is still required for career readiness."
+    },
+    {
+      "curriculumTopicKey": "jntuh.r25.me.me104es.scope",
+      "skillKey": "mechanical.mechanics",
+      "breadth": 0.72,
+      "depth": 0.58,
+      "confidence": 0.86,
+      "practiceRequired": true,
+      "evidencePotential": 0.48,
+      "rationale": "Engineering Mechanics in the official JNTUH R25 course structure directly supports mechanical mechanics; applied evidence is still required for career readiness."
+    },
+    {
+      "curriculumTopicKey": "jntuh.r25.me.en105hs.scope",
+      "skillKey": "communication.technical",
+      "breadth": 0.72,
+      "depth": 0.58,
+      "confidence": 0.86,
+      "practiceRequired": true,
+      "evidencePotential": 0.48,
+      "rationale": "English for Skill Enhancement in the official JNTUH R25 course structure directly supports communication technical; applied evidence is still required for career readiness."
+    },
+    {
+      "curriculumTopicKey": "jntuh.r25.me.cs107es.scope",
+      "skillKey": "programming.fundamentals",
+      "breadth": 0.55,
+      "depth": 0.62,
+      "confidence": 0.86,
+      "practiceRequired": true,
+      "evidencePotential": 0.72,
+      "rationale": "C Programming and Data Structures Lab in the official JNTUH R25 course structure directly supports programming fundamentals; applied evidence is still required for career readiness."
+    },
+    {
+      "curriculumTopicKey": "jntuh.r25.me.cs107es.scope",
+      "skillKey": "dsa.core",
+      "breadth": 0.55,
+      "depth": 0.62,
+      "confidence": 0.86,
+      "practiceRequired": true,
+      "evidencePotential": 0.72,
+      "rationale": "C Programming and Data Structures Lab in the official JNTUH R25 course structure directly supports dsa core; applied evidence is still required for career readiness."
+    },
+    {
+      "curriculumTopicKey": "jntuh.r25.me.en109hs.scope",
+      "skillKey": "communication.technical",
+      "breadth": 0.55,
+      "depth": 0.62,
+      "confidence": 0.86,
+      "practiceRequired": true,
+      "evidencePotential": 0.72,
+      "rationale": "English Language and Communication Skills Lab in the official JNTUH R25 course structure directly supports communication technical; applied evidence is still required for career readiness."
+    },
+    {
+      "curriculumTopicKey": "jntuh.r25.me.cs203es.scope",
+      "skillKey": "programming.fundamentals",
+      "breadth": 0.72,
+      "depth": 0.58,
+      "confidence": 0.86,
+      "practiceRequired": true,
+      "evidencePotential": 0.48,
+      "rationale": "Python Programming in the official JNTUH R25 course structure directly supports programming fundamentals; applied evidence is still required for career readiness."
+    },
+    {
+      "curriculumTopicKey": "jntuh.r25.me.me205es.scope",
+      "skillKey": "mechanical.thermal",
+      "breadth": 0.72,
+      "depth": 0.58,
+      "confidence": 0.86,
+      "practiceRequired": true,
+      "evidencePotential": 0.48,
+      "rationale": "Thermodynamics in the official JNTUH R25 course structure directly supports mechanical thermal; applied evidence is still required for career readiness."
+    },
+    {
+      "curriculumTopicKey": "jntuh.r25.me.me206es.scope",
+      "skillKey": "mechanical.design",
+      "breadth": 0.72,
+      "depth": 0.58,
+      "confidence": 0.86,
+      "practiceRequired": true,
+      "evidencePotential": 0.48,
+      "rationale": "Engineering Drawing and Computer Aided Drafting in the official JNTUH R25 course structure directly supports mechanical design; applied evidence is still required for career readiness."
+    },
+    {
+      "curriculumTopicKey": "jntuh.r25.me.cs208es.scope",
+      "skillKey": "programming.fundamentals",
+      "breadth": 0.55,
+      "depth": 0.62,
+      "confidence": 0.86,
+      "practiceRequired": true,
+      "evidencePotential": 0.72,
+      "rationale": "Python Programming Lab in the official JNTUH R25 course structure directly supports programming fundamentals; applied evidence is still required for career readiness."
+    },
+    {
+      "curriculumTopicKey": "jntuh.r25.me.ma301bs.scope",
+      "skillKey": "data.statistics",
+      "breadth": 0.72,
+      "depth": 0.58,
+      "confidence": 0.86,
+      "practiceRequired": true,
+      "evidencePotential": 0.48,
+      "rationale": "Probability, Statistics and Complex Variables in the official JNTUH R25 course structure directly supports data statistics; applied evidence is still required for career readiness."
+    },
+    {
+      "curriculumTopicKey": "jntuh.r25.me.me302pc.scope",
+      "skillKey": "mechanical.mechanics",
+      "breadth": 0.72,
+      "depth": 0.58,
+      "confidence": 0.86,
+      "practiceRequired": true,
+      "evidencePotential": 0.48,
+      "rationale": "Mechanics of Solids in the official JNTUH R25 course structure directly supports mechanical mechanics; applied evidence is still required for career readiness."
+    },
+    {
+      "curriculumTopicKey": "jntuh.r25.me.me304pc.scope",
+      "skillKey": "mechanical.manufacturing",
+      "breadth": 0.72,
+      "depth": 0.58,
+      "confidence": 0.86,
+      "practiceRequired": true,
+      "evidencePotential": 0.48,
+      "rationale": "Production Technology in the official JNTUH R25 course structure directly supports mechanical manufacturing; applied evidence is still required for career readiness."
+    },
+    {
+      "curriculumTopicKey": "jntuh.r25.me.me307pc.scope",
+      "skillKey": "mechanical.manufacturing",
+      "breadth": 0.55,
+      "depth": 0.62,
+      "confidence": 0.86,
+      "practiceRequired": true,
+      "evidencePotential": 0.72,
+      "rationale": "Production Technology Lab in the official JNTUH R25 course structure directly supports mechanical manufacturing; applied evidence is still required for career readiness."
+    },
+    {
+      "curriculumTopicKey": "jntuh.r25.me.me308pc.scope",
+      "skillKey": "mechanical.mechanics",
+      "breadth": 0.55,
+      "depth": 0.62,
+      "confidence": 0.86,
+      "practiceRequired": true,
+      "evidencePotential": 0.72,
+      "rationale": "Material Science and Mechanics of Solids Lab in the official JNTUH R25 course structure directly supports mechanical mechanics; applied evidence is still required for career readiness."
+    },
+    {
+      "curriculumTopicKey": "jntuh.r25.me.me402pc.scope",
+      "skillKey": "mechanical.thermal",
+      "breadth": 0.72,
+      "depth": 0.58,
+      "confidence": 0.86,
+      "practiceRequired": true,
+      "evidencePotential": 0.48,
+      "rationale": "Thermal Engineering - I in the official JNTUH R25 course structure directly supports mechanical thermal; applied evidence is still required for career readiness."
+    },
+    {
+      "curriculumTopicKey": "jntuh.r25.me.me403pc.scope",
+      "skillKey": "mechanical.design",
+      "breadth": 0.72,
+      "depth": 0.58,
+      "confidence": 0.86,
+      "practiceRequired": true,
+      "evidencePotential": 0.48,
+      "rationale": "Design of Machine Elements in the official JNTUH R25 course structure directly supports mechanical design; applied evidence is still required for career readiness."
+    },
+    {
+      "curriculumTopicKey": "jntuh.r25.me.me404pc.scope",
+      "skillKey": "electronics.control",
+      "breadth": 0.72,
+      "depth": 0.58,
+      "confidence": 0.86,
+      "practiceRequired": true,
+      "evidencePotential": 0.48,
+      "rationale": "Instrumentation and Control Systems in the official JNTUH R25 course structure directly supports electronics control; applied evidence is still required for career readiness."
+    },
+    {
+      "curriculumTopicKey": "jntuh.r25.me.me408pc.scope",
+      "skillKey": "electronics.control",
+      "breadth": 0.55,
+      "depth": 0.62,
+      "confidence": 0.86,
+      "practiceRequired": true,
+      "evidencePotential": 0.72,
+      "rationale": "Instrumentation and Control Systems Lab in the official JNTUH R25 course structure directly supports electronics control; applied evidence is still required for career readiness."
+    },
+    {
+      "curriculumTopicKey": "jntuh.r25.me.me409pc.scope",
+      "skillKey": "mechanical.thermal",
+      "breadth": 0.55,
+      "depth": 0.62,
+      "confidence": 0.86,
+      "practiceRequired": true,
+      "evidencePotential": 0.72,
+      "rationale": "Thermal Engineering-I Lab in the official JNTUH R25 course structure directly supports mechanical thermal; applied evidence is still required for career readiness."
+    },
+    {
+      "curriculumTopicKey": "jntuh.r25.me.me410sd.scope",
+      "skillKey": "programming.fundamentals",
+      "breadth": 0.72,
+      "depth": 0.58,
+      "confidence": 0.86,
+      "practiceRequired": true,
+      "evidencePotential": 0.48,
+      "rationale": "Data Analytics and Python for Engineers in the official JNTUH R25 course structure directly supports programming fundamentals; applied evidence is still required for career readiness."
+    },
+    {
+      "curriculumTopicKey": "jntuh.r25.me.me410sd.scope",
+      "skillKey": "data.analysis",
+      "breadth": 0.72,
+      "depth": 0.58,
+      "confidence": 0.86,
+      "practiceRequired": true,
+      "evidencePotential": 0.48,
+      "rationale": "Data Analytics and Python for Engineers in the official JNTUH R25 course structure directly supports data analysis; applied evidence is still required for career readiness."
+    },
+    {
+      "curriculumTopicKey": "jntuh.r25.me.me502pc.scope",
+      "skillKey": "mechanical.thermal",
+      "breadth": 0.72,
+      "depth": 0.58,
+      "confidence": 0.86,
+      "practiceRequired": true,
+      "evidencePotential": 0.48,
+      "rationale": "Thermal Engineering - II in the official JNTUH R25 course structure directly supports mechanical thermal; applied evidence is still required for career readiness."
+    },
+    {
+      "curriculumTopicKey": "jntuh.r25.me.me503pc.scope",
+      "skillKey": "mechanical.manufacturing",
+      "breadth": 0.72,
+      "depth": 0.58,
+      "confidence": 0.86,
+      "practiceRequired": true,
+      "evidencePotential": 0.48,
+      "rationale": "Metrology and Machine Tools in the official JNTUH R25 course structure directly supports mechanical manufacturing; applied evidence is still required for career readiness."
+    },
+    {
+      "curriculumTopicKey": "jntuh.r25.me.me504pc.scope",
+      "skillKey": "mechanical.thermal",
+      "breadth": 0.55,
+      "depth": 0.62,
+      "confidence": 0.86,
+      "practiceRequired": true,
+      "evidencePotential": 0.72,
+      "rationale": "Thermal Engineering - II Lab in the official JNTUH R25 course structure directly supports mechanical thermal; applied evidence is still required for career readiness."
+    },
+    {
+      "curriculumTopicKey": "jntuh.r25.me.me505pc.scope",
+      "skillKey": "mechanical.manufacturing",
+      "breadth": 0.55,
+      "depth": 0.62,
+      "confidence": 0.86,
+      "practiceRequired": true,
+      "evidencePotential": 0.72,
+      "rationale": "Metrology and Machine Tools Lab in the official JNTUH R25 course structure directly supports mechanical manufacturing; applied evidence is still required for career readiness."
+    },
+    {
+      "curriculumTopicKey": "jntuh.r25.me.me506pc.scope",
+      "skillKey": "mechanical.design",
+      "breadth": 0.55,
+      "depth": 0.62,
+      "confidence": 0.86,
+      "practiceRequired": true,
+      "evidencePotential": 0.72,
+      "rationale": "Modelling and Drafting Lab in the official JNTUH R25 course structure directly supports mechanical design; applied evidence is still required for career readiness."
+    },
+    {
+      "curriculumTopicKey": "jntuh.r25.me.me507pc.scope",
+      "skillKey": "projects.delivery",
+      "breadth": 0.72,
+      "depth": 0.58,
+      "confidence": 0.86,
+      "practiceRequired": true,
+      "evidencePotential": 0.72,
+      "rationale": "Field Based Research Project in the official JNTUH R25 course structure directly supports projects delivery; applied evidence is still required for career readiness."
+    },
+    {
+      "curriculumTopicKey": "jntuh.r25.me.me602pc.scope",
+      "skillKey": "mechanical.thermal",
+      "breadth": 0.72,
+      "depth": 0.58,
+      "confidence": 0.86,
+      "practiceRequired": true,
+      "evidencePotential": 0.48,
+      "rationale": "Heat Transfer in the official JNTUH R25 course structure directly supports mechanical thermal; applied evidence is still required for career readiness."
+    },
+    {
+      "curriculumTopicKey": "jntuh.r25.me.me604pc.scope",
+      "skillKey": "mechanical.thermal",
+      "breadth": 0.55,
+      "depth": 0.62,
+      "confidence": 0.86,
+      "practiceRequired": true,
+      "evidencePotential": 0.72,
+      "rationale": "Heat Transfer Lab in the official JNTUH R25 course structure directly supports mechanical thermal; applied evidence is still required for career readiness."
+    },
+    {
+      "curriculumTopicKey": "jntuh.r25.me.me605pc.scope",
+      "skillKey": "mechanical.manufacturing",
+      "breadth": 0.55,
+      "depth": 0.62,
+      "confidence": 0.86,
+      "practiceRequired": true,
+      "evidencePotential": 0.72,
+      "rationale": "Applied Manufacturing Lab in the official JNTUH R25 course structure directly supports mechanical manufacturing; applied evidence is still required for career readiness."
+    },
+    {
+      "curriculumTopicKey": "jntuh.r25.me.en607hs.scope",
+      "skillKey": "communication.technical",
+      "breadth": 0.55,
+      "depth": 0.62,
+      "confidence": 0.86,
+      "practiceRequired": true,
+      "evidencePotential": 0.72,
+      "rationale": "English for Employability Skills Lab in the official JNTUH R25 course structure directly supports communication technical; applied evidence is still required for career readiness."
+    },
+    {
+      "curriculumTopicKey": "jntuh.r25.me.me702pc.scope",
+      "skillKey": "mechanical.automation",
+      "breadth": 0.72,
+      "depth": 0.58,
+      "confidence": 0.86,
+      "practiceRequired": true,
+      "evidencePotential": 0.48,
+      "rationale": "Robotics and Automation in the official JNTUH R25 course structure directly supports mechanical automation; applied evidence is still required for career readiness."
+    },
+    {
+      "curriculumTopicKey": "jntuh.r25.me.me705pc.scope",
+      "skillKey": "mechanical.automation",
+      "breadth": 0.55,
+      "depth": 0.62,
+      "confidence": 0.86,
+      "practiceRequired": true,
+      "evidencePotential": 0.72,
+      "rationale": "Robotics and Automation Lab in the official JNTUH R25 course structure directly supports mechanical automation; applied evidence is still required for career readiness."
+    },
+    {
+      "curriculumTopicKey": "jntuh.r25.me.me706pc.scope",
+      "skillKey": "projects.delivery",
+      "breadth": 0.72,
+      "depth": 0.58,
+      "confidence": 0.86,
+      "practiceRequired": true,
+      "evidencePotential": 0.72,
+      "rationale": "Industry Oriented Mini Project/ Internship in the official JNTUH R25 course structure directly supports projects delivery; applied evidence is still required for career readiness."
+    },
+    {
+      "curriculumTopicKey": "jntuh.r25.me.me801pc.scope",
+      "skillKey": "projects.delivery",
+      "breadth": 0.72,
+      "depth": 0.58,
+      "confidence": 0.86,
+      "practiceRequired": true,
+      "evidencePotential": 0.72,
+      "rationale": "Project Work in the official JNTUH R25 course structure directly supports projects delivery; applied evidence is still required for career readiness."
+    },
+    {
+      "curriculumTopicKey": "jntuh.r25.me.me732oe.scope",
+      "skillKey": "mechanical.manufacturing",
+      "breadth": 0.72,
+      "depth": 0.58,
+      "confidence": 0.86,
+      "practiceRequired": true,
+      "evidencePotential": 0.48,
+      "rationale": "Digital Manufacturing R25 B.Tech. Mechanical Engg. JNTU Hyderabad Page 5 of 71 MA101BS: MATRICES AND CALCULUS B.Tech. I Year I Sem. L T P C in the official JNTUH R25 course structure directly supports mechanical manufacturing; applied evidence is still required for career readiness."
+    }
+  ]
+}

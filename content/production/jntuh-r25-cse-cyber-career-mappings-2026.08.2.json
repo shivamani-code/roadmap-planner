@@ -1,0 +1,433 @@
+{
+  "schemaVersion": "1.0.0",
+  "mappingVersion": 2,
+  "curriculumDatasetVersion": "2026.08.2",
+  "careerDatasetVersion": "2026.08.2",
+  "review": {
+    "editorId": "studentos-content-editor",
+    "reviewerId": "studentos-content-reviewer",
+    "reviewedAt": "2026-08-26T00:00:00Z"
+  },
+  "mappings": [
+    {
+      "curriculumTopicKey": "jntuh.r25.cse-cyber.cs103es.scope",
+      "skillKey": "programming.fundamentals",
+      "breadth": 0.72,
+      "depth": 0.58,
+      "confidence": 0.86,
+      "practiceRequired": true,
+      "evidencePotential": 0.48,
+      "rationale": "Programming for Problem Solving in the official JNTUH R25 course structure directly supports programming fundamentals; applied evidence is still required for career readiness."
+    },
+    {
+      "curriculumTopicKey": "jntuh.r25.cse-cyber.me105es.scope",
+      "skillKey": "mechanical.design",
+      "breadth": 0.72,
+      "depth": 0.58,
+      "confidence": 0.86,
+      "practiceRequired": true,
+      "evidencePotential": 0.48,
+      "rationale": "Engineering Drawing and Computer Aided Drafting in the official JNTUH R25 course structure directly supports mechanical design; applied evidence is still required for career readiness."
+    },
+    {
+      "curriculumTopicKey": "jntuh.r25.cse-cyber.cs107es.scope",
+      "skillKey": "programming.fundamentals",
+      "breadth": 0.55,
+      "depth": 0.62,
+      "confidence": 0.86,
+      "practiceRequired": true,
+      "evidencePotential": 0.72,
+      "rationale": "Programming for Problem Solving Lab in the official JNTUH R25 course structure directly supports programming fundamentals; applied evidence is still required for career readiness."
+    },
+    {
+      "curriculumTopicKey": "jntuh.r25.cse-cyber.cs109es.scope",
+      "skillKey": "programming.fundamentals",
+      "breadth": 0.55,
+      "depth": 0.62,
+      "confidence": 0.86,
+      "practiceRequired": true,
+      "evidencePotential": 0.72,
+      "rationale": "Python Programming Lab in the official JNTUH R25 course structure directly supports programming fundamentals; applied evidence is still required for career readiness."
+    },
+    {
+      "curriculumTopicKey": "jntuh.r25.cse-cyber.cs203es.scope",
+      "skillKey": "dsa.core",
+      "breadth": 0.72,
+      "depth": 0.58,
+      "confidence": 0.86,
+      "practiceRequired": true,
+      "evidencePotential": 0.48,
+      "rationale": "Data Structures in the official JNTUH R25 course structure directly supports dsa core; applied evidence is still required for career readiness."
+    },
+    {
+      "curriculumTopicKey": "jntuh.r25.cse-cyber.ec204es.scope",
+      "skillKey": "electronics.circuits",
+      "breadth": 0.72,
+      "depth": 0.58,
+      "confidence": 0.86,
+      "practiceRequired": true,
+      "evidencePotential": 0.48,
+      "rationale": "Electronic Devices and Circuits in the official JNTUH R25 course structure directly supports electronics circuits; applied evidence is still required for career readiness."
+    },
+    {
+      "curriculumTopicKey": "jntuh.r25.cse-cyber.en205hs.scope",
+      "skillKey": "communication.technical",
+      "breadth": 0.72,
+      "depth": 0.58,
+      "confidence": 0.86,
+      "practiceRequired": true,
+      "evidencePotential": 0.48,
+      "rationale": "English for Skill Enhancement in the official JNTUH R25 course structure directly supports communication technical; applied evidence is still required for career readiness."
+    },
+    {
+      "curriculumTopicKey": "jntuh.r25.cse-cyber.cs207es.scope",
+      "skillKey": "dsa.core",
+      "breadth": 0.55,
+      "depth": 0.62,
+      "confidence": 0.86,
+      "practiceRequired": true,
+      "evidencePotential": 0.72,
+      "rationale": "Data Structures Lab in the official JNTUH R25 course structure directly supports dsa core; applied evidence is still required for career readiness."
+    },
+    {
+      "curriculumTopicKey": "jntuh.r25.cse-cyber.en208hs.scope",
+      "skillKey": "communication.technical",
+      "breadth": 0.55,
+      "depth": 0.62,
+      "confidence": 0.86,
+      "practiceRequired": true,
+      "evidencePotential": 0.72,
+      "rationale": "English Language and Communication Skills Lab in the official JNTUH R25 course structure directly supports communication technical; applied evidence is still required for career readiness."
+    },
+    {
+      "curriculumTopicKey": "jntuh.r25.cse-cyber.cy302pc.scope",
+      "skillKey": "core.architecture",
+      "breadth": 0.72,
+      "depth": 0.58,
+      "confidence": 0.86,
+      "practiceRequired": true,
+      "evidencePotential": 0.48,
+      "rationale": "Computer Organization in the official JNTUH R25 course structure directly supports core architecture; applied evidence is still required for career readiness."
+    },
+    {
+      "curriculumTopicKey": "jntuh.r25.cse-cyber.cy303pc.scope",
+      "skillKey": "programming.fundamentals",
+      "breadth": 0.72,
+      "depth": 0.58,
+      "confidence": 0.86,
+      "practiceRequired": true,
+      "evidencePotential": 0.48,
+      "rationale": "Java Programming in the official JNTUH R25 course structure directly supports programming fundamentals; applied evidence is still required for career readiness."
+    },
+    {
+      "curriculumTopicKey": "jntuh.r25.cse-cyber.cs304pc.scope",
+      "skillKey": "engineering.software",
+      "breadth": 0.72,
+      "depth": 0.58,
+      "confidence": 0.86,
+      "practiceRequired": true,
+      "evidencePotential": 0.48,
+      "rationale": "Software Engineering in the official JNTUH R25 course structure directly supports engineering software; applied evidence is still required for career readiness."
+    },
+    {
+      "curriculumTopicKey": "jntuh.r25.cse-cyber.cs305pc.scope",
+      "skillKey": "db.relational",
+      "breadth": 0.72,
+      "depth": 0.58,
+      "confidence": 0.86,
+      "practiceRequired": true,
+      "evidencePotential": 0.48,
+      "rationale": "Database Management System in the official JNTUH R25 course structure directly supports db relational; applied evidence is still required for career readiness."
+    },
+    {
+      "curriculumTopicKey": "jntuh.r25.cse-cyber.cy307pc.scope",
+      "skillKey": "programming.fundamentals",
+      "breadth": 0.55,
+      "depth": 0.62,
+      "confidence": 0.86,
+      "practiceRequired": true,
+      "evidencePotential": 0.72,
+      "rationale": "Java Programming Lab in the official JNTUH R25 course structure directly supports programming fundamentals; applied evidence is still required for career readiness."
+    },
+    {
+      "curriculumTopicKey": "jntuh.r25.cse-cyber.cs308pc.scope",
+      "skillKey": "engineering.software",
+      "breadth": 0.55,
+      "depth": 0.62,
+      "confidence": 0.86,
+      "practiceRequired": true,
+      "evidencePotential": 0.72,
+      "rationale": "Software Engineering Lab in the official JNTUH R25 course structure directly supports engineering software; applied evidence is still required for career readiness."
+    },
+    {
+      "curriculumTopicKey": "jntuh.r25.cse-cyber.cs309pc.scope",
+      "skillKey": "db.relational",
+      "breadth": 0.55,
+      "depth": 0.62,
+      "confidence": 0.86,
+      "practiceRequired": true,
+      "evidencePotential": 0.72,
+      "rationale": "Database Management Systems Lab in the official JNTUH R25 course structure directly supports db relational; applied evidence is still required for career readiness."
+    },
+    {
+      "curriculumTopicKey": "jntuh.r25.cse-cyber.cy310sd.scope",
+      "skillKey": "programming.fundamentals",
+      "breadth": 0.72,
+      "depth": 0.58,
+      "confidence": 0.86,
+      "practiceRequired": true,
+      "evidencePotential": 0.48,
+      "rationale": "Data Visualization-R Programming/Power BI/ Tableau/Google Chart in the official JNTUH R25 course structure directly supports programming fundamentals; applied evidence is still required for career readiness."
+    },
+    {
+      "curriculumTopicKey": "jntuh.r25.cse-cyber.cy310sd.scope",
+      "skillKey": "data.analysis",
+      "breadth": 0.72,
+      "depth": 0.58,
+      "confidence": 0.86,
+      "practiceRequired": true,
+      "evidencePotential": 0.48,
+      "rationale": "Data Visualization-R Programming/Power BI/ Tableau/Google Chart in the official JNTUH R25 course structure directly supports data analysis; applied evidence is still required for career readiness."
+    },
+    {
+      "curriculumTopicKey": "jntuh.r25.cse-cyber.cs402pc.scope",
+      "skillKey": "core.os",
+      "breadth": 0.72,
+      "depth": 0.58,
+      "confidence": 0.86,
+      "practiceRequired": true,
+      "evidencePotential": 0.48,
+      "rationale": "Operating Systems in the official JNTUH R25 course structure directly supports core os; applied evidence is still required for career readiness."
+    },
+    {
+      "curriculumTopicKey": "jntuh.r25.cse-cyber.cs404pc.scope",
+      "skillKey": "core.networks",
+      "breadth": 0.72,
+      "depth": 0.58,
+      "confidence": 0.86,
+      "practiceRequired": true,
+      "evidencePotential": 0.48,
+      "rationale": "Computer Networks in the official JNTUH R25 course structure directly supports core networks; applied evidence is still required for career readiness."
+    },
+    {
+      "curriculumTopicKey": "jntuh.r25.cse-cyber.cy405pc.scope",
+      "skillKey": "core.cybersecurity",
+      "breadth": 0.72,
+      "depth": 0.58,
+      "confidence": 0.86,
+      "practiceRequired": true,
+      "evidencePotential": 0.48,
+      "rationale": "Mathematical Foundations of Cryptography in the official JNTUH R25 course structure directly supports core cybersecurity; applied evidence is still required for career readiness."
+    },
+    {
+      "curriculumTopicKey": "jntuh.r25.cse-cyber.cs407pc.scope",
+      "skillKey": "core.os",
+      "breadth": 0.55,
+      "depth": 0.62,
+      "confidence": 0.86,
+      "practiceRequired": true,
+      "evidencePotential": 0.72,
+      "rationale": "Operating Systems Lab in the official JNTUH R25 course structure directly supports core os; applied evidence is still required for career readiness."
+    },
+    {
+      "curriculumTopicKey": "jntuh.r25.cse-cyber.cs408pc.scope",
+      "skillKey": "core.networks",
+      "breadth": 0.55,
+      "depth": 0.62,
+      "confidence": 0.86,
+      "practiceRequired": true,
+      "evidencePotential": 0.72,
+      "rationale": "Computer Networks lab in the official JNTUH R25 course structure directly supports core networks; applied evidence is still required for career readiness."
+    },
+    {
+      "curriculumTopicKey": "jntuh.r25.cse-cyber.cy409pc.scope",
+      "skillKey": "core.cybersecurity",
+      "breadth": 0.55,
+      "depth": 0.62,
+      "confidence": 0.86,
+      "practiceRequired": true,
+      "evidencePotential": 0.72,
+      "rationale": "Mathematical Foundations of Cryptography Lab in the official JNTUH R25 course structure directly supports core cybersecurity; applied evidence is still required for career readiness."
+    },
+    {
+      "curriculumTopicKey": "jntuh.r25.cse-cyber.cy410sd.scope",
+      "skillKey": "web.frontend",
+      "breadth": 0.72,
+      "depth": 0.58,
+      "confidence": 0.86,
+      "practiceRequired": true,
+      "evidencePotential": 0.48,
+      "rationale": "Node JS/ React JS/ Django, UI Design - Flutter in the official JNTUH R25 course structure directly supports web frontend; applied evidence is still required for career readiness."
+    },
+    {
+      "curriculumTopicKey": "jntuh.r25.cse-cyber.cy503pc.scope",
+      "skillKey": "dsa.core",
+      "breadth": 0.72,
+      "depth": 0.58,
+      "confidence": 0.86,
+      "practiceRequired": true,
+      "evidencePotential": 0.48,
+      "rationale": "Algorithm Design and Analysis in the official JNTUH R25 course structure directly supports dsa core; applied evidence is still required for career readiness."
+    },
+    {
+      "curriculumTopicKey": "jntuh.r25.cse-cyber.cy506pc.scope",
+      "skillKey": "dsa.core",
+      "breadth": 0.55,
+      "depth": 0.62,
+      "confidence": 0.86,
+      "practiceRequired": true,
+      "evidencePotential": 0.72,
+      "rationale": "Algorithm Design and Analysis Lab in the official JNTUH R25 course structure directly supports dsa core; applied evidence is still required for career readiness."
+    },
+    {
+      "curriculumTopicKey": "jntuh.r25.cse-cyber.cy507pc.scope",
+      "skillKey": "projects.delivery",
+      "breadth": 0.72,
+      "depth": 0.58,
+      "confidence": 0.86,
+      "practiceRequired": true,
+      "evidencePotential": 0.72,
+      "rationale": "Field Based Research Project in the official JNTUH R25 course structure directly supports projects delivery; applied evidence is still required for career readiness."
+    },
+    {
+      "curriculumTopicKey": "jntuh.r25.cse-cyber.cy508sd.scope",
+      "skillKey": "web.frontend",
+      "breadth": 0.72,
+      "depth": 0.58,
+      "confidence": 0.86,
+      "practiceRequired": true,
+      "evidencePotential": 0.48,
+      "rationale": "Full Stack Development in the official JNTUH R25 course structure directly supports web frontend; applied evidence is still required for career readiness."
+    },
+    {
+      "curriculumTopicKey": "jntuh.r25.cse-cyber.cy601pc.scope",
+      "skillKey": "core.cybersecurity",
+      "breadth": 0.72,
+      "depth": 0.58,
+      "confidence": 0.86,
+      "practiceRequired": true,
+      "evidencePotential": 0.48,
+      "rationale": "Cyber Security Essentials in the official JNTUH R25 course structure directly supports core cybersecurity; applied evidence is still required for career readiness."
+    },
+    {
+      "curriculumTopicKey": "jntuh.r25.cse-cyber.cy604pc.scope",
+      "skillKey": "core.cybersecurity",
+      "breadth": 0.55,
+      "depth": 0.62,
+      "confidence": 0.86,
+      "practiceRequired": true,
+      "evidencePotential": 0.72,
+      "rationale": "Cyber Security Essentials Lab in the official JNTUH R25 course structure directly supports core cybersecurity; applied evidence is still required for career readiness."
+    },
+    {
+      "curriculumTopicKey": "jntuh.r25.cse-cyber.cy606pc.scope",
+      "skillKey": "core.cloud",
+      "breadth": 0.55,
+      "depth": 0.62,
+      "confidence": 0.86,
+      "practiceRequired": true,
+      "evidencePotential": 0.72,
+      "rationale": "Development and Operations (DevOps) Lab in the official JNTUH R25 course structure directly supports core cloud; applied evidence is still required for career readiness."
+    },
+    {
+      "curriculumTopicKey": "jntuh.r25.cse-cyber.en607hs.scope",
+      "skillKey": "communication.technical",
+      "breadth": 0.55,
+      "depth": 0.62,
+      "confidence": 0.86,
+      "practiceRequired": true,
+      "evidencePotential": 0.72,
+      "rationale": "English for Employability Skills Lab in the official JNTUH R25 course structure directly supports communication technical; applied evidence is still required for career readiness."
+    },
+    {
+      "curriculumTopicKey": "jntuh.r25.cse-cyber.cy608sd.scope",
+      "skillKey": "core.cybersecurity",
+      "breadth": 0.72,
+      "depth": 0.58,
+      "confidence": 0.86,
+      "practiceRequired": true,
+      "evidencePotential": 0.48,
+      "rationale": "Cyber Defense Techniques in the official JNTUH R25 course structure directly supports core cybersecurity; applied evidence is still required for career readiness."
+    },
+    {
+      "curriculumTopicKey": "jntuh.r25.cse-cyber.cy701pc.scope",
+      "skillKey": "core.cybersecurity",
+      "breadth": 0.72,
+      "depth": 0.58,
+      "confidence": 0.86,
+      "practiceRequired": true,
+      "evidencePotential": 0.48,
+      "rationale": "Vulnerability Assessment & Penetration Testing in the official JNTUH R25 course structure directly supports core cybersecurity; applied evidence is still required for career readiness."
+    },
+    {
+      "curriculumTopicKey": "jntuh.r25.cse-cyber.cy702pc.scope",
+      "skillKey": "core.cybersecurity",
+      "breadth": 0.72,
+      "depth": 0.58,
+      "confidence": 0.86,
+      "practiceRequired": true,
+      "evidencePotential": 0.48,
+      "rationale": "Cyber Crime Investigation & Digital Forensics in the official JNTUH R25 course structure directly supports core cybersecurity; applied evidence is still required for career readiness."
+    },
+    {
+      "curriculumTopicKey": "jntuh.r25.cse-cyber.cy704pc.scope",
+      "skillKey": "core.cybersecurity",
+      "breadth": 0.55,
+      "depth": 0.62,
+      "confidence": 0.86,
+      "practiceRequired": true,
+      "evidencePotential": 0.72,
+      "rationale": "Vulnerability Assessment & Penetration Testing Lab in the official JNTUH R25 course structure directly supports core cybersecurity; applied evidence is still required for career readiness."
+    },
+    {
+      "curriculumTopicKey": "jntuh.r25.cse-cyber.cy705pc.scope",
+      "skillKey": "core.cybersecurity",
+      "breadth": 0.55,
+      "depth": 0.62,
+      "confidence": 0.86,
+      "practiceRequired": true,
+      "evidencePotential": 0.72,
+      "rationale": "Cyber Crime Investigation & Digital Forensics Lab in the official JNTUH R25 course structure directly supports core cybersecurity; applied evidence is still required for career readiness."
+    },
+    {
+      "curriculumTopicKey": "jntuh.r25.cse-cyber.cy706pc.scope",
+      "skillKey": "projects.delivery",
+      "breadth": 0.72,
+      "depth": 0.58,
+      "confidence": 0.86,
+      "practiceRequired": true,
+      "evidencePotential": 0.72,
+      "rationale": "Industry Oriented Mini Project/ Internship in the official JNTUH R25 course structure directly supports projects delivery; applied evidence is still required for career readiness."
+    },
+    {
+      "curriculumTopicKey": "jntuh.r25.cse-cyber.cy801pc.scope",
+      "skillKey": "projects.delivery",
+      "breadth": 0.72,
+      "depth": 0.58,
+      "confidence": 0.86,
+      "practiceRequired": true,
+      "evidencePotential": 0.72,
+      "rationale": "Project Work in the official JNTUH R25 course structure directly supports projects delivery; applied evidence is still required for career readiness."
+    },
+    {
+      "curriculumTopicKey": "jntuh.r25.cse-cyber.course80101.scope",
+      "skillKey": "core.cybersecurity",
+      "breadth": 0.72,
+      "depth": 0.58,
+      "confidence": 0.86,
+      "practiceRequired": true,
+      "evidencePotential": 0.48,
+      "rationale": "Cyber Security 2 Mathematics for Machine Learning Open Elective-II: 1 Information System Audit & Assurance 2 Social Media Security Open Elective-III: 1 Data Privacy 2 Security Incident & Response Mana in the official JNTUH R25 course structure directly supports core cybersecurity; applied evidence is still required for career readiness."
+    },
+    {
+      "curriculumTopicKey": "jntuh.r25.cse-cyber.course80101.scope",
+      "skillKey": "ai.machine-learning",
+      "breadth": 0.72,
+      "depth": 0.58,
+      "confidence": 0.86,
+      "practiceRequired": true,
+      "evidencePotential": 0.48,
+      "rationale": "Cyber Security 2 Mathematics for Machine Learning Open Elective-II: 1 Information System Audit & Assurance 2 Social Media Security Open Elective-III: 1 Data Privacy 2 Security Incident & Response Mana in the official JNTUH R25 course structure directly supports ai machine-learning; applied evidence is still required for career readiness."
+    }
+  ]
+}

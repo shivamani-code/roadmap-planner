@@ -1,0 +1,13 @@
+{
+  "name": "@studentos/phase-0-prototype",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test",
+    "validate": "node src/validate-content.mjs",
+    "personas": "node src/run-personas.mjs"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}

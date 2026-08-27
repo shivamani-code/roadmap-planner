@@ -1,0 +1,36 @@
+{
+  "name": "studentos",
+  "private": true,
+  "version": "0.1.0",
+  "packageManager": "pnpm@11.1.2",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev --parallel",
+    "lint": "turbo run lint",
+    "typecheck": "turbo run typecheck",
+    "test": "turbo run test --concurrency=1",
+    "check": "pnpm lint && pnpm typecheck && pnpm test && pnpm build",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "db:generate": "pnpm --filter @studentos/database generate",
+    "release:seed": "pnpm --filter @studentos/api release:seed",
+    "prototype:test": "pnpm --dir prototype test",
+    "load:smoke": "node scripts/load-smoke.mjs",
+    "security:smoke": "node scripts/security-smoke.mjs",
+    "content:build:jntuh-r25": "node scripts/build-jntuh-r25-curriculum.mjs",
+    "content:build:career": "node scripts/build-production-career-content-v2.mjs",
+    "content:validate:production": "pnpm --filter @studentos/academic build && pnpm --filter @studentos/career build && node scripts/validate-production-content.mjs"
+  },
+  "devDependencies": {
+    "@eslint/js": "10.0.1",
+    "eslint": "10.9.0",
+    "globals": "17.11.0",
+    "prettier": "3.9.6",
+    "turbo": "2.10.11",
+    "typescript": "5.9.3",
+    "typescript-eslint": "8.67.0"
+  }
+}

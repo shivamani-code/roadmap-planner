@@ -1,0 +1,984 @@
+{
+  "schemaVersion": "1.0.0",
+  "dataset": {
+    "universityCode": "JNTUH",
+    "regulationCode": "R25",
+    "degreeCode": "BTECH",
+    "branchCode": "MINING",
+    "datasetVersion": "2026.08.2",
+    "effectiveFrom": "2025-07-01",
+    "effectiveTo": null,
+    "source": {
+      "documentId": "jntuh-r25-mining-course-structure",
+      "title": "JNTUH R25 B.Tech. Mining Engineering Course Structure and Syllabus",
+      "sourceUrl": "https://jntuh.ac.in/uploads/academics/R25B.Tech.MiningEngg.IIIYearSyllabus.pdf",
+      "sha256": "c723f8d7bf8852a9fc7f23a5e85cf7c41985b9396060ab8d50338df0cece5650",
+      "publishedAt": "2026-08-12",
+      "retrievedAt": "2026-08-26T00:00:00Z",
+      "usagePermission": "PUBLIC_OFFICIAL"
+    },
+    "synthetic": false
+  },
+  "semesters": [
+    {
+      "number": 1,
+      "academicYear": 1,
+      "subjects": [
+        {
+          "code": "MA101BS",
+          "title": "Matrices and Calculus",
+          "credits": 4.0,
+          "type": "THEORY",
+          "contactHoursPerWeek": 4.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.mining.ma101bs.scope",
+                  "title": "Matrices and Calculus",
+                  "sourcePage": 1,
+                  "academicDepth": 0.55,
+                  "estimatedAcademicHours": 48.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "PH102BS",
+          "title": "Advanced Engineering Physics",
+          "credits": 3.0,
+          "type": "THEORY",
+          "contactHoursPerWeek": 3.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.mining.ph102bs.scope",
+                  "title": "Advanced Engineering Physics",
+                  "sourcePage": 1,
+                  "academicDepth": 0.55,
+                  "estimatedAcademicHours": 36.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "ME103ES",
+          "title": "C Programming and Data Structures",
+          "credits": 3.0,
+          "type": "THEORY",
+          "contactHoursPerWeek": 3.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.mining.me103es.scope",
+                  "title": "C Programming and Data Structures",
+                  "sourcePage": 1,
+                  "academicDepth": 0.55,
+                  "estimatedAcademicHours": 36.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "ME104ES",
+          "title": "Engineering Mechanics",
+          "credits": 3.0,
+          "type": "THEORY",
+          "contactHoursPerWeek": 3.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.mining.me104es.scope",
+                  "title": "Engineering Mechanics",
+                  "sourcePage": 1,
+                  "academicDepth": 0.55,
+                  "estimatedAcademicHours": 36.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "EN105HS",
+          "title": "English for Skill Enhancement",
+          "credits": 3.0,
+          "type": "THEORY",
+          "contactHoursPerWeek": 3.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.mining.en105hs.scope",
+                  "title": "English for Skill Enhancement",
+                  "sourcePage": 1,
+                  "academicDepth": 0.55,
+                  "estimatedAcademicHours": 36.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "PH106BS",
+          "title": "Advanced Engineering Physics Lab",
+          "credits": 1.0,
+          "type": "LAB",
+          "contactHoursPerWeek": 2.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.mining.ph106bs.scope",
+                  "title": "Advanced Engineering Physics Lab",
+                  "sourcePage": 1,
+                  "academicDepth": 0.65,
+                  "estimatedAcademicHours": 12.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "CS107ES",
+          "title": "C Programming and Data Structures Lab",
+          "credits": 1.0,
+          "type": "LAB",
+          "contactHoursPerWeek": 2.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.mining.cs107es.scope",
+                  "title": "C Programming and Data Structures Lab",
+                  "sourcePage": 1,
+                  "academicDepth": 0.65,
+                  "estimatedAcademicHours": 12.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "ME108ES",
+          "title": "Engineering Workshop",
+          "credits": 1.0,
+          "type": "LAB",
+          "contactHoursPerWeek": 2.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.mining.me108es.scope",
+                  "title": "Engineering Workshop",
+                  "sourcePage": 1,
+                  "academicDepth": 0.65,
+                  "estimatedAcademicHours": 12.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "EN109HS",
+          "title": "English Language and Communication Skills Lab",
+          "credits": 1.0,
+          "type": "LAB",
+          "contactHoursPerWeek": 2.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.mining.en109hs.scope",
+                  "title": "English Language and Communication Skills Lab",
+                  "sourcePage": 1,
+                  "academicDepth": 0.65,
+                  "estimatedAcademicHours": 12.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": true
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "academicYear": 1,
+      "subjects": [
+        {
+          "code": "MA201BS",
+          "title": "Ordinary Differential Equations and Vector Calculus",
+          "credits": 3.0,
+          "type": "THEORY",
+          "contactHoursPerWeek": 3.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.mining.ma201bs.scope",
+                  "title": "Ordinary Differential Equations and Vector Calculus",
+                  "sourcePage": 1,
+                  "academicDepth": 0.55,
+                  "estimatedAcademicHours": 36.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "CH202BS",
+          "title": "Applied Chemistry",
+          "credits": 3.0,
+          "type": "THEORY",
+          "contactHoursPerWeek": 3.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.mining.ch202bs.scope",
+                  "title": "Applied Chemistry",
+                  "sourcePage": 1,
+                  "academicDepth": 0.55,
+                  "estimatedAcademicHours": 36.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "CS203ES",
+          "title": "Python Programming",
+          "credits": 3.0,
+          "type": "THEORY",
+          "contactHoursPerWeek": 3.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.mining.cs203es.scope",
+                  "title": "Python Programming",
+                  "sourcePage": 1,
+                  "academicDepth": 0.55,
+                  "estimatedAcademicHours": 36.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "EE204ES",
+          "title": "Elements of Electrical and Electronics Engineering",
+          "credits": 3.0,
+          "type": "THEORY",
+          "contactHoursPerWeek": 3.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.mining.ee204es.scope",
+                  "title": "Elements of Electrical and Electronics Engineering",
+                  "sourcePage": 1,
+                  "academicDepth": 0.55,
+                  "estimatedAcademicHours": 36.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "MN205ES",
+          "title": "Introduction to Mining Engineering",
+          "credits": 3.0,
+          "type": "THEORY",
+          "contactHoursPerWeek": 3.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.mining.mn205es.scope",
+                  "title": "Introduction to Mining Engineering",
+                  "sourcePage": 1,
+                  "academicDepth": 0.55,
+                  "estimatedAcademicHours": 36.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "ME206ES",
+          "title": "Engineering Drawing and Computer Aided Drafting",
+          "credits": 3.0,
+          "type": "THEORY",
+          "contactHoursPerWeek": 4.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.mining.me206es.scope",
+                  "title": "Engineering Drawing and Computer Aided Drafting",
+                  "sourcePage": 1,
+                  "academicDepth": 0.55,
+                  "estimatedAcademicHours": 36.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "CH207BS",
+          "title": "Chemistry Lab for Engineers",
+          "credits": 1.0,
+          "type": "LAB",
+          "contactHoursPerWeek": 2.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.mining.ch207bs.scope",
+                  "title": "Chemistry Lab for Engineers",
+                  "sourcePage": 1,
+                  "academicDepth": 0.65,
+                  "estimatedAcademicHours": 12.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "CS208ES",
+          "title": "Python Programming Lab",
+          "credits": 1.0,
+          "type": "LAB",
+          "contactHoursPerWeek": 2.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.mining.cs208es.scope",
+                  "title": "Python Programming Lab",
+                  "sourcePage": 1,
+                  "academicDepth": 0.65,
+                  "estimatedAcademicHours": 12.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "EE209ES",
+          "title": "Elements of Electrical and Electronics Engineering Lab",
+          "credits": 1.0,
+          "type": "LAB",
+          "contactHoursPerWeek": 2.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.mining.ee209es.scope",
+                  "title": "Elements of Electrical and Electronics Engineering Lab",
+                  "sourcePage": 1,
+                  "academicDepth": 0.65,
+                  "estimatedAcademicHours": 12.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": true
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "academicYear": 2,
+      "subjects": [
+        {
+          "code": "MN301BS",
+          "title": "Probability, Statistics and Complex Variables",
+          "credits": 3.0,
+          "type": "THEORY",
+          "contactHoursPerWeek": 3.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.mining.mn301bs.scope",
+                  "title": "Probability, Statistics and Complex Variables",
+                  "sourcePage": 1,
+                  "academicDepth": 0.55,
+                  "estimatedAcademicHours": 36.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "COURSE302",
+          "title": "DC Mine Surveying-I",
+          "credits": 3.0,
+          "type": "THEORY",
+          "contactHoursPerWeek": 3.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.mining.course302.scope",
+                  "title": "DC Mine Surveying-I",
+                  "sourcePage": 1,
+                  "academicDepth": 0.55,
+                  "estimatedAcademicHours": 36.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "COURSE303",
+          "title": "DC Development of Mineral Deposits",
+          "credits": 3.0,
+          "type": "THEORY",
+          "contactHoursPerWeek": 3.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.mining.course303.scope",
+                  "title": "DC Development of Mineral Deposits",
+                  "sourcePage": 1,
+                  "academicDepth": 0.55,
+                  "estimatedAcademicHours": 36.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "COURSE304",
+          "title": "DC Mining Geology",
+          "credits": 3.0,
+          "type": "THEORY",
+          "contactHoursPerWeek": 3.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.mining.course304.scope",
+                  "title": "DC Mining Geology",
+                  "sourcePage": 1,
+                  "academicDepth": 0.55,
+                  "estimatedAcademicHours": 36.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "COURSE305",
+          "title": "DC Fluid Mechanics and Hydraulic Machines",
+          "credits": 3.0,
+          "type": "THEORY",
+          "contactHoursPerWeek": 3.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.mining.course305.scope",
+                  "title": "DC Fluid Mechanics and Hydraulic Machines",
+                  "sourcePage": 1,
+                  "academicDepth": 0.55,
+                  "estimatedAcademicHours": 36.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "COURSE306",
+          "title": "BSCL Computational Mathematics Lab",
+          "credits": 1.0,
+          "type": "LAB",
+          "contactHoursPerWeek": 2.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.mining.course306.scope",
+                  "title": "BSCL Computational Mathematics Lab",
+                  "sourcePage": 1,
+                  "academicDepth": 0.65,
+                  "estimatedAcademicHours": 12.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "COURSE307",
+          "title": "DCL Mine Surveying- I Lab",
+          "credits": 1.0,
+          "type": "LAB",
+          "contactHoursPerWeek": 2.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.mining.course307.scope",
+                  "title": "DCL Mine Surveying- I Lab",
+                  "sourcePage": 1,
+                  "academicDepth": 0.65,
+                  "estimatedAcademicHours": 12.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "COURSE308",
+          "title": "DCL Mining Geology Laboratory",
+          "credits": 1.0,
+          "type": "LAB",
+          "contactHoursPerWeek": 2.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.mining.course308.scope",
+                  "title": "DCL Mining Geology Laboratory",
+                  "sourcePage": 1,
+                  "academicDepth": 0.65,
+                  "estimatedAcademicHours": 12.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "COURSE309",
+          "title": "DCL Fluid Mechanics and Hydraulic Machines Lab",
+          "credits": 1.0,
+          "type": "LAB",
+          "contactHoursPerWeek": 2.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.mining.course309.scope",
+                  "title": "DCL Fluid Mechanics and Hydraulic Machines Lab",
+                  "sourcePage": 1,
+                  "academicDepth": 0.65,
+                  "estimatedAcademicHours": 12.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "COURSE310",
+          "title": "SDC Industrial Training-I",
+          "credits": 1.0,
+          "type": "LAB",
+          "contactHoursPerWeek": 2.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.mining.course310.scope",
+                  "title": "SDC Industrial Training-I",
+                  "sourcePage": 1,
+                  "academicDepth": 0.65,
+                  "estimatedAcademicHours": 12.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": true
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "academicYear": 2,
+      "subjects": [
+        {
+          "code": "COURSE401",
+          "title": "DC Surface Mining Technology",
+          "credits": 3.0,
+          "type": "THEORY",
+          "contactHoursPerWeek": 3.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.mining.course401.scope",
+                  "title": "DC Surface Mining Technology",
+                  "sourcePage": 2,
+                  "academicDepth": 0.55,
+                  "estimatedAcademicHours": 36.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "COURSE402",
+          "title": "DC Mine Ventilation",
+          "credits": 3.0,
+          "type": "THEORY",
+          "contactHoursPerWeek": 3.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.mining.course402.scope",
+                  "title": "DC Mine Ventilation",
+                  "sourcePage": 2,
+                  "academicDepth": 0.55,
+                  "estimatedAcademicHours": 36.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "COURSE403",
+          "title": "DC Mine surveying-II",
+          "credits": 3.0,
+          "type": "THEORY",
+          "contactHoursPerWeek": 3.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.mining.course403.scope",
+                  "title": "DC Mine surveying-II",
+                  "sourcePage": 2,
+                  "academicDepth": 0.55,
+                  "estimatedAcademicHours": 36.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "COURSE404",
+          "title": "DC Mine Mechanization-I",
+          "credits": 3.0,
+          "type": "THEORY",
+          "contactHoursPerWeek": 3.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.mining.course404.scope",
+                  "title": "DC Mine Mechanization-I",
+                  "sourcePage": 2,
+                  "academicDepth": 0.55,
+                  "estimatedAcademicHours": 36.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "COURSE405",
+          "title": "DC Underground Coal Mining Technology",
+          "credits": 2.0,
+          "type": "THEORY",
+          "contactHoursPerWeek": 2.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.mining.course405.scope",
+                  "title": "DC Underground Coal Mining Technology",
+                  "sourcePage": 2,
+                  "academicDepth": 0.55,
+                  "estimatedAcademicHours": 24.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "COURSE406",
+          "title": "Innovation and Entrepreneurship",
+          "credits": 2.0,
+          "type": "THEORY",
+          "contactHoursPerWeek": 2.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.mining.course406.scope",
+                  "title": "Innovation and Entrepreneurship",
+                  "sourcePage": 2,
+                  "academicDepth": 0.55,
+                  "estimatedAcademicHours": 24.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "COURSE407",
+          "title": "DCL Mine Surveying -II Lab",
+          "credits": 1.0,
+          "type": "LAB",
+          "contactHoursPerWeek": 2.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.mining.course407.scope",
+                  "title": "DCL Mine Surveying -II Lab",
+                  "sourcePage": 2,
+                  "academicDepth": 0.65,
+                  "estimatedAcademicHours": 12.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "COURSE408",
+          "title": "DCL Mine Ventilation Lab",
+          "credits": 1.0,
+          "type": "LAB",
+          "contactHoursPerWeek": 2.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.mining.course408.scope",
+                  "title": "DCL Mine Ventilation Lab",
+                  "sourcePage": 2,
+                  "academicDepth": 0.65,
+                  "estimatedAcademicHours": 12.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "COURSE409",
+          "title": "DCL Mine Mechanization- I lab",
+          "credits": 1.0,
+          "type": "LAB",
+          "contactHoursPerWeek": 2.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.mining.course409.scope",
+                  "title": "DCL Mine Mechanization- I lab",
+                  "sourcePage": 2,
+                  "academicDepth": 0.65,
+                  "estimatedAcademicHours": 12.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "COURSE410",
+          "title": "SDC Introduction to Data Science for Mining Engineering",
+          "credits": 1.0,
+          "type": "THEORY",
+          "contactHoursPerWeek": 2.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.mining.course410.scope",
+                  "title": "SDC Introduction to Data Science for Mining Engineering",
+                  "sourcePage": 2,
+                  "academicDepth": 0.55,
+                  "estimatedAcademicHours": 12.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "VA400HS",
+          "title": "Indian Knowledge System",
+          "credits": 1.0,
+          "type": "THEORY",
+          "contactHoursPerWeek": 1.0,
+          "units": [
+            {
+              "number": 1,
+              "title": "Published course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.mining.va400hs.scope",
+                  "title": "Indian Knowledge System",
+                  "sourcePage": 2,
+                  "academicDepth": 0.55,
+                  "estimatedAcademicHours": 12.0,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

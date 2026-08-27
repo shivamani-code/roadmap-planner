@@ -1,0 +1,47 @@
+{
+  "name": "@studentos/api",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "dev": "tsx watch src/main.ts",
+    "release:seed": "tsx scripts/seed-release.ts",
+    "start": "node dist/main.js",
+    "lint": "eslint src test scripts",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@nestjs/common": "11.2.1",
+    "@nestjs/core": "11.2.1",
+    "@nestjs/platform-express": "11.2.1",
+    "@nestjs/swagger": "11.4.7",
+    "@nestjs/testing": "11.2.1",
+    "@opentelemetry/api": "1.9.0",
+    "@studentos/academic": "workspace:*",
+    "@studentos/career": "workspace:*",
+    "@studentos/communication": "workspace:*",
+    "@studentos/contracts": "workspace:*",
+    "@studentos/database": "workspace:*",
+    "@studentos/domain": "workspace:*",
+    "@studentos/observability": "workspace:*",
+    "@studentos/planning": "workspace:*",
+    "class-transformer": "0.5.1",
+    "class-validator": "0.15.1",
+    "express": "5.2.1",
+    "helmet": "8.1.0",
+    "reflect-metadata": "0.2.2",
+    "rxjs": "7.8.2",
+    "zod": "4.4.3"
+  },
+  "devDependencies": {
+    "@types/node": "26.2.0",
+    "@types/express": "5.0.6",
+    "@types/supertest": "6.0.3",
+    "supertest": "7.2.2",
+    "tsx": "4.23.12",
+    "typescript": "5.9.3",
+    "vitest": "4.1.11"
+  }
+}

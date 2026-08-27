@@ -1,0 +1,18 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "noEmit": false,
+    "composite": true,
+    "rootDir": "src",
+    "outDir": "dist",
+    "tsBuildInfoFile": "dist/.tsbuildinfo",
+    "paths": {
+      "@studentos/contracts": ["packages/contracts/dist/index.d.ts"],
+      "@studentos/domain": ["packages/domain/dist/index.d.ts"],
+      "@studentos/database": ["packages/database/dist/index.d.ts"],
+      "@studentos/observability": ["packages/observability/dist/index.d.ts"]
+    }
+  },
+  "include": ["src/**/*.ts"],
+  "exclude": ["test", "dist"]
+}

@@ -1,0 +1,74 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://studentos.app/schemas/curriculum-skill-mapping/1.0.0",
+  "title": "StudentOS Curriculum-to-Skill Mapping Import",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "mappingVersion",
+    "curriculumDatasetVersion",
+    "careerDatasetVersion",
+    "review",
+    "mappings"
+  ],
+  "properties": {
+    "schemaVersion": { "const": "1.0.0" },
+    "mappingVersion": { "type": "integer", "minimum": 1 },
+    "curriculumDatasetVersion": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 64
+    },
+    "careerDatasetVersion": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 64
+    },
+    "review": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["editorId", "reviewerId", "reviewedAt"],
+      "properties": {
+        "editorId": { "type": "string", "minLength": 1 },
+        "reviewerId": { "type": "string", "minLength": 1 },
+        "reviewedAt": { "type": "string", "format": "date-time" }
+      }
+    },
+    "mappings": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "curriculumTopicKey",
+          "skillKey",
+          "breadth",
+          "depth",
+          "confidence",
+          "practiceRequired",
+          "evidencePotential",
+          "rationale"
+        ],
+        "properties": {
+          "curriculumTopicKey": { "$ref": "#/$defs/stableKey" },
+          "skillKey": { "$ref": "#/$defs/stableKey" },
+          "breadth": { "type": "number", "minimum": 0, "maximum": 1 },
+          "depth": { "type": "number", "minimum": 0, "maximum": 1 },
+          "confidence": { "type": "number", "minimum": 0, "maximum": 1 },
+          "practiceRequired": { "type": "boolean" },
+          "evidencePotential": { "type": "number", "minimum": 0, "maximum": 1 },
+          "rationale": { "type": "string", "minLength": 20, "maxLength": 1000 }
+        }
+      }
+    }
+  },
+  "$defs": {
+    "stableKey": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:[.-][a-z0-9]+)*$",
+      "maxLength": 128
+    }
+  }
+}

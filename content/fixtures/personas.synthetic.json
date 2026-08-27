@@ -1,0 +1,773 @@
+{
+  "schemaVersion": "1.0.0",
+  "rulesetVersion": "prototype-1.0.0",
+  "personas": [
+    {
+      "id": "P01",
+      "description": "First-year beginner with unknown programming ability and a long service-placement horizon.",
+      "supportedCurriculum": true,
+      "roleKey": "software-engineer",
+      "targetLevel": "SERVICE_PLACEMENT",
+      "deadlineWeeks": 120,
+      "normalWeeklyMinutes": 420,
+      "mode": "NORMAL",
+      "skills": {
+        "programming.basics": { "proficiency": null, "confidence": 0 },
+        "dsa.arrays": { "proficiency": 0, "confidence": 0.45 },
+        "tools.git": { "proficiency": 0, "confidence": 0.45 }
+      },
+      "requirements": [
+        {
+          "skillKey": "programming.basics",
+          "requiredDepth": 0.6,
+          "importance": 1,
+          "placementRelevance": 0.8,
+          "prerequisites": [],
+          "academicDepth": 0.4,
+          "mappingConfidence": 0.9,
+          "academicTiming": "CURRENT",
+          "estimatedMinutes": 1200,
+          "required": true
+        },
+        {
+          "skillKey": "dsa.arrays",
+          "requiredDepth": 0.65,
+          "importance": 0.9,
+          "placementRelevance": 1,
+          "prerequisites": ["programming.basics"],
+          "academicDepth": 0.45,
+          "mappingConfidence": 0.9,
+          "academicTiming": "CURRENT",
+          "estimatedMinutes": 1500,
+          "required": true
+        },
+        {
+          "skillKey": "tools.git",
+          "requiredDepth": 0.4,
+          "importance": 0.55,
+          "placementRelevance": 0.35,
+          "prerequisites": [],
+          "academicDepth": 0,
+          "mappingConfidence": 0,
+          "academicTiming": "NONE",
+          "estimatedMinutes": 480,
+          "required": true
+        }
+      ],
+      "expected": {
+        "status": "READY",
+        "classifications": {
+          "programming.basics": "UNKNOWN",
+          "dsa.arrays": "COLLEGE_EXTENSION",
+          "tools.git": "INDEPENDENT"
+        },
+        "maxWeeklyMinutes": 357,
+        "prerequisiteOrder": ["programming.basics", "dsa.arrays"]
+      }
+    },
+    {
+      "id": "P02",
+      "description": "Second-year intermediate student targeting backend product placement with current OOP and DSA overlap.",
+      "supportedCurriculum": true,
+      "roleKey": "backend-engineer",
+      "targetLevel": "PRODUCT_PLACEMENT",
+      "deadlineWeeks": 88,
+      "normalWeeklyMinutes": 840,
+      "mode": "NORMAL",
+      "skills": {
+        "programming.basics": { "proficiency": 0.75, "confidence": 0.9 },
+        "programming.oop": { "proficiency": 0.55, "confidence": 0.7 },
+        "dsa.arrays": { "proficiency": 0.35, "confidence": 0.7 },
+        "db.sql": { "proficiency": 0.2, "confidence": 0.45 },
+        "backend.rest": { "proficiency": 0, "confidence": 0.45 },
+        "tools.git": { "proficiency": 0.1, "confidence": 0.45 }
+      },
+      "requirements": [
+        {
+          "skillKey": "programming.basics",
+          "requiredDepth": 0.65,
+          "importance": 0.9,
+          "placementRelevance": 0.8,
+          "prerequisites": [],
+          "academicDepth": 0.5,
+          "mappingConfidence": 0.9,
+          "academicTiming": "COMPLETED",
+          "estimatedMinutes": 900,
+          "required": true
+        },
+        {
+          "skillKey": "programming.oop",
+          "requiredDepth": 0.75,
+          "importance": 0.85,
+          "placementRelevance": 0.8,
+          "prerequisites": ["programming.basics"],
+          "academicDepth": 0.6,
+          "mappingConfidence": 0.9,
+          "academicTiming": "CURRENT",
+          "estimatedMinutes": 1200,
+          "required": true
+        },
+        {
+          "skillKey": "dsa.arrays",
+          "requiredDepth": 0.8,
+          "importance": 0.95,
+          "placementRelevance": 1,
+          "prerequisites": ["programming.basics"],
+          "academicDepth": 0.5,
+          "mappingConfidence": 0.9,
+          "academicTiming": "CURRENT",
+          "estimatedMinutes": 2400,
+          "required": true
+        },
+        {
+          "skillKey": "db.sql",
+          "requiredDepth": 0.75,
+          "importance": 0.85,
+          "placementRelevance": 0.8,
+          "prerequisites": [],
+          "academicDepth": 0.55,
+          "mappingConfidence": 0.95,
+          "academicTiming": "FUTURE_BEFORE_REQUIRED",
+          "estimatedMinutes": 1440,
+          "required": true
+        },
+        {
+          "skillKey": "backend.rest",
+          "requiredDepth": 0.7,
+          "importance": 0.9,
+          "placementRelevance": 0.7,
+          "prerequisites": ["programming.oop"],
+          "academicDepth": 0,
+          "mappingConfidence": 0,
+          "academicTiming": "NONE",
+          "estimatedMinutes": 2100,
+          "required": true
+        },
+        {
+          "skillKey": "tools.git",
+          "requiredDepth": 0.55,
+          "importance": 0.6,
+          "placementRelevance": 0.4,
+          "prerequisites": [],
+          "academicDepth": 0,
+          "mappingConfidence": 0,
+          "academicTiming": "NONE",
+          "estimatedMinutes": 600,
+          "required": true
+        }
+      ],
+      "expected": {
+        "status": "READY",
+        "classifications": {
+          "programming.basics": "MASTERED",
+          "programming.oop": "COLLEGE_EXTENSION",
+          "dsa.arrays": "COLLEGE_EXTENSION",
+          "db.sql": "COLLEGE_EXTENSION",
+          "backend.rest": "INDEPENDENT",
+          "tools.git": "PARTIAL"
+        },
+        "maxWeeklyMinutes": 714,
+        "prerequisiteOrder": [
+          "programming.basics",
+          "programming.oop",
+          "backend.rest"
+        ]
+      }
+    },
+    {
+      "id": "P03",
+      "description": "Third-year full-stack student switching to data analysis with transferable SQL and Git evidence.",
+      "supportedCurriculum": true,
+      "roleKey": "data-analyst",
+      "targetLevel": "INTERNSHIP_READY",
+      "deadlineWeeks": 48,
+      "normalWeeklyMinutes": 600,
+      "mode": "NORMAL",
+      "skills": {
+        "db.sql": { "proficiency": 0.75, "confidence": 0.9 },
+        "tools.git": { "proficiency": 0.7, "confidence": 0.9 },
+        "data.statistics": { "proficiency": 0.2, "confidence": 0.45 },
+        "data.bi": { "proficiency": 0, "confidence": 0.45 }
+      },
+      "requirements": [
+        {
+          "skillKey": "db.sql",
+          "requiredDepth": 0.65,
+          "importance": 1,
+          "placementRelevance": 0.8,
+          "prerequisites": [],
+          "academicDepth": 0.55,
+          "mappingConfidence": 0.95,
+          "academicTiming": "COMPLETED",
+          "estimatedMinutes": 1200,
+          "required": true
+        },
+        {
+          "skillKey": "tools.git",
+          "requiredDepth": 0.5,
+          "importance": 0.4,
+          "placementRelevance": 0.25,
+          "prerequisites": [],
+          "academicDepth": 0,
+          "mappingConfidence": 0,
+          "academicTiming": "NONE",
+          "estimatedMinutes": 360,
+          "required": false
+        },
+        {
+          "skillKey": "data.statistics",
+          "requiredDepth": 0.6,
+          "importance": 0.85,
+          "placementRelevance": 0.7,
+          "prerequisites": [],
+          "academicDepth": 0.45,
+          "mappingConfidence": 0.9,
+          "academicTiming": "FUTURE_BEFORE_REQUIRED",
+          "estimatedMinutes": 1800,
+          "required": true
+        },
+        {
+          "skillKey": "data.bi",
+          "requiredDepth": 0.6,
+          "importance": 0.9,
+          "placementRelevance": 0.65,
+          "prerequisites": ["db.sql"],
+          "academicDepth": 0,
+          "mappingConfidence": 0,
+          "academicTiming": "NONE",
+          "estimatedMinutes": 1920,
+          "required": true
+        }
+      ],
+      "expected": {
+        "status": "READY",
+        "classifications": {
+          "db.sql": "MASTERED",
+          "tools.git": "MASTERED",
+          "data.statistics": "COLLEGE_EXTENSION",
+          "data.bi": "INDEPENDENT"
+        },
+        "maxWeeklyMinutes": 510,
+        "prerequisiteOrder": ["db.sql", "data.bi"]
+      }
+    },
+    {
+      "id": "P04",
+      "description": "Final-year service-placement student needing a focused minimum path rather than a new framework.",
+      "supportedCurriculum": true,
+      "roleKey": "software-engineer",
+      "targetLevel": "SERVICE_PLACEMENT",
+      "deadlineWeeks": 10,
+      "normalWeeklyMinutes": 480,
+      "mode": "PLACEMENT",
+      "skills": {
+        "programming.basics": { "proficiency": 0.7, "confidence": 0.8 },
+        "dsa.arrays": { "proficiency": 0.5, "confidence": 0.8 },
+        "placement.aptitude": { "proficiency": 0.25, "confidence": 0.7 },
+        "resume.profile": { "proficiency": 0, "confidence": 0.45 },
+        "backend.framework": { "proficiency": 0, "confidence": 0.45 }
+      },
+      "requirements": [
+        {
+          "skillKey": "programming.basics",
+          "requiredDepth": 0.65,
+          "importance": 0.9,
+          "placementRelevance": 0.85,
+          "prerequisites": [],
+          "academicDepth": 0.5,
+          "mappingConfidence": 0.9,
+          "academicTiming": "COMPLETED",
+          "estimatedMinutes": 480,
+          "required": true
+        },
+        {
+          "skillKey": "dsa.arrays",
+          "requiredDepth": 0.7,
+          "importance": 0.9,
+          "placementRelevance": 1,
+          "prerequisites": ["programming.basics"],
+          "academicDepth": 0.5,
+          "mappingConfidence": 0.9,
+          "academicTiming": "COMPLETED",
+          "estimatedMinutes": 1200,
+          "required": true
+        },
+        {
+          "skillKey": "placement.aptitude",
+          "requiredDepth": 0.55,
+          "importance": 0.75,
+          "placementRelevance": 1,
+          "prerequisites": [],
+          "academicDepth": 0,
+          "mappingConfidence": 0,
+          "academicTiming": "NONE",
+          "estimatedMinutes": 900,
+          "required": true
+        },
+        {
+          "skillKey": "resume.profile",
+          "requiredDepth": 0.7,
+          "importance": 0.75,
+          "placementRelevance": 1,
+          "prerequisites": [],
+          "academicDepth": 0,
+          "mappingConfidence": 0,
+          "academicTiming": "NONE",
+          "estimatedMinutes": 300,
+          "required": true
+        },
+        {
+          "skillKey": "backend.framework",
+          "requiredDepth": 0.4,
+          "importance": 0.2,
+          "placementRelevance": 0.2,
+          "prerequisites": ["programming.basics"],
+          "academicDepth": 0,
+          "mappingConfidence": 0,
+          "academicTiming": "NONE",
+          "estimatedMinutes": 2400,
+          "required": false
+        }
+      ],
+      "expected": {
+        "status": "READY",
+        "classifications": {
+          "programming.basics": "MASTERED",
+          "dsa.arrays": "COLLEGE_EXTENSION",
+          "placement.aptitude": "PARTIAL",
+          "resume.profile": "INDEPENDENT",
+          "backend.framework": "INDEPENDENT"
+        },
+        "maxWeeklyMinutes": 326,
+        "prerequisiteOrder": ["programming.basics", "dsa.arrays"]
+      }
+    },
+    {
+      "id": "P05",
+      "description": "Backend internship student with only six declared hours each week and incomplete foundations.",
+      "supportedCurriculum": true,
+      "roleKey": "backend-engineer",
+      "targetLevel": "INTERNSHIP_READY",
+      "deadlineWeeks": 40,
+      "normalWeeklyMinutes": 360,
+      "mode": "NORMAL",
+      "skills": {
+        "programming.basics": { "proficiency": 0.45, "confidence": 0.7 },
+        "programming.oop": { "proficiency": 0.2, "confidence": 0.45 },
+        "backend.rest": { "proficiency": 0, "confidence": 0.45 },
+        "tools.git": { "proficiency": 0, "confidence": 0.45 }
+      },
+      "requirements": [
+        {
+          "skillKey": "programming.basics",
+          "requiredDepth": 0.6,
+          "importance": 1,
+          "placementRelevance": 0.6,
+          "prerequisites": [],
+          "academicDepth": 0.4,
+          "mappingConfidence": 0.9,
+          "academicTiming": "CURRENT",
+          "estimatedMinutes": 1200,
+          "required": true
+        },
+        {
+          "skillKey": "programming.oop",
+          "requiredDepth": 0.65,
+          "importance": 0.9,
+          "placementRelevance": 0.6,
+          "prerequisites": ["programming.basics"],
+          "academicDepth": 0.5,
+          "mappingConfidence": 0.9,
+          "academicTiming": "CURRENT",
+          "estimatedMinutes": 1500,
+          "required": true
+        },
+        {
+          "skillKey": "backend.rest",
+          "requiredDepth": 0.55,
+          "importance": 0.9,
+          "placementRelevance": 0.5,
+          "prerequisites": ["programming.oop"],
+          "academicDepth": 0,
+          "mappingConfidence": 0,
+          "academicTiming": "NONE",
+          "estimatedMinutes": 1800,
+          "required": true
+        },
+        {
+          "skillKey": "tools.git",
+          "requiredDepth": 0.4,
+          "importance": 0.55,
+          "placementRelevance": 0.3,
+          "prerequisites": [],
+          "academicDepth": 0,
+          "mappingConfidence": 0,
+          "academicTiming": "NONE",
+          "estimatedMinutes": 480,
+          "required": true
+        }
+      ],
+      "expected": {
+        "status": "READY",
+        "classifications": {
+          "programming.basics": "PARTIAL",
+          "programming.oop": "COLLEGE_EXTENSION",
+          "backend.rest": "INDEPENDENT",
+          "tools.git": "INDEPENDENT"
+        },
+        "maxWeeklyMinutes": 306,
+        "prerequisiteOrder": [
+          "programming.basics",
+          "programming.oop",
+          "backend.rest"
+        ]
+      }
+    },
+    {
+      "id": "P06",
+      "description": "Advanced programmer whose verified foundations should remove beginner work and expose remaining tree practice.",
+      "supportedCurriculum": true,
+      "roleKey": "software-engineer",
+      "targetLevel": "PRODUCT_PLACEMENT",
+      "deadlineWeeks": 60,
+      "normalWeeklyMinutes": 720,
+      "mode": "NORMAL",
+      "skills": {
+        "programming.basics": { "proficiency": 0.9, "confidence": 0.9 },
+        "dsa.arrays": { "proficiency": 0.82, "confidence": 0.9 },
+        "dsa.trees": { "proficiency": 0.65, "confidence": 0.8 },
+        "tools.git": { "proficiency": 0.75, "confidence": 0.9 }
+      },
+      "requirements": [
+        {
+          "skillKey": "programming.basics",
+          "requiredDepth": 0.7,
+          "importance": 0.9,
+          "placementRelevance": 0.8,
+          "prerequisites": [],
+          "academicDepth": 0.5,
+          "mappingConfidence": 0.9,
+          "academicTiming": "COMPLETED",
+          "estimatedMinutes": 900,
+          "required": true
+        },
+        {
+          "skillKey": "dsa.arrays",
+          "requiredDepth": 0.75,
+          "importance": 0.95,
+          "placementRelevance": 1,
+          "prerequisites": ["programming.basics"],
+          "academicDepth": 0.5,
+          "mappingConfidence": 0.9,
+          "academicTiming": "COMPLETED",
+          "estimatedMinutes": 1800,
+          "required": true
+        },
+        {
+          "skillKey": "dsa.trees",
+          "requiredDepth": 0.75,
+          "importance": 0.85,
+          "placementRelevance": 1,
+          "prerequisites": ["dsa.arrays"],
+          "academicDepth": 0.5,
+          "mappingConfidence": 0.9,
+          "academicTiming": "CURRENT",
+          "estimatedMinutes": 1800,
+          "required": true
+        },
+        {
+          "skillKey": "tools.git",
+          "requiredDepth": 0.55,
+          "importance": 0.5,
+          "placementRelevance": 0.35,
+          "prerequisites": [],
+          "academicDepth": 0,
+          "mappingConfidence": 0,
+          "academicTiming": "NONE",
+          "estimatedMinutes": 420,
+          "required": true
+        }
+      ],
+      "expected": {
+        "status": "READY",
+        "classifications": {
+          "programming.basics": "MASTERED",
+          "dsa.arrays": "MASTERED",
+          "dsa.trees": "PARTIAL",
+          "tools.git": "MASTERED"
+        },
+        "maxWeeklyMinutes": 612,
+        "prerequisiteOrder": ["programming.basics", "dsa.arrays", "dsa.trees"]
+      }
+    },
+    {
+      "id": "P07",
+      "description": "Second-year data analyst learner with future statistics and SQL curriculum but no BI experience.",
+      "supportedCurriculum": true,
+      "roleKey": "data-analyst",
+      "targetLevel": "INTERNSHIP_READY",
+      "deadlineWeeks": 52,
+      "normalWeeklyMinutes": 600,
+      "mode": "NORMAL",
+      "skills": {
+        "db.sql": { "proficiency": 0.25, "confidence": 0.55 },
+        "data.statistics": { "proficiency": 0.1, "confidence": 0.45 },
+        "data.bi": { "proficiency": 0, "confidence": 0.45 },
+        "tools.git": { "proficiency": 0.2, "confidence": 0.45 }
+      },
+      "requirements": [
+        {
+          "skillKey": "db.sql",
+          "requiredDepth": 0.7,
+          "importance": 1,
+          "placementRelevance": 0.8,
+          "prerequisites": [],
+          "academicDepth": 0.55,
+          "mappingConfidence": 0.95,
+          "academicTiming": "FUTURE_BEFORE_REQUIRED",
+          "estimatedMinutes": 1500,
+          "required": true
+        },
+        {
+          "skillKey": "data.statistics",
+          "requiredDepth": 0.6,
+          "importance": 0.85,
+          "placementRelevance": 0.7,
+          "prerequisites": [],
+          "academicDepth": 0.5,
+          "mappingConfidence": 0.9,
+          "academicTiming": "FUTURE_BEFORE_REQUIRED",
+          "estimatedMinutes": 1800,
+          "required": true
+        },
+        {
+          "skillKey": "data.bi",
+          "requiredDepth": 0.6,
+          "importance": 0.9,
+          "placementRelevance": 0.65,
+          "prerequisites": ["db.sql"],
+          "academicDepth": 0,
+          "mappingConfidence": 0,
+          "academicTiming": "NONE",
+          "estimatedMinutes": 1920,
+          "required": true
+        },
+        {
+          "skillKey": "tools.git",
+          "requiredDepth": 0.4,
+          "importance": 0.4,
+          "placementRelevance": 0.25,
+          "prerequisites": [],
+          "academicDepth": 0,
+          "mappingConfidence": 0,
+          "academicTiming": "NONE",
+          "estimatedMinutes": 360,
+          "required": false
+        }
+      ],
+      "expected": {
+        "status": "READY",
+        "classifications": {
+          "db.sql": "COLLEGE_EXTENSION",
+          "data.statistics": "COLLEGE_EXTENSION",
+          "data.bi": "INDEPENDENT",
+          "tools.git": "PARTIAL"
+        },
+        "maxWeeklyMinutes": 510,
+        "prerequisiteOrder": ["db.sql", "data.bi"]
+      }
+    },
+    {
+      "id": "P08",
+      "description": "Backend student in semester-exam mode who needs only bounded career continuity.",
+      "supportedCurriculum": true,
+      "roleKey": "backend-engineer",
+      "targetLevel": "PRODUCT_PLACEMENT",
+      "deadlineWeeks": 12,
+      "normalWeeklyMinutes": 840,
+      "mode": "SEMESTER_EXAM",
+      "skills": {
+        "programming.basics": { "proficiency": 0.6, "confidence": 0.8 },
+        "dsa.arrays": { "proficiency": 0.45, "confidence": 0.7 },
+        "tools.git": { "proficiency": 0.3, "confidence": 0.55 }
+      },
+      "requirements": [
+        {
+          "skillKey": "programming.basics",
+          "requiredDepth": 0.65,
+          "importance": 0.9,
+          "placementRelevance": 0.8,
+          "prerequisites": [],
+          "academicDepth": 0.5,
+          "mappingConfidence": 0.9,
+          "academicTiming": "COMPLETED",
+          "estimatedMinutes": 720,
+          "required": true
+        },
+        {
+          "skillKey": "dsa.arrays",
+          "requiredDepth": 0.7,
+          "importance": 0.95,
+          "placementRelevance": 1,
+          "prerequisites": ["programming.basics"],
+          "academicDepth": 0.5,
+          "mappingConfidence": 0.9,
+          "academicTiming": "CURRENT",
+          "estimatedMinutes": 900,
+          "required": true
+        },
+        {
+          "skillKey": "tools.git",
+          "requiredDepth": 0.4,
+          "importance": 0.45,
+          "placementRelevance": 0.3,
+          "prerequisites": [],
+          "academicDepth": 0,
+          "mappingConfidence": 0,
+          "academicTiming": "NONE",
+          "estimatedMinutes": 300,
+          "required": true
+        }
+      ],
+      "expected": {
+        "status": "READY",
+        "classifications": {
+          "programming.basics": "PARTIAL",
+          "dsa.arrays": "COLLEGE_EXTENSION",
+          "tools.git": "PARTIAL"
+        },
+        "maxWeeklyMinutes": 142,
+        "prerequisiteOrder": ["programming.basics", "dsa.arrays"]
+      }
+    },
+    {
+      "id": "P09",
+      "description": "Backend product-placement beginner with four weekly hours and an impossible eight-week deadline.",
+      "supportedCurriculum": true,
+      "roleKey": "backend-engineer",
+      "targetLevel": "PRODUCT_PLACEMENT",
+      "deadlineWeeks": 8,
+      "normalWeeklyMinutes": 240,
+      "mode": "NORMAL",
+      "skills": {
+        "programming.basics": { "proficiency": 0, "confidence": 0.45 },
+        "programming.oop": { "proficiency": 0, "confidence": 0.45 },
+        "db.sql": { "proficiency": 0, "confidence": 0.45 },
+        "backend.rest": { "proficiency": 0, "confidence": 0.45 },
+        "backend.framework": { "proficiency": 0, "confidence": 0.45 }
+      },
+      "requirements": [
+        {
+          "skillKey": "programming.basics",
+          "requiredDepth": 0.7,
+          "importance": 1,
+          "placementRelevance": 0.8,
+          "prerequisites": [],
+          "academicDepth": 0.3,
+          "mappingConfidence": 0.9,
+          "academicTiming": "CURRENT",
+          "estimatedMinutes": 2100,
+          "required": true
+        },
+        {
+          "skillKey": "programming.oop",
+          "requiredDepth": 0.75,
+          "importance": 0.9,
+          "placementRelevance": 0.8,
+          "prerequisites": ["programming.basics"],
+          "academicDepth": 0,
+          "mappingConfidence": 0,
+          "academicTiming": "NONE",
+          "estimatedMinutes": 1800,
+          "required": true
+        },
+        {
+          "skillKey": "db.sql",
+          "requiredDepth": 0.75,
+          "importance": 0.85,
+          "placementRelevance": 0.8,
+          "prerequisites": [],
+          "academicDepth": 0,
+          "mappingConfidence": 0,
+          "academicTiming": "NONE",
+          "estimatedMinutes": 1500,
+          "required": true
+        },
+        {
+          "skillKey": "backend.rest",
+          "requiredDepth": 0.7,
+          "importance": 0.9,
+          "placementRelevance": 0.7,
+          "prerequisites": ["programming.oop"],
+          "academicDepth": 0,
+          "mappingConfidence": 0,
+          "academicTiming": "NONE",
+          "estimatedMinutes": 2100,
+          "required": true
+        },
+        {
+          "skillKey": "backend.framework",
+          "requiredDepth": 0.7,
+          "importance": 0.9,
+          "placementRelevance": 0.65,
+          "prerequisites": ["backend.rest", "db.sql"],
+          "academicDepth": 0,
+          "mappingConfidence": 0,
+          "academicTiming": "NONE",
+          "estimatedMinutes": 3300,
+          "required": true
+        }
+      ],
+      "expected": {
+        "status": "INFEASIBLE",
+        "classifications": {
+          "programming.basics": "COLLEGE_EXTENSION",
+          "programming.oop": "INDEPENDENT",
+          "db.sql": "INDEPENDENT",
+          "backend.rest": "INDEPENDENT",
+          "backend.framework": "INDEPENDENT"
+        },
+        "maxWeeklyMinutes": 204,
+        "prerequisiteOrder": [
+          "programming.basics",
+          "programming.oop",
+          "backend.rest",
+          "backend.framework"
+        ]
+      }
+    },
+    {
+      "id": "P10",
+      "description": "Student from an unsupported academic program where curriculum-aware generation must stop.",
+      "supportedCurriculum": false,
+      "roleKey": "software-engineer",
+      "targetLevel": "SERVICE_PLACEMENT",
+      "deadlineWeeks": 60,
+      "normalWeeklyMinutes": 600,
+      "mode": "NORMAL",
+      "skills": {
+        "programming.basics": { "proficiency": 0.4, "confidence": 0.45 }
+      },
+      "requirements": [
+        {
+          "skillKey": "programming.basics",
+          "requiredDepth": 0.65,
+          "importance": 1,
+          "placementRelevance": 0.8,
+          "prerequisites": [],
+          "academicDepth": 0,
+          "mappingConfidence": 0,
+          "academicTiming": "NONE",
+          "estimatedMinutes": 1200,
+          "required": true
+        }
+      ],
+      "expected": {
+        "status": "UNSUPPORTED",
+        "classifications": {},
+        "maxWeeklyMinutes": 510,
+        "prerequisiteOrder": []
+      }
+    }
+  ]
+}

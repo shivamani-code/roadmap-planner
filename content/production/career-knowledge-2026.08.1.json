@@ -1,0 +1,3229 @@
+{
+  "schemaVersion": "1.0.0",
+  "datasetVersion": "2026.08.1",
+  "synthetic": false,
+  "review": {
+    "editorId": "studentos-content-editor",
+    "reviewerId": "studentos-content-reviewer",
+    "reviewedAt": "2026-08-26T00:00:00Z",
+    "rationale": "Role activities and technology coverage were cross-checked against O*NET occupation profiles and India NCO classifications. Skill depths and effort estimates are StudentOS planning parameters, not claims made by those sources."
+  },
+  "skills": [
+    {
+      "key": "programming.fundamentals",
+      "name": "Programming fundamentals",
+      "category": "PROGRAMMING",
+      "rubricVersion": 1,
+      "evidenceDecayDays": 730,
+      "prerequisites": []
+    },
+    {
+      "key": "programming.oop",
+      "name": "Object-oriented programming",
+      "category": "PROGRAMMING",
+      "rubricVersion": 1,
+      "evidenceDecayDays": 730,
+      "prerequisites": [
+        {
+          "skillKey": "programming.fundamentals",
+          "type": "HARD",
+          "threshold": 0.4
+        }
+      ]
+    },
+    {
+      "key": "dsa.core",
+      "name": "Data structures and algorithms",
+      "category": "DSA",
+      "rubricVersion": 1,
+      "evidenceDecayDays": 730,
+      "prerequisites": [
+        {
+          "skillKey": "programming.fundamentals",
+          "type": "HARD",
+          "threshold": 0.4
+        }
+      ]
+    },
+    {
+      "key": "dsa.problem-solving",
+      "name": "Algorithmic problem solving",
+      "category": "DSA",
+      "rubricVersion": 1,
+      "evidenceDecayDays": 730,
+      "prerequisites": [
+        {
+          "skillKey": "dsa.core",
+          "type": "HARD",
+          "threshold": 0.5
+        }
+      ]
+    },
+    {
+      "key": "core.os",
+      "name": "Operating systems",
+      "category": "CORE_CS",
+      "rubricVersion": 1,
+      "evidenceDecayDays": 730,
+      "prerequisites": [
+        {
+          "skillKey": "programming.fundamentals",
+          "type": "SOFT",
+          "threshold": 0.3
+        }
+      ]
+    },
+    {
+      "key": "core.networks",
+      "name": "Computer networks",
+      "category": "CORE_CS",
+      "rubricVersion": 1,
+      "evidenceDecayDays": 730,
+      "prerequisites": []
+    },
+    {
+      "key": "db.relational",
+      "name": "Relational databases and SQL",
+      "category": "DATABASES",
+      "rubricVersion": 1,
+      "evidenceDecayDays": 730,
+      "prerequisites": [
+        {
+          "skillKey": "programming.fundamentals",
+          "type": "SOFT",
+          "threshold": 0.3
+        }
+      ]
+    },
+    {
+      "key": "engineering.software",
+      "name": "Software engineering practices",
+      "category": "DEVELOPMENT",
+      "rubricVersion": 1,
+      "evidenceDecayDays": 365,
+      "prerequisites": [
+        {
+          "skillKey": "programming.oop",
+          "type": "SOFT",
+          "threshold": 0.4
+        }
+      ]
+    },
+    {
+      "key": "engineering.testing",
+      "name": "Automated testing and debugging",
+      "category": "DEVELOPMENT",
+      "rubricVersion": 1,
+      "evidenceDecayDays": 365,
+      "prerequisites": [
+        {
+          "skillKey": "programming.fundamentals",
+          "type": "HARD",
+          "threshold": 0.4
+        }
+      ]
+    },
+    {
+      "key": "tools.git",
+      "name": "Git and collaborative version control",
+      "category": "TOOLS",
+      "rubricVersion": 1,
+      "evidenceDecayDays": 365,
+      "prerequisites": []
+    },
+    {
+      "key": "web.fundamentals",
+      "name": "HTML, CSS, and browser fundamentals",
+      "category": "DEVELOPMENT",
+      "rubricVersion": 1,
+      "evidenceDecayDays": 365,
+      "prerequisites": []
+    },
+    {
+      "key": "web.javascript",
+      "name": "Modern JavaScript and TypeScript",
+      "category": "PROGRAMMING",
+      "rubricVersion": 1,
+      "evidenceDecayDays": 730,
+      "prerequisites": [
+        {
+          "skillKey": "programming.fundamentals",
+          "type": "HARD",
+          "threshold": 0.4
+        }
+      ]
+    },
+    {
+      "key": "web.react",
+      "name": "React user-interface development",
+      "category": "DEVELOPMENT",
+      "rubricVersion": 1,
+      "evidenceDecayDays": 365,
+      "prerequisites": [
+        {
+          "skillKey": "web.javascript",
+          "type": "HARD",
+          "threshold": 0.5
+        },
+        {
+          "skillKey": "web.fundamentals",
+          "type": "HARD",
+          "threshold": 0.4
+        }
+      ]
+    },
+    {
+      "key": "backend.api",
+      "name": "HTTP and REST API engineering",
+      "category": "DEVELOPMENT",
+      "rubricVersion": 1,
+      "evidenceDecayDays": 365,
+      "prerequisites": [
+        {
+          "skillKey": "core.networks",
+          "type": "SOFT",
+          "threshold": 0.3
+        },
+        {
+          "skillKey": "programming.fundamentals",
+          "type": "HARD",
+          "threshold": 0.5
+        }
+      ]
+    },
+    {
+      "key": "backend.security",
+      "name": "Application security fundamentals",
+      "category": "CORE_CS",
+      "rubricVersion": 1,
+      "evidenceDecayDays": 730,
+      "prerequisites": [
+        {
+          "skillKey": "backend.api",
+          "type": "SOFT",
+          "threshold": 0.4
+        }
+      ]
+    },
+    {
+      "key": "deployment.devops",
+      "name": "CI/CD, containers, and deployment",
+      "category": "TOOLS",
+      "rubricVersion": 1,
+      "evidenceDecayDays": 365,
+      "prerequisites": [
+        {
+          "skillKey": "tools.git",
+          "type": "HARD",
+          "threshold": 0.4
+        },
+        {
+          "skillKey": "engineering.testing",
+          "type": "SOFT",
+          "threshold": 0.4
+        }
+      ]
+    },
+    {
+      "key": "data.python",
+      "name": "Python for data work",
+      "category": "DATA",
+      "rubricVersion": 1,
+      "evidenceDecayDays": 365,
+      "prerequisites": [
+        {
+          "skillKey": "programming.fundamentals",
+          "type": "HARD",
+          "threshold": 0.4
+        }
+      ]
+    },
+    {
+      "key": "data.statistics",
+      "name": "Applied statistics",
+      "category": "DATA",
+      "rubricVersion": 1,
+      "evidenceDecayDays": 365,
+      "prerequisites": []
+    },
+    {
+      "key": "data.analysis",
+      "name": "Data cleaning and analysis",
+      "category": "DATA",
+      "rubricVersion": 1,
+      "evidenceDecayDays": 365,
+      "prerequisites": [
+        {
+          "skillKey": "data.python",
+          "type": "HARD",
+          "threshold": 0.4
+        },
+        {
+          "skillKey": "db.relational",
+          "type": "SOFT",
+          "threshold": 0.4
+        },
+        {
+          "skillKey": "data.statistics",
+          "type": "HARD",
+          "threshold": 0.4
+        }
+      ]
+    },
+    {
+      "key": "data.visualization",
+      "name": "Data visualization and reporting",
+      "category": "DATA",
+      "rubricVersion": 1,
+      "evidenceDecayDays": 365,
+      "prerequisites": [
+        {
+          "skillKey": "data.analysis",
+          "type": "HARD",
+          "threshold": 0.5
+        }
+      ]
+    },
+    {
+      "key": "communication.technical",
+      "name": "Technical communication",
+      "category": "COMMUNICATION",
+      "rubricVersion": 1,
+      "evidenceDecayDays": 730,
+      "prerequisites": []
+    },
+    {
+      "key": "projects.delivery",
+      "name": "Portfolio project delivery",
+      "category": "PROJECTS",
+      "rubricVersion": 1,
+      "evidenceDecayDays": 730,
+      "prerequisites": [
+        {
+          "skillKey": "tools.git",
+          "type": "HARD",
+          "threshold": 0.4
+        },
+        {
+          "skillKey": "engineering.software",
+          "type": "SOFT",
+          "threshold": 0.4
+        }
+      ]
+    },
+    {
+      "key": "interview.coding",
+      "name": "Coding interview problem solving",
+      "category": "INTERVIEW",
+      "rubricVersion": 1,
+      "evidenceDecayDays": 365,
+      "prerequisites": [
+        {
+          "skillKey": "dsa.core",
+          "type": "HARD",
+          "threshold": 0.5
+        }
+      ]
+    },
+    {
+      "key": "placement.aptitude",
+      "name": "Quantitative aptitude and reasoning",
+      "category": "APTITUDE",
+      "rubricVersion": 1,
+      "evidenceDecayDays": 730,
+      "prerequisites": []
+    }
+  ],
+  "roles": [
+    {
+      "key": "software-engineer",
+      "name": "Software Engineer",
+      "domainKey": "software-development",
+      "version": 1,
+      "targetLevels": [
+        {
+          "level": "INTERNSHIP_READY",
+          "requirements": [
+            {
+              "skillKey": "programming.fundamentals",
+              "requiredDepth": 0.56,
+              "importance": 0.78,
+              "placementRelevance": 0.76,
+              "required": true,
+              "requiredByDaysBeforeDeadline": 45,
+              "hours": {
+                "p25": 17,
+                "p50": 24,
+                "p75": 35
+              },
+              "rationale": "programming fundamentals is part of the reviewed Software Engineer internship ready competency profile."
+            },
+            {
+              "skillKey": "programming.oop",
+              "requiredDepth": 0.52,
+              "importance": 0.72,
+              "placementRelevance": 0.72,
+              "required": true,
+              "requiredByDaysBeforeDeadline": 45,
+              "hours": {
+                "p25": 13,
+                "p50": 18,
+                "p75": 26
+              },
+              "rationale": "programming oop is part of the reviewed Software Engineer internship ready competency profile."
+            },
+            {
+              "skillKey": "dsa.core",
+              "requiredDepth": 0.56,
+              "importance": 0.78,
+              "placementRelevance": 0.76,
+              "required": true,
+              "requiredByDaysBeforeDeadline": 45,
+              "hours": {
+                "p25": 17,
+                "p50": 24,
+                "p75": 35
+              },
+              "rationale": "dsa core is part of the reviewed Software Engineer internship ready competency profile."
+            },
+            {
+              "skillKey": "dsa.problem-solving",
+              "requiredDepth": 0.52,
+              "importance": 0.72,
+              "placementRelevance": 0.72,
+              "required": true,
+              "requiredByDaysBeforeDeadline": 45,
+              "hours": {
+                "p25": 13,
+                "p50": 18,
+                "p75": 26
+              },
+              "rationale": "dsa problem-solving is part of the reviewed Software Engineer internship ready competency profile."
+            },
+            {
+              "skillKey": "core.os",
+              "requiredDepth": 0.52,
+              "importance": 0.72,
+              "placementRelevance": 0.72,
+              "required": true,
+              "requiredByDaysBeforeDeadline": 45,
+              "hours": {
+                "p25": 13,
+                "p50": 18,
+                "p75": 26
+              },
+              "rationale": "core os is part of the reviewed Software Engineer internship ready competency profile."
+            },
+            {
+              "skillKey": "core.networks",
+              "requiredDepth": 0.52,
+              "importance": 0.72,
+              "placementRelevance": 0.72,
+              "required": true,
+              "requiredByDaysBeforeDeadline": 45,
+              "hours": {
+                "p25": 13,
+                "p50": 18,
+                "p75": 26
+              },
+              "rationale": "core networks is part of the reviewed Software Engineer internship ready competency profile."
+            },
+            {
+              "skillKey": "db.relational",
+              "requiredDepth": 0.56,
+              "importance": 0.78,
+              "placementRelevance": 0.76,
+              "required": true,
+              "requiredByDaysBeforeDeadline": 45,
+              "hours": {
+                "p25": 17,
+                "p50": 24,
+                "p75": 35
+              },
+              "rationale": "db relational is part of the reviewed Software Engineer internship ready competency profile."
+            },
+            {
+              "skillKey": "engineering.software",
+              "requiredDepth": 0.52,
+              "importance": 0.72,
+              "placementRelevance": 0.72,
+              "required": true,
+              "requiredByDaysBeforeDeadline": 45,
+              "hours": {
+                "p25": 13,
+                "p50": 18,
+                "p75": 26
+              },
+              "rationale": "engineering software is part of the reviewed Software Engineer internship ready competency profile."
+            },
+            {
+              "skillKey": "engineering.testing",
+              "requiredDepth": 0.52,
+              "importance": 0.72,
+              "placementRelevance": 0.72,
+              "required": true,
+              "requiredByDaysBeforeDeadline": 45,
+              "hours": {
+                "p25": 13,
+                "p50": 18,
+                "p75": 26
+              },
+              "rationale": "engineering testing is part of the reviewed Software Engineer internship ready competency profile."
+            },
+            {
+              "skillKey": "tools.git",
+              "requiredDepth": 0.52,
+              "importance": 0.72,
+              "placementRelevance": 0.72,
+              "required": true,
+              "requiredByDaysBeforeDeadline": 45,
+              "hours": {
+                "p25": 13,
+                "p50": 18,
+                "p75": 26
+              },
+              "rationale": "tools git is part of the reviewed Software Engineer internship ready competency profile."
+            },
+            {
+              "skillKey": "projects.delivery",
+              "requiredDepth": 0.52,
+              "importance": 0.72,
+              "placementRelevance": 0.72,
+              "required": true,
+              "requiredByDaysBeforeDeadline": 45,
+              "hours": {
+                "p25": 13,
+                "p50": 18,
+                "p75": 26
+              },
+              "rationale": "projects delivery is part of the reviewed Software Engineer internship ready competency profile."
+            },
+            {
+              "skillKey": "communication.technical",
+              "requiredDepth": 0.56,
+              "importance": 0.78,
+              "placementRelevance": 0.76,
+              "required": true,
+              "requiredByDaysBeforeDeadline": 45,
+              "hours": {
+                "p25": 17,
+                "p50": 24,
+                "p75": 35
+              },
+              "rationale": "communication technical is part of the reviewed Software Engineer internship ready competency profile."
+            },
+            {
+              "skillKey": "interview.coding",
+              "requiredDepth": 0.52,
+              "importance": 0.72,
+              "placementRelevance": 0.72,
+              "required": true,
+              "requiredByDaysBeforeDeadline": 45,
+              "hours": {
+                "p25": 13,
+                "p50": 18,
+                "p75": 26
+              },
+              "rationale": "interview coding is part of the reviewed Software Engineer internship ready competency profile."
+            },
+            {
+              "skillKey": "placement.aptitude",
+              "requiredDepth": 0.52,
+              "importance": 0.72,
+              "placementRelevance": 0.72,
+              "required": true,
+              "requiredByDaysBeforeDeadline": 45,
+              "hours": {
+                "p25": 13,
+                "p50": 18,
+                "p75": 26
+              },
+              "rationale": "placement aptitude is part of the reviewed Software Engineer internship ready competency profile."
+            }
+          ]
+        },
+        {
+          "level": "SERVICE_PLACEMENT",
+          "requirements": [
+            {
+              "skillKey": "programming.fundamentals",
+              "requiredDepth": 0.68,
+              "importance": 0.8799999999999999,
+              "placementRelevance": 0.86,
+              "required": true,
+              "requiredByDaysBeforeDeadline": 75,
+              "hours": {
+                "p25": 24,
+                "p50": 34,
+                "p75": 49
+              },
+              "rationale": "programming fundamentals is part of the reviewed Software Engineer service placement competency profile."
+            },
+            {
+              "skillKey": "programming.oop",
+              "requiredDepth": 0.64,
+              "importance": 0.82,
+              "placementRelevance": 0.82,
+              "required": true,
+              "requiredByDaysBeforeDeadline": 75,
+              "hours": {
+                "p25": 20,
+                "p50": 28,
+                "p75": 41
+              },
+              "rationale": "programming oop is part of the reviewed Software Engineer service placement competency profile."
+            },
+            {
+              "skillKey": "dsa.core",
+              "requiredDepth": 0.68,
+              "importance": 0.8799999999999999,
+              "placementRelevance": 0.86,
+              "required": true,
+              "requiredByDaysBeforeDeadline": 75,
+              "hours": {
+                "p25": 24,
+                "p50": 34,
+                "p75": 49
+              },
+              "rationale": "dsa core is part of the reviewed Software Engineer service placement competency profile."
+            },
+            {
+              "skillKey": "dsa.problem-solving",
+              "requiredDepth": 0.64,
+              "importance": 0.82,
+              "placementRelevance": 0.82,
+              "required": true,
+              "requiredByDaysBeforeDeadline": 75,
+              "hours": {
+                "p25": 20,
+                "p50": 28,
+                "p75": 41
+              },
+              "rationale": "dsa problem-solving is part of the reviewed Software Engineer service placement competency profile."
+            },
+            {
+              "skillKey": "core.os",
+              "requiredDepth": 0.64,
+              "importance": 0.82,
+              "placementRelevance": 0.82,
+              "required": true,
+              "requiredByDaysBeforeDeadline": 75,
+              "hours": {
+                "p25": 20,
+                "p50": 28,
+                "p75": 41
+              },
+              "rationale": "core os is part of the reviewed Software Engineer service placement competency profile."
+            },
+            {
+              "skillKey": "core.networks",
+              "requiredDepth": 0.64,
+              "importance": 0.82,
+              "placementRelevance": 0.82,
+              "required": true,
+              "requiredByDaysBeforeDeadline": 75,
+              "hours": {
+                "p25": 20,
+                "p50": 28,
+                "p75": 41
+              },
+              "rationale": "core networks is part of the reviewed Software Engineer service placement competency profile."
+            },
+            {
+              "skillKey": "db.relational",
+              "requiredDepth": 0.68,
+              "importance": 0.8799999999999999,
+              "placementRelevance": 0.86,
+              "required": true,
+              "requiredByDaysBeforeDeadline": 75,
+              "hours": {
+                "p25": 24,
+                "p50": 34,
+                "p75": 49
+              },
+              "rationale": "db relational is part of the reviewed Software Engineer service placement competency profile."
+            },
+            {
+              "skillKey": "engineering.software",
+              "requiredDepth": 0.64,
+              "importance": 0.82,
+              "placementRelevance": 0.82,
+              "required": true,
+              "requiredByDaysBeforeDeadline": 75,
+              "hours": {
+                "p25": 20,
+                "p50": 28,
+                "p75": 41
+              },
+              "rationale": "engineering software is part of the reviewed Software Engineer service placement competency profile."
+            },
+            {
+              "skillKey": "engineering.testing",
+              "requiredDepth": 0.64,
+              "importance": 0.82,
+              "placementRelevance": 0.82,
+              "required": true,
+              "requiredByDaysBeforeDeadline": 75,
+              "hours": {
+                "p25": 20,
+                "p50": 28,
+                "p75": 41
+              },
+              "rationale": "engineering testing is part of the reviewed Software Engineer service placement competency profile."
+            },
+            {
+              "skillKey": "tools.git",
+              "requiredDepth": 0.64,
+              "importance": 0.82,
+              "placementRelevance": 0.82,
+              "required": true,
+              "requiredByDaysBeforeDeadline": 75,
+              "hours": {
+                "p25": 20,
+                "p50": 28,
+                "p75": 41
+              },
+              "rationale": "tools git is part of the reviewed Software Engineer service placement competency profile."
+            },
+            {
+              "skillKey": "projects.delivery",
+              "requiredDepth": 0.64,
+              "importance": 0.82,
+              "placementRelevance": 0.82,
+              "required": true,
+              "requiredByDaysBeforeDeadline": 75,
+              "hours": {
+                "p25": 20,
+                "p50": 28,
+                "p75": 41
+              },
+              "rationale": "projects delivery is part of the reviewed Software Engineer service placement competency profile."
+            },
+            {
+              "skillKey": "communication.technical",
+              "requiredDepth": 0.68,
+              "importance": 0.8799999999999999,
+              "placementRelevance": 0.86,
+              "required": true,
+              "requiredByDaysBeforeDeadline": 75,
+              "hours": {
+                "p25": 24,
+                "p50": 34,
+                "p75": 49
+              },
+              "rationale": "communication technical is part of the reviewed Software Engineer service placement competency profile."
+            },
+            {
+              "skillKey": "interview.coding",
+              "requiredDepth": 0.64,
+              "importance": 0.82,
+              "placementRelevance": 0.82,
+              "required": true,
+              "requiredByDaysBeforeDeadline": 75,
+              "hours": {
+                "p25": 20,
+                "p50": 28,
+                "p75": 41
+              },
+              "rationale": "interview coding is part of the reviewed Software Engineer service placement competency profile."
+            },
+            {
+              "skillKey": "placement.aptitude",
+              "requiredDepth": 0.64,
+              "importance": 0.82,
+              "placementRelevance": 0.82,
+              "required": true,
+              "requiredByDaysBeforeDeadline": 75,
+              "hours": {
+                "p25": 20,
+                "p50": 28,
+                "p75": 41
+              },
+              "rationale": "placement aptitude is part of the reviewed Software Engineer service placement competency profile."
+            }
+          ]
+        },
+        {
+          "level": "PRODUCT_PLACEMENT",
+          "requirements": [
+            {
+              "skillKey": "programming.fundamentals",
+              "requiredDepth": 0.8200000000000001,
+              "importance": 0.98,
+              "placementRelevance": 0.96,
+              "required": true,
+              "requiredByDaysBeforeDeadline": 105,
+              "hours": {
+                "p25": 31,
+                "p50": 44,
+                "p75": 64
+              },
+              "rationale": "programming fundamentals is part of the reviewed Software Engineer product placement competency profile."
+            },
+            {
+              "skillKey": "programming.oop",
+              "requiredDepth": 0.78,
+              "importance": 0.92,
+              "placementRelevance": 0.9199999999999999,
+              "required": true,
+              "requiredByDaysBeforeDeadline": 105,
+              "hours": {
+                "p25": 27,
+                "p50": 38,
+                "p75": 55
+              },
+              "rationale": "programming oop is part of the reviewed Software Engineer product placement competency profile."
+            },
+            {
+              "skillKey": "dsa.core",
+              "requiredDepth": 0.8200000000000001,
+              "importance": 0.98,
+              "placementRelevance": 0.96,
+              "required": true,
+              "requiredByDaysBeforeDeadline": 105,
+              "hours": {
+                "p25": 31,
+                "p50": 44,
+                "p75": 64
+              },
+              "rationale": "dsa core is part of the reviewed Software Engineer product placement competency profile."
+            },
+            {
+              "skillKey": "dsa.problem-solving",
+              "requiredDepth": 0.78,
+              "importance": 0.92,
+              "placementRelevance": 0.9199999999999999,
+              "required": true,
+              "requiredByDaysBeforeDeadline": 105,
+              "hours": {
+                "p25": 27,
+                "p50": 38,
+                "p75": 55
+              },
+              "rationale": "dsa problem-solving is part of the reviewed Software Engineer product placement competency profile."
+            },
+            {
+              "skillKey": "core.os",
+              "requiredDepth": 0.78,
+              "importance": 0.92,
+              "placementRelevance": 0.9199999999999999,
+              "required": true,
+              "requiredByDaysBeforeDeadline": 105,
+              "hours": {
+                "p25": 27,
+                "p50": 38,
+                "p75": 55
+              },
+              "rationale": "core os is part of the reviewed Software Engineer product placement competency profile."
+            },
+            {
+              "skillKey": "core.networks",
+              "requiredDepth": 0.78,
+              "importance": 0.92,
+              "placementRelevance": 0.9199999999999999,
+              "required": true,
+              "requiredByDaysBeforeDeadline": 105,
+              "hours": {
+                "p25": 27,
+                "p50": 38,
+                "p75": 55
+              },
+              "rationale": "core networks is part of the reviewed Software Engineer product placement competency profile."
+            },
+            {
+              "skillKey": "db.relational",
+              "requiredDepth": 0.8200000000000001,
+              "importance": 0.98,
+              "placementRelevance": 0.96,
+              "required": true,
+              "requiredByDaysBeforeDeadline": 105,
+              "hours": {
+                "p25": 31,
+                "p50": 44,
+                "p75": 64
+              },
+              "rationale": "db relational is part of the reviewed Software Engineer product placement competency profile."
+            },
+            {
+              "skillKey": "engineering.software",
+              "requiredDepth": 0.78,
+              "importance": 0.92,
+              "placementRelevance": 0.9199999999999999,
+              "required": true,
+              "requiredByDaysBeforeDeadline": 105,
+              "hours": {
+                "p25": 27,
+                "p50": 38,
+                "p75": 55
+              },
+              "rationale": "engineering software is part of the reviewed Software Engineer product placement competency profile."
+            },
+            {
+              "skillKey": "engineering.testing",
+              "requiredDepth": 0.78,
+              "importance": 0.92,
+              "placementRelevance": 0.9199999999999999,
+              "required": true,
+              "requiredByDaysBeforeDeadline": 105,
+              "hours": {
+                "p25": 27,
+                "p50": 38,
+                "p75": 55
+              },
+              "rationale": "engineering testing is part of the reviewed Software Engineer product placement competency profile."
+            },
+            {
+              "skillKey": "tools.git",
+              "requiredDepth": 0.78,
+              "importance": 0.92,
+              "placementRelevance": 0.9199999999999999,
+              "required": true,
+              "requiredByDaysBeforeDeadline": 105,
+              "hours": {
+                "p25": 27,
+                "p50": 38,
+                "p75": 55
+              },
+              "rationale": "tools git is part of the reviewed Software Engineer product placement competency profile."
+            },
+            {
+              "skillKey": "projects.delivery",
+              "requiredDepth": 0.78,
+              "importance": 0.92,
+              "placementRelevance": 0.9199999999999999,
+              "required": true,
+              "requiredByDaysBeforeDeadline": 105,
+              "hours": {
+                "p25": 27,
+                "p50": 38,
+                "p75": 55
+              },
+              "rationale": "projects delivery is part of the reviewed Software Engineer product placement competency profile."
+            },
+            {
+              "skillKey": "communication.technical",
+              "requiredDepth": 0.8200000000000001,
+              "importance": 0.98,
+              "placementRelevance": 0.96,
+              "required": true,
+              "requiredByDaysBeforeDeadline": 105,
+              "hours": {
+                "p25": 31,
+                "p50": 44,
+                "p75": 64
+              },
+              "rationale": "communication technical is part of the reviewed Software Engineer product placement competency profile."
+            },
+            {
+              "skillKey": "interview.coding",
+              "requiredDepth": 0.78,
+              "importance": 0.92,
+              "placementRelevance": 0.9199999999999999,
+              "required": true,
+              "requiredByDaysBeforeDeadline": 105,
+              "hours": {
+                "p25": 27,
+                "p50": 38,
+                "p75": 55
+              },
+              "rationale": "interview coding is part of the reviewed Software Engineer product placement competency profile."
+            },
+            {
+              "skillKey": "placement.aptitude",
+              "requiredDepth": 0.78,
+              "importance": 0.92,
+              "placementRelevance": 0.9199999999999999,
+              "required": true,
+              "requiredByDaysBeforeDeadline": 105,
+              "hours": {
+                "p25": 27,
+                "p50": 38,
+                "p75": 55
+              },
+              "rationale": "placement aptitude is part of the reviewed Software Engineer product placement competency profile."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "backend-engineer",
+      "name": "Backend Engineer",
+      "domainKey": "software-development",
+      "version": 1,
+      "targetLevels": [
+        {
+          "level": "INTERNSHIP_READY",
+          "requirements": [
+            {
+              "skillKey": "programming.fundamentals",
+              "requiredDepth": 0.56,
+              "importance": 0.78,
+              "placementRelevance": 0.76,
+              "required": true,
+              "requiredByDaysBeforeDeadline": 45,
+              "hours": {
+                "p25": 17,
+                "p50": 24,
+                "p75": 35
+              },
+              "rationale": "programming fundamentals is part of the reviewed Backend Engineer internship ready competency profile."
+            },
+            {
+              "skillKey": "programming.oop",
+              "requiredDepth": 0.52,
+              "importance": 0.72,
+              "placementRelevance": 0.72,
+              "required": true,
+              "requiredByDaysBeforeDeadline": 45,
+              "hours": {
+                "p25": 13,
+                "p50": 18,
+                "p75": 26
+              },
+              "rationale": "programming oop is part of the reviewed Backend Engineer internship ready competency profile."
+            },
+            {
+              "skillKey": "dsa.core",
+              "requiredDepth": 0.56,
+              "importance": 0.78,
+              "placementRelevance": 0.76,
+              "required": true,
+              "requiredByDaysBeforeDeadline": 45,
+              "hours": {
+                "p25": 17,
+                "p50": 24,
+                "p75": 35
+              },
+              "rationale": "dsa core is part of the reviewed Backend Engineer internship ready competency profile."
+            },
+            {
+              "skillKey": "core.os",
+              "requiredDepth": 0.52,
+              "importance": 0.72,
+              "placementRelevance": 0.72,
+              "required": true,
+              "requiredByDaysBeforeDeadline": 45,
+              "hours": {
+                "p25": 13,
+                "p50": 18,
+                "p75": 26
+              },
+              "rationale": "core os is part of the reviewed Backend Engineer internship ready competency profile."
+            },
+            {
+              "skillKey": "core.networks",
+              "requiredDepth": 0.52,
+              "importance": 0.72,
+              "placementRelevance": 0.72,
+              "required": true,
+              "requiredByDaysBeforeDeadline": 45,
+              "hours": {
+                "p25": 13,
+                "p50": 18,
+                "p75": 26
+              },
+              "rationale": "core networks is part of the reviewed Backend Engineer internship ready competency profile."
+            },
+            {
+              "skillKey": "db.relational",
+              "requiredDepth": 0.56,
+              "importance": 0.78,
+              "placementRelevance": 0.76,
+              "required": true,
+              "requiredByDaysBeforeDeadline": 45,
+              "hours": {
+                "p25": 17,
+                "p50": 24,
+                "p75": 35
+              },
+              "rationale": "db relational is part of the reviewed Backend Engineer internship ready competency profile."
+            },
+            {
+              "skillKey": "engineering.software",
+              "requiredDepth": 0.52,
+              "importance": 0.72,
+              "placementRelevance": 0.72,
+              "required": true,
+              "requiredByDaysBeforeDeadline": 45,
+              "hours": {
+                "p25": 13,
+                "p50": 18,
+                "p75": 26
+              },
+              "rationale": "engineering software is part of the reviewed Backend Engineer internship ready competency profile."
+            },
+            {
+              "skillKey": "engineering.testing",
+              "requiredDepth": 0.52,
+              "importance": 0.72,
+              "placementRelevance": 0.72,
+              "required": true,
+              "requiredByDaysBeforeDeadline": 45,
+              "hours": {
+                "p25": 13,
+                "p50": 18,
+                "p75": 26
+              },
+              "rationale": "engineering testing is part of the reviewed Backend Engineer internship ready competency profile."
+            },
+            {
+              "skillKey": "tools.git",
+              "requiredDepth": 0.52,
+              "importance": 0.72,
+              "placementRelevance": 0.72,
+              "required": true,
+              "requiredByDaysBeforeDeadline": 45,
+              "hours": {
+                "p25": 13,
+                "p50": 18,
+                "p75": 26
+              },
+              "rationale": "tools git is part of the reviewed Backend Engineer internship ready competency profile."
+            },
+            {
+              "skillKey": "backend.api",
+              "requiredDepth": 0.52,
+              "importance": 0.72,
+              "placementRelevance": 0.72,
+              "required": true,
+              "requiredByDaysBeforeDeadline": 45,
+              "hours": {
+                "p25": 13,
+                "p50": 18,
+                "p75": 26
+              },
+              "rationale": "backend api is part of the reviewed Backend Engineer internship ready competency profile."
+            },
+            {
+              "skillKey": "backend.security",
+              "requiredDepth": 0.52,
+              "importance": 0.72,
+              "placementRelevance": 0.72,
+              "required": true,
+              "requiredByDaysBeforeDeadline": 45,
+              "hours": {
+                "p25": 13,
+                "p50": 18,
+                "p75": 26
+              },
+              "rationale": "backend security is part of the reviewed Backend Engineer internship ready competency profile."
+            },
+            {
+              "skillKey": "deployment.devops",
+              "requiredDepth": 0.52,
+              "importance": 0.72,
+              "placementRelevance": 0.72,
+              "required": true,
+              "requiredByDaysBeforeDeadline": 45,
+              "hours": {
+                "p25": 13,
+                "p50": 18,
+                "p75": 26
+              },
+              "rationale": "deployment devops is part of the reviewed Backend Engineer internship ready competency profile."
+            },
+            {
+              "skillKey": "projects.delivery",
+              "requiredDepth": 0.52,
+              "importance": 0.72,
+              "placementRelevance": 0.72,
+              "required": true,
+              "requiredByDaysBeforeDeadline": 45,
+              "hours": {
+                "p25": 13,
+                "p50": 18,
+                "p75": 26
+              },
+              "rationale": "projects delivery is part of the reviewed Backend Engineer internship ready competency profile."
+            },
+            {
+              "skillKey": "communication.technical",
+              "requiredDepth": 0.56,
+              "importance": 0.78,
+              "placementRelevance": 0.76,
+              "required": true,
+              "requiredByDaysBeforeDeadline": 45,
+              "hours": {
+                "p25": 17,
+                "p50": 24,
+                "p75": 35
+              },
+              "rationale": "communication technical is part of the reviewed Backend Engineer internship ready competency profile."
+            },
+            {
+              "skillKey": "interview.coding",
+              "requiredDepth": 0.52,
+              "importance": 0.72,
+              "placementRelevance": 0.72,
+              "required": true,
+              "requiredByDaysBeforeDeadline": 45,
+              "hours": {
+                "p25": 13,
+                "p50": 18,
+                "p75": 26
+              },
+              "rationale": "interview coding is part of the reviewed Backend Engineer internship ready competency profile."
+            }
+          ]
+        },
+        {
+          "level": "SERVICE_PLACEMENT",
+          "requirements": [
+            {
+              "skillKey": "programming.fundamentals",
+              "requiredDepth": 0.68,
+              "importance": 0.8799999999999999,
+              "placementRelevance": 0.86,
+              "required": true,
+              "requiredByDaysBeforeDeadline": 75,
+              "hours": {
+                "p25": 24,
+                "p50": 34,
+                "p75": 49
+              },
+              "rationale": "programming fundamentals is part of the reviewed Backend Engineer service placement competency profile."
+            },
+            {
+              "skillKey": "programming.oop",
+              "requiredDepth": 0.64,
+              "importance": 0.82,
+              "placementRelevance": 0.82,
+              "required": true,
+              "requiredByDaysBeforeDeadline": 75,
+              "hours": {
+                "p25": 20,
+                "p50": 28,
+                "p75": 41
+              },
+              "rationale": "programming oop is part of the reviewed Backend Engineer service placement competency profile."
+            },
+            {
+              "skillKey": "dsa.core",
+              "requiredDepth": 0.68,
+              "importance": 0.8799999999999999,
+              "placementRelevance": 0.86,
+              "required": true,
+              "requiredByDaysBeforeDeadline": 75,
+              "hours": {
+                "p25": 24,
+                "p50": 34,
+                "p75": 49
+              },
+              "rationale": "dsa core is part of the reviewed Backend Engineer service placement competency profile."
+            },
+            {
+              "skillKey": "core.os",
+              "requiredDepth": 0.64,
+              "importance": 0.82,
+              "placementRelevance": 0.82,
+              "required": true,
+              "requiredByDaysBeforeDeadline": 75,
+              "hours": {
+                "p25": 20,
+                "p50": 28,
+                "p75": 41
+              },
+              "rationale": "core os is part of the reviewed Backend Engineer service placement competency profile."
+            },
+            {
+              "skillKey": "core.networks",
+              "requiredDepth": 0.64,
+              "importance": 0.82,
+              "placementRelevance": 0.82,
+              "required": true,
+              "requiredByDaysBeforeDeadline": 75,
+              "hours": {
+                "p25": 20,
+                "p50": 28,
+                "p75": 41
+              },
+              "rationale": "core networks is part of the reviewed Backend Engineer service placement competency profile."
+            },
+            {
+              "skillKey": "db.relational",
+              "requiredDepth": 0.68,
+              "importance": 0.8799999999999999,
+              "placementRelevance": 0.86,
+              "required": true,
+              "requiredByDaysBeforeDeadline": 75,
+              "hours": {
+                "p25": 24,
+                "p50": 34,
+                "p75": 49
+              },
+              "rationale": "db relational is part of the reviewed Backend Engineer service placement competency profile."
+            },
+            {
+              "skillKey": "engineering.software",
+              "requiredDepth": 0.64,
+              "importance": 0.82,
+              "placementRelevance": 0.82,
+              "required": true,
+              "requiredByDaysBeforeDeadline": 75,
+              "hours": {
+                "p25": 20,
+                "p50": 28,
+                "p75": 41
+              },
+              "rationale": "engineering software is part of the reviewed Backend Engineer service placement competency profile."
+            },
+            {
+              "skillKey": "engineering.testing",
+              "requiredDepth": 0.64,
+              "importance": 0.82,
+              "placementRelevance": 0.82,
+              "required": true,
+              "requiredByDaysBeforeDeadline": 75,
+              "hours": {
+                "p25": 20,
+                "p50": 28,
+                "p75": 41
+              },
+              "rationale": "engineering testing is part of the reviewed Backend Engineer service placement competency profile."
+            },
+            {
+              "skillKey": "tools.git",
+              "requiredDepth": 0.64,
+              "importance": 0.82,
+              "placementRelevance": 0.82,
+              "required": true,
+              "requiredByDaysBeforeDeadline": 75,
+              "hours": {
+                "p25": 20,
+                "p50": 28,
+                "p75": 41
+              },
+              "rationale": "tools git is part of the reviewed Backend Engineer service placement competency profile."
+            },
+            {
+              "skillKey": "backend.api",
+              "requiredDepth": 0.64,
+              "importance": 0.82,
+              "placementRelevance": 0.82,
+              "required": true,
+              "requiredByDaysBeforeDeadline": 75,
+              "hours": {
+                "p25": 20,
+                "p50": 28,
+                "p75": 41
+              },
+              "rationale": "backend api is part of the reviewed Backend Engineer service placement competency profile."
+            },
+            {
+              "skillKey": "backend.security",
+              "requiredDepth": 0.64,
+              "importance": 0.82,
+              "placementRelevance": 0.82,
+              "required": true,
+              "requiredByDaysBeforeDeadline": 75,
+              "hours": {
+                "p25": 20,
+                "p50": 28,
+                "p75": 41
+              },
+              "rationale": "backend security is part of the reviewed Backend Engineer service placement competency profile."
+            },
+            {
+              "skillKey": "deployment.devops",
+              "requiredDepth": 0.64,
+              "importance": 0.82,
+              "placementRelevance": 0.82,
+              "required": true,
+              "requiredByDaysBeforeDeadline": 75,
+              "hours": {
+                "p25": 20,
+                "p50": 28,
+                "p75": 41
+              },
+              "rationale": "deployment devops is part of the reviewed Backend Engineer service placement competency profile."
+            },
+            {
+              "skillKey": "projects.delivery",
+              "requiredDepth": 0.64,
+              "importance": 0.82,
+              "placementRelevance": 0.82,
+              "required": true,
+              "requiredByDaysBeforeDeadline": 75,
+              "hours": {
+                "p25": 20,
+                "p50": 28,
+                "p75": 41
+              },
+              "rationale": "projects delivery is part of the reviewed Backend Engineer service placement competency profile."
+            },
+            {
+              "skillKey": "communication.technical",
+              "requiredDepth": 0.68,
+              "importance": 0.8799999999999999,
+              "placementRelevance": 0.86,
+              "required": true,
+              "requiredByDaysBeforeDeadline": 75,
+              "hours": {
+                "p25": 24,
+                "p50": 34,
+                "p75": 49
+              },
+              "rationale": "communication technical is part of the reviewed Backend Engineer service placement competency profile."
+            },
+            {
+              "skillKey": "interview.coding",
+              "requiredDepth": 0.64,
+              "importance": 0.82,
+              "placementRelevance": 0.82,
+              "required": true,
+              "requiredByDaysBeforeDeadline": 75,
+              "hours": {
+                "p25": 20,
+                "p50": 28,
+                "p75": 41
+              },
+              "rationale": "interview coding is part of the reviewed Backend Engineer service placement competency profile."
+            }
+          ]
+        },
+        {
+          "level": "PRODUCT_PLACEMENT",
+          "requirements": [
+            {
+              "skillKey": "programming.fundamentals",
+              "requiredDepth": 0.8200000000000001,
+              "importance": 0.98,
+              "placementRelevance": 0.96,
+              "required": true,
+              "requiredByDaysBeforeDeadline": 105,
+              "hours": {
+                "p25": 31,
+                "p50": 44,
+                "p75": 64
+              },
+              "rationale": "programming fundamentals is part of the reviewed Backend Engineer product placement competency profile."
+            },
+            {
+              "skillKey": "programming.oop",
+              "requiredDepth": 0.78,
+              "importance": 0.92,
+              "placementRelevance": 0.9199999999999999,
+              "required": true,
+              "requiredByDaysBeforeDeadline": 105,
+              "hours": {
+                "p25": 27,
+                "p50": 38,
+                "p75": 55
+              },
+              "rationale": "programming oop is part of the reviewed Backend Engineer product placement competency profile."
+            },
+            {
+              "skillKey": "dsa.core",
+              "requiredDepth": 0.8200000000000001,
+              "importance": 0.98,
+              "placementRelevance": 0.96,
+              "required": true,
+              "requiredByDaysBeforeDeadline": 105,
+              "hours": {
+                "p25": 31,
+                "p50": 44,
+                "p75": 64
+              },
+              "rationale": "dsa core is part of the reviewed Backend Engineer product placement competency profile."
+            },
+            {
+              "skillKey": "core.os",
+              "requiredDepth": 0.78,
+              "importance": 0.92,
+              "placementRelevance": 0.9199999999999999,
+              "required": true,
+              "requiredByDaysBeforeDeadline": 105,
+              "hours": {
+                "p25": 27,
+                "p50": 38,
+                "p75": 55
+              },
+              "rationale": "core os is part of the reviewed Backend Engineer product placement competency profile."
+            },
+            {
+              "skillKey": "core.networks",
+              "requiredDepth": 0.78,
+              "importance": 0.92,
+              "placementRelevance": 0.9199999999999999,
+              "required": true,
+              "requiredByDaysBeforeDeadline": 105,
+              "hours": {
+                "p25": 27,
+                "p50": 38,
+                "p75": 55
+              },
+              "rationale": "core networks is part of the reviewed Backend Engineer product placement competency profile."
+            },
+            {
+              "skillKey": "db.relational",
+              "requiredDepth": 0.8200000000000001,
+              "importance": 0.98,
+              "placementRelevance": 0.96,
+              "required": true,
+              "requiredByDaysBeforeDeadline": 105,
+              "hours": {
+                "p25": 31,
+                "p50": 44,
+                "p75": 64
+              },
+              "rationale": "db relational is part of the reviewed Backend Engineer product placement competency profile."
+            },
+            {
+              "skillKey": "engineering.software",
+              "requiredDepth": 0.78,
+              "importance": 0.92,
+              "placementRelevance": 0.9199999999999999,
+              "required": true,
+              "requiredByDaysBeforeDeadline": 105,
+              "hours": {
+                "p25": 27,
+                "p50": 38,
+                "p75": 55
+              },
+              "rationale": "engineering software is part of the reviewed Backend Engineer product placement competency profile."
+            },
+            {
+              "skillKey": "engineering.testing",
+              "requiredDepth": 0.78,
+              "importance": 0.92,
+              "placementRelevance": 0.9199999999999999,
+              "required": true,
+              "requiredByDaysBeforeDeadline": 105,
+              "hours": {
+                "p25": 27,
+                "p50": 38,
+                "p75": 55
+              },
+              "rationale": "engineering testing is part of the reviewed Backend Engineer product placement competency profile."
+            },
+            {
+              "skillKey": "tools.git",
+              "requiredDepth": 0.78,
+              "importance": 0.92,
+              "placementRelevance": 0.9199999999999999,
+              "required": true,
+              "requiredByDaysBeforeDeadline": 105,
+              "hours": {
+                "p25": 27,
+                "p50": 38,
+                "p75": 55
+              },
+              "rationale": "tools git is part of the reviewed Backend Engineer product placement competency profile."
+            },
+            {
+              "skillKey": "backend.api",
+              "requiredDepth": 0.78,
+              "importance": 0.92,
+              "placementRelevance": 0.9199999999999999,
+              "required": true,
+              "requiredByDaysBeforeDeadline": 105,
+              "hours": {
+                "p25": 27,
+                "p50": 38,
+                "p75": 55
+              },
+              "rationale": "backend api is part of the reviewed Backend Engineer product placement competency profile."
+            },
+            {
+              "skillKey": "backend.security",
+              "requiredDepth": 0.78,
+              "importance": 0.92,
+              "placementRelevance": 0.9199999999999999,
+              "required": true,
+              "requiredByDaysBeforeDeadline": 105,
+              "hours": {
+                "p25": 27,
+                "p50": 38,
+                "p75": 55
+              },
+              "rationale": "backend security is part of the reviewed Backend Engineer product placement competency profile."
+            },
+            {
+              "skillKey": "deployment.devops",
+              "requiredDepth": 0.78,
+              "importance": 0.92,
+              "placementRelevance": 0.9199999999999999,
+              "required": true,
+              "requiredByDaysBeforeDeadline": 105,
+              "hours": {
+                "p25": 27,
+                "p50": 38,
+                "p75": 55
+              },
+              "rationale": "deployment devops is part of the reviewed Backend Engineer product placement competency profile."
+            },
+            {
+              "skillKey": "projects.delivery",
+              "requiredDepth": 0.78,
+              "importance": 0.92,
+              "placementRelevance": 0.9199999999999999,
+              "required": true,
+              "requiredByDaysBeforeDeadline": 105,
+              "hours": {
+                "p25": 27,
+                "p50": 38,
+                "p75": 55
+              },
+              "rationale": "projects delivery is part of the reviewed Backend Engineer product placement competency profile."
+            },
+            {
+              "skillKey": "communication.technical",
+              "requiredDepth": 0.8200000000000001,
+              "importance": 0.98,
+              "placementRelevance": 0.96,
+              "required": true,
+              "requiredByDaysBeforeDeadline": 105,
+              "hours": {
+                "p25": 31,
+                "p50": 44,
+                "p75": 64
+              },
+              "rationale": "communication technical is part of the reviewed Backend Engineer product placement competency profile."
+            },
+            {
+              "skillKey": "interview.coding",
+              "requiredDepth": 0.78,
+              "importance": 0.92,
+              "placementRelevance": 0.9199999999999999,
+              "required": true,
+              "requiredByDaysBeforeDeadline": 105,
+              "hours": {
+                "p25": 27,
+                "p50": 38,
+                "p75": 55
+              },
+              "rationale": "interview coding is part of the reviewed Backend Engineer product placement competency profile."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "full-stack-engineer",
+      "name": "Full-stack Engineer",
+      "domainKey": "software-development",
+      "version": 1,
+      "targetLevels": [
+        {
+          "level": "INTERNSHIP_READY",
+          "requirements": [
+            {
+              "skillKey": "programming.fundamentals",
+              "requiredDepth": 0.56,
+              "importance": 0.78,
+              "placementRelevance": 0.76,
+              "required": true,
+              "requiredByDaysBeforeDeadline": 45,
+              "hours": {
+                "p25": 17,
+                "p50": 24,
+                "p75": 35
+              },
+              "rationale": "programming fundamentals is part of the reviewed Full-stack Engineer internship ready competency profile."
+            },
+            {
+              "skillKey": "dsa.core",
+              "requiredDepth": 0.56,
+              "importance": 0.78,
+              "placementRelevance": 0.76,
+              "required": true,
+              "requiredByDaysBeforeDeadline": 45,
+              "hours": {
+                "p25": 17,
+                "p50": 24,
+                "p75": 35
+              },
+              "rationale": "dsa core is part of the reviewed Full-stack Engineer internship ready competency profile."
+            },
+            {
+              "skillKey": "db.relational",
+              "requiredDepth": 0.56,
+              "importance": 0.78,
+              "placementRelevance": 0.76,
+              "required": true,
+              "requiredByDaysBeforeDeadline": 45,
+              "hours": {
+                "p25": 17,
+                "p50": 24,
+                "p75": 35
+              },
+              "rationale": "db relational is part of the reviewed Full-stack Engineer internship ready competency profile."
+            },
+            {
+              "skillKey": "engineering.software",
+              "requiredDepth": 0.52,
+              "importance": 0.72,
+              "placementRelevance": 0.72,
+              "required": true,
+              "requiredByDaysBeforeDeadline": 45,
+              "hours": {
+                "p25": 13,
+                "p50": 18,
+                "p75": 26
+              },
+              "rationale": "engineering software is part of the reviewed Full-stack Engineer internship ready competency profile."
+            },
+            {
+              "skillKey": "engineering.testing",
+              "requiredDepth": 0.52,
+              "importance": 0.72,
+              "placementRelevance": 0.72,
+              "required": true,
+              "requiredByDaysBeforeDeadline": 45,
+              "hours": {
+                "p25": 13,
+                "p50": 18,
+                "p75": 26
+              },
+              "rationale": "engineering testing is part of the reviewed Full-stack Engineer internship ready competency profile."
+            },
+            {
+              "skillKey": "tools.git",
+              "requiredDepth": 0.52,
+              "importance": 0.72,
+              "placementRelevance": 0.72,
+              "required": true,
+              "requiredByDaysBeforeDeadline": 45,
+              "hours": {
+                "p25": 13,
+                "p50": 18,
+                "p75": 26
+              },
+              "rationale": "tools git is part of the reviewed Full-stack Engineer internship ready competency profile."
+            },
+            {
+              "skillKey": "web.fundamentals",
+              "requiredDepth": 0.52,
+              "importance": 0.72,
+              "placementRelevance": 0.72,
+              "required": true,
+              "requiredByDaysBeforeDeadline": 45,
+              "hours": {
+                "p25": 13,
+                "p50": 18,
+                "p75": 26
+              },
+              "rationale": "web fundamentals is part of the reviewed Full-stack Engineer internship ready competency profile."
+            },
+            {
+              "skillKey": "web.javascript",
+              "requiredDepth": 0.52,
+              "importance": 0.72,
+              "placementRelevance": 0.72,
+              "required": true,
+              "requiredByDaysBeforeDeadline": 45,
+              "hours": {
+                "p25": 13,
+                "p50": 18,
+                "p75": 26
+              },
+              "rationale": "web javascript is part of the reviewed Full-stack Engineer internship ready competency profile."
+            },
+            {
+              "skillKey": "web.react",
+              "requiredDepth": 0.52,
+              "importance": 0.72,
+              "placementRelevance": 0.72,
+              "required": true,
+              "requiredByDaysBeforeDeadline": 45,
+              "hours": {
+                "p25": 13,
+                "p50": 18,
+                "p75": 26
+              },
+              "rationale": "web react is part of the reviewed Full-stack Engineer internship ready competency profile."
+            },
+            {
+              "skillKey": "backend.api",
+              "requiredDepth": 0.52,
+              "importance": 0.72,
+              "placementRelevance": 0.72,
+              "required": true,
+              "requiredByDaysBeforeDeadline": 45,
+              "hours": {
+                "p25": 13,
+                "p50": 18,
+                "p75": 26
+              },
+              "rationale": "backend api is part of the reviewed Full-stack Engineer internship ready competency profile."
+            },
+            {
+              "skillKey": "backend.security",
+              "requiredDepth": 0.52,
+              "importance": 0.72,
+              "placementRelevance": 0.72,
+              "required": true,
+              "requiredByDaysBeforeDeadline": 45,
+              "hours": {
+                "p25": 13,
+                "p50": 18,
+                "p75": 26
+              },
+              "rationale": "backend security is part of the reviewed Full-stack Engineer internship ready competency profile."
+            },
+            {
+              "skillKey": "deployment.devops",
+              "requiredDepth": 0.52,
+              "importance": 0.72,
+              "placementRelevance": 0.72,
+              "required": true,
+              "requiredByDaysBeforeDeadline": 45,
+              "hours": {
+                "p25": 13,
+                "p50": 18,
+                "p75": 26
+              },
+              "rationale": "deployment devops is part of the reviewed Full-stack Engineer internship ready competency profile."
+            },
+            {
+              "skillKey": "projects.delivery",
+              "requiredDepth": 0.52,
+              "importance": 0.72,
+              "placementRelevance": 0.72,
+              "required": true,
+              "requiredByDaysBeforeDeadline": 45,
+              "hours": {
+                "p25": 13,
+                "p50": 18,
+                "p75": 26
+              },
+              "rationale": "projects delivery is part of the reviewed Full-stack Engineer internship ready competency profile."
+            },
+            {
+              "skillKey": "communication.technical",
+              "requiredDepth": 0.56,
+              "importance": 0.78,
+              "placementRelevance": 0.76,
+              "required": true,
+              "requiredByDaysBeforeDeadline": 45,
+              "hours": {
+                "p25": 17,
+                "p50": 24,
+                "p75": 35
+              },
+              "rationale": "communication technical is part of the reviewed Full-stack Engineer internship ready competency profile."
+            },
+            {
+              "skillKey": "interview.coding",
+              "requiredDepth": 0.52,
+              "importance": 0.72,
+              "placementRelevance": 0.72,
+              "required": true,
+              "requiredByDaysBeforeDeadline": 45,
+              "hours": {
+                "p25": 13,
+                "p50": 18,
+                "p75": 26
+              },
+              "rationale": "interview coding is part of the reviewed Full-stack Engineer internship ready competency profile."
+            }
+          ]
+        },
+        {
+          "level": "SERVICE_PLACEMENT",
+          "requirements": [
+            {
+              "skillKey": "programming.fundamentals",
+              "requiredDepth": 0.68,
+              "importance": 0.8799999999999999,
+              "placementRelevance": 0.86,
+              "required": true,
+              "requiredByDaysBeforeDeadline": 75,
+              "hours": {
+                "p25": 24,
+                "p50": 34,
+                "p75": 49
+              },
+              "rationale": "programming fundamentals is part of the reviewed Full-stack Engineer service placement competency profile."
+            },
+            {
+              "skillKey": "dsa.core",
+              "requiredDepth": 0.68,
+              "importance": 0.8799999999999999,
+              "placementRelevance": 0.86,
+              "required": true,
+              "requiredByDaysBeforeDeadline": 75,
+              "hours": {
+                "p25": 24,
+                "p50": 34,
+                "p75": 49
+              },
+              "rationale": "dsa core is part of the reviewed Full-stack Engineer service placement competency profile."
+            },
+            {
+              "skillKey": "db.relational",
+              "requiredDepth": 0.68,
+              "importance": 0.8799999999999999,
+              "placementRelevance": 0.86,
+              "required": true,
+              "requiredByDaysBeforeDeadline": 75,
+              "hours": {
+                "p25": 24,
+                "p50": 34,
+                "p75": 49
+              },
+              "rationale": "db relational is part of the reviewed Full-stack Engineer service placement competency profile."
+            },
+            {
+              "skillKey": "engineering.software",
+              "requiredDepth": 0.64,
+              "importance": 0.82,
+              "placementRelevance": 0.82,
+              "required": true,
+              "requiredByDaysBeforeDeadline": 75,
+              "hours": {
+                "p25": 20,
+                "p50": 28,
+                "p75": 41
+              },
+              "rationale": "engineering software is part of the reviewed Full-stack Engineer service placement competency profile."
+            },
+            {
+              "skillKey": "engineering.testing",
+              "requiredDepth": 0.64,
+              "importance": 0.82,
+              "placementRelevance": 0.82,
+              "required": true,
+              "requiredByDaysBeforeDeadline": 75,
+              "hours": {
+                "p25": 20,
+                "p50": 28,
+                "p75": 41
+              },
+              "rationale": "engineering testing is part of the reviewed Full-stack Engineer service placement competency profile."
+            },
+            {
+              "skillKey": "tools.git",
+              "requiredDepth": 0.64,
+              "importance": 0.82,
+              "placementRelevance": 0.82,
+              "required": true,
+              "requiredByDaysBeforeDeadline": 75,
+              "hours": {
+                "p25": 20,
+                "p50": 28,
+                "p75": 41
+              },
+              "rationale": "tools git is part of the reviewed Full-stack Engineer service placement competency profile."
+            },
+            {
+              "skillKey": "web.fundamentals",
+              "requiredDepth": 0.64,
+              "importance": 0.82,
+              "placementRelevance": 0.82,
+              "required": true,
+              "requiredByDaysBeforeDeadline": 75,
+              "hours": {
+                "p25": 20,
+                "p50": 28,
+                "p75": 41
+              },
+              "rationale": "web fundamentals is part of the reviewed Full-stack Engineer service placement competency profile."
+            },
+            {
+              "skillKey": "web.javascript",
+              "requiredDepth": 0.64,
+              "importance": 0.82,
+              "placementRelevance": 0.82,
+              "required": true,
+              "requiredByDaysBeforeDeadline": 75,
+              "hours": {
+                "p25": 20,
+                "p50": 28,
+                "p75": 41
+              },
+              "rationale": "web javascript is part of the reviewed Full-stack Engineer service placement competency profile."
+            },
+            {
+              "skillKey": "web.react",
+              "requiredDepth": 0.64,
+              "importance": 0.82,
+              "placementRelevance": 0.82,
+              "required": true,
+              "requiredByDaysBeforeDeadline": 75,
+              "hours": {
+                "p25": 20,
+                "p50": 28,
+                "p75": 41
+              },
+              "rationale": "web react is part of the reviewed Full-stack Engineer service placement competency profile."
+            },
+            {
+              "skillKey": "backend.api",
+              "requiredDepth": 0.64,
+              "importance": 0.82,
+              "placementRelevance": 0.82,
+              "required": true,
+              "requiredByDaysBeforeDeadline": 75,
+              "hours": {
+                "p25": 20,
+                "p50": 28,
+                "p75": 41
+              },
+              "rationale": "backend api is part of the reviewed Full-stack Engineer service placement competency profile."
+            },
+            {
+              "skillKey": "backend.security",
+              "requiredDepth": 0.64,
+              "importance": 0.82,
+              "placementRelevance": 0.82,
+              "required": true,
+              "requiredByDaysBeforeDeadline": 75,
+              "hours": {
+                "p25": 20,
+                "p50": 28,
+                "p75": 41
+              },
+              "rationale": "backend security is part of the reviewed Full-stack Engineer service placement competency profile."
+            },
+            {
+              "skillKey": "deployment.devops",
+              "requiredDepth": 0.64,
+              "importance": 0.82,
+              "placementRelevance": 0.82,
+              "required": true,
+              "requiredByDaysBeforeDeadline": 75,
+              "hours": {
+                "p25": 20,
+                "p50": 28,
+                "p75": 41
+              },
+              "rationale": "deployment devops is part of the reviewed Full-stack Engineer service placement competency profile."
+            },
+            {
+              "skillKey": "projects.delivery",
+              "requiredDepth": 0.64,
+              "importance": 0.82,
+              "placementRelevance": 0.82,
+              "required": true,
+              "requiredByDaysBeforeDeadline": 75,
+              "hours": {
+                "p25": 20,
+                "p50": 28,
+                "p75": 41
+              },
+              "rationale": "projects delivery is part of the reviewed Full-stack Engineer service placement competency profile."
+            },
+            {
+              "skillKey": "communication.technical",
+              "requiredDepth": 0.68,
+              "importance": 0.8799999999999999,
+              "placementRelevance": 0.86,
+              "required": true,
+              "requiredByDaysBeforeDeadline": 75,
+              "hours": {
+                "p25": 24,
+                "p50": 34,
+                "p75": 49
+              },
+              "rationale": "communication technical is part of the reviewed Full-stack Engineer service placement competency profile."
+            },
+            {
+              "skillKey": "interview.coding",
+              "requiredDepth": 0.64,
+              "importance": 0.82,
+              "placementRelevance": 0.82,
+              "required": true,
+              "requiredByDaysBeforeDeadline": 75,
+              "hours": {
+                "p25": 20,
+                "p50": 28,
+                "p75": 41
+              },
+              "rationale": "interview coding is part of the reviewed Full-stack Engineer service placement competency profile."
+            }
+          ]
+        },
+        {
+          "level": "PRODUCT_PLACEMENT",
+          "requirements": [
+            {
+              "skillKey": "programming.fundamentals",
+              "requiredDepth": 0.8200000000000001,
+              "importance": 0.98,
+              "placementRelevance": 0.96,
+              "required": true,
+              "requiredByDaysBeforeDeadline": 105,
+              "hours": {
+                "p25": 31,
+                "p50": 44,
+                "p75": 64
+              },
+              "rationale": "programming fundamentals is part of the reviewed Full-stack Engineer product placement competency profile."
+            },
+            {
+              "skillKey": "dsa.core",
+              "requiredDepth": 0.8200000000000001,
+              "importance": 0.98,
+              "placementRelevance": 0.96,
+              "required": true,
+              "requiredByDaysBeforeDeadline": 105,
+              "hours": {
+                "p25": 31,
+                "p50": 44,
+                "p75": 64
+              },
+              "rationale": "dsa core is part of the reviewed Full-stack Engineer product placement competency profile."
+            },
+            {
+              "skillKey": "db.relational",
+              "requiredDepth": 0.8200000000000001,
+              "importance": 0.98,
+              "placementRelevance": 0.96,
+              "required": true,
+              "requiredByDaysBeforeDeadline": 105,
+              "hours": {
+                "p25": 31,
+                "p50": 44,
+                "p75": 64
+              },
+              "rationale": "db relational is part of the reviewed Full-stack Engineer product placement competency profile."
+            },
+            {
+              "skillKey": "engineering.software",
+              "requiredDepth": 0.78,
+              "importance": 0.92,
+              "placementRelevance": 0.9199999999999999,
+              "required": true,
+              "requiredByDaysBeforeDeadline": 105,
+              "hours": {
+                "p25": 27,
+                "p50": 38,
+                "p75": 55
+              },
+              "rationale": "engineering software is part of the reviewed Full-stack Engineer product placement competency profile."
+            },
+            {
+              "skillKey": "engineering.testing",
+              "requiredDepth": 0.78,
+              "importance": 0.92,
+              "placementRelevance": 0.9199999999999999,
+              "required": true,
+              "requiredByDaysBeforeDeadline": 105,
+              "hours": {
+                "p25": 27,
+                "p50": 38,
+                "p75": 55
+              },
+              "rationale": "engineering testing is part of the reviewed Full-stack Engineer product placement competency profile."
+            },
+            {
+              "skillKey": "tools.git",
+              "requiredDepth": 0.78,
+              "importance": 0.92,
+              "placementRelevance": 0.9199999999999999,
+              "required": true,
+              "requiredByDaysBeforeDeadline": 105,
+              "hours": {
+                "p25": 27,
+                "p50": 38,
+                "p75": 55
+              },
+              "rationale": "tools git is part of the reviewed Full-stack Engineer product placement competency profile."
+            },
+            {
+              "skillKey": "web.fundamentals",
+              "requiredDepth": 0.78,
+              "importance": 0.92,
+              "placementRelevance": 0.9199999999999999,
+              "required": true,
+              "requiredByDaysBeforeDeadline": 105,
+              "hours": {
+                "p25": 27,
+                "p50": 38,
+                "p75": 55
+              },
+              "rationale": "web fundamentals is part of the reviewed Full-stack Engineer product placement competency profile."
+            },
+            {
+              "skillKey": "web.javascript",
+              "requiredDepth": 0.78,
+              "importance": 0.92,
+              "placementRelevance": 0.9199999999999999,
+              "required": true,
+              "requiredByDaysBeforeDeadline": 105,
+              "hours": {
+                "p25": 27,
+                "p50": 38,
+                "p75": 55
+              },
+              "rationale": "web javascript is part of the reviewed Full-stack Engineer product placement competency profile."
+            },
+            {
+              "skillKey": "web.react",
+              "requiredDepth": 0.78,
+              "importance": 0.92,
+              "placementRelevance": 0.9199999999999999,
+              "required": true,
+              "requiredByDaysBeforeDeadline": 105,
+              "hours": {
+                "p25": 27,
+                "p50": 38,
+                "p75": 55
+              },
+              "rationale": "web react is part of the reviewed Full-stack Engineer product placement competency profile."
+            },
+            {
+              "skillKey": "backend.api",
+              "requiredDepth": 0.78,
+              "importance": 0.92,
+              "placementRelevance": 0.9199999999999999,
+              "required": true,
+              "requiredByDaysBeforeDeadline": 105,
+              "hours": {
+                "p25": 27,
+                "p50": 38,
+                "p75": 55
+              },
+              "rationale": "backend api is part of the reviewed Full-stack Engineer product placement competency profile."
+            },
+            {
+              "skillKey": "backend.security",
+              "requiredDepth": 0.78,
+              "importance": 0.92,
+              "placementRelevance": 0.9199999999999999,
+              "required": true,
+              "requiredByDaysBeforeDeadline": 105,
+              "hours": {
+                "p25": 27,
+                "p50": 38,
+                "p75": 55
+              },
+              "rationale": "backend security is part of the reviewed Full-stack Engineer product placement competency profile."
+            },
+            {
+              "skillKey": "deployment.devops",
+              "requiredDepth": 0.78,
+              "importance": 0.92,
+              "placementRelevance": 0.9199999999999999,
+              "required": true,
+              "requiredByDaysBeforeDeadline": 105,
+              "hours": {
+                "p25": 27,
+                "p50": 38,
+                "p75": 55
+              },
+              "rationale": "deployment devops is part of the reviewed Full-stack Engineer product placement competency profile."
+            },
+            {
+              "skillKey": "projects.delivery",
+              "requiredDepth": 0.78,
+              "importance": 0.92,
+              "placementRelevance": 0.9199999999999999,
+              "required": true,
+              "requiredByDaysBeforeDeadline": 105,
+              "hours": {
+                "p25": 27,
+                "p50": 38,
+                "p75": 55
+              },
+              "rationale": "projects delivery is part of the reviewed Full-stack Engineer product placement competency profile."
+            },
+            {
+              "skillKey": "communication.technical",
+              "requiredDepth": 0.8200000000000001,
+              "importance": 0.98,
+              "placementRelevance": 0.96,
+              "required": true,
+              "requiredByDaysBeforeDeadline": 105,
+              "hours": {
+                "p25": 31,
+                "p50": 44,
+                "p75": 64
+              },
+              "rationale": "communication technical is part of the reviewed Full-stack Engineer product placement competency profile."
+            },
+            {
+              "skillKey": "interview.coding",
+              "requiredDepth": 0.78,
+              "importance": 0.92,
+              "placementRelevance": 0.9199999999999999,
+              "required": true,
+              "requiredByDaysBeforeDeadline": 105,
+              "hours": {
+                "p25": 27,
+                "p50": 38,
+                "p75": 55
+              },
+              "rationale": "interview coding is part of the reviewed Full-stack Engineer product placement competency profile."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "data-analyst",
+      "name": "Data Analyst",
+      "domainKey": "data-analytics",
+      "version": 1,
+      "targetLevels": [
+        {
+          "level": "INTERNSHIP_READY",
+          "requirements": [
+            {
+              "skillKey": "programming.fundamentals",
+              "requiredDepth": 0.56,
+              "importance": 0.78,
+              "placementRelevance": 0.76,
+              "required": true,
+              "requiredByDaysBeforeDeadline": 45,
+              "hours": {
+                "p25": 17,
+                "p50": 24,
+                "p75": 35
+              },
+              "rationale": "programming fundamentals is part of the reviewed Data Analyst internship ready competency profile."
+            },
+            {
+              "skillKey": "db.relational",
+              "requiredDepth": 0.56,
+              "importance": 0.78,
+              "placementRelevance": 0.76,
+              "required": true,
+              "requiredByDaysBeforeDeadline": 45,
+              "hours": {
+                "p25": 17,
+                "p50": 24,
+                "p75": 35
+              },
+              "rationale": "db relational is part of the reviewed Data Analyst internship ready competency profile."
+            },
+            {
+              "skillKey": "tools.git",
+              "requiredDepth": 0.52,
+              "importance": 0.72,
+              "placementRelevance": 0.72,
+              "required": true,
+              "requiredByDaysBeforeDeadline": 45,
+              "hours": {
+                "p25": 13,
+                "p50": 18,
+                "p75": 26
+              },
+              "rationale": "tools git is part of the reviewed Data Analyst internship ready competency profile."
+            },
+            {
+              "skillKey": "data.python",
+              "requiredDepth": 0.52,
+              "importance": 0.72,
+              "placementRelevance": 0.72,
+              "required": true,
+              "requiredByDaysBeforeDeadline": 45,
+              "hours": {
+                "p25": 13,
+                "p50": 18,
+                "p75": 26
+              },
+              "rationale": "data python is part of the reviewed Data Analyst internship ready competency profile."
+            },
+            {
+              "skillKey": "data.statistics",
+              "requiredDepth": 0.52,
+              "importance": 0.72,
+              "placementRelevance": 0.72,
+              "required": true,
+              "requiredByDaysBeforeDeadline": 45,
+              "hours": {
+                "p25": 13,
+                "p50": 18,
+                "p75": 26
+              },
+              "rationale": "data statistics is part of the reviewed Data Analyst internship ready competency profile."
+            },
+            {
+              "skillKey": "data.analysis",
+              "requiredDepth": 0.52,
+              "importance": 0.72,
+              "placementRelevance": 0.72,
+              "required": true,
+              "requiredByDaysBeforeDeadline": 45,
+              "hours": {
+                "p25": 13,
+                "p50": 18,
+                "p75": 26
+              },
+              "rationale": "data analysis is part of the reviewed Data Analyst internship ready competency profile."
+            },
+            {
+              "skillKey": "data.visualization",
+              "requiredDepth": 0.52,
+              "importance": 0.72,
+              "placementRelevance": 0.72,
+              "required": true,
+              "requiredByDaysBeforeDeadline": 45,
+              "hours": {
+                "p25": 13,
+                "p50": 18,
+                "p75": 26
+              },
+              "rationale": "data visualization is part of the reviewed Data Analyst internship ready competency profile."
+            },
+            {
+              "skillKey": "projects.delivery",
+              "requiredDepth": 0.52,
+              "importance": 0.72,
+              "placementRelevance": 0.72,
+              "required": true,
+              "requiredByDaysBeforeDeadline": 45,
+              "hours": {
+                "p25": 13,
+                "p50": 18,
+                "p75": 26
+              },
+              "rationale": "projects delivery is part of the reviewed Data Analyst internship ready competency profile."
+            },
+            {
+              "skillKey": "communication.technical",
+              "requiredDepth": 0.56,
+              "importance": 0.78,
+              "placementRelevance": 0.76,
+              "required": true,
+              "requiredByDaysBeforeDeadline": 45,
+              "hours": {
+                "p25": 17,
+                "p50": 24,
+                "p75": 35
+              },
+              "rationale": "communication technical is part of the reviewed Data Analyst internship ready competency profile."
+            },
+            {
+              "skillKey": "placement.aptitude",
+              "requiredDepth": 0.52,
+              "importance": 0.72,
+              "placementRelevance": 0.72,
+              "required": true,
+              "requiredByDaysBeforeDeadline": 45,
+              "hours": {
+                "p25": 13,
+                "p50": 18,
+                "p75": 26
+              },
+              "rationale": "placement aptitude is part of the reviewed Data Analyst internship ready competency profile."
+            }
+          ]
+        },
+        {
+          "level": "SERVICE_PLACEMENT",
+          "requirements": [
+            {
+              "skillKey": "programming.fundamentals",
+              "requiredDepth": 0.68,
+              "importance": 0.8799999999999999,
+              "placementRelevance": 0.86,
+              "required": true,
+              "requiredByDaysBeforeDeadline": 75,
+              "hours": {
+                "p25": 24,
+                "p50": 34,
+                "p75": 49
+              },
+              "rationale": "programming fundamentals is part of the reviewed Data Analyst service placement competency profile."
+            },
+            {
+              "skillKey": "db.relational",
+              "requiredDepth": 0.68,
+              "importance": 0.8799999999999999,
+              "placementRelevance": 0.86,
+              "required": true,
+              "requiredByDaysBeforeDeadline": 75,
+              "hours": {
+                "p25": 24,
+                "p50": 34,
+                "p75": 49
+              },
+              "rationale": "db relational is part of the reviewed Data Analyst service placement competency profile."
+            },
+            {
+              "skillKey": "tools.git",
+              "requiredDepth": 0.64,
+              "importance": 0.82,
+              "placementRelevance": 0.82,
+              "required": true,
+              "requiredByDaysBeforeDeadline": 75,
+              "hours": {
+                "p25": 20,
+                "p50": 28,
+                "p75": 41
+              },
+              "rationale": "tools git is part of the reviewed Data Analyst service placement competency profile."
+            },
+            {
+              "skillKey": "data.python",
+              "requiredDepth": 0.64,
+              "importance": 0.82,
+              "placementRelevance": 0.82,
+              "required": true,
+              "requiredByDaysBeforeDeadline": 75,
+              "hours": {
+                "p25": 20,
+                "p50": 28,
+                "p75": 41
+              },
+              "rationale": "data python is part of the reviewed Data Analyst service placement competency profile."
+            },
+            {
+              "skillKey": "data.statistics",
+              "requiredDepth": 0.64,
+              "importance": 0.82,
+              "placementRelevance": 0.82,
+              "required": true,
+              "requiredByDaysBeforeDeadline": 75,
+              "hours": {
+                "p25": 20,
+                "p50": 28,
+                "p75": 41
+              },
+              "rationale": "data statistics is part of the reviewed Data Analyst service placement competency profile."
+            },
+            {
+              "skillKey": "data.analysis",
+              "requiredDepth": 0.64,
+              "importance": 0.82,
+              "placementRelevance": 0.82,
+              "required": true,
+              "requiredByDaysBeforeDeadline": 75,
+              "hours": {
+                "p25": 20,
+                "p50": 28,
+                "p75": 41
+              },
+              "rationale": "data analysis is part of the reviewed Data Analyst service placement competency profile."
+            },
+            {
+              "skillKey": "data.visualization",
+              "requiredDepth": 0.64,
+              "importance": 0.82,
+              "placementRelevance": 0.82,
+              "required": true,
+              "requiredByDaysBeforeDeadline": 75,
+              "hours": {
+                "p25": 20,
+                "p50": 28,
+                "p75": 41
+              },
+              "rationale": "data visualization is part of the reviewed Data Analyst service placement competency profile."
+            },
+            {
+              "skillKey": "projects.delivery",
+              "requiredDepth": 0.64,
+              "importance": 0.82,
+              "placementRelevance": 0.82,
+              "required": true,
+              "requiredByDaysBeforeDeadline": 75,
+              "hours": {
+                "p25": 20,
+                "p50": 28,
+                "p75": 41
+              },
+              "rationale": "projects delivery is part of the reviewed Data Analyst service placement competency profile."
+            },
+            {
+              "skillKey": "communication.technical",
+              "requiredDepth": 0.68,
+              "importance": 0.8799999999999999,
+              "placementRelevance": 0.86,
+              "required": true,
+              "requiredByDaysBeforeDeadline": 75,
+              "hours": {
+                "p25": 24,
+                "p50": 34,
+                "p75": 49
+              },
+              "rationale": "communication technical is part of the reviewed Data Analyst service placement competency profile."
+            },
+            {
+              "skillKey": "placement.aptitude",
+              "requiredDepth": 0.64,
+              "importance": 0.82,
+              "placementRelevance": 0.82,
+              "required": true,
+              "requiredByDaysBeforeDeadline": 75,
+              "hours": {
+                "p25": 20,
+                "p50": 28,
+                "p75": 41
+              },
+              "rationale": "placement aptitude is part of the reviewed Data Analyst service placement competency profile."
+            }
+          ]
+        },
+        {
+          "level": "PRODUCT_PLACEMENT",
+          "requirements": [
+            {
+              "skillKey": "programming.fundamentals",
+              "requiredDepth": 0.8200000000000001,
+              "importance": 0.98,
+              "placementRelevance": 0.96,
+              "required": true,
+              "requiredByDaysBeforeDeadline": 105,
+              "hours": {
+                "p25": 31,
+                "p50": 44,
+                "p75": 64
+              },
+              "rationale": "programming fundamentals is part of the reviewed Data Analyst product placement competency profile."
+            },
+            {
+              "skillKey": "db.relational",
+              "requiredDepth": 0.8200000000000001,
+              "importance": 0.98,
+              "placementRelevance": 0.96,
+              "required": true,
+              "requiredByDaysBeforeDeadline": 105,
+              "hours": {
+                "p25": 31,
+                "p50": 44,
+                "p75": 64
+              },
+              "rationale": "db relational is part of the reviewed Data Analyst product placement competency profile."
+            },
+            {
+              "skillKey": "tools.git",
+              "requiredDepth": 0.78,
+              "importance": 0.92,
+              "placementRelevance": 0.9199999999999999,
+              "required": true,
+              "requiredByDaysBeforeDeadline": 105,
+              "hours": {
+                "p25": 27,
+                "p50": 38,
+                "p75": 55
+              },
+              "rationale": "tools git is part of the reviewed Data Analyst product placement competency profile."
+            },
+            {
+              "skillKey": "data.python",
+              "requiredDepth": 0.78,
+              "importance": 0.92,
+              "placementRelevance": 0.9199999999999999,
+              "required": true,
+              "requiredByDaysBeforeDeadline": 105,
+              "hours": {
+                "p25": 27,
+                "p50": 38,
+                "p75": 55
+              },
+              "rationale": "data python is part of the reviewed Data Analyst product placement competency profile."
+            },
+            {
+              "skillKey": "data.statistics",
+              "requiredDepth": 0.78,
+              "importance": 0.92,
+              "placementRelevance": 0.9199999999999999,
+              "required": true,
+              "requiredByDaysBeforeDeadline": 105,
+              "hours": {
+                "p25": 27,
+                "p50": 38,
+                "p75": 55
+              },
+              "rationale": "data statistics is part of the reviewed Data Analyst product placement competency profile."
+            },
+            {
+              "skillKey": "data.analysis",
+              "requiredDepth": 0.78,
+              "importance": 0.92,
+              "placementRelevance": 0.9199999999999999,
+              "required": true,
+              "requiredByDaysBeforeDeadline": 105,
+              "hours": {
+                "p25": 27,
+                "p50": 38,
+                "p75": 55
+              },
+              "rationale": "data analysis is part of the reviewed Data Analyst product placement competency profile."
+            },
+            {
+              "skillKey": "data.visualization",
+              "requiredDepth": 0.78,
+              "importance": 0.92,
+              "placementRelevance": 0.9199999999999999,
+              "required": true,
+              "requiredByDaysBeforeDeadline": 105,
+              "hours": {
+                "p25": 27,
+                "p50": 38,
+                "p75": 55
+              },
+              "rationale": "data visualization is part of the reviewed Data Analyst product placement competency profile."
+            },
+            {
+              "skillKey": "projects.delivery",
+              "requiredDepth": 0.78,
+              "importance": 0.92,
+              "placementRelevance": 0.9199999999999999,
+              "required": true,
+              "requiredByDaysBeforeDeadline": 105,
+              "hours": {
+                "p25": 27,
+                "p50": 38,
+                "p75": 55
+              },
+              "rationale": "projects delivery is part of the reviewed Data Analyst product placement competency profile."
+            },
+            {
+              "skillKey": "communication.technical",
+              "requiredDepth": 0.8200000000000001,
+              "importance": 0.98,
+              "placementRelevance": 0.96,
+              "required": true,
+              "requiredByDaysBeforeDeadline": 105,
+              "hours": {
+                "p25": 31,
+                "p50": 44,
+                "p75": 64
+              },
+              "rationale": "communication technical is part of the reviewed Data Analyst product placement competency profile."
+            },
+            {
+              "skillKey": "placement.aptitude",
+              "requiredDepth": 0.78,
+              "importance": 0.92,
+              "placementRelevance": 0.9199999999999999,
+              "required": true,
+              "requiredByDaysBeforeDeadline": 105,
+              "hours": {
+                "p25": 27,
+                "p50": 38,
+                "p75": 55
+              },
+              "rationale": "placement aptitude is part of the reviewed Data Analyst product placement competency profile."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "learningUnits": [
+    {
+      "key": "learn.programming.fundamentals.foundation",
+      "type": "TEACH",
+      "skillKeys": ["programming.fundamentals"],
+      "fromDepth": 0,
+      "toDepth": 0.55,
+      "estimatedMinutes": 720,
+      "difficulty": "FOUNDATION",
+      "splitPointsMinutes": [30, 45, 60],
+      "reasonCodes": ["ROLE_REQUIRED"]
+    },
+    {
+      "key": "learn.programming.fundamentals.evidence",
+      "type": "PRACTICE",
+      "skillKeys": ["programming.fundamentals"],
+      "fromDepth": 0.55,
+      "toDepth": 0.85,
+      "estimatedMinutes": 900,
+      "difficulty": "INTERMEDIATE",
+      "splitPointsMinutes": [45, 60, 90],
+      "reasonCodes": ["PROJECT_EVIDENCE", "PLACEMENT_REQUIRED"]
+    },
+    {
+      "key": "learn.programming.oop.foundation",
+      "type": "TEACH",
+      "skillKeys": ["programming.oop"],
+      "fromDepth": 0,
+      "toDepth": 0.55,
+      "estimatedMinutes": 720,
+      "difficulty": "FOUNDATION",
+      "splitPointsMinutes": [30, 45, 60],
+      "reasonCodes": ["ROLE_REQUIRED"]
+    },
+    {
+      "key": "learn.programming.oop.evidence",
+      "type": "PRACTICE",
+      "skillKeys": ["programming.oop"],
+      "fromDepth": 0.55,
+      "toDepth": 0.85,
+      "estimatedMinutes": 900,
+      "difficulty": "INTERMEDIATE",
+      "splitPointsMinutes": [45, 60, 90],
+      "reasonCodes": ["PROJECT_EVIDENCE", "PLACEMENT_REQUIRED"]
+    },
+    {
+      "key": "learn.dsa.core.foundation",
+      "type": "TEACH",
+      "skillKeys": ["dsa.core"],
+      "fromDepth": 0,
+      "toDepth": 0.55,
+      "estimatedMinutes": 720,
+      "difficulty": "FOUNDATION",
+      "splitPointsMinutes": [30, 45, 60],
+      "reasonCodes": ["ROLE_REQUIRED"]
+    },
+    {
+      "key": "learn.dsa.core.evidence",
+      "type": "PRACTICE",
+      "skillKeys": ["dsa.core"],
+      "fromDepth": 0.55,
+      "toDepth": 0.85,
+      "estimatedMinutes": 900,
+      "difficulty": "INTERMEDIATE",
+      "splitPointsMinutes": [45, 60, 90],
+      "reasonCodes": ["PROJECT_EVIDENCE", "PLACEMENT_REQUIRED"]
+    },
+    {
+      "key": "learn.dsa.problem-solving.foundation",
+      "type": "TEACH",
+      "skillKeys": ["dsa.problem-solving"],
+      "fromDepth": 0,
+      "toDepth": 0.55,
+      "estimatedMinutes": 720,
+      "difficulty": "FOUNDATION",
+      "splitPointsMinutes": [30, 45, 60],
+      "reasonCodes": ["ROLE_REQUIRED"]
+    },
+    {
+      "key": "learn.dsa.problem-solving.evidence",
+      "type": "PRACTICE",
+      "skillKeys": ["dsa.problem-solving"],
+      "fromDepth": 0.55,
+      "toDepth": 0.85,
+      "estimatedMinutes": 900,
+      "difficulty": "INTERMEDIATE",
+      "splitPointsMinutes": [45, 60, 90],
+      "reasonCodes": ["PROJECT_EVIDENCE", "PLACEMENT_REQUIRED"]
+    },
+    {
+      "key": "learn.core.os.foundation",
+      "type": "TEACH",
+      "skillKeys": ["core.os"],
+      "fromDepth": 0,
+      "toDepth": 0.55,
+      "estimatedMinutes": 720,
+      "difficulty": "FOUNDATION",
+      "splitPointsMinutes": [30, 45, 60],
+      "reasonCodes": ["ROLE_REQUIRED"]
+    },
+    {
+      "key": "learn.core.os.evidence",
+      "type": "PRACTICE",
+      "skillKeys": ["core.os"],
+      "fromDepth": 0.55,
+      "toDepth": 0.85,
+      "estimatedMinutes": 900,
+      "difficulty": "INTERMEDIATE",
+      "splitPointsMinutes": [45, 60, 90],
+      "reasonCodes": ["PROJECT_EVIDENCE", "PLACEMENT_REQUIRED"]
+    },
+    {
+      "key": "learn.core.networks.foundation",
+      "type": "TEACH",
+      "skillKeys": ["core.networks"],
+      "fromDepth": 0,
+      "toDepth": 0.55,
+      "estimatedMinutes": 720,
+      "difficulty": "FOUNDATION",
+      "splitPointsMinutes": [30, 45, 60],
+      "reasonCodes": ["ROLE_REQUIRED"]
+    },
+    {
+      "key": "learn.core.networks.evidence",
+      "type": "PRACTICE",
+      "skillKeys": ["core.networks"],
+      "fromDepth": 0.55,
+      "toDepth": 0.85,
+      "estimatedMinutes": 900,
+      "difficulty": "INTERMEDIATE",
+      "splitPointsMinutes": [45, 60, 90],
+      "reasonCodes": ["PROJECT_EVIDENCE", "PLACEMENT_REQUIRED"]
+    },
+    {
+      "key": "learn.db.relational.foundation",
+      "type": "TEACH",
+      "skillKeys": ["db.relational"],
+      "fromDepth": 0,
+      "toDepth": 0.55,
+      "estimatedMinutes": 720,
+      "difficulty": "FOUNDATION",
+      "splitPointsMinutes": [30, 45, 60],
+      "reasonCodes": ["ROLE_REQUIRED"]
+    },
+    {
+      "key": "learn.db.relational.evidence",
+      "type": "PRACTICE",
+      "skillKeys": ["db.relational"],
+      "fromDepth": 0.55,
+      "toDepth": 0.85,
+      "estimatedMinutes": 900,
+      "difficulty": "INTERMEDIATE",
+      "splitPointsMinutes": [45, 60, 90],
+      "reasonCodes": ["PROJECT_EVIDENCE", "PLACEMENT_REQUIRED"]
+    },
+    {
+      "key": "learn.engineering.software.foundation",
+      "type": "TEACH",
+      "skillKeys": ["engineering.software"],
+      "fromDepth": 0,
+      "toDepth": 0.55,
+      "estimatedMinutes": 720,
+      "difficulty": "FOUNDATION",
+      "splitPointsMinutes": [30, 45, 60],
+      "reasonCodes": ["ROLE_REQUIRED"]
+    },
+    {
+      "key": "learn.engineering.software.evidence",
+      "type": "PRACTICE",
+      "skillKeys": ["engineering.software"],
+      "fromDepth": 0.55,
+      "toDepth": 0.85,
+      "estimatedMinutes": 900,
+      "difficulty": "INTERMEDIATE",
+      "splitPointsMinutes": [45, 60, 90],
+      "reasonCodes": ["PROJECT_EVIDENCE", "PLACEMENT_REQUIRED"]
+    },
+    {
+      "key": "learn.engineering.testing.foundation",
+      "type": "TEACH",
+      "skillKeys": ["engineering.testing"],
+      "fromDepth": 0,
+      "toDepth": 0.55,
+      "estimatedMinutes": 720,
+      "difficulty": "FOUNDATION",
+      "splitPointsMinutes": [30, 45, 60],
+      "reasonCodes": ["ROLE_REQUIRED"]
+    },
+    {
+      "key": "learn.engineering.testing.evidence",
+      "type": "PRACTICE",
+      "skillKeys": ["engineering.testing"],
+      "fromDepth": 0.55,
+      "toDepth": 0.85,
+      "estimatedMinutes": 900,
+      "difficulty": "INTERMEDIATE",
+      "splitPointsMinutes": [45, 60, 90],
+      "reasonCodes": ["PROJECT_EVIDENCE", "PLACEMENT_REQUIRED"]
+    },
+    {
+      "key": "learn.tools.git.foundation",
+      "type": "TEACH",
+      "skillKeys": ["tools.git"],
+      "fromDepth": 0,
+      "toDepth": 0.55,
+      "estimatedMinutes": 720,
+      "difficulty": "FOUNDATION",
+      "splitPointsMinutes": [30, 45, 60],
+      "reasonCodes": ["ROLE_REQUIRED"]
+    },
+    {
+      "key": "learn.tools.git.evidence",
+      "type": "PRACTICE",
+      "skillKeys": ["tools.git"],
+      "fromDepth": 0.55,
+      "toDepth": 0.85,
+      "estimatedMinutes": 900,
+      "difficulty": "INTERMEDIATE",
+      "splitPointsMinutes": [45, 60, 90],
+      "reasonCodes": ["PROJECT_EVIDENCE", "PLACEMENT_REQUIRED"]
+    },
+    {
+      "key": "learn.web.fundamentals.foundation",
+      "type": "TEACH",
+      "skillKeys": ["web.fundamentals"],
+      "fromDepth": 0,
+      "toDepth": 0.55,
+      "estimatedMinutes": 720,
+      "difficulty": "FOUNDATION",
+      "splitPointsMinutes": [30, 45, 60],
+      "reasonCodes": ["ROLE_REQUIRED"]
+    },
+    {
+      "key": "learn.web.fundamentals.evidence",
+      "type": "PRACTICE",
+      "skillKeys": ["web.fundamentals"],
+      "fromDepth": 0.55,
+      "toDepth": 0.85,
+      "estimatedMinutes": 900,
+      "difficulty": "INTERMEDIATE",
+      "splitPointsMinutes": [45, 60, 90],
+      "reasonCodes": ["PROJECT_EVIDENCE", "PLACEMENT_REQUIRED"]
+    },
+    {
+      "key": "learn.web.javascript.foundation",
+      "type": "TEACH",
+      "skillKeys": ["web.javascript"],
+      "fromDepth": 0,
+      "toDepth": 0.55,
+      "estimatedMinutes": 720,
+      "difficulty": "FOUNDATION",
+      "splitPointsMinutes": [30, 45, 60],
+      "reasonCodes": ["ROLE_REQUIRED"]
+    },
+    {
+      "key": "learn.web.javascript.evidence",
+      "type": "PRACTICE",
+      "skillKeys": ["web.javascript"],
+      "fromDepth": 0.55,
+      "toDepth": 0.85,
+      "estimatedMinutes": 900,
+      "difficulty": "INTERMEDIATE",
+      "splitPointsMinutes": [45, 60, 90],
+      "reasonCodes": ["PROJECT_EVIDENCE", "PLACEMENT_REQUIRED"]
+    },
+    {
+      "key": "learn.web.react.foundation",
+      "type": "TEACH",
+      "skillKeys": ["web.react"],
+      "fromDepth": 0,
+      "toDepth": 0.55,
+      "estimatedMinutes": 720,
+      "difficulty": "FOUNDATION",
+      "splitPointsMinutes": [30, 45, 60],
+      "reasonCodes": ["ROLE_REQUIRED"]
+    },
+    {
+      "key": "learn.web.react.evidence",
+      "type": "PRACTICE",
+      "skillKeys": ["web.react"],
+      "fromDepth": 0.55,
+      "toDepth": 0.85,
+      "estimatedMinutes": 900,
+      "difficulty": "INTERMEDIATE",
+      "splitPointsMinutes": [45, 60, 90],
+      "reasonCodes": ["PROJECT_EVIDENCE", "PLACEMENT_REQUIRED"]
+    },
+    {
+      "key": "learn.backend.api.foundation",
+      "type": "TEACH",
+      "skillKeys": ["backend.api"],
+      "fromDepth": 0,
+      "toDepth": 0.55,
+      "estimatedMinutes": 720,
+      "difficulty": "FOUNDATION",
+      "splitPointsMinutes": [30, 45, 60],
+      "reasonCodes": ["ROLE_REQUIRED"]
+    },
+    {
+      "key": "learn.backend.api.evidence",
+      "type": "PRACTICE",
+      "skillKeys": ["backend.api"],
+      "fromDepth": 0.55,
+      "toDepth": 0.85,
+      "estimatedMinutes": 900,
+      "difficulty": "INTERMEDIATE",
+      "splitPointsMinutes": [45, 60, 90],
+      "reasonCodes": ["PROJECT_EVIDENCE", "PLACEMENT_REQUIRED"]
+    },
+    {
+      "key": "learn.backend.security.foundation",
+      "type": "TEACH",
+      "skillKeys": ["backend.security"],
+      "fromDepth": 0,
+      "toDepth": 0.55,
+      "estimatedMinutes": 720,
+      "difficulty": "FOUNDATION",
+      "splitPointsMinutes": [30, 45, 60],
+      "reasonCodes": ["ROLE_REQUIRED"]
+    },
+    {
+      "key": "learn.backend.security.evidence",
+      "type": "PRACTICE",
+      "skillKeys": ["backend.security"],
+      "fromDepth": 0.55,
+      "toDepth": 0.85,
+      "estimatedMinutes": 900,
+      "difficulty": "INTERMEDIATE",
+      "splitPointsMinutes": [45, 60, 90],
+      "reasonCodes": ["PROJECT_EVIDENCE", "PLACEMENT_REQUIRED"]
+    },
+    {
+      "key": "learn.deployment.devops.foundation",
+      "type": "TEACH",
+      "skillKeys": ["deployment.devops"],
+      "fromDepth": 0,
+      "toDepth": 0.55,
+      "estimatedMinutes": 720,
+      "difficulty": "FOUNDATION",
+      "splitPointsMinutes": [30, 45, 60],
+      "reasonCodes": ["ROLE_REQUIRED"]
+    },
+    {
+      "key": "learn.deployment.devops.evidence",
+      "type": "PRACTICE",
+      "skillKeys": ["deployment.devops"],
+      "fromDepth": 0.55,
+      "toDepth": 0.85,
+      "estimatedMinutes": 900,
+      "difficulty": "INTERMEDIATE",
+      "splitPointsMinutes": [45, 60, 90],
+      "reasonCodes": ["PROJECT_EVIDENCE", "PLACEMENT_REQUIRED"]
+    },
+    {
+      "key": "learn.data.python.foundation",
+      "type": "TEACH",
+      "skillKeys": ["data.python"],
+      "fromDepth": 0,
+      "toDepth": 0.55,
+      "estimatedMinutes": 720,
+      "difficulty": "FOUNDATION",
+      "splitPointsMinutes": [30, 45, 60],
+      "reasonCodes": ["ROLE_REQUIRED"]
+    },
+    {
+      "key": "learn.data.python.evidence",
+      "type": "PRACTICE",
+      "skillKeys": ["data.python"],
+      "fromDepth": 0.55,
+      "toDepth": 0.85,
+      "estimatedMinutes": 900,
+      "difficulty": "INTERMEDIATE",
+      "splitPointsMinutes": [45, 60, 90],
+      "reasonCodes": ["PROJECT_EVIDENCE", "PLACEMENT_REQUIRED"]
+    },
+    {
+      "key": "learn.data.statistics.foundation",
+      "type": "TEACH",
+      "skillKeys": ["data.statistics"],
+      "fromDepth": 0,
+      "toDepth": 0.55,
+      "estimatedMinutes": 720,
+      "difficulty": "FOUNDATION",
+      "splitPointsMinutes": [30, 45, 60],
+      "reasonCodes": ["ROLE_REQUIRED"]
+    },
+    {
+      "key": "learn.data.statistics.evidence",
+      "type": "PRACTICE",
+      "skillKeys": ["data.statistics"],
+      "fromDepth": 0.55,
+      "toDepth": 0.85,
+      "estimatedMinutes": 900,
+      "difficulty": "INTERMEDIATE",
+      "splitPointsMinutes": [45, 60, 90],
+      "reasonCodes": ["PROJECT_EVIDENCE", "PLACEMENT_REQUIRED"]
+    },
+    {
+      "key": "learn.data.analysis.foundation",
+      "type": "TEACH",
+      "skillKeys": ["data.analysis"],
+      "fromDepth": 0,
+      "toDepth": 0.55,
+      "estimatedMinutes": 720,
+      "difficulty": "FOUNDATION",
+      "splitPointsMinutes": [30, 45, 60],
+      "reasonCodes": ["ROLE_REQUIRED"]
+    },
+    {
+      "key": "learn.data.analysis.evidence",
+      "type": "PRACTICE",
+      "skillKeys": ["data.analysis"],
+      "fromDepth": 0.55,
+      "toDepth": 0.85,
+      "estimatedMinutes": 900,
+      "difficulty": "INTERMEDIATE",
+      "splitPointsMinutes": [45, 60, 90],
+      "reasonCodes": ["PROJECT_EVIDENCE", "PLACEMENT_REQUIRED"]
+    },
+    {
+      "key": "learn.data.visualization.foundation",
+      "type": "TEACH",
+      "skillKeys": ["data.visualization"],
+      "fromDepth": 0,
+      "toDepth": 0.55,
+      "estimatedMinutes": 720,
+      "difficulty": "FOUNDATION",
+      "splitPointsMinutes": [30, 45, 60],
+      "reasonCodes": ["ROLE_REQUIRED"]
+    },
+    {
+      "key": "learn.data.visualization.evidence",
+      "type": "PRACTICE",
+      "skillKeys": ["data.visualization"],
+      "fromDepth": 0.55,
+      "toDepth": 0.85,
+      "estimatedMinutes": 900,
+      "difficulty": "INTERMEDIATE",
+      "splitPointsMinutes": [45, 60, 90],
+      "reasonCodes": ["PROJECT_EVIDENCE", "PLACEMENT_REQUIRED"]
+    },
+    {
+      "key": "learn.communication.technical.foundation",
+      "type": "TEACH",
+      "skillKeys": ["communication.technical"],
+      "fromDepth": 0,
+      "toDepth": 0.55,
+      "estimatedMinutes": 720,
+      "difficulty": "FOUNDATION",
+      "splitPointsMinutes": [30, 45, 60],
+      "reasonCodes": ["ROLE_REQUIRED"]
+    },
+    {
+      "key": "learn.communication.technical.evidence",
+      "type": "PRACTICE",
+      "skillKeys": ["communication.technical"],
+      "fromDepth": 0.55,
+      "toDepth": 0.85,
+      "estimatedMinutes": 900,
+      "difficulty": "INTERMEDIATE",
+      "splitPointsMinutes": [45, 60, 90],
+      "reasonCodes": ["PROJECT_EVIDENCE", "PLACEMENT_REQUIRED"]
+    },
+    {
+      "key": "learn.projects.delivery.foundation",
+      "type": "TEACH",
+      "skillKeys": ["projects.delivery"],
+      "fromDepth": 0,
+      "toDepth": 0.55,
+      "estimatedMinutes": 720,
+      "difficulty": "FOUNDATION",
+      "splitPointsMinutes": [30, 45, 60],
+      "reasonCodes": ["ROLE_REQUIRED"]
+    },
+    {
+      "key": "learn.projects.delivery.evidence",
+      "type": "PRACTICE",
+      "skillKeys": ["projects.delivery"],
+      "fromDepth": 0.55,
+      "toDepth": 0.85,
+      "estimatedMinutes": 900,
+      "difficulty": "INTERMEDIATE",
+      "splitPointsMinutes": [45, 60, 90],
+      "reasonCodes": ["PROJECT_EVIDENCE", "PLACEMENT_REQUIRED"]
+    },
+    {
+      "key": "learn.interview.coding.foundation",
+      "type": "TEACH",
+      "skillKeys": ["interview.coding"],
+      "fromDepth": 0,
+      "toDepth": 0.55,
+      "estimatedMinutes": 720,
+      "difficulty": "FOUNDATION",
+      "splitPointsMinutes": [30, 45, 60],
+      "reasonCodes": ["ROLE_REQUIRED"]
+    },
+    {
+      "key": "learn.interview.coding.evidence",
+      "type": "PRACTICE",
+      "skillKeys": ["interview.coding"],
+      "fromDepth": 0.55,
+      "toDepth": 0.85,
+      "estimatedMinutes": 900,
+      "difficulty": "INTERMEDIATE",
+      "splitPointsMinutes": [45, 60, 90],
+      "reasonCodes": ["PROJECT_EVIDENCE", "PLACEMENT_REQUIRED"]
+    },
+    {
+      "key": "learn.placement.aptitude.foundation",
+      "type": "TEACH",
+      "skillKeys": ["placement.aptitude"],
+      "fromDepth": 0,
+      "toDepth": 0.55,
+      "estimatedMinutes": 720,
+      "difficulty": "FOUNDATION",
+      "splitPointsMinutes": [30, 45, 60],
+      "reasonCodes": ["ROLE_REQUIRED"]
+    },
+    {
+      "key": "learn.placement.aptitude.evidence",
+      "type": "PRACTICE",
+      "skillKeys": ["placement.aptitude"],
+      "fromDepth": 0.55,
+      "toDepth": 0.85,
+      "estimatedMinutes": 900,
+      "difficulty": "INTERMEDIATE",
+      "splitPointsMinutes": [45, 60, 90],
+      "reasonCodes": ["PROJECT_EVIDENCE", "PLACEMENT_REQUIRED"]
+    }
+  ]
+}

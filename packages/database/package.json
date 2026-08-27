@@ -1,0 +1,36 @@
+{
+  "name": "@studentos/database",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "generate": "prisma generate",
+    "build": "pnpm generate && tsc -p tsconfig.build.json",
+    "lint": "eslint src test prisma.config.ts",
+    "typecheck": "pnpm generate && tsc -p tsconfig.json --noEmit",
+    "test": "pnpm generate && vitest run"
+  },
+  "dependencies": {
+    "@electric-sql/pglite": "0.5.7",
+    "@prisma/adapter-pg": "7.9.1",
+    "@prisma/client": "7.9.1",
+    "@studentos/domain": "workspace:*",
+    "pglite-prisma-adapter": "0.7.2",
+    "pg": "8.16.3"
+  },
+  "devDependencies": {
+    "@types/node": "26.2.0",
+    "@types/pg": "8.15.5",
+    "dotenv": "17.4.2",
+    "prisma": "7.9.1",
+    "tsx": "4.23.12",
+    "typescript": "5.9.3",
+    "vitest": "4.1.11"
+  }
+}

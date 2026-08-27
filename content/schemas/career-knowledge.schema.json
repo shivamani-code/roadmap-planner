@@ -1,0 +1,239 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://studentos.app/schemas/career-knowledge/1.0.0",
+  "title": "StudentOS Career Knowledge Import",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "datasetVersion",
+    "synthetic",
+    "review",
+    "skills",
+    "roles",
+    "learningUnits"
+  ],
+  "properties": {
+    "schemaVersion": { "const": "1.0.0" },
+    "datasetVersion": {
+      "type": "string",
+      "pattern": "^[0-9]{4}\\.[0-9]{2}\\.[0-9]+$"
+    },
+    "synthetic": { "type": "boolean" },
+    "review": { "$ref": "#/$defs/review" },
+    "skills": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "$ref": "#/$defs/skill" }
+    },
+    "roles": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "$ref": "#/$defs/role" }
+    },
+    "learningUnits": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "$ref": "#/$defs/learningUnit" }
+    }
+  },
+  "$defs": {
+    "stableKey": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:[.-][a-z0-9]+)*$",
+      "maxLength": 128
+    },
+    "ratio": { "type": "number", "minimum": 0, "maximum": 1 },
+    "review": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["editorId", "reviewerId", "reviewedAt", "rationale"],
+      "properties": {
+        "editorId": { "type": "string", "minLength": 1 },
+        "reviewerId": { "type": "string", "minLength": 1 },
+        "reviewedAt": { "type": "string", "format": "date-time" },
+        "rationale": { "type": "string", "minLength": 20, "maxLength": 2000 }
+      }
+    },
+    "skill": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["key", "name", "category", "rubricVersion", "prerequisites"],
+      "properties": {
+        "key": { "$ref": "#/$defs/stableKey" },
+        "name": { "type": "string", "minLength": 1, "maxLength": 160 },
+        "category": {
+          "type": "string",
+          "enum": [
+            "PROGRAMMING",
+            "DSA",
+            "CORE_CS",
+            "DEVELOPMENT",
+            "DATABASES",
+            "TOOLS",
+            "DATA",
+            "PROJECTS",
+            "APTITUDE",
+            "COMMUNICATION",
+            "RESUME",
+            "INTERVIEW"
+          ]
+        },
+        "rubricVersion": { "type": "integer", "minimum": 1 },
+        "evidenceDecayDays": {
+          "type": ["integer", "null"],
+          "minimum": 30,
+          "maximum": 3650
+        },
+        "prerequisites": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["skillKey", "type", "threshold"],
+            "properties": {
+              "skillKey": { "$ref": "#/$defs/stableKey" },
+              "type": { "type": "string", "enum": ["HARD", "SOFT"] },
+              "threshold": { "$ref": "#/$defs/ratio" }
+            }
+          }
+        }
+      }
+    },
+    "role": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["key", "name", "domainKey", "version", "targetLevels"],
+      "properties": {
+        "key": { "$ref": "#/$defs/stableKey" },
+        "name": { "type": "string", "minLength": 1, "maxLength": 160 },
+        "domainKey": { "$ref": "#/$defs/stableKey" },
+        "version": { "type": "integer", "minimum": 1 },
+        "targetLevels": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "$ref": "#/$defs/targetLevel" }
+        }
+      }
+    },
+    "targetLevel": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["level", "requirements"],
+      "properties": {
+        "level": {
+          "type": "string",
+          "enum": ["INTERNSHIP_READY", "SERVICE_PLACEMENT", "PRODUCT_PLACEMENT"]
+        },
+        "requirements": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "$ref": "#/$defs/requirement" }
+        }
+      }
+    },
+    "requirement": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "skillKey",
+        "requiredDepth",
+        "importance",
+        "placementRelevance",
+        "required",
+        "requiredByDaysBeforeDeadline",
+        "hours",
+        "rationale"
+      ],
+      "properties": {
+        "skillKey": { "$ref": "#/$defs/stableKey" },
+        "requiredDepth": { "$ref": "#/$defs/ratio" },
+        "importance": { "$ref": "#/$defs/ratio" },
+        "placementRelevance": { "$ref": "#/$defs/ratio" },
+        "required": { "type": "boolean" },
+        "requiredByDaysBeforeDeadline": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 1460
+        },
+        "hours": { "$ref": "#/$defs/effortHours" },
+        "rationale": { "type": "string", "minLength": 20, "maxLength": 1000 }
+      }
+    },
+    "effortHours": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["p25", "p50", "p75"],
+      "properties": {
+        "p25": { "type": "number", "minimum": 0, "maximum": 2000 },
+        "p50": { "type": "number", "minimum": 0, "maximum": 2000 },
+        "p75": { "type": "number", "minimum": 0, "maximum": 2000 }
+      }
+    },
+    "learningUnit": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "key",
+        "type",
+        "skillKeys",
+        "fromDepth",
+        "toDepth",
+        "estimatedMinutes",
+        "difficulty",
+        "splitPointsMinutes",
+        "reasonCodes"
+      ],
+      "properties": {
+        "key": { "$ref": "#/$defs/stableKey" },
+        "type": {
+          "type": "string",
+          "enum": ["TEACH", "PRACTICE", "ASSESS", "REVISE"]
+        },
+        "skillKeys": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": { "$ref": "#/$defs/stableKey" }
+        },
+        "fromDepth": { "$ref": "#/$defs/ratio" },
+        "toDepth": { "$ref": "#/$defs/ratio" },
+        "estimatedMinutes": {
+          "type": "integer",
+          "minimum": 5,
+          "maximum": 12000
+        },
+        "difficulty": {
+          "type": "string",
+          "enum": ["FOUNDATION", "INTERMEDIATE", "ADVANCED"]
+        },
+        "splitPointsMinutes": {
+          "type": "array",
+          "items": { "type": "integer", "minimum": 5, "maximum": 240 }
+        },
+        "reasonCodes": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "enum": [
+              "ROLE_REQUIRED",
+              "PLACEMENT_REQUIRED",
+              "PREREQUISITE_OF",
+              "ACADEMIC_SYNC",
+              "ACADEMIC_EXTENSION",
+              "CAREER_ONLY",
+              "PROJECT_EVIDENCE",
+              "LOW_CONFIDENCE_CHECK",
+              "SPACED_REVISION",
+              "DEADLINE_URGENCY",
+              "EXAM_CONTINUITY",
+              "OPTIONAL_EXCLUDED"
+            ]
+          }
+        }
+      }
+    }
+  }
+}

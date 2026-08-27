@@ -1,0 +1,122 @@
+name: studentos
+
+x-studentos-app: &studentos-app
+  image: studentos:${STUDENTOS_IMAGE_TAG:-latest}
+  build:
+    context: .
+    args:
+      NEXT_PUBLIC_API_URL: ${PUBLIC_API_URL:?Set PUBLIC_API_URL}
+  restart: unless-stopped
+
+services:
+  postgres:
+    image: postgres:17-alpine
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: studentos
+      POSTGRES_USER: studentos
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?Set POSTGRES_PASSWORD}
+    volumes:
+      - studentos-postgres:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U studentos -d studentos"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+
+  migrate:
+    <<: *studentos-app
+    restart: "no"
+    command:
+      [
+        "pnpm",
+        "--filter",
+        "@studentos/database",
+        "exec",
+        "prisma",
+        "migrate",
+        "deploy",
+      ]
+    environment:
+      DATABASE_URL: postgresql://studentos:${POSTGRES_PASSWORD}@postgres:5432/studentos?schema=public
+    depends_on:
+      postgres:
+        condition: service_healthy
+
+  api:
+    <<: *studentos-app
+    environment:
+      STUDENTOS_SERVICE: api
+      NODE_ENV: production
+      API_PORT: 4000
+      DATABASE_MODE: postgres
+      DATABASE_URL: postgresql://studentos:${POSTGRES_PASSWORD}@postgres:5432/studentos?schema=public
+      SESSION_SECRET: ${SESSION_SECRET:?Set SESSION_SECRET}
+      AUTH_MODE: email
+      ALLOW_DEV_AUTH: "false"
+      PUBLIC_WEB_URL: ${PUBLIC_WEB_URL:?Set PUBLIC_WEB_URL}
+      WEB_ORIGIN: ${PUBLIC_WEB_URL}
+      ADMIN_ORIGIN: ${PUBLIC_ADMIN_URL:?Set PUBLIC_ADMIN_URL}
+      EMAIL_GATEWAY_URL: ${EMAIL_GATEWAY_URL:?Set EMAIL_GATEWAY_URL}
+      EMAIL_GATEWAY_TOKEN: ${EMAIL_GATEWAY_TOKEN:?Set EMAIL_GATEWAY_TOKEN}
+      CSRF_ENABLED: "true"
+      RATE_LIMIT_ENABLED: "true"
+      TRUST_PROXY_HOPS: ${TRUST_PROXY_HOPS:-1}
+      LOG_LEVEL: ${LOG_LEVEL:-info}
+    ports:
+      - "4000:4000"
+    depends_on:
+      migrate:
+        condition: service_completed_successfully
+    healthcheck:
+      test:
+        [
+          "CMD",
+          "node",
+          "-e",
+          "fetch('http://localhost:4000/api/v1/health/ready').then(r=>{if(!r.ok)process.exit(1)})",
+        ]
+      interval: 15s
+      timeout: 5s
+      retries: 10
+
+  web:
+    <<: *studentos-app
+    environment:
+      STUDENTOS_SERVICE: web
+      NODE_ENV: production
+      NEXT_PUBLIC_API_URL: ${PUBLIC_API_URL}
+    ports:
+      - "3000:3000"
+    depends_on:
+      api:
+        condition: service_healthy
+
+  admin:
+    <<: *studentos-app
+    environment:
+      STUDENTOS_SERVICE: admin
+      NODE_ENV: production
+      NEXT_PUBLIC_API_URL: ${PUBLIC_API_URL}
+    ports:
+      - "3001:3001"
+    depends_on:
+      api:
+        condition: service_healthy
+
+  worker:
+    <<: *studentos-app
+    environment:
+      STUDENTOS_SERVICE: worker
+      NODE_ENV: production
+      DATABASE_MODE: postgres
+      DATABASE_URL: postgresql://studentos:${POSTGRES_PASSWORD}@postgres:5432/studentos?schema=public
+      EMAIL_GATEWAY_URL: ${EMAIL_GATEWAY_URL}
+      EMAIL_GATEWAY_TOKEN: ${EMAIL_GATEWAY_TOKEN}
+      LOG_LEVEL: ${LOG_LEVEL:-info}
+    depends_on:
+      migrate:
+        condition: service_completed_successfully
+
+volumes:
+  studentos-postgres:

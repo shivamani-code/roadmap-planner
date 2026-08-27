@@ -1,0 +1,162 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://studentos.app/schemas/curriculum-import/1.0.0",
+  "title": "StudentOS Curriculum Import",
+  "description": "Authoritative academic hierarchy only. Career mappings use a separate reviewed import.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "dataset", "semesters"],
+  "properties": {
+    "schemaVersion": { "const": "1.0.0" },
+    "dataset": { "$ref": "#/$defs/dataset" },
+    "semesters": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 12,
+      "items": { "$ref": "#/$defs/semester" }
+    }
+  },
+  "$defs": {
+    "stableCode": {
+      "type": "string",
+      "pattern": "^[A-Z0-9][A-Z0-9_-]{1,31}$"
+    },
+    "stableKey": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:[.-][a-z0-9]+)*$",
+      "maxLength": 128
+    },
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["documentId", "title", "sha256", "retrievedAt"],
+      "properties": {
+        "documentId": { "type": "string", "minLength": 1, "maxLength": 128 },
+        "title": { "type": "string", "minLength": 1, "maxLength": 300 },
+        "sourceUrl": { "type": "string", "format": "uri", "maxLength": 2048 },
+        "sha256": { "type": "string", "pattern": "^[a-fA-F0-9]{64}$" },
+        "publishedAt": { "type": "string", "format": "date" },
+        "retrievedAt": { "type": "string", "format": "date-time" },
+        "usagePermission": {
+          "type": "string",
+          "enum": ["PUBLIC_OFFICIAL", "LICENSED", "PERMISSION_RECORDED"]
+        }
+      }
+    },
+    "dataset": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "universityCode",
+        "regulationCode",
+        "degreeCode",
+        "branchCode",
+        "datasetVersion",
+        "effectiveFrom",
+        "source",
+        "synthetic"
+      ],
+      "properties": {
+        "universityCode": { "$ref": "#/$defs/stableCode" },
+        "regulationCode": { "$ref": "#/$defs/stableCode" },
+        "degreeCode": { "$ref": "#/$defs/stableCode" },
+        "branchCode": { "$ref": "#/$defs/stableCode" },
+        "datasetVersion": {
+          "type": "string",
+          "pattern": "^[0-9]{4}\\.[0-9]{2}\\.[0-9]+$"
+        },
+        "effectiveFrom": { "type": "string", "format": "date" },
+        "effectiveTo": { "type": ["string", "null"], "format": "date" },
+        "source": { "$ref": "#/$defs/source" },
+        "synthetic": { "type": "boolean" }
+      }
+    },
+    "semester": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["number", "academicYear", "subjects"],
+      "properties": {
+        "number": { "type": "integer", "minimum": 1, "maximum": 12 },
+        "academicYear": { "type": "integer", "minimum": 1, "maximum": 6 },
+        "subjects": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "$ref": "#/$defs/subject" }
+        }
+      }
+    },
+    "subject": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["code", "title", "credits", "type", "units"],
+      "properties": {
+        "code": { "type": "string", "minLength": 1, "maxLength": 32 },
+        "title": { "type": "string", "minLength": 1, "maxLength": 200 },
+        "credits": { "type": "number", "minimum": 0, "maximum": 20 },
+        "type": {
+          "type": "string",
+          "enum": [
+            "THEORY",
+            "LAB",
+            "INTEGRATED",
+            "PROJECT",
+            "SEMINAR",
+            "ELECTIVE"
+          ]
+        },
+        "contactHoursPerWeek": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 40
+        },
+        "units": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "$ref": "#/$defs/unit" }
+        }
+      }
+    },
+    "unit": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["number", "title", "topics"],
+      "properties": {
+        "number": { "type": "integer", "minimum": 1, "maximum": 30 },
+        "title": { "type": "string", "minLength": 1, "maxLength": 200 },
+        "topics": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "$ref": "#/$defs/topic" }
+        }
+      }
+    },
+    "topic": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "key",
+        "title",
+        "sourcePage",
+        "academicDepth",
+        "estimatedAcademicHours"
+      ],
+      "properties": {
+        "key": { "$ref": "#/$defs/stableKey" },
+        "title": { "type": "string", "minLength": 1, "maxLength": 240 },
+        "sourcePage": { "type": "integer", "minimum": 1 },
+        "academicDepth": { "type": "number", "minimum": 0, "maximum": 1 },
+        "estimatedAcademicHours": {
+          "type": "number",
+          "exclusiveMinimum": 0,
+          "maximum": 200
+        },
+        "prerequisiteTopicKeys": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": { "$ref": "#/$defs/stableKey" }
+        },
+        "lab": { "type": "boolean", "default": false }
+      }
+    }
+  }
+}

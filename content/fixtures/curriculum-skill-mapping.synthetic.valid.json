@@ -1,0 +1,43 @@
+{
+  "schemaVersion": "1.0.0",
+  "mappingVersion": 1,
+  "curriculumDatasetVersion": "2026.08.1",
+  "careerDatasetVersion": "2026.08.1",
+  "review": {
+    "editorId": "synthetic-editor",
+    "reviewerId": "synthetic-reviewer",
+    "reviewedAt": "2026-08-24T00:00:00Z"
+  },
+  "mappings": [
+    {
+      "curriculumTopicKey": "synthetic.dsa.arrays",
+      "skillKey": "dsa.arrays",
+      "breadth": 0.75,
+      "depth": 0.5,
+      "confidence": 0.95,
+      "practiceRequired": true,
+      "evidencePotential": 0.4,
+      "rationale": "Synthetic topic introduces arrays but lacks sufficient timed interview practice."
+    },
+    {
+      "curriculumTopicKey": "synthetic.dsa.trees",
+      "skillKey": "dsa.trees",
+      "breadth": 0.7,
+      "depth": 0.5,
+      "confidence": 0.9,
+      "practiceRequired": true,
+      "evidencePotential": 0.4,
+      "rationale": "Synthetic topic covers traversal foundations but not the complete role-level depth."
+    },
+    {
+      "curriculumTopicKey": "synthetic.db.sql",
+      "skillKey": "db.sql",
+      "breadth": 0.8,
+      "depth": 0.55,
+      "confidence": 0.95,
+      "practiceRequired": true,
+      "evidencePotential": 0.5,
+      "rationale": "Synthetic database unit covers core querying while production analysis remains external."
+    }
+  ]
+}

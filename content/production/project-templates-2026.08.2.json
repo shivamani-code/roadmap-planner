@@ -1,0 +1,2976 @@
+{
+  "schemaVersion": "1.0.0",
+  "datasetVersion": "2026.08.2",
+  "synthetic": false,
+  "projects": [
+    {
+      "key": "project.software-engineer.capstone",
+      "version": 2,
+      "title": "Software Engineer Evidence Capstone",
+      "goal": "Deliver a realistic software development solution that demonstrates the core decisions, validation, and communication expected from an entry-level Software Engineer.",
+      "roleKeys": ["software-engineer"],
+      "difficulty": "FOUNDATION",
+      "estimatedHours": {
+        "p25": 20,
+        "p50": 32,
+        "p75": 48
+      },
+      "portfolioValue": 0.86,
+      "prerequisites": [
+        {
+          "skillKey": "programming.oop",
+          "threshold": 0.35,
+          "type": "HARD"
+        },
+        {
+          "skillKey": "dsa.core",
+          "threshold": 0.35,
+          "type": "HARD"
+        }
+      ],
+      "deliverables": [
+        "Version-controlled working artifact",
+        "Validation and test evidence",
+        "Architecture or engineering decision record",
+        "Public case study and demonstration"
+      ],
+      "deploymentRequired": true,
+      "milestones": [
+        {
+          "key": "project.software-engineer.capstone.scope",
+          "title": "Scope, constraints, and evidence plan",
+          "sequence": 1,
+          "weight": 0.15,
+          "estimatedMinutes": 240,
+          "skillOutcomes": ["programming.oop"],
+          "completionCriteria": [
+            "A reviewer can verify the scope, constraints, and evidence plan from the submitted artifact and evidence."
+          ]
+        },
+        {
+          "key": "project.software-engineer.capstone.build",
+          "title": "Working implementation or engineering analysis",
+          "sequence": 2,
+          "weight": 0.45,
+          "estimatedMinutes": 960,
+          "skillOutcomes": [
+            "programming.oop",
+            "dsa.core",
+            "core.os",
+            "db.relational",
+            "engineering.software"
+          ],
+          "completionCriteria": [
+            "A reviewer can verify the working implementation or engineering analysis from the submitted artifact and evidence."
+          ]
+        },
+        {
+          "key": "project.software-engineer.capstone.validate",
+          "title": "Validation against documented risks",
+          "sequence": 3,
+          "weight": 0.25,
+          "estimatedMinutes": 480,
+          "skillOutcomes": [
+            "db.relational",
+            "engineering.software",
+            "projects.delivery",
+            "communication.technical"
+          ],
+          "completionCriteria": [
+            "A reviewer can verify the validation against documented risks from the submitted artifact and evidence."
+          ]
+        },
+        {
+          "key": "project.software-engineer.capstone.present",
+          "title": "Portfolio case study and technical walkthrough",
+          "sequence": 4,
+          "weight": 0.15,
+          "estimatedMinutes": 240,
+          "skillOutcomes": ["projects.delivery", "communication.technical"],
+          "completionCriteria": [
+            "A reviewer can verify the portfolio case study and technical walkthrough from the submitted artifact and evidence."
+          ]
+        }
+      ]
+    },
+    {
+      "key": "project.backend-engineer.capstone",
+      "version": 2,
+      "title": "Backend Engineer Evidence Capstone",
+      "goal": "Deliver a realistic software development solution that demonstrates the core decisions, validation, and communication expected from an entry-level Backend Engineer.",
+      "roleKeys": ["backend-engineer"],
+      "difficulty": "INTERMEDIATE",
+      "estimatedHours": {
+        "p25": 20,
+        "p50": 32,
+        "p75": 48
+      },
+      "portfolioValue": 0.86,
+      "prerequisites": [
+        {
+          "skillKey": "programming.java",
+          "threshold": 0.35,
+          "type": "HARD"
+        },
+        {
+          "skillKey": "dsa.core",
+          "threshold": 0.35,
+          "type": "HARD"
+        }
+      ],
+      "deliverables": [
+        "Version-controlled working artifact",
+        "Validation and test evidence",
+        "Architecture or engineering decision record",
+        "Public case study and demonstration"
+      ],
+      "deploymentRequired": true,
+      "milestones": [
+        {
+          "key": "project.backend-engineer.capstone.scope",
+          "title": "Scope, constraints, and evidence plan",
+          "sequence": 1,
+          "weight": 0.15,
+          "estimatedMinutes": 240,
+          "skillOutcomes": ["programming.java"],
+          "completionCriteria": [
+            "A reviewer can verify the scope, constraints, and evidence plan from the submitted artifact and evidence."
+          ]
+        },
+        {
+          "key": "project.backend-engineer.capstone.build",
+          "title": "Working implementation or engineering analysis",
+          "sequence": 2,
+          "weight": 0.45,
+          "estimatedMinutes": 960,
+          "skillOutcomes": [
+            "programming.java",
+            "dsa.core",
+            "core.os",
+            "core.networks",
+            "db.relational"
+          ],
+          "completionCriteria": [
+            "A reviewer can verify the working implementation or engineering analysis from the submitted artifact and evidence."
+          ]
+        },
+        {
+          "key": "project.backend-engineer.capstone.validate",
+          "title": "Validation against documented risks",
+          "sequence": 3,
+          "weight": 0.25,
+          "estimatedMinutes": 480,
+          "skillOutcomes": [
+            "core.networks",
+            "db.relational",
+            "projects.delivery",
+            "communication.technical"
+          ],
+          "completionCriteria": [
+            "A reviewer can verify the validation against documented risks from the submitted artifact and evidence."
+          ]
+        },
+        {
+          "key": "project.backend-engineer.capstone.present",
+          "title": "Portfolio case study and technical walkthrough",
+          "sequence": 4,
+          "weight": 0.15,
+          "estimatedMinutes": 240,
+          "skillOutcomes": ["projects.delivery", "communication.technical"],
+          "completionCriteria": [
+            "A reviewer can verify the portfolio case study and technical walkthrough from the submitted artifact and evidence."
+          ]
+        }
+      ]
+    },
+    {
+      "key": "project.frontend-engineer.capstone",
+      "version": 2,
+      "title": "Frontend Engineer Evidence Capstone",
+      "goal": "Deliver a realistic software development solution that demonstrates the core decisions, validation, and communication expected from an entry-level Frontend Engineer.",
+      "roleKeys": ["frontend-engineer"],
+      "difficulty": "ADVANCED",
+      "estimatedHours": {
+        "p25": 20,
+        "p50": 32,
+        "p75": 48
+      },
+      "portfolioValue": 0.86,
+      "prerequisites": [
+        {
+          "skillKey": "programming.javascript",
+          "threshold": 0.35,
+          "type": "HARD"
+        },
+        {
+          "skillKey": "web.fundamentals",
+          "threshold": 0.35,
+          "type": "HARD"
+        }
+      ],
+      "deliverables": [
+        "Version-controlled working artifact",
+        "Validation and test evidence",
+        "Architecture or engineering decision record",
+        "Public case study and demonstration"
+      ],
+      "deploymentRequired": true,
+      "milestones": [
+        {
+          "key": "project.frontend-engineer.capstone.scope",
+          "title": "Scope, constraints, and evidence plan",
+          "sequence": 1,
+          "weight": 0.15,
+          "estimatedMinutes": 240,
+          "skillOutcomes": ["programming.javascript"],
+          "completionCriteria": [
+            "A reviewer can verify the scope, constraints, and evidence plan from the submitted artifact and evidence."
+          ]
+        },
+        {
+          "key": "project.frontend-engineer.capstone.build",
+          "title": "Working implementation or engineering analysis",
+          "sequence": 2,
+          "weight": 0.45,
+          "estimatedMinutes": 960,
+          "skillOutcomes": [
+            "programming.javascript",
+            "web.fundamentals",
+            "web.frontend",
+            "engineering.testing",
+            "backend.api"
+          ],
+          "completionCriteria": [
+            "A reviewer can verify the working implementation or engineering analysis from the submitted artifact and evidence."
+          ]
+        },
+        {
+          "key": "project.frontend-engineer.capstone.validate",
+          "title": "Validation against documented risks",
+          "sequence": 3,
+          "weight": 0.25,
+          "estimatedMinutes": 480,
+          "skillOutcomes": [
+            "engineering.testing",
+            "backend.api",
+            "projects.delivery",
+            "communication.technical"
+          ],
+          "completionCriteria": [
+            "A reviewer can verify the validation against documented risks from the submitted artifact and evidence."
+          ]
+        },
+        {
+          "key": "project.frontend-engineer.capstone.present",
+          "title": "Portfolio case study and technical walkthrough",
+          "sequence": 4,
+          "weight": 0.15,
+          "estimatedMinutes": 240,
+          "skillOutcomes": ["projects.delivery", "communication.technical"],
+          "completionCriteria": [
+            "A reviewer can verify the portfolio case study and technical walkthrough from the submitted artifact and evidence."
+          ]
+        }
+      ]
+    },
+    {
+      "key": "project.full-stack-engineer.capstone",
+      "version": 2,
+      "title": "Full-stack Engineer Evidence Capstone",
+      "goal": "Deliver a realistic software development solution that demonstrates the core decisions, validation, and communication expected from an entry-level Full-stack Engineer.",
+      "roleKeys": ["full-stack-engineer"],
+      "difficulty": "FOUNDATION",
+      "estimatedHours": {
+        "p25": 20,
+        "p50": 32,
+        "p75": 48
+      },
+      "portfolioValue": 0.86,
+      "prerequisites": [
+        {
+          "skillKey": "programming.javascript",
+          "threshold": 0.35,
+          "type": "HARD"
+        },
+        {
+          "skillKey": "web.frontend",
+          "threshold": 0.35,
+          "type": "HARD"
+        }
+      ],
+      "deliverables": [
+        "Version-controlled working artifact",
+        "Validation and test evidence",
+        "Architecture or engineering decision record",
+        "Public case study and demonstration"
+      ],
+      "deploymentRequired": true,
+      "milestones": [
+        {
+          "key": "project.full-stack-engineer.capstone.scope",
+          "title": "Scope, constraints, and evidence plan",
+          "sequence": 1,
+          "weight": 0.15,
+          "estimatedMinutes": 240,
+          "skillOutcomes": ["programming.javascript"],
+          "completionCriteria": [
+            "A reviewer can verify the scope, constraints, and evidence plan from the submitted artifact and evidence."
+          ]
+        },
+        {
+          "key": "project.full-stack-engineer.capstone.build",
+          "title": "Working implementation or engineering analysis",
+          "sequence": 2,
+          "weight": 0.45,
+          "estimatedMinutes": 960,
+          "skillOutcomes": [
+            "programming.javascript",
+            "web.frontend",
+            "backend.api",
+            "db.relational",
+            "backend.security"
+          ],
+          "completionCriteria": [
+            "A reviewer can verify the working implementation or engineering analysis from the submitted artifact and evidence."
+          ]
+        },
+        {
+          "key": "project.full-stack-engineer.capstone.validate",
+          "title": "Validation against documented risks",
+          "sequence": 3,
+          "weight": 0.25,
+          "estimatedMinutes": 480,
+          "skillOutcomes": [
+            "db.relational",
+            "backend.security",
+            "projects.delivery",
+            "communication.technical"
+          ],
+          "completionCriteria": [
+            "A reviewer can verify the validation against documented risks from the submitted artifact and evidence."
+          ]
+        },
+        {
+          "key": "project.full-stack-engineer.capstone.present",
+          "title": "Portfolio case study and technical walkthrough",
+          "sequence": 4,
+          "weight": 0.15,
+          "estimatedMinutes": 240,
+          "skillOutcomes": ["projects.delivery", "communication.technical"],
+          "completionCriteria": [
+            "A reviewer can verify the portfolio case study and technical walkthrough from the submitted artifact and evidence."
+          ]
+        }
+      ]
+    },
+    {
+      "key": "project.mobile-app-developer.capstone",
+      "version": 2,
+      "title": "Mobile App Developer Evidence Capstone",
+      "goal": "Deliver a realistic software development solution that demonstrates the core decisions, validation, and communication expected from an entry-level Mobile App Developer.",
+      "roleKeys": ["mobile-app-developer"],
+      "difficulty": "INTERMEDIATE",
+      "estimatedHours": {
+        "p25": 20,
+        "p50": 32,
+        "p75": 48
+      },
+      "portfolioValue": 0.86,
+      "prerequisites": [
+        {
+          "skillKey": "programming.oop",
+          "threshold": 0.35,
+          "type": "HARD"
+        },
+        {
+          "skillKey": "mobile.development",
+          "threshold": 0.35,
+          "type": "HARD"
+        }
+      ],
+      "deliverables": [
+        "Version-controlled working artifact",
+        "Validation and test evidence",
+        "Architecture or engineering decision record",
+        "Public case study and demonstration"
+      ],
+      "deploymentRequired": true,
+      "milestones": [
+        {
+          "key": "project.mobile-app-developer.capstone.scope",
+          "title": "Scope, constraints, and evidence plan",
+          "sequence": 1,
+          "weight": 0.15,
+          "estimatedMinutes": 240,
+          "skillOutcomes": ["programming.oop"],
+          "completionCriteria": [
+            "A reviewer can verify the scope, constraints, and evidence plan from the submitted artifact and evidence."
+          ]
+        },
+        {
+          "key": "project.mobile-app-developer.capstone.build",
+          "title": "Working implementation or engineering analysis",
+          "sequence": 2,
+          "weight": 0.45,
+          "estimatedMinutes": 960,
+          "skillOutcomes": [
+            "programming.oop",
+            "mobile.development",
+            "backend.api",
+            "db.relational",
+            "engineering.testing"
+          ],
+          "completionCriteria": [
+            "A reviewer can verify the working implementation or engineering analysis from the submitted artifact and evidence."
+          ]
+        },
+        {
+          "key": "project.mobile-app-developer.capstone.validate",
+          "title": "Validation against documented risks",
+          "sequence": 3,
+          "weight": 0.25,
+          "estimatedMinutes": 480,
+          "skillOutcomes": [
+            "db.relational",
+            "engineering.testing",
+            "projects.delivery",
+            "communication.technical"
+          ],
+          "completionCriteria": [
+            "A reviewer can verify the validation against documented risks from the submitted artifact and evidence."
+          ]
+        },
+        {
+          "key": "project.mobile-app-developer.capstone.present",
+          "title": "Portfolio case study and technical walkthrough",
+          "sequence": 4,
+          "weight": 0.15,
+          "estimatedMinutes": 240,
+          "skillOutcomes": ["projects.delivery", "communication.technical"],
+          "completionCriteria": [
+            "A reviewer can verify the portfolio case study and technical walkthrough from the submitted artifact and evidence."
+          ]
+        }
+      ]
+    },
+    {
+      "key": "project.qa-automation-engineer.capstone",
+      "version": 2,
+      "title": "QA Automation Engineer Evidence Capstone",
+      "goal": "Deliver a realistic software quality solution that demonstrates the core decisions, validation, and communication expected from an entry-level QA Automation Engineer.",
+      "roleKeys": ["qa-automation-engineer"],
+      "difficulty": "ADVANCED",
+      "estimatedHours": {
+        "p25": 20,
+        "p50": 32,
+        "p75": 48
+      },
+      "portfolioValue": 0.86,
+      "prerequisites": [
+        {
+          "skillKey": "programming.fundamentals",
+          "threshold": 0.35,
+          "type": "HARD"
+        },
+        {
+          "skillKey": "engineering.testing",
+          "threshold": 0.35,
+          "type": "HARD"
+        }
+      ],
+      "deliverables": [
+        "Version-controlled working artifact",
+        "Validation and test evidence",
+        "Architecture or engineering decision record",
+        "Public case study and demonstration"
+      ],
+      "deploymentRequired": true,
+      "milestones": [
+        {
+          "key": "project.qa-automation-engineer.capstone.scope",
+          "title": "Scope, constraints, and evidence plan",
+          "sequence": 1,
+          "weight": 0.15,
+          "estimatedMinutes": 240,
+          "skillOutcomes": ["programming.fundamentals"],
+          "completionCriteria": [
+            "A reviewer can verify the scope, constraints, and evidence plan from the submitted artifact and evidence."
+          ]
+        },
+        {
+          "key": "project.qa-automation-engineer.capstone.build",
+          "title": "Working implementation or engineering analysis",
+          "sequence": 2,
+          "weight": 0.45,
+          "estimatedMinutes": 960,
+          "skillOutcomes": [
+            "programming.fundamentals",
+            "engineering.testing",
+            "qa.automation",
+            "backend.api",
+            "deployment.devops"
+          ],
+          "completionCriteria": [
+            "A reviewer can verify the working implementation or engineering analysis from the submitted artifact and evidence."
+          ]
+        },
+        {
+          "key": "project.qa-automation-engineer.capstone.validate",
+          "title": "Validation against documented risks",
+          "sequence": 3,
+          "weight": 0.25,
+          "estimatedMinutes": 480,
+          "skillOutcomes": [
+            "backend.api",
+            "deployment.devops",
+            "projects.delivery",
+            "communication.technical"
+          ],
+          "completionCriteria": [
+            "A reviewer can verify the validation against documented risks from the submitted artifact and evidence."
+          ]
+        },
+        {
+          "key": "project.qa-automation-engineer.capstone.present",
+          "title": "Portfolio case study and technical walkthrough",
+          "sequence": 4,
+          "weight": 0.15,
+          "estimatedMinutes": 240,
+          "skillOutcomes": ["projects.delivery", "communication.technical"],
+          "completionCriteria": [
+            "A reviewer can verify the portfolio case study and technical walkthrough from the submitted artifact and evidence."
+          ]
+        }
+      ]
+    },
+    {
+      "key": "project.devops-engineer.capstone",
+      "version": 2,
+      "title": "DevOps Engineer Evidence Capstone",
+      "goal": "Deliver a realistic cloud and platform solution that demonstrates the core decisions, validation, and communication expected from an entry-level DevOps Engineer.",
+      "roleKeys": ["devops-engineer"],
+      "difficulty": "FOUNDATION",
+      "estimatedHours": {
+        "p25": 20,
+        "p50": 32,
+        "p75": 48
+      },
+      "portfolioValue": 0.86,
+      "prerequisites": [
+        {
+          "skillKey": "core.os",
+          "threshold": 0.35,
+          "type": "HARD"
+        },
+        {
+          "skillKey": "core.linux",
+          "threshold": 0.35,
+          "type": "HARD"
+        }
+      ],
+      "deliverables": [
+        "Version-controlled working artifact",
+        "Validation and test evidence",
+        "Architecture or engineering decision record",
+        "Public case study and demonstration"
+      ],
+      "deploymentRequired": true,
+      "milestones": [
+        {
+          "key": "project.devops-engineer.capstone.scope",
+          "title": "Scope, constraints, and evidence plan",
+          "sequence": 1,
+          "weight": 0.15,
+          "estimatedMinutes": 240,
+          "skillOutcomes": ["core.os"],
+          "completionCriteria": [
+            "A reviewer can verify the scope, constraints, and evidence plan from the submitted artifact and evidence."
+          ]
+        },
+        {
+          "key": "project.devops-engineer.capstone.build",
+          "title": "Working implementation or engineering analysis",
+          "sequence": 2,
+          "weight": 0.45,
+          "estimatedMinutes": 960,
+          "skillOutcomes": [
+            "core.os",
+            "core.linux",
+            "core.networks",
+            "core.cloud",
+            "deployment.devops"
+          ],
+          "completionCriteria": [
+            "A reviewer can verify the working implementation or engineering analysis from the submitted artifact and evidence."
+          ]
+        },
+        {
+          "key": "project.devops-engineer.capstone.validate",
+          "title": "Validation against documented risks",
+          "sequence": 3,
+          "weight": 0.25,
+          "estimatedMinutes": 480,
+          "skillOutcomes": [
+            "core.cloud",
+            "deployment.devops",
+            "projects.delivery",
+            "communication.technical"
+          ],
+          "completionCriteria": [
+            "A reviewer can verify the validation against documented risks from the submitted artifact and evidence."
+          ]
+        },
+        {
+          "key": "project.devops-engineer.capstone.present",
+          "title": "Portfolio case study and technical walkthrough",
+          "sequence": 4,
+          "weight": 0.15,
+          "estimatedMinutes": 240,
+          "skillOutcomes": ["projects.delivery", "communication.technical"],
+          "completionCriteria": [
+            "A reviewer can verify the portfolio case study and technical walkthrough from the submitted artifact and evidence."
+          ]
+        }
+      ]
+    },
+    {
+      "key": "project.cloud-engineer.capstone",
+      "version": 2,
+      "title": "Cloud Engineer Evidence Capstone",
+      "goal": "Deliver a realistic cloud and platform solution that demonstrates the core decisions, validation, and communication expected from an entry-level Cloud Engineer.",
+      "roleKeys": ["cloud-engineer"],
+      "difficulty": "INTERMEDIATE",
+      "estimatedHours": {
+        "p25": 20,
+        "p50": 32,
+        "p75": 48
+      },
+      "portfolioValue": 0.86,
+      "prerequisites": [
+        {
+          "skillKey": "core.os",
+          "threshold": 0.35,
+          "type": "HARD"
+        },
+        {
+          "skillKey": "core.networks",
+          "threshold": 0.35,
+          "type": "HARD"
+        }
+      ],
+      "deliverables": [
+        "Version-controlled working artifact",
+        "Validation and test evidence",
+        "Architecture or engineering decision record",
+        "Public case study and demonstration"
+      ],
+      "deploymentRequired": true,
+      "milestones": [
+        {
+          "key": "project.cloud-engineer.capstone.scope",
+          "title": "Scope, constraints, and evidence plan",
+          "sequence": 1,
+          "weight": 0.15,
+          "estimatedMinutes": 240,
+          "skillOutcomes": ["core.os"],
+          "completionCriteria": [
+            "A reviewer can verify the scope, constraints, and evidence plan from the submitted artifact and evidence."
+          ]
+        },
+        {
+          "key": "project.cloud-engineer.capstone.build",
+          "title": "Working implementation or engineering analysis",
+          "sequence": 2,
+          "weight": 0.45,
+          "estimatedMinutes": 960,
+          "skillOutcomes": [
+            "core.os",
+            "core.networks",
+            "core.cloud",
+            "cloud.platform",
+            "deployment.devops"
+          ],
+          "completionCriteria": [
+            "A reviewer can verify the working implementation or engineering analysis from the submitted artifact and evidence."
+          ]
+        },
+        {
+          "key": "project.cloud-engineer.capstone.validate",
+          "title": "Validation against documented risks",
+          "sequence": 3,
+          "weight": 0.25,
+          "estimatedMinutes": 480,
+          "skillOutcomes": [
+            "cloud.platform",
+            "deployment.devops",
+            "projects.delivery",
+            "communication.technical"
+          ],
+          "completionCriteria": [
+            "A reviewer can verify the validation against documented risks from the submitted artifact and evidence."
+          ]
+        },
+        {
+          "key": "project.cloud-engineer.capstone.present",
+          "title": "Portfolio case study and technical walkthrough",
+          "sequence": 4,
+          "weight": 0.15,
+          "estimatedMinutes": 240,
+          "skillOutcomes": ["projects.delivery", "communication.technical"],
+          "completionCriteria": [
+            "A reviewer can verify the portfolio case study and technical walkthrough from the submitted artifact and evidence."
+          ]
+        }
+      ]
+    },
+    {
+      "key": "project.cybersecurity-analyst.capstone",
+      "version": 2,
+      "title": "Cybersecurity Analyst Evidence Capstone",
+      "goal": "Deliver a realistic cybersecurity solution that demonstrates the core decisions, validation, and communication expected from an entry-level Cybersecurity Analyst.",
+      "roleKeys": ["cybersecurity-analyst"],
+      "difficulty": "ADVANCED",
+      "estimatedHours": {
+        "p25": 20,
+        "p50": 32,
+        "p75": 48
+      },
+      "portfolioValue": 0.86,
+      "prerequisites": [
+        {
+          "skillKey": "core.os",
+          "threshold": 0.35,
+          "type": "HARD"
+        },
+        {
+          "skillKey": "core.linux",
+          "threshold": 0.35,
+          "type": "HARD"
+        }
+      ],
+      "deliverables": [
+        "Version-controlled working artifact",
+        "Validation and test evidence",
+        "Architecture or engineering decision record",
+        "Public case study and demonstration"
+      ],
+      "deploymentRequired": true,
+      "milestones": [
+        {
+          "key": "project.cybersecurity-analyst.capstone.scope",
+          "title": "Scope, constraints, and evidence plan",
+          "sequence": 1,
+          "weight": 0.15,
+          "estimatedMinutes": 240,
+          "skillOutcomes": ["core.os"],
+          "completionCriteria": [
+            "A reviewer can verify the scope, constraints, and evidence plan from the submitted artifact and evidence."
+          ]
+        },
+        {
+          "key": "project.cybersecurity-analyst.capstone.build",
+          "title": "Working implementation or engineering analysis",
+          "sequence": 2,
+          "weight": 0.45,
+          "estimatedMinutes": 960,
+          "skillOutcomes": [
+            "core.os",
+            "core.linux",
+            "core.networks",
+            "core.cybersecurity",
+            "backend.security"
+          ],
+          "completionCriteria": [
+            "A reviewer can verify the working implementation or engineering analysis from the submitted artifact and evidence."
+          ]
+        },
+        {
+          "key": "project.cybersecurity-analyst.capstone.validate",
+          "title": "Validation against documented risks",
+          "sequence": 3,
+          "weight": 0.25,
+          "estimatedMinutes": 480,
+          "skillOutcomes": [
+            "core.cybersecurity",
+            "backend.security",
+            "projects.delivery",
+            "communication.technical"
+          ],
+          "completionCriteria": [
+            "A reviewer can verify the validation against documented risks from the submitted artifact and evidence."
+          ]
+        },
+        {
+          "key": "project.cybersecurity-analyst.capstone.present",
+          "title": "Portfolio case study and technical walkthrough",
+          "sequence": 4,
+          "weight": 0.15,
+          "estimatedMinutes": 240,
+          "skillOutcomes": ["projects.delivery", "communication.technical"],
+          "completionCriteria": [
+            "A reviewer can verify the portfolio case study and technical walkthrough from the submitted artifact and evidence."
+          ]
+        }
+      ]
+    },
+    {
+      "key": "project.network-engineer.capstone",
+      "version": 2,
+      "title": "Network Engineer Evidence Capstone",
+      "goal": "Deliver a realistic networks and telecom solution that demonstrates the core decisions, validation, and communication expected from an entry-level Network Engineer.",
+      "roleKeys": ["network-engineer"],
+      "difficulty": "FOUNDATION",
+      "estimatedHours": {
+        "p25": 20,
+        "p50": 32,
+        "p75": 48
+      },
+      "portfolioValue": 0.86,
+      "prerequisites": [
+        {
+          "skillKey": "core.networks",
+          "threshold": 0.35,
+          "type": "HARD"
+        },
+        {
+          "skillKey": "core.linux",
+          "threshold": 0.35,
+          "type": "HARD"
+        }
+      ],
+      "deliverables": [
+        "Version-controlled working artifact",
+        "Validation and test evidence",
+        "Architecture or engineering decision record",
+        "Public case study and demonstration"
+      ],
+      "deploymentRequired": true,
+      "milestones": [
+        {
+          "key": "project.network-engineer.capstone.scope",
+          "title": "Scope, constraints, and evidence plan",
+          "sequence": 1,
+          "weight": 0.15,
+          "estimatedMinutes": 240,
+          "skillOutcomes": ["core.networks"],
+          "completionCriteria": [
+            "A reviewer can verify the scope, constraints, and evidence plan from the submitted artifact and evidence."
+          ]
+        },
+        {
+          "key": "project.network-engineer.capstone.build",
+          "title": "Working implementation or engineering analysis",
+          "sequence": 2,
+          "weight": 0.45,
+          "estimatedMinutes": 960,
+          "skillOutcomes": [
+            "core.networks",
+            "core.linux",
+            "core.cybersecurity",
+            "electronics.telecom",
+            "core.cloud"
+          ],
+          "completionCriteria": [
+            "A reviewer can verify the working implementation or engineering analysis from the submitted artifact and evidence."
+          ]
+        },
+        {
+          "key": "project.network-engineer.capstone.validate",
+          "title": "Validation against documented risks",
+          "sequence": 3,
+          "weight": 0.25,
+          "estimatedMinutes": 480,
+          "skillOutcomes": [
+            "electronics.telecom",
+            "core.cloud",
+            "projects.delivery",
+            "communication.technical"
+          ],
+          "completionCriteria": [
+            "A reviewer can verify the validation against documented risks from the submitted artifact and evidence."
+          ]
+        },
+        {
+          "key": "project.network-engineer.capstone.present",
+          "title": "Portfolio case study and technical walkthrough",
+          "sequence": 4,
+          "weight": 0.15,
+          "estimatedMinutes": 240,
+          "skillOutcomes": ["projects.delivery", "communication.technical"],
+          "completionCriteria": [
+            "A reviewer can verify the portfolio case study and technical walkthrough from the submitted artifact and evidence."
+          ]
+        }
+      ]
+    },
+    {
+      "key": "project.database-administrator.capstone",
+      "version": 2,
+      "title": "Database Administrator Evidence Capstone",
+      "goal": "Deliver a realistic data platforms solution that demonstrates the core decisions, validation, and communication expected from an entry-level Database Administrator.",
+      "roleKeys": ["database-administrator"],
+      "difficulty": "INTERMEDIATE",
+      "estimatedHours": {
+        "p25": 20,
+        "p50": 32,
+        "p75": 48
+      },
+      "portfolioValue": 0.86,
+      "prerequisites": [
+        {
+          "skillKey": "db.relational",
+          "threshold": 0.35,
+          "type": "HARD"
+        },
+        {
+          "skillKey": "db.modeling",
+          "threshold": 0.35,
+          "type": "HARD"
+        }
+      ],
+      "deliverables": [
+        "Version-controlled working artifact",
+        "Validation and test evidence",
+        "Architecture or engineering decision record",
+        "Public case study and demonstration"
+      ],
+      "deploymentRequired": true,
+      "milestones": [
+        {
+          "key": "project.database-administrator.capstone.scope",
+          "title": "Scope, constraints, and evidence plan",
+          "sequence": 1,
+          "weight": 0.15,
+          "estimatedMinutes": 240,
+          "skillOutcomes": ["db.relational"],
+          "completionCriteria": [
+            "A reviewer can verify the scope, constraints, and evidence plan from the submitted artifact and evidence."
+          ]
+        },
+        {
+          "key": "project.database-administrator.capstone.build",
+          "title": "Working implementation or engineering analysis",
+          "sequence": 2,
+          "weight": 0.45,
+          "estimatedMinutes": 960,
+          "skillOutcomes": [
+            "db.relational",
+            "db.modeling",
+            "db.nosql",
+            "core.os",
+            "core.cloud"
+          ],
+          "completionCriteria": [
+            "A reviewer can verify the working implementation or engineering analysis from the submitted artifact and evidence."
+          ]
+        },
+        {
+          "key": "project.database-administrator.capstone.validate",
+          "title": "Validation against documented risks",
+          "sequence": 3,
+          "weight": 0.25,
+          "estimatedMinutes": 480,
+          "skillOutcomes": [
+            "core.os",
+            "core.cloud",
+            "projects.delivery",
+            "communication.technical"
+          ],
+          "completionCriteria": [
+            "A reviewer can verify the validation against documented risks from the submitted artifact and evidence."
+          ]
+        },
+        {
+          "key": "project.database-administrator.capstone.present",
+          "title": "Portfolio case study and technical walkthrough",
+          "sequence": 4,
+          "weight": 0.15,
+          "estimatedMinutes": 240,
+          "skillOutcomes": ["projects.delivery", "communication.technical"],
+          "completionCriteria": [
+            "A reviewer can verify the portfolio case study and technical walkthrough from the submitted artifact and evidence."
+          ]
+        }
+      ]
+    },
+    {
+      "key": "project.data-analyst.capstone",
+      "version": 2,
+      "title": "Data Analyst Evidence Capstone",
+      "goal": "Deliver a realistic data and ai solution that demonstrates the core decisions, validation, and communication expected from an entry-level Data Analyst.",
+      "roleKeys": ["data-analyst"],
+      "difficulty": "ADVANCED",
+      "estimatedHours": {
+        "p25": 20,
+        "p50": 32,
+        "p75": 48
+      },
+      "portfolioValue": 0.86,
+      "prerequisites": [
+        {
+          "skillKey": "programming.python",
+          "threshold": 0.35,
+          "type": "HARD"
+        },
+        {
+          "skillKey": "db.relational",
+          "threshold": 0.35,
+          "type": "HARD"
+        }
+      ],
+      "deliverables": [
+        "Version-controlled working artifact",
+        "Validation and test evidence",
+        "Architecture or engineering decision record",
+        "Public case study and demonstration"
+      ],
+      "deploymentRequired": true,
+      "milestones": [
+        {
+          "key": "project.data-analyst.capstone.scope",
+          "title": "Scope, constraints, and evidence plan",
+          "sequence": 1,
+          "weight": 0.15,
+          "estimatedMinutes": 240,
+          "skillOutcomes": ["programming.python"],
+          "completionCriteria": [
+            "A reviewer can verify the scope, constraints, and evidence plan from the submitted artifact and evidence."
+          ]
+        },
+        {
+          "key": "project.data-analyst.capstone.build",
+          "title": "Working implementation or engineering analysis",
+          "sequence": 2,
+          "weight": 0.45,
+          "estimatedMinutes": 960,
+          "skillOutcomes": [
+            "programming.python",
+            "db.relational",
+            "data.statistics",
+            "data.analysis",
+            "data.visualization"
+          ],
+          "completionCriteria": [
+            "A reviewer can verify the working implementation or engineering analysis from the submitted artifact and evidence."
+          ]
+        },
+        {
+          "key": "project.data-analyst.capstone.validate",
+          "title": "Validation against documented risks",
+          "sequence": 3,
+          "weight": 0.25,
+          "estimatedMinutes": 480,
+          "skillOutcomes": [
+            "data.analysis",
+            "data.visualization",
+            "projects.delivery",
+            "communication.technical"
+          ],
+          "completionCriteria": [
+            "A reviewer can verify the validation against documented risks from the submitted artifact and evidence."
+          ]
+        },
+        {
+          "key": "project.data-analyst.capstone.present",
+          "title": "Portfolio case study and technical walkthrough",
+          "sequence": 4,
+          "weight": 0.15,
+          "estimatedMinutes": 240,
+          "skillOutcomes": ["projects.delivery", "communication.technical"],
+          "completionCriteria": [
+            "A reviewer can verify the portfolio case study and technical walkthrough from the submitted artifact and evidence."
+          ]
+        }
+      ]
+    },
+    {
+      "key": "project.business-analyst.capstone",
+      "version": 2,
+      "title": "Business Analyst Evidence Capstone",
+      "goal": "Deliver a realistic product and business solution that demonstrates the core decisions, validation, and communication expected from an entry-level Business Analyst.",
+      "roleKeys": ["business-analyst"],
+      "difficulty": "FOUNDATION",
+      "estimatedHours": {
+        "p25": 20,
+        "p50": 32,
+        "p75": 48
+      },
+      "portfolioValue": 0.86,
+      "prerequisites": [
+        {
+          "skillKey": "business.analysis",
+          "threshold": 0.35,
+          "type": "HARD"
+        },
+        {
+          "skillKey": "product.requirements",
+          "threshold": 0.35,
+          "type": "HARD"
+        }
+      ],
+      "deliverables": [
+        "Version-controlled working artifact",
+        "Validation and test evidence",
+        "Architecture or engineering decision record",
+        "Public case study and demonstration"
+      ],
+      "deploymentRequired": true,
+      "milestones": [
+        {
+          "key": "project.business-analyst.capstone.scope",
+          "title": "Scope, constraints, and evidence plan",
+          "sequence": 1,
+          "weight": 0.15,
+          "estimatedMinutes": 240,
+          "skillOutcomes": ["business.analysis"],
+          "completionCriteria": [
+            "A reviewer can verify the scope, constraints, and evidence plan from the submitted artifact and evidence."
+          ]
+        },
+        {
+          "key": "project.business-analyst.capstone.build",
+          "title": "Working implementation or engineering analysis",
+          "sequence": 2,
+          "weight": 0.45,
+          "estimatedMinutes": 960,
+          "skillOutcomes": [
+            "business.analysis",
+            "product.requirements",
+            "data.analysis",
+            "data.visualization",
+            "communication.technical"
+          ],
+          "completionCriteria": [
+            "A reviewer can verify the working implementation or engineering analysis from the submitted artifact and evidence."
+          ]
+        },
+        {
+          "key": "project.business-analyst.capstone.validate",
+          "title": "Validation against documented risks",
+          "sequence": 3,
+          "weight": 0.25,
+          "estimatedMinutes": 480,
+          "skillOutcomes": [
+            "data.visualization",
+            "communication.technical",
+            "projects.delivery"
+          ],
+          "completionCriteria": [
+            "A reviewer can verify the validation against documented risks from the submitted artifact and evidence."
+          ]
+        },
+        {
+          "key": "project.business-analyst.capstone.present",
+          "title": "Portfolio case study and technical walkthrough",
+          "sequence": 4,
+          "weight": 0.15,
+          "estimatedMinutes": 240,
+          "skillOutcomes": ["projects.delivery", "communication.technical"],
+          "completionCriteria": [
+            "A reviewer can verify the portfolio case study and technical walkthrough from the submitted artifact and evidence."
+          ]
+        }
+      ]
+    },
+    {
+      "key": "project.data-engineer.capstone",
+      "version": 2,
+      "title": "Data Engineer Evidence Capstone",
+      "goal": "Deliver a realistic data and ai solution that demonstrates the core decisions, validation, and communication expected from an entry-level Data Engineer.",
+      "roleKeys": ["data-engineer"],
+      "difficulty": "INTERMEDIATE",
+      "estimatedHours": {
+        "p25": 20,
+        "p50": 32,
+        "p75": 48
+      },
+      "portfolioValue": 0.86,
+      "prerequisites": [
+        {
+          "skillKey": "programming.python",
+          "threshold": 0.35,
+          "type": "HARD"
+        },
+        {
+          "skillKey": "db.relational",
+          "threshold": 0.35,
+          "type": "HARD"
+        }
+      ],
+      "deliverables": [
+        "Version-controlled working artifact",
+        "Validation and test evidence",
+        "Architecture or engineering decision record",
+        "Public case study and demonstration"
+      ],
+      "deploymentRequired": true,
+      "milestones": [
+        {
+          "key": "project.data-engineer.capstone.scope",
+          "title": "Scope, constraints, and evidence plan",
+          "sequence": 1,
+          "weight": 0.15,
+          "estimatedMinutes": 240,
+          "skillOutcomes": ["programming.python"],
+          "completionCriteria": [
+            "A reviewer can verify the scope, constraints, and evidence plan from the submitted artifact and evidence."
+          ]
+        },
+        {
+          "key": "project.data-engineer.capstone.build",
+          "title": "Working implementation or engineering analysis",
+          "sequence": 2,
+          "weight": 0.45,
+          "estimatedMinutes": 960,
+          "skillOutcomes": [
+            "programming.python",
+            "db.relational",
+            "db.warehouse",
+            "data.engineering",
+            "data.bigdata"
+          ],
+          "completionCriteria": [
+            "A reviewer can verify the working implementation or engineering analysis from the submitted artifact and evidence."
+          ]
+        },
+        {
+          "key": "project.data-engineer.capstone.validate",
+          "title": "Validation against documented risks",
+          "sequence": 3,
+          "weight": 0.25,
+          "estimatedMinutes": 480,
+          "skillOutcomes": [
+            "data.engineering",
+            "data.bigdata",
+            "projects.delivery",
+            "communication.technical"
+          ],
+          "completionCriteria": [
+            "A reviewer can verify the validation against documented risks from the submitted artifact and evidence."
+          ]
+        },
+        {
+          "key": "project.data-engineer.capstone.present",
+          "title": "Portfolio case study and technical walkthrough",
+          "sequence": 4,
+          "weight": 0.15,
+          "estimatedMinutes": 240,
+          "skillOutcomes": ["projects.delivery", "communication.technical"],
+          "completionCriteria": [
+            "A reviewer can verify the portfolio case study and technical walkthrough from the submitted artifact and evidence."
+          ]
+        }
+      ]
+    },
+    {
+      "key": "project.data-scientist.capstone",
+      "version": 2,
+      "title": "Data Scientist Evidence Capstone",
+      "goal": "Deliver a realistic data and ai solution that demonstrates the core decisions, validation, and communication expected from an entry-level Data Scientist.",
+      "roleKeys": ["data-scientist"],
+      "difficulty": "ADVANCED",
+      "estimatedHours": {
+        "p25": 20,
+        "p50": 32,
+        "p75": 48
+      },
+      "portfolioValue": 0.86,
+      "prerequisites": [
+        {
+          "skillKey": "programming.python",
+          "threshold": 0.35,
+          "type": "HARD"
+        },
+        {
+          "skillKey": "data.statistics",
+          "threshold": 0.35,
+          "type": "HARD"
+        }
+      ],
+      "deliverables": [
+        "Version-controlled working artifact",
+        "Validation and test evidence",
+        "Architecture or engineering decision record",
+        "Public case study and demonstration"
+      ],
+      "deploymentRequired": true,
+      "milestones": [
+        {
+          "key": "project.data-scientist.capstone.scope",
+          "title": "Scope, constraints, and evidence plan",
+          "sequence": 1,
+          "weight": 0.15,
+          "estimatedMinutes": 240,
+          "skillOutcomes": ["programming.python"],
+          "completionCriteria": [
+            "A reviewer can verify the scope, constraints, and evidence plan from the submitted artifact and evidence."
+          ]
+        },
+        {
+          "key": "project.data-scientist.capstone.build",
+          "title": "Working implementation or engineering analysis",
+          "sequence": 2,
+          "weight": 0.45,
+          "estimatedMinutes": 960,
+          "skillOutcomes": [
+            "programming.python",
+            "data.statistics",
+            "data.analysis",
+            "data.visualization",
+            "ai.machine-learning"
+          ],
+          "completionCriteria": [
+            "A reviewer can verify the working implementation or engineering analysis from the submitted artifact and evidence."
+          ]
+        },
+        {
+          "key": "project.data-scientist.capstone.validate",
+          "title": "Validation against documented risks",
+          "sequence": 3,
+          "weight": 0.25,
+          "estimatedMinutes": 480,
+          "skillOutcomes": [
+            "data.visualization",
+            "ai.machine-learning",
+            "projects.delivery",
+            "communication.technical"
+          ],
+          "completionCriteria": [
+            "A reviewer can verify the validation against documented risks from the submitted artifact and evidence."
+          ]
+        },
+        {
+          "key": "project.data-scientist.capstone.present",
+          "title": "Portfolio case study and technical walkthrough",
+          "sequence": 4,
+          "weight": 0.15,
+          "estimatedMinutes": 240,
+          "skillOutcomes": ["projects.delivery", "communication.technical"],
+          "completionCriteria": [
+            "A reviewer can verify the portfolio case study and technical walkthrough from the submitted artifact and evidence."
+          ]
+        }
+      ]
+    },
+    {
+      "key": "project.machine-learning-engineer.capstone",
+      "version": 2,
+      "title": "Machine Learning Engineer Evidence Capstone",
+      "goal": "Deliver a realistic data and ai solution that demonstrates the core decisions, validation, and communication expected from an entry-level Machine Learning Engineer.",
+      "roleKeys": ["machine-learning-engineer"],
+      "difficulty": "FOUNDATION",
+      "estimatedHours": {
+        "p25": 20,
+        "p50": 32,
+        "p75": 48
+      },
+      "portfolioValue": 0.86,
+      "prerequisites": [
+        {
+          "skillKey": "programming.python",
+          "threshold": 0.35,
+          "type": "HARD"
+        },
+        {
+          "skillKey": "dsa.core",
+          "threshold": 0.35,
+          "type": "HARD"
+        }
+      ],
+      "deliverables": [
+        "Version-controlled working artifact",
+        "Validation and test evidence",
+        "Architecture or engineering decision record",
+        "Public case study and demonstration"
+      ],
+      "deploymentRequired": true,
+      "milestones": [
+        {
+          "key": "project.machine-learning-engineer.capstone.scope",
+          "title": "Scope, constraints, and evidence plan",
+          "sequence": 1,
+          "weight": 0.15,
+          "estimatedMinutes": 240,
+          "skillOutcomes": ["programming.python"],
+          "completionCriteria": [
+            "A reviewer can verify the scope, constraints, and evidence plan from the submitted artifact and evidence."
+          ]
+        },
+        {
+          "key": "project.machine-learning-engineer.capstone.build",
+          "title": "Working implementation or engineering analysis",
+          "sequence": 2,
+          "weight": 0.45,
+          "estimatedMinutes": 960,
+          "skillOutcomes": [
+            "programming.python",
+            "dsa.core",
+            "data.engineering",
+            "ai.machine-learning",
+            "ai.deep-learning"
+          ],
+          "completionCriteria": [
+            "A reviewer can verify the working implementation or engineering analysis from the submitted artifact and evidence."
+          ]
+        },
+        {
+          "key": "project.machine-learning-engineer.capstone.validate",
+          "title": "Validation against documented risks",
+          "sequence": 3,
+          "weight": 0.25,
+          "estimatedMinutes": 480,
+          "skillOutcomes": [
+            "ai.machine-learning",
+            "ai.deep-learning",
+            "projects.delivery",
+            "communication.technical"
+          ],
+          "completionCriteria": [
+            "A reviewer can verify the validation against documented risks from the submitted artifact and evidence."
+          ]
+        },
+        {
+          "key": "project.machine-learning-engineer.capstone.present",
+          "title": "Portfolio case study and technical walkthrough",
+          "sequence": 4,
+          "weight": 0.15,
+          "estimatedMinutes": 240,
+          "skillOutcomes": ["projects.delivery", "communication.technical"],
+          "completionCriteria": [
+            "A reviewer can verify the portfolio case study and technical walkthrough from the submitted artifact and evidence."
+          ]
+        }
+      ]
+    },
+    {
+      "key": "project.ai-engineer.capstone",
+      "version": 2,
+      "title": "AI Engineer Evidence Capstone",
+      "goal": "Deliver a realistic data and ai solution that demonstrates the core decisions, validation, and communication expected from an entry-level AI Engineer.",
+      "roleKeys": ["ai-engineer"],
+      "difficulty": "INTERMEDIATE",
+      "estimatedHours": {
+        "p25": 20,
+        "p50": 32,
+        "p75": 48
+      },
+      "portfolioValue": 0.86,
+      "prerequisites": [
+        {
+          "skillKey": "programming.python",
+          "threshold": 0.35,
+          "type": "HARD"
+        },
+        {
+          "skillKey": "ai.machine-learning",
+          "threshold": 0.35,
+          "type": "HARD"
+        }
+      ],
+      "deliverables": [
+        "Version-controlled working artifact",
+        "Validation and test evidence",
+        "Architecture or engineering decision record",
+        "Public case study and demonstration"
+      ],
+      "deploymentRequired": true,
+      "milestones": [
+        {
+          "key": "project.ai-engineer.capstone.scope",
+          "title": "Scope, constraints, and evidence plan",
+          "sequence": 1,
+          "weight": 0.15,
+          "estimatedMinutes": 240,
+          "skillOutcomes": ["programming.python"],
+          "completionCriteria": [
+            "A reviewer can verify the scope, constraints, and evidence plan from the submitted artifact and evidence."
+          ]
+        },
+        {
+          "key": "project.ai-engineer.capstone.build",
+          "title": "Working implementation or engineering analysis",
+          "sequence": 2,
+          "weight": 0.45,
+          "estimatedMinutes": 960,
+          "skillOutcomes": [
+            "programming.python",
+            "ai.machine-learning",
+            "ai.deep-learning",
+            "ai.generative",
+            "ai.nlp"
+          ],
+          "completionCriteria": [
+            "A reviewer can verify the working implementation or engineering analysis from the submitted artifact and evidence."
+          ]
+        },
+        {
+          "key": "project.ai-engineer.capstone.validate",
+          "title": "Validation against documented risks",
+          "sequence": 3,
+          "weight": 0.25,
+          "estimatedMinutes": 480,
+          "skillOutcomes": [
+            "ai.generative",
+            "ai.nlp",
+            "projects.delivery",
+            "communication.technical"
+          ],
+          "completionCriteria": [
+            "A reviewer can verify the validation against documented risks from the submitted artifact and evidence."
+          ]
+        },
+        {
+          "key": "project.ai-engineer.capstone.present",
+          "title": "Portfolio case study and technical walkthrough",
+          "sequence": 4,
+          "weight": 0.15,
+          "estimatedMinutes": 240,
+          "skillOutcomes": ["projects.delivery", "communication.technical"],
+          "completionCriteria": [
+            "A reviewer can verify the portfolio case study and technical walkthrough from the submitted artifact and evidence."
+          ]
+        }
+      ]
+    },
+    {
+      "key": "project.embedded-systems-engineer.capstone",
+      "version": 2,
+      "title": "Embedded Systems Engineer Evidence Capstone",
+      "goal": "Deliver a realistic electronics and embedded solution that demonstrates the core decisions, validation, and communication expected from an entry-level Embedded Systems Engineer.",
+      "roleKeys": ["embedded-systems-engineer"],
+      "difficulty": "ADVANCED",
+      "estimatedHours": {
+        "p25": 20,
+        "p50": 32,
+        "p75": 48
+      },
+      "portfolioValue": 0.86,
+      "prerequisites": [
+        {
+          "skillKey": "programming.fundamentals",
+          "threshold": 0.35,
+          "type": "HARD"
+        },
+        {
+          "skillKey": "core.architecture",
+          "threshold": 0.35,
+          "type": "HARD"
+        }
+      ],
+      "deliverables": [
+        "Version-controlled working artifact",
+        "Validation and test evidence",
+        "Architecture or engineering decision record",
+        "Public case study and demonstration"
+      ],
+      "deploymentRequired": true,
+      "milestones": [
+        {
+          "key": "project.embedded-systems-engineer.capstone.scope",
+          "title": "Scope, constraints, and evidence plan",
+          "sequence": 1,
+          "weight": 0.15,
+          "estimatedMinutes": 240,
+          "skillOutcomes": ["programming.fundamentals"],
+          "completionCriteria": [
+            "A reviewer can verify the scope, constraints, and evidence plan from the submitted artifact and evidence."
+          ]
+        },
+        {
+          "key": "project.embedded-systems-engineer.capstone.build",
+          "title": "Working implementation or engineering analysis",
+          "sequence": 2,
+          "weight": 0.45,
+          "estimatedMinutes": 960,
+          "skillOutcomes": [
+            "programming.fundamentals",
+            "core.architecture",
+            "electronics.circuits",
+            "electronics.embedded",
+            "electronics.pcb"
+          ],
+          "completionCriteria": [
+            "A reviewer can verify the working implementation or engineering analysis from the submitted artifact and evidence."
+          ]
+        },
+        {
+          "key": "project.embedded-systems-engineer.capstone.validate",
+          "title": "Validation against documented risks",
+          "sequence": 3,
+          "weight": 0.25,
+          "estimatedMinutes": 480,
+          "skillOutcomes": [
+            "electronics.embedded",
+            "electronics.pcb",
+            "projects.delivery",
+            "communication.technical"
+          ],
+          "completionCriteria": [
+            "A reviewer can verify the validation against documented risks from the submitted artifact and evidence."
+          ]
+        },
+        {
+          "key": "project.embedded-systems-engineer.capstone.present",
+          "title": "Portfolio case study and technical walkthrough",
+          "sequence": 4,
+          "weight": 0.15,
+          "estimatedMinutes": 240,
+          "skillOutcomes": ["projects.delivery", "communication.technical"],
+          "completionCriteria": [
+            "A reviewer can verify the portfolio case study and technical walkthrough from the submitted artifact and evidence."
+          ]
+        }
+      ]
+    },
+    {
+      "key": "project.vlsi-design-engineer.capstone",
+      "version": 2,
+      "title": "VLSI Design Engineer Evidence Capstone",
+      "goal": "Deliver a realistic electronics and embedded solution that demonstrates the core decisions, validation, and communication expected from an entry-level VLSI Design Engineer.",
+      "roleKeys": ["vlsi-design-engineer"],
+      "difficulty": "FOUNDATION",
+      "estimatedHours": {
+        "p25": 20,
+        "p50": 32,
+        "p75": 48
+      },
+      "portfolioValue": 0.86,
+      "prerequisites": [
+        {
+          "skillKey": "electronics.circuits",
+          "threshold": 0.35,
+          "type": "HARD"
+        },
+        {
+          "skillKey": "electronics.vlsi",
+          "threshold": 0.35,
+          "type": "HARD"
+        }
+      ],
+      "deliverables": [
+        "Version-controlled working artifact",
+        "Validation and test evidence",
+        "Architecture or engineering decision record",
+        "Public case study and demonstration"
+      ],
+      "deploymentRequired": true,
+      "milestones": [
+        {
+          "key": "project.vlsi-design-engineer.capstone.scope",
+          "title": "Scope, constraints, and evidence plan",
+          "sequence": 1,
+          "weight": 0.15,
+          "estimatedMinutes": 240,
+          "skillOutcomes": ["electronics.circuits"],
+          "completionCriteria": [
+            "A reviewer can verify the scope, constraints, and evidence plan from the submitted artifact and evidence."
+          ]
+        },
+        {
+          "key": "project.vlsi-design-engineer.capstone.build",
+          "title": "Working implementation or engineering analysis",
+          "sequence": 2,
+          "weight": 0.45,
+          "estimatedMinutes": 960,
+          "skillOutcomes": [
+            "electronics.circuits",
+            "electronics.vlsi",
+            "electronics.signal",
+            "tools.eda",
+            "engineering.testing"
+          ],
+          "completionCriteria": [
+            "A reviewer can verify the working implementation or engineering analysis from the submitted artifact and evidence."
+          ]
+        },
+        {
+          "key": "project.vlsi-design-engineer.capstone.validate",
+          "title": "Validation against documented risks",
+          "sequence": 3,
+          "weight": 0.25,
+          "estimatedMinutes": 480,
+          "skillOutcomes": [
+            "tools.eda",
+            "engineering.testing",
+            "projects.delivery",
+            "communication.technical"
+          ],
+          "completionCriteria": [
+            "A reviewer can verify the validation against documented risks from the submitted artifact and evidence."
+          ]
+        },
+        {
+          "key": "project.vlsi-design-engineer.capstone.present",
+          "title": "Portfolio case study and technical walkthrough",
+          "sequence": 4,
+          "weight": 0.15,
+          "estimatedMinutes": 240,
+          "skillOutcomes": ["projects.delivery", "communication.technical"],
+          "completionCriteria": [
+            "A reviewer can verify the portfolio case study and technical walkthrough from the submitted artifact and evidence."
+          ]
+        }
+      ]
+    },
+    {
+      "key": "project.electronics-design-engineer.capstone",
+      "version": 2,
+      "title": "Electronics Design Engineer Evidence Capstone",
+      "goal": "Deliver a realistic electronics and embedded solution that demonstrates the core decisions, validation, and communication expected from an entry-level Electronics Design Engineer.",
+      "roleKeys": ["electronics-design-engineer"],
+      "difficulty": "INTERMEDIATE",
+      "estimatedHours": {
+        "p25": 20,
+        "p50": 32,
+        "p75": 48
+      },
+      "portfolioValue": 0.86,
+      "prerequisites": [
+        {
+          "skillKey": "electronics.circuits",
+          "threshold": 0.35,
+          "type": "HARD"
+        },
+        {
+          "skillKey": "electronics.pcb",
+          "threshold": 0.35,
+          "type": "HARD"
+        }
+      ],
+      "deliverables": [
+        "Version-controlled working artifact",
+        "Validation and test evidence",
+        "Architecture or engineering decision record",
+        "Public case study and demonstration"
+      ],
+      "deploymentRequired": true,
+      "milestones": [
+        {
+          "key": "project.electronics-design-engineer.capstone.scope",
+          "title": "Scope, constraints, and evidence plan",
+          "sequence": 1,
+          "weight": 0.15,
+          "estimatedMinutes": 240,
+          "skillOutcomes": ["electronics.circuits"],
+          "completionCriteria": [
+            "A reviewer can verify the scope, constraints, and evidence plan from the submitted artifact and evidence."
+          ]
+        },
+        {
+          "key": "project.electronics-design-engineer.capstone.build",
+          "title": "Working implementation or engineering analysis",
+          "sequence": 2,
+          "weight": 0.45,
+          "estimatedMinutes": 960,
+          "skillOutcomes": [
+            "electronics.circuits",
+            "electronics.pcb",
+            "electronics.signal",
+            "electronics.control",
+            "tools.eda"
+          ],
+          "completionCriteria": [
+            "A reviewer can verify the working implementation or engineering analysis from the submitted artifact and evidence."
+          ]
+        },
+        {
+          "key": "project.electronics-design-engineer.capstone.validate",
+          "title": "Validation against documented risks",
+          "sequence": 3,
+          "weight": 0.25,
+          "estimatedMinutes": 480,
+          "skillOutcomes": [
+            "electronics.control",
+            "tools.eda",
+            "projects.delivery",
+            "communication.technical"
+          ],
+          "completionCriteria": [
+            "A reviewer can verify the validation against documented risks from the submitted artifact and evidence."
+          ]
+        },
+        {
+          "key": "project.electronics-design-engineer.capstone.present",
+          "title": "Portfolio case study and technical walkthrough",
+          "sequence": 4,
+          "weight": 0.15,
+          "estimatedMinutes": 240,
+          "skillOutcomes": ["projects.delivery", "communication.technical"],
+          "completionCriteria": [
+            "A reviewer can verify the portfolio case study and technical walkthrough from the submitted artifact and evidence."
+          ]
+        }
+      ]
+    },
+    {
+      "key": "project.telecom-engineer.capstone",
+      "version": 2,
+      "title": "Telecom Engineer Evidence Capstone",
+      "goal": "Deliver a realistic networks and telecom solution that demonstrates the core decisions, validation, and communication expected from an entry-level Telecom Engineer.",
+      "roleKeys": ["telecom-engineer"],
+      "difficulty": "ADVANCED",
+      "estimatedHours": {
+        "p25": 20,
+        "p50": 32,
+        "p75": 48
+      },
+      "portfolioValue": 0.86,
+      "prerequisites": [
+        {
+          "skillKey": "electronics.signal",
+          "threshold": 0.35,
+          "type": "HARD"
+        },
+        {
+          "skillKey": "electronics.telecom",
+          "threshold": 0.35,
+          "type": "HARD"
+        }
+      ],
+      "deliverables": [
+        "Version-controlled working artifact",
+        "Validation and test evidence",
+        "Architecture or engineering decision record",
+        "Public case study and demonstration"
+      ],
+      "deploymentRequired": true,
+      "milestones": [
+        {
+          "key": "project.telecom-engineer.capstone.scope",
+          "title": "Scope, constraints, and evidence plan",
+          "sequence": 1,
+          "weight": 0.15,
+          "estimatedMinutes": 240,
+          "skillOutcomes": ["electronics.signal"],
+          "completionCriteria": [
+            "A reviewer can verify the scope, constraints, and evidence plan from the submitted artifact and evidence."
+          ]
+        },
+        {
+          "key": "project.telecom-engineer.capstone.build",
+          "title": "Working implementation or engineering analysis",
+          "sequence": 2,
+          "weight": 0.45,
+          "estimatedMinutes": 960,
+          "skillOutcomes": [
+            "electronics.signal",
+            "electronics.telecom",
+            "core.networks",
+            "core.cybersecurity",
+            "data.analysis"
+          ],
+          "completionCriteria": [
+            "A reviewer can verify the working implementation or engineering analysis from the submitted artifact and evidence."
+          ]
+        },
+        {
+          "key": "project.telecom-engineer.capstone.validate",
+          "title": "Validation against documented risks",
+          "sequence": 3,
+          "weight": 0.25,
+          "estimatedMinutes": 480,
+          "skillOutcomes": [
+            "core.cybersecurity",
+            "data.analysis",
+            "projects.delivery",
+            "communication.technical"
+          ],
+          "completionCriteria": [
+            "A reviewer can verify the validation against documented risks from the submitted artifact and evidence."
+          ]
+        },
+        {
+          "key": "project.telecom-engineer.capstone.present",
+          "title": "Portfolio case study and technical walkthrough",
+          "sequence": 4,
+          "weight": 0.15,
+          "estimatedMinutes": 240,
+          "skillOutcomes": ["projects.delivery", "communication.technical"],
+          "completionCriteria": [
+            "A reviewer can verify the portfolio case study and technical walkthrough from the submitted artifact and evidence."
+          ]
+        }
+      ]
+    },
+    {
+      "key": "project.iot-engineer.capstone",
+      "version": 2,
+      "title": "IoT Engineer Evidence Capstone",
+      "goal": "Deliver a realistic electronics and embedded solution that demonstrates the core decisions, validation, and communication expected from an entry-level IoT Engineer.",
+      "roleKeys": ["iot-engineer"],
+      "difficulty": "FOUNDATION",
+      "estimatedHours": {
+        "p25": 20,
+        "p50": 32,
+        "p75": 48
+      },
+      "portfolioValue": 0.86,
+      "prerequisites": [
+        {
+          "skillKey": "core.iot",
+          "threshold": 0.35,
+          "type": "HARD"
+        },
+        {
+          "skillKey": "electronics.embedded",
+          "threshold": 0.35,
+          "type": "HARD"
+        }
+      ],
+      "deliverables": [
+        "Version-controlled working artifact",
+        "Validation and test evidence",
+        "Architecture or engineering decision record",
+        "Public case study and demonstration"
+      ],
+      "deploymentRequired": true,
+      "milestones": [
+        {
+          "key": "project.iot-engineer.capstone.scope",
+          "title": "Scope, constraints, and evidence plan",
+          "sequence": 1,
+          "weight": 0.15,
+          "estimatedMinutes": 240,
+          "skillOutcomes": ["core.iot"],
+          "completionCriteria": [
+            "A reviewer can verify the scope, constraints, and evidence plan from the submitted artifact and evidence."
+          ]
+        },
+        {
+          "key": "project.iot-engineer.capstone.build",
+          "title": "Working implementation or engineering analysis",
+          "sequence": 2,
+          "weight": 0.45,
+          "estimatedMinutes": 960,
+          "skillOutcomes": [
+            "core.iot",
+            "electronics.embedded",
+            "electronics.circuits",
+            "core.networks",
+            "backend.api"
+          ],
+          "completionCriteria": [
+            "A reviewer can verify the working implementation or engineering analysis from the submitted artifact and evidence."
+          ]
+        },
+        {
+          "key": "project.iot-engineer.capstone.validate",
+          "title": "Validation against documented risks",
+          "sequence": 3,
+          "weight": 0.25,
+          "estimatedMinutes": 480,
+          "skillOutcomes": [
+            "core.networks",
+            "backend.api",
+            "projects.delivery",
+            "communication.technical"
+          ],
+          "completionCriteria": [
+            "A reviewer can verify the validation against documented risks from the submitted artifact and evidence."
+          ]
+        },
+        {
+          "key": "project.iot-engineer.capstone.present",
+          "title": "Portfolio case study and technical walkthrough",
+          "sequence": 4,
+          "weight": 0.15,
+          "estimatedMinutes": 240,
+          "skillOutcomes": ["projects.delivery", "communication.technical"],
+          "completionCriteria": [
+            "A reviewer can verify the portfolio case study and technical walkthrough from the submitted artifact and evidence."
+          ]
+        }
+      ]
+    },
+    {
+      "key": "project.mechanical-design-engineer.capstone",
+      "version": 2,
+      "title": "Mechanical Design Engineer Evidence Capstone",
+      "goal": "Deliver a realistic mechanical engineering solution that demonstrates the core decisions, validation, and communication expected from an entry-level Mechanical Design Engineer.",
+      "roleKeys": ["mechanical-design-engineer"],
+      "difficulty": "INTERMEDIATE",
+      "estimatedHours": {
+        "p25": 20,
+        "p50": 32,
+        "p75": 48
+      },
+      "portfolioValue": 0.86,
+      "prerequisites": [
+        {
+          "skillKey": "mechanical.mechanics",
+          "threshold": 0.35,
+          "type": "HARD"
+        },
+        {
+          "skillKey": "mechanical.design",
+          "threshold": 0.35,
+          "type": "HARD"
+        }
+      ],
+      "deliverables": [
+        "Version-controlled working artifact",
+        "Validation and test evidence",
+        "Architecture or engineering decision record",
+        "Public case study and demonstration"
+      ],
+      "deploymentRequired": false,
+      "milestones": [
+        {
+          "key": "project.mechanical-design-engineer.capstone.scope",
+          "title": "Scope, constraints, and evidence plan",
+          "sequence": 1,
+          "weight": 0.15,
+          "estimatedMinutes": 240,
+          "skillOutcomes": ["mechanical.mechanics"],
+          "completionCriteria": [
+            "A reviewer can verify the scope, constraints, and evidence plan from the submitted artifact and evidence."
+          ]
+        },
+        {
+          "key": "project.mechanical-design-engineer.capstone.build",
+          "title": "Working implementation or engineering analysis",
+          "sequence": 2,
+          "weight": 0.45,
+          "estimatedMinutes": 960,
+          "skillOutcomes": [
+            "mechanical.mechanics",
+            "mechanical.design",
+            "tools.cad",
+            "mechanical.manufacturing",
+            "mechanical.quality"
+          ],
+          "completionCriteria": [
+            "A reviewer can verify the working implementation or engineering analysis from the submitted artifact and evidence."
+          ]
+        },
+        {
+          "key": "project.mechanical-design-engineer.capstone.validate",
+          "title": "Validation against documented risks",
+          "sequence": 3,
+          "weight": 0.25,
+          "estimatedMinutes": 480,
+          "skillOutcomes": [
+            "mechanical.manufacturing",
+            "mechanical.quality",
+            "projects.delivery",
+            "communication.technical"
+          ],
+          "completionCriteria": [
+            "A reviewer can verify the validation against documented risks from the submitted artifact and evidence."
+          ]
+        },
+        {
+          "key": "project.mechanical-design-engineer.capstone.present",
+          "title": "Portfolio case study and technical walkthrough",
+          "sequence": 4,
+          "weight": 0.15,
+          "estimatedMinutes": 240,
+          "skillOutcomes": ["projects.delivery", "communication.technical"],
+          "completionCriteria": [
+            "A reviewer can verify the portfolio case study and technical walkthrough from the submitted artifact and evidence."
+          ]
+        }
+      ]
+    },
+    {
+      "key": "project.manufacturing-engineer.capstone",
+      "version": 2,
+      "title": "Manufacturing Engineer Evidence Capstone",
+      "goal": "Deliver a realistic mechanical engineering solution that demonstrates the core decisions, validation, and communication expected from an entry-level Manufacturing Engineer.",
+      "roleKeys": ["manufacturing-engineer"],
+      "difficulty": "ADVANCED",
+      "estimatedHours": {
+        "p25": 20,
+        "p50": 32,
+        "p75": 48
+      },
+      "portfolioValue": 0.86,
+      "prerequisites": [
+        {
+          "skillKey": "mechanical.manufacturing",
+          "threshold": 0.35,
+          "type": "HARD"
+        },
+        {
+          "skillKey": "mechanical.quality",
+          "threshold": 0.35,
+          "type": "HARD"
+        }
+      ],
+      "deliverables": [
+        "Version-controlled working artifact",
+        "Validation and test evidence",
+        "Architecture or engineering decision record",
+        "Public case study and demonstration"
+      ],
+      "deploymentRequired": false,
+      "milestones": [
+        {
+          "key": "project.manufacturing-engineer.capstone.scope",
+          "title": "Scope, constraints, and evidence plan",
+          "sequence": 1,
+          "weight": 0.15,
+          "estimatedMinutes": 240,
+          "skillOutcomes": ["mechanical.manufacturing"],
+          "completionCriteria": [
+            "A reviewer can verify the scope, constraints, and evidence plan from the submitted artifact and evidence."
+          ]
+        },
+        {
+          "key": "project.manufacturing-engineer.capstone.build",
+          "title": "Working implementation or engineering analysis",
+          "sequence": 2,
+          "weight": 0.45,
+          "estimatedMinutes": 960,
+          "skillOutcomes": [
+            "mechanical.manufacturing",
+            "mechanical.quality",
+            "mechanical.automation",
+            "tools.cad",
+            "data.analysis"
+          ],
+          "completionCriteria": [
+            "A reviewer can verify the working implementation or engineering analysis from the submitted artifact and evidence."
+          ]
+        },
+        {
+          "key": "project.manufacturing-engineer.capstone.validate",
+          "title": "Validation against documented risks",
+          "sequence": 3,
+          "weight": 0.25,
+          "estimatedMinutes": 480,
+          "skillOutcomes": [
+            "tools.cad",
+            "data.analysis",
+            "projects.delivery",
+            "communication.technical"
+          ],
+          "completionCriteria": [
+            "A reviewer can verify the validation against documented risks from the submitted artifact and evidence."
+          ]
+        },
+        {
+          "key": "project.manufacturing-engineer.capstone.present",
+          "title": "Portfolio case study and technical walkthrough",
+          "sequence": 4,
+          "weight": 0.15,
+          "estimatedMinutes": 240,
+          "skillOutcomes": ["projects.delivery", "communication.technical"],
+          "completionCriteria": [
+            "A reviewer can verify the portfolio case study and technical walkthrough from the submitted artifact and evidence."
+          ]
+        }
+      ]
+    },
+    {
+      "key": "project.automotive-engineer.capstone",
+      "version": 2,
+      "title": "Automotive Engineer Evidence Capstone",
+      "goal": "Deliver a realistic mechanical engineering solution that demonstrates the core decisions, validation, and communication expected from an entry-level Automotive Engineer.",
+      "roleKeys": ["automotive-engineer"],
+      "difficulty": "FOUNDATION",
+      "estimatedHours": {
+        "p25": 20,
+        "p50": 32,
+        "p75": 48
+      },
+      "portfolioValue": 0.86,
+      "prerequisites": [
+        {
+          "skillKey": "mechanical.mechanics",
+          "threshold": 0.35,
+          "type": "HARD"
+        },
+        {
+          "skillKey": "mechanical.design",
+          "threshold": 0.35,
+          "type": "HARD"
+        }
+      ],
+      "deliverables": [
+        "Version-controlled working artifact",
+        "Validation and test evidence",
+        "Architecture or engineering decision record",
+        "Public case study and demonstration"
+      ],
+      "deploymentRequired": false,
+      "milestones": [
+        {
+          "key": "project.automotive-engineer.capstone.scope",
+          "title": "Scope, constraints, and evidence plan",
+          "sequence": 1,
+          "weight": 0.15,
+          "estimatedMinutes": 240,
+          "skillOutcomes": ["mechanical.mechanics"],
+          "completionCriteria": [
+            "A reviewer can verify the scope, constraints, and evidence plan from the submitted artifact and evidence."
+          ]
+        },
+        {
+          "key": "project.automotive-engineer.capstone.build",
+          "title": "Working implementation or engineering analysis",
+          "sequence": 2,
+          "weight": 0.45,
+          "estimatedMinutes": 960,
+          "skillOutcomes": [
+            "mechanical.mechanics",
+            "mechanical.design",
+            "mechanical.thermal",
+            "mechanical.automation",
+            "tools.cad"
+          ],
+          "completionCriteria": [
+            "A reviewer can verify the working implementation or engineering analysis from the submitted artifact and evidence."
+          ]
+        },
+        {
+          "key": "project.automotive-engineer.capstone.validate",
+          "title": "Validation against documented risks",
+          "sequence": 3,
+          "weight": 0.25,
+          "estimatedMinutes": 480,
+          "skillOutcomes": [
+            "mechanical.automation",
+            "tools.cad",
+            "projects.delivery",
+            "communication.technical"
+          ],
+          "completionCriteria": [
+            "A reviewer can verify the validation against documented risks from the submitted artifact and evidence."
+          ]
+        },
+        {
+          "key": "project.automotive-engineer.capstone.present",
+          "title": "Portfolio case study and technical walkthrough",
+          "sequence": 4,
+          "weight": 0.15,
+          "estimatedMinutes": 240,
+          "skillOutcomes": ["projects.delivery", "communication.technical"],
+          "completionCriteria": [
+            "A reviewer can verify the portfolio case study and technical walkthrough from the submitted artifact and evidence."
+          ]
+        }
+      ]
+    },
+    {
+      "key": "project.robotics-engineer.capstone",
+      "version": 2,
+      "title": "Robotics Engineer Evidence Capstone",
+      "goal": "Deliver a realistic robotics and automation solution that demonstrates the core decisions, validation, and communication expected from an entry-level Robotics Engineer.",
+      "roleKeys": ["robotics-engineer"],
+      "difficulty": "INTERMEDIATE",
+      "estimatedHours": {
+        "p25": 20,
+        "p50": 32,
+        "p75": 48
+      },
+      "portfolioValue": 0.86,
+      "prerequisites": [
+        {
+          "skillKey": "programming.python",
+          "threshold": 0.35,
+          "type": "HARD"
+        },
+        {
+          "skillKey": "electronics.embedded",
+          "threshold": 0.35,
+          "type": "HARD"
+        }
+      ],
+      "deliverables": [
+        "Version-controlled working artifact",
+        "Validation and test evidence",
+        "Architecture or engineering decision record",
+        "Public case study and demonstration"
+      ],
+      "deploymentRequired": true,
+      "milestones": [
+        {
+          "key": "project.robotics-engineer.capstone.scope",
+          "title": "Scope, constraints, and evidence plan",
+          "sequence": 1,
+          "weight": 0.15,
+          "estimatedMinutes": 240,
+          "skillOutcomes": ["programming.python"],
+          "completionCriteria": [
+            "A reviewer can verify the scope, constraints, and evidence plan from the submitted artifact and evidence."
+          ]
+        },
+        {
+          "key": "project.robotics-engineer.capstone.build",
+          "title": "Working implementation or engineering analysis",
+          "sequence": 2,
+          "weight": 0.45,
+          "estimatedMinutes": 960,
+          "skillOutcomes": [
+            "programming.python",
+            "electronics.embedded",
+            "electronics.control",
+            "mechanical.design",
+            "mechanical.automation"
+          ],
+          "completionCriteria": [
+            "A reviewer can verify the working implementation or engineering analysis from the submitted artifact and evidence."
+          ]
+        },
+        {
+          "key": "project.robotics-engineer.capstone.validate",
+          "title": "Validation against documented risks",
+          "sequence": 3,
+          "weight": 0.25,
+          "estimatedMinutes": 480,
+          "skillOutcomes": [
+            "mechanical.design",
+            "mechanical.automation",
+            "projects.delivery",
+            "communication.technical"
+          ],
+          "completionCriteria": [
+            "A reviewer can verify the validation against documented risks from the submitted artifact and evidence."
+          ]
+        },
+        {
+          "key": "project.robotics-engineer.capstone.present",
+          "title": "Portfolio case study and technical walkthrough",
+          "sequence": 4,
+          "weight": 0.15,
+          "estimatedMinutes": 240,
+          "skillOutcomes": ["projects.delivery", "communication.technical"],
+          "completionCriteria": [
+            "A reviewer can verify the portfolio case study and technical walkthrough from the submitted artifact and evidence."
+          ]
+        }
+      ]
+    },
+    {
+      "key": "project.civil-site-engineer.capstone",
+      "version": 2,
+      "title": "Civil Site Engineer Evidence Capstone",
+      "goal": "Deliver a realistic civil engineering solution that demonstrates the core decisions, validation, and communication expected from an entry-level Civil Site Engineer.",
+      "roleKeys": ["civil-site-engineer"],
+      "difficulty": "ADVANCED",
+      "estimatedHours": {
+        "p25": 20,
+        "p50": 32,
+        "p75": 48
+      },
+      "portfolioValue": 0.86,
+      "prerequisites": [
+        {
+          "skillKey": "civil.construction",
+          "threshold": 0.35,
+          "type": "HARD"
+        },
+        {
+          "skillKey": "civil.surveying",
+          "threshold": 0.35,
+          "type": "HARD"
+        }
+      ],
+      "deliverables": [
+        "Version-controlled working artifact",
+        "Validation and test evidence",
+        "Architecture or engineering decision record",
+        "Public case study and demonstration"
+      ],
+      "deploymentRequired": false,
+      "milestones": [
+        {
+          "key": "project.civil-site-engineer.capstone.scope",
+          "title": "Scope, constraints, and evidence plan",
+          "sequence": 1,
+          "weight": 0.15,
+          "estimatedMinutes": 240,
+          "skillOutcomes": ["civil.construction"],
+          "completionCriteria": [
+            "A reviewer can verify the scope, constraints, and evidence plan from the submitted artifact and evidence."
+          ]
+        },
+        {
+          "key": "project.civil-site-engineer.capstone.build",
+          "title": "Working implementation or engineering analysis",
+          "sequence": 2,
+          "weight": 0.45,
+          "estimatedMinutes": 960,
+          "skillOutcomes": [
+            "civil.construction",
+            "civil.surveying",
+            "civil.structural",
+            "tools.cad",
+            "product.requirements"
+          ],
+          "completionCriteria": [
+            "A reviewer can verify the working implementation or engineering analysis from the submitted artifact and evidence."
+          ]
+        },
+        {
+          "key": "project.civil-site-engineer.capstone.validate",
+          "title": "Validation against documented risks",
+          "sequence": 3,
+          "weight": 0.25,
+          "estimatedMinutes": 480,
+          "skillOutcomes": [
+            "tools.cad",
+            "product.requirements",
+            "projects.delivery",
+            "communication.technical"
+          ],
+          "completionCriteria": [
+            "A reviewer can verify the validation against documented risks from the submitted artifact and evidence."
+          ]
+        },
+        {
+          "key": "project.civil-site-engineer.capstone.present",
+          "title": "Portfolio case study and technical walkthrough",
+          "sequence": 4,
+          "weight": 0.15,
+          "estimatedMinutes": 240,
+          "skillOutcomes": ["projects.delivery", "communication.technical"],
+          "completionCriteria": [
+            "A reviewer can verify the portfolio case study and technical walkthrough from the submitted artifact and evidence."
+          ]
+        }
+      ]
+    },
+    {
+      "key": "project.structural-engineer.capstone",
+      "version": 2,
+      "title": "Structural Engineer Evidence Capstone",
+      "goal": "Deliver a realistic civil engineering solution that demonstrates the core decisions, validation, and communication expected from an entry-level Structural Engineer.",
+      "roleKeys": ["structural-engineer"],
+      "difficulty": "FOUNDATION",
+      "estimatedHours": {
+        "p25": 20,
+        "p50": 32,
+        "p75": 48
+      },
+      "portfolioValue": 0.86,
+      "prerequisites": [
+        {
+          "skillKey": "mechanical.mechanics",
+          "threshold": 0.35,
+          "type": "HARD"
+        },
+        {
+          "skillKey": "civil.structural",
+          "threshold": 0.35,
+          "type": "HARD"
+        }
+      ],
+      "deliverables": [
+        "Version-controlled working artifact",
+        "Validation and test evidence",
+        "Architecture or engineering decision record",
+        "Public case study and demonstration"
+      ],
+      "deploymentRequired": false,
+      "milestones": [
+        {
+          "key": "project.structural-engineer.capstone.scope",
+          "title": "Scope, constraints, and evidence plan",
+          "sequence": 1,
+          "weight": 0.15,
+          "estimatedMinutes": 240,
+          "skillOutcomes": ["mechanical.mechanics"],
+          "completionCriteria": [
+            "A reviewer can verify the scope, constraints, and evidence plan from the submitted artifact and evidence."
+          ]
+        },
+        {
+          "key": "project.structural-engineer.capstone.build",
+          "title": "Working implementation or engineering analysis",
+          "sequence": 2,
+          "weight": 0.45,
+          "estimatedMinutes": 960,
+          "skillOutcomes": [
+            "mechanical.mechanics",
+            "civil.structural",
+            "civil.geotechnical",
+            "tools.cad",
+            "civil.bim"
+          ],
+          "completionCriteria": [
+            "A reviewer can verify the working implementation or engineering analysis from the submitted artifact and evidence."
+          ]
+        },
+        {
+          "key": "project.structural-engineer.capstone.validate",
+          "title": "Validation against documented risks",
+          "sequence": 3,
+          "weight": 0.25,
+          "estimatedMinutes": 480,
+          "skillOutcomes": [
+            "tools.cad",
+            "civil.bim",
+            "projects.delivery",
+            "communication.technical"
+          ],
+          "completionCriteria": [
+            "A reviewer can verify the validation against documented risks from the submitted artifact and evidence."
+          ]
+        },
+        {
+          "key": "project.structural-engineer.capstone.present",
+          "title": "Portfolio case study and technical walkthrough",
+          "sequence": 4,
+          "weight": 0.15,
+          "estimatedMinutes": 240,
+          "skillOutcomes": ["projects.delivery", "communication.technical"],
+          "completionCriteria": [
+            "A reviewer can verify the portfolio case study and technical walkthrough from the submitted artifact and evidence."
+          ]
+        }
+      ]
+    },
+    {
+      "key": "project.transportation-engineer.capstone",
+      "version": 2,
+      "title": "Transportation Engineer Evidence Capstone",
+      "goal": "Deliver a realistic civil engineering solution that demonstrates the core decisions, validation, and communication expected from an entry-level Transportation Engineer.",
+      "roleKeys": ["transportation-engineer"],
+      "difficulty": "INTERMEDIATE",
+      "estimatedHours": {
+        "p25": 20,
+        "p50": 32,
+        "p75": 48
+      },
+      "portfolioValue": 0.86,
+      "prerequisites": [
+        {
+          "skillKey": "civil.surveying",
+          "threshold": 0.35,
+          "type": "HARD"
+        },
+        {
+          "skillKey": "civil.transport",
+          "threshold": 0.35,
+          "type": "HARD"
+        }
+      ],
+      "deliverables": [
+        "Version-controlled working artifact",
+        "Validation and test evidence",
+        "Architecture or engineering decision record",
+        "Public case study and demonstration"
+      ],
+      "deploymentRequired": false,
+      "milestones": [
+        {
+          "key": "project.transportation-engineer.capstone.scope",
+          "title": "Scope, constraints, and evidence plan",
+          "sequence": 1,
+          "weight": 0.15,
+          "estimatedMinutes": 240,
+          "skillOutcomes": ["civil.surveying"],
+          "completionCriteria": [
+            "A reviewer can verify the scope, constraints, and evidence plan from the submitted artifact and evidence."
+          ]
+        },
+        {
+          "key": "project.transportation-engineer.capstone.build",
+          "title": "Working implementation or engineering analysis",
+          "sequence": 2,
+          "weight": 0.45,
+          "estimatedMinutes": 960,
+          "skillOutcomes": [
+            "civil.surveying",
+            "civil.transport",
+            "tools.gis",
+            "data.analysis",
+            "civil.environment"
+          ],
+          "completionCriteria": [
+            "A reviewer can verify the working implementation or engineering analysis from the submitted artifact and evidence."
+          ]
+        },
+        {
+          "key": "project.transportation-engineer.capstone.validate",
+          "title": "Validation against documented risks",
+          "sequence": 3,
+          "weight": 0.25,
+          "estimatedMinutes": 480,
+          "skillOutcomes": [
+            "data.analysis",
+            "civil.environment",
+            "projects.delivery",
+            "communication.technical"
+          ],
+          "completionCriteria": [
+            "A reviewer can verify the validation against documented risks from the submitted artifact and evidence."
+          ]
+        },
+        {
+          "key": "project.transportation-engineer.capstone.present",
+          "title": "Portfolio case study and technical walkthrough",
+          "sequence": 4,
+          "weight": 0.15,
+          "estimatedMinutes": 240,
+          "skillOutcomes": ["projects.delivery", "communication.technical"],
+          "completionCriteria": [
+            "A reviewer can verify the portfolio case study and technical walkthrough from the submitted artifact and evidence."
+          ]
+        }
+      ]
+    },
+    {
+      "key": "project.gis-engineer.capstone",
+      "version": 2,
+      "title": "GIS Engineer Evidence Capstone",
+      "goal": "Deliver a realistic geospatial solution that demonstrates the core decisions, validation, and communication expected from an entry-level GIS Engineer.",
+      "roleKeys": ["gis-engineer"],
+      "difficulty": "ADVANCED",
+      "estimatedHours": {
+        "p25": 20,
+        "p50": 32,
+        "p75": 48
+      },
+      "portfolioValue": 0.86,
+      "prerequisites": [
+        {
+          "skillKey": "civil.surveying",
+          "threshold": 0.35,
+          "type": "HARD"
+        },
+        {
+          "skillKey": "tools.gis",
+          "threshold": 0.35,
+          "type": "HARD"
+        }
+      ],
+      "deliverables": [
+        "Version-controlled working artifact",
+        "Validation and test evidence",
+        "Architecture or engineering decision record",
+        "Public case study and demonstration"
+      ],
+      "deploymentRequired": true,
+      "milestones": [
+        {
+          "key": "project.gis-engineer.capstone.scope",
+          "title": "Scope, constraints, and evidence plan",
+          "sequence": 1,
+          "weight": 0.15,
+          "estimatedMinutes": 240,
+          "skillOutcomes": ["civil.surveying"],
+          "completionCriteria": [
+            "A reviewer can verify the scope, constraints, and evidence plan from the submitted artifact and evidence."
+          ]
+        },
+        {
+          "key": "project.gis-engineer.capstone.build",
+          "title": "Working implementation or engineering analysis",
+          "sequence": 2,
+          "weight": 0.45,
+          "estimatedMinutes": 960,
+          "skillOutcomes": [
+            "civil.surveying",
+            "tools.gis",
+            "data.analysis",
+            "data.visualization",
+            "programming.python"
+          ],
+          "completionCriteria": [
+            "A reviewer can verify the working implementation or engineering analysis from the submitted artifact and evidence."
+          ]
+        },
+        {
+          "key": "project.gis-engineer.capstone.validate",
+          "title": "Validation against documented risks",
+          "sequence": 3,
+          "weight": 0.25,
+          "estimatedMinutes": 480,
+          "skillOutcomes": [
+            "data.visualization",
+            "programming.python",
+            "projects.delivery",
+            "communication.technical"
+          ],
+          "completionCriteria": [
+            "A reviewer can verify the validation against documented risks from the submitted artifact and evidence."
+          ]
+        },
+        {
+          "key": "project.gis-engineer.capstone.present",
+          "title": "Portfolio case study and technical walkthrough",
+          "sequence": 4,
+          "weight": 0.15,
+          "estimatedMinutes": 240,
+          "skillOutcomes": ["projects.delivery", "communication.technical"],
+          "completionCriteria": [
+            "A reviewer can verify the portfolio case study and technical walkthrough from the submitted artifact and evidence."
+          ]
+        }
+      ]
+    },
+    {
+      "key": "project.mining-engineer.capstone",
+      "version": 2,
+      "title": "Mining Engineer Evidence Capstone",
+      "goal": "Deliver a realistic mining engineering solution that demonstrates the core decisions, validation, and communication expected from an entry-level Mining Engineer.",
+      "roleKeys": ["mining-engineer"],
+      "difficulty": "FOUNDATION",
+      "estimatedHours": {
+        "p25": 20,
+        "p50": 32,
+        "p75": 48
+      },
+      "portfolioValue": 0.86,
+      "prerequisites": [
+        {
+          "skillKey": "mining.operations",
+          "threshold": 0.35,
+          "type": "HARD"
+        },
+        {
+          "skillKey": "mining.survey",
+          "threshold": 0.35,
+          "type": "HARD"
+        }
+      ],
+      "deliverables": [
+        "Version-controlled working artifact",
+        "Validation and test evidence",
+        "Architecture or engineering decision record",
+        "Public case study and demonstration"
+      ],
+      "deploymentRequired": false,
+      "milestones": [
+        {
+          "key": "project.mining-engineer.capstone.scope",
+          "title": "Scope, constraints, and evidence plan",
+          "sequence": 1,
+          "weight": 0.15,
+          "estimatedMinutes": 240,
+          "skillOutcomes": ["mining.operations"],
+          "completionCriteria": [
+            "A reviewer can verify the scope, constraints, and evidence plan from the submitted artifact and evidence."
+          ]
+        },
+        {
+          "key": "project.mining-engineer.capstone.build",
+          "title": "Working implementation or engineering analysis",
+          "sequence": 2,
+          "weight": 0.45,
+          "estimatedMinutes": 960,
+          "skillOutcomes": [
+            "mining.operations",
+            "mining.survey",
+            "mining.ventilation",
+            "mining.safety",
+            "tools.gis"
+          ],
+          "completionCriteria": [
+            "A reviewer can verify the working implementation or engineering analysis from the submitted artifact and evidence."
+          ]
+        },
+        {
+          "key": "project.mining-engineer.capstone.validate",
+          "title": "Validation against documented risks",
+          "sequence": 3,
+          "weight": 0.25,
+          "estimatedMinutes": 480,
+          "skillOutcomes": [
+            "mining.safety",
+            "tools.gis",
+            "projects.delivery",
+            "communication.technical"
+          ],
+          "completionCriteria": [
+            "A reviewer can verify the validation against documented risks from the submitted artifact and evidence."
+          ]
+        },
+        {
+          "key": "project.mining-engineer.capstone.present",
+          "title": "Portfolio case study and technical walkthrough",
+          "sequence": 4,
+          "weight": 0.15,
+          "estimatedMinutes": 240,
+          "skillOutcomes": ["projects.delivery", "communication.technical"],
+          "completionCriteria": [
+            "A reviewer can verify the portfolio case study and technical walkthrough from the submitted artifact and evidence."
+          ]
+        }
+      ]
+    },
+    {
+      "key": "project.bioprocess-engineer.capstone",
+      "version": 2,
+      "title": "Bioprocess Engineer Evidence Capstone",
+      "goal": "Deliver a realistic biotechnology solution that demonstrates the core decisions, validation, and communication expected from an entry-level Bioprocess Engineer.",
+      "roleKeys": ["bioprocess-engineer"],
+      "difficulty": "INTERMEDIATE",
+      "estimatedHours": {
+        "p25": 20,
+        "p50": 32,
+        "p75": 48
+      },
+      "portfolioValue": 0.86,
+      "prerequisites": [
+        {
+          "skillKey": "biotech.cell",
+          "threshold": 0.35,
+          "type": "HARD"
+        },
+        {
+          "skillKey": "biotech.microbiology",
+          "threshold": 0.35,
+          "type": "HARD"
+        }
+      ],
+      "deliverables": [
+        "Version-controlled working artifact",
+        "Validation and test evidence",
+        "Architecture or engineering decision record",
+        "Public case study and demonstration"
+      ],
+      "deploymentRequired": false,
+      "milestones": [
+        {
+          "key": "project.bioprocess-engineer.capstone.scope",
+          "title": "Scope, constraints, and evidence plan",
+          "sequence": 1,
+          "weight": 0.15,
+          "estimatedMinutes": 240,
+          "skillOutcomes": ["biotech.cell"],
+          "completionCriteria": [
+            "A reviewer can verify the scope, constraints, and evidence plan from the submitted artifact and evidence."
+          ]
+        },
+        {
+          "key": "project.bioprocess-engineer.capstone.build",
+          "title": "Working implementation or engineering analysis",
+          "sequence": 2,
+          "weight": 0.45,
+          "estimatedMinutes": 960,
+          "skillOutcomes": [
+            "biotech.cell",
+            "biotech.microbiology",
+            "biotech.bioprocess",
+            "data.statistics",
+            "engineering.testing"
+          ],
+          "completionCriteria": [
+            "A reviewer can verify the working implementation or engineering analysis from the submitted artifact and evidence."
+          ]
+        },
+        {
+          "key": "project.bioprocess-engineer.capstone.validate",
+          "title": "Validation against documented risks",
+          "sequence": 3,
+          "weight": 0.25,
+          "estimatedMinutes": 480,
+          "skillOutcomes": [
+            "data.statistics",
+            "engineering.testing",
+            "projects.delivery",
+            "communication.technical"
+          ],
+          "completionCriteria": [
+            "A reviewer can verify the validation against documented risks from the submitted artifact and evidence."
+          ]
+        },
+        {
+          "key": "project.bioprocess-engineer.capstone.present",
+          "title": "Portfolio case study and technical walkthrough",
+          "sequence": 4,
+          "weight": 0.15,
+          "estimatedMinutes": 240,
+          "skillOutcomes": ["projects.delivery", "communication.technical"],
+          "completionCriteria": [
+            "A reviewer can verify the portfolio case study and technical walkthrough from the submitted artifact and evidence."
+          ]
+        }
+      ]
+    },
+    {
+      "key": "project.bioinformatics-analyst.capstone",
+      "version": 2,
+      "title": "Bioinformatics Analyst Evidence Capstone",
+      "goal": "Deliver a realistic biotechnology solution that demonstrates the core decisions, validation, and communication expected from an entry-level Bioinformatics Analyst.",
+      "roleKeys": ["bioinformatics-analyst"],
+      "difficulty": "ADVANCED",
+      "estimatedHours": {
+        "p25": 20,
+        "p50": 32,
+        "p75": 48
+      },
+      "portfolioValue": 0.86,
+      "prerequisites": [
+        {
+          "skillKey": "biotech.cell",
+          "threshold": 0.35,
+          "type": "HARD"
+        },
+        {
+          "skillKey": "biotech.molecular",
+          "threshold": 0.35,
+          "type": "HARD"
+        }
+      ],
+      "deliverables": [
+        "Version-controlled working artifact",
+        "Validation and test evidence",
+        "Architecture or engineering decision record",
+        "Public case study and demonstration"
+      ],
+      "deploymentRequired": false,
+      "milestones": [
+        {
+          "key": "project.bioinformatics-analyst.capstone.scope",
+          "title": "Scope, constraints, and evidence plan",
+          "sequence": 1,
+          "weight": 0.15,
+          "estimatedMinutes": 240,
+          "skillOutcomes": ["biotech.cell"],
+          "completionCriteria": [
+            "A reviewer can verify the scope, constraints, and evidence plan from the submitted artifact and evidence."
+          ]
+        },
+        {
+          "key": "project.bioinformatics-analyst.capstone.build",
+          "title": "Working implementation or engineering analysis",
+          "sequence": 2,
+          "weight": 0.45,
+          "estimatedMinutes": 960,
+          "skillOutcomes": [
+            "biotech.cell",
+            "biotech.molecular",
+            "biotech.bioinformatics",
+            "programming.python",
+            "data.statistics"
+          ],
+          "completionCriteria": [
+            "A reviewer can verify the working implementation or engineering analysis from the submitted artifact and evidence."
+          ]
+        },
+        {
+          "key": "project.bioinformatics-analyst.capstone.validate",
+          "title": "Validation against documented risks",
+          "sequence": 3,
+          "weight": 0.25,
+          "estimatedMinutes": 480,
+          "skillOutcomes": [
+            "programming.python",
+            "data.statistics",
+            "projects.delivery",
+            "communication.technical"
+          ],
+          "completionCriteria": [
+            "A reviewer can verify the validation against documented risks from the submitted artifact and evidence."
+          ]
+        },
+        {
+          "key": "project.bioinformatics-analyst.capstone.present",
+          "title": "Portfolio case study and technical walkthrough",
+          "sequence": 4,
+          "weight": 0.15,
+          "estimatedMinutes": 240,
+          "skillOutcomes": ["projects.delivery", "communication.technical"],
+          "completionCriteria": [
+            "A reviewer can verify the portfolio case study and technical walkthrough from the submitted artifact and evidence."
+          ]
+        }
+      ]
+    }
+  ]
+}

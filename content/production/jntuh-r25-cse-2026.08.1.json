@@ -1,0 +1,3211 @@
+{
+  "schemaVersion": "1.0.0",
+  "dataset": {
+    "universityCode": "JNTUH",
+    "regulationCode": "R25",
+    "degreeCode": "BTECH",
+    "branchCode": "CSE",
+    "datasetVersion": "2026.08.1",
+    "effectiveFrom": "2025-07-01",
+    "effectiveTo": null,
+    "source": {
+      "documentId": "jntuh-r25-btech-cse-course-structure-v2",
+      "title": "JNTUH B.Tech. Computer Science and Engineering Course Structure and Syllabus (R25)",
+      "sourceUrl": "https://jntuh.ac.in/uploads/academics/R25B.Tech.CSEIIIYearSyllabusV2.pdf",
+      "sha256": "de1e7290f04f8fefdf3f022d4bb73ef62d68b542cfea93e4ab0f3331b35202c8",
+      "retrievedAt": "2026-08-25T00:00:00Z",
+      "usagePermission": "PUBLIC_OFFICIAL"
+    },
+    "synthetic": false
+  },
+  "semesters": [
+    {
+      "number": 1,
+      "academicYear": 1,
+      "subjects": [
+        {
+          "code": "MA101BS",
+          "title": "Matrices and Calculus",
+          "credits": 4,
+          "type": "THEORY",
+          "contactHoursPerWeek": 4,
+          "units": [
+            {
+              "number": 1,
+              "title": "Matrices",
+              "topics": [
+                {
+                  "key": "jntuh.r25.cse.ma101bs.unit-1",
+                  "title": "Matrices",
+                  "sourcePage": 5,
+                  "academicDepth": 0.4,
+                  "estimatedAcademicHours": 12,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            },
+            {
+              "number": 2,
+              "title": "Eigen values and Eigen vectors",
+              "topics": [
+                {
+                  "key": "jntuh.r25.cse.ma101bs.unit-2",
+                  "title": "Eigen values and Eigen vectors",
+                  "sourcePage": 5,
+                  "academicDepth": 0.4,
+                  "estimatedAcademicHours": 12,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            },
+            {
+              "number": 3,
+              "title": "Single Variable Calculus",
+              "topics": [
+                {
+                  "key": "jntuh.r25.cse.ma101bs.unit-3",
+                  "title": "Single Variable Calculus",
+                  "sourcePage": 5,
+                  "academicDepth": 0.4,
+                  "estimatedAcademicHours": 12,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            },
+            {
+              "number": 4,
+              "title": "Multivariable Calculus (Partial Differentiation and applications)",
+              "topics": [
+                {
+                  "key": "jntuh.r25.cse.ma101bs.unit-4",
+                  "title": "Multivariable Calculus (Partial Differentiation and applications)",
+                  "sourcePage": 5,
+                  "academicDepth": 0.4,
+                  "estimatedAcademicHours": 12,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            },
+            {
+              "number": 5,
+              "title": "Multivariable Calculus (Integration)",
+              "topics": [
+                {
+                  "key": "jntuh.r25.cse.ma101bs.unit-5",
+                  "title": "Multivariable Calculus (Integration)",
+                  "sourcePage": 5,
+                  "academicDepth": 0.4,
+                  "estimatedAcademicHours": 12,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "CH102BS",
+          "title": "Engineering Chemistry",
+          "credits": 3,
+          "type": "THEORY",
+          "contactHoursPerWeek": 3,
+          "units": [
+            {
+              "number": 1,
+              "title": "Water and its treatment",
+              "topics": [
+                {
+                  "key": "jntuh.r25.cse.ch102bs.unit-1",
+                  "title": "Water and its treatment",
+                  "sourcePage": 7,
+                  "academicDepth": 0.4,
+                  "estimatedAcademicHours": 9,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            },
+            {
+              "number": 2,
+              "title": "Electrochemistry and Corrosion",
+              "topics": [
+                {
+                  "key": "jntuh.r25.cse.ch102bs.unit-2",
+                  "title": "Electrochemistry and Corrosion",
+                  "sourcePage": 7,
+                  "academicDepth": 0.4,
+                  "estimatedAcademicHours": 9,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            },
+            {
+              "number": 3,
+              "title": "Energy sources",
+              "topics": [
+                {
+                  "key": "jntuh.r25.cse.ch102bs.unit-3",
+                  "title": "Energy sources",
+                  "sourcePage": 7,
+                  "academicDepth": 0.4,
+                  "estimatedAcademicHours": 9,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            },
+            {
+              "number": 4,
+              "title": "Polymers",
+              "topics": [
+                {
+                  "key": "jntuh.r25.cse.ch102bs.unit-4",
+                  "title": "Polymers",
+                  "sourcePage": 8,
+                  "academicDepth": 0.4,
+                  "estimatedAcademicHours": 9,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            },
+            {
+              "number": 5,
+              "title": "Advanced Functional Materials",
+              "topics": [
+                {
+                  "key": "jntuh.r25.cse.ch102bs.unit-5",
+                  "title": "Advanced Functional Materials",
+                  "sourcePage": 8,
+                  "academicDepth": 0.4,
+                  "estimatedAcademicHours": 9,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "EN103HS",
+          "title": "English for Skill Enhancement",
+          "credits": 3,
+          "type": "THEORY",
+          "contactHoursPerWeek": 3,
+          "units": [
+            {
+              "number": 1,
+              "title": "Theme: Perspectives",
+              "topics": [
+                {
+                  "key": "jntuh.r25.cse.en103hs.unit-1",
+                  "title": "Theme: Perspectives",
+                  "sourcePage": 9,
+                  "academicDepth": 0.4,
+                  "estimatedAcademicHours": 9,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            },
+            {
+              "number": 2,
+              "title": "Theme: Digital Transformation",
+              "topics": [
+                {
+                  "key": "jntuh.r25.cse.en103hs.unit-2",
+                  "title": "Theme: Digital Transformation",
+                  "sourcePage": 10,
+                  "academicDepth": 0.4,
+                  "estimatedAcademicHours": 9,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            },
+            {
+              "number": 3,
+              "title": "Theme: Attitude and Gratitude",
+              "topics": [
+                {
+                  "key": "jntuh.r25.cse.en103hs.unit-3",
+                  "title": "Theme: Attitude and Gratitude",
+                  "sourcePage": 10,
+                  "academicDepth": 0.4,
+                  "estimatedAcademicHours": 9,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            },
+            {
+              "number": 4,
+              "title": "Theme: Entrepreneurship",
+              "topics": [
+                {
+                  "key": "jntuh.r25.cse.en103hs.unit-4",
+                  "title": "Theme: Entrepreneurship",
+                  "sourcePage": 10,
+                  "academicDepth": 0.4,
+                  "estimatedAcademicHours": 9,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            },
+            {
+              "number": 5,
+              "title": "Theme: Integrity and Professionalism",
+              "topics": [
+                {
+                  "key": "jntuh.r25.cse.en103hs.unit-5",
+                  "title": "Theme: Integrity and Professionalism",
+                  "sourcePage": 10,
+                  "academicDepth": 0.4,
+                  "estimatedAcademicHours": 9,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "EC104ES",
+          "title": "Electronic Devices and Circuits",
+          "credits": 3,
+          "type": "THEORY",
+          "contactHoursPerWeek": 3,
+          "units": [
+            {
+              "number": 1,
+              "title": "Diode Characteristics and Applications: PN junction diode – I-V characteristics, Diode resistance",
+              "topics": [
+                {
+                  "key": "jntuh.r25.cse.ec104es.unit-1",
+                  "title": "Diode Characteristics and Applications: PN junction diode – I-V characteristics, Diode resistance",
+                  "sourcePage": 12,
+                  "academicDepth": 0.4,
+                  "estimatedAcademicHours": 9,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            },
+            {
+              "number": 2,
+              "title": "Bipolar Junction Transistor (BJT): Structure and working principle of BJT, Current components and",
+              "topics": [
+                {
+                  "key": "jntuh.r25.cse.ec104es.unit-2",
+                  "title": "Bipolar Junction Transistor (BJT): Structure and working principle of BJT, Current components and",
+                  "sourcePage": 12,
+                  "academicDepth": 0.4,
+                  "estimatedAcademicHours": 9,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            },
+            {
+              "number": 3,
+              "title": "BJT Biasing: Need for biasing and stabilization, Load line and operating point, Biasing techniques",
+              "topics": [
+                {
+                  "key": "jntuh.r25.cse.ec104es.unit-3",
+                  "title": "BJT Biasing: Need for biasing and stabilization, Load line and operating point, Biasing techniques",
+                  "sourcePage": 12,
+                  "academicDepth": 0.4,
+                  "estimatedAcademicHours": 9,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            },
+            {
+              "number": 4,
+              "title": "Transistor Amplifiers: Transistor as a small-signal amplifier, h-parameter equivalent circuit, CE, CB,",
+              "topics": [
+                {
+                  "key": "jntuh.r25.cse.ec104es.unit-4",
+                  "title": "Transistor Amplifiers: Transistor as a small-signal amplifier, h-parameter equivalent circuit, CE, CB,",
+                  "sourcePage": 12,
+                  "academicDepth": 0.4,
+                  "estimatedAcademicHours": 9,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            },
+            {
+              "number": 5,
+              "title": "Special Purpose Diodes: Principle of Operation of – SCR, Tunnel Diode, Varactor Diode, Photo Diode,",
+              "topics": [
+                {
+                  "key": "jntuh.r25.cse.ec104es.unit-5",
+                  "title": "Special Purpose Diodes: Principle of Operation of – SCR, Tunnel Diode, Varactor Diode, Photo Diode,",
+                  "sourcePage": 13,
+                  "academicDepth": 0.4,
+                  "estimatedAcademicHours": 9,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "CS105ES",
+          "title": "Programming for Problem Solving",
+          "credits": 3,
+          "type": "THEORY",
+          "contactHoursPerWeek": 3,
+          "units": [
+            {
+              "number": 1,
+              "title": "Overview of C:C Language Elements, Variable Declarations and Data Types, Executable",
+              "topics": [
+                {
+                  "key": "jntuh.r25.cse.cs105es.unit-1",
+                  "title": "Overview of C:C Language Elements, Variable Declarations and Data Types, Executable",
+                  "sourcePage": 14,
+                  "academicDepth": 0.4,
+                  "estimatedAcademicHours": 9,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            },
+            {
+              "number": 2,
+              "title": "Top-Down Design with Functions: Building Programs from Existing Information, Library",
+              "topics": [
+                {
+                  "key": "jntuh.r25.cse.cs105es.unit-2",
+                  "title": "Top-Down Design with Functions: Building Programs from Existing Information, Library",
+                  "sourcePage": 14,
+                  "academicDepth": 0.4,
+                  "estimatedAcademicHours": 9,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            },
+            {
+              "number": 3,
+              "title": "Arrays: Declaring and Referencing Arrays, Array Subscripts, Using for Loops for Sequential",
+              "topics": [
+                {
+                  "key": "jntuh.r25.cse.cs105es.unit-3",
+                  "title": "Arrays: Declaring and Referencing Arrays, Array Subscripts, Using for Loops for Sequential",
+                  "sourcePage": 14,
+                  "academicDepth": 0.4,
+                  "estimatedAcademicHours": 9,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            },
+            {
+              "number": 4,
+              "title": "Recursion: The Nature of Recursion, Tracing a Recursive Function, Recursive Mathematical",
+              "topics": [
+                {
+                  "key": "jntuh.r25.cse.cs105es.unit-4",
+                  "title": "Recursion: The Nature of Recursion, Tracing a Recursive Function, Recursive Mathematical",
+                  "sourcePage": 14,
+                  "academicDepth": 0.4,
+                  "estimatedAcademicHours": 9,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            },
+            {
+              "number": 5,
+              "title": "Text and Binary File Pointers: Input/ Output Files - Review and Further Study, Binary Files,",
+              "topics": [
+                {
+                  "key": "jntuh.r25.cse.cs105es.unit-5",
+                  "title": "Text and Binary File Pointers: Input/ Output Files - Review and Further Study, Binary Files,",
+                  "sourcePage": 14,
+                  "academicDepth": 0.4,
+                  "estimatedAcademicHours": 9,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "CH106BS",
+          "title": "Engineering Chemistry Lab",
+          "credits": 1,
+          "type": "LAB",
+          "contactHoursPerWeek": 2,
+          "units": [
+            {
+              "number": 1,
+              "title": "Practical syllabus",
+              "topics": [
+                {
+                  "key": "jntuh.r25.cse.ch106bs.scope",
+                  "title": "Engineering Chemistry Lab",
+                  "sourcePage": 16,
+                  "academicDepth": 0.4,
+                  "estimatedAcademicHours": 30,
+                  "prerequisiteTopicKeys": [],
+                  "lab": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "CS107ES",
+          "title": "Programming for Problem Solving Lab",
+          "credits": 1,
+          "type": "LAB",
+          "contactHoursPerWeek": 2,
+          "units": [
+            {
+              "number": 1,
+              "title": "Practical syllabus",
+              "topics": [
+                {
+                  "key": "jntuh.r25.cse.cs107es.scope",
+                  "title": "Programming for Problem Solving Lab",
+                  "sourcePage": 17,
+                  "academicDepth": 0.4,
+                  "estimatedAcademicHours": 30,
+                  "prerequisiteTopicKeys": [],
+                  "lab": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "EN108HS",
+          "title": "English Language and Communication Skills Lab",
+          "credits": 1,
+          "type": "LAB",
+          "contactHoursPerWeek": 2,
+          "units": [
+            {
+              "number": 1,
+              "title": "Practical syllabus",
+              "topics": [
+                {
+                  "key": "jntuh.r25.cse.en108hs.scope",
+                  "title": "English Language and Communication Skills Lab",
+                  "sourcePage": 19,
+                  "academicDepth": 0.4,
+                  "estimatedAcademicHours": 30,
+                  "prerequisiteTopicKeys": [],
+                  "lab": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "ME109ES",
+          "title": "Engineering Workshop",
+          "credits": 1,
+          "type": "LAB",
+          "contactHoursPerWeek": 2,
+          "units": [
+            {
+              "number": 1,
+              "title": "Practical syllabus",
+              "topics": [
+                {
+                  "key": "jntuh.r25.cse.me109es.scope",
+                  "title": "Engineering Workshop",
+                  "sourcePage": 22,
+                  "academicDepth": 0.4,
+                  "estimatedAcademicHours": 30,
+                  "prerequisiteTopicKeys": [],
+                  "lab": true
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "academicYear": 1,
+      "subjects": [
+        {
+          "code": "MA201BS",
+          "title": "Ordinary Differential Equations and Vector Calculus",
+          "credits": 3,
+          "type": "THEORY",
+          "contactHoursPerWeek": 3,
+          "units": [
+            {
+              "number": 1,
+              "title": "First Order Ordinary Differential Equations",
+              "topics": [
+                {
+                  "key": "jntuh.r25.cse.ma201bs.unit-1",
+                  "title": "First Order Ordinary Differential Equations",
+                  "sourcePage": 23,
+                  "academicDepth": 0.4,
+                  "estimatedAcademicHours": 9,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            },
+            {
+              "number": 2,
+              "title": "Ordinary Differential Equations of Higher Order",
+              "topics": [
+                {
+                  "key": "jntuh.r25.cse.ma201bs.unit-2",
+                  "title": "Ordinary Differential Equations of Higher Order",
+                  "sourcePage": 23,
+                  "academicDepth": 0.4,
+                  "estimatedAcademicHours": 9,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            },
+            {
+              "number": 3,
+              "title": "Laplace Transforms",
+              "topics": [
+                {
+                  "key": "jntuh.r25.cse.ma201bs.unit-3",
+                  "title": "Laplace Transforms",
+                  "sourcePage": 23,
+                  "academicDepth": 0.4,
+                  "estimatedAcademicHours": 9,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            },
+            {
+              "number": 4,
+              "title": "Vector Differentiation",
+              "topics": [
+                {
+                  "key": "jntuh.r25.cse.ma201bs.unit-4",
+                  "title": "Vector Differentiation",
+                  "sourcePage": 23,
+                  "academicDepth": 0.4,
+                  "estimatedAcademicHours": 9,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            },
+            {
+              "number": 5,
+              "title": "Vector Integration",
+              "topics": [
+                {
+                  "key": "jntuh.r25.cse.ma201bs.unit-5",
+                  "title": "Vector Integration",
+                  "sourcePage": 23,
+                  "academicDepth": 0.4,
+                  "estimatedAcademicHours": 9,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "PH202BS",
+          "title": "Advanced Engineering Physics",
+          "credits": 3,
+          "type": "THEORY",
+          "contactHoursPerWeek": 3,
+          "units": [
+            {
+              "number": 1,
+              "title": "Crystallography & Materials Characterization",
+              "topics": [
+                {
+                  "key": "jntuh.r25.cse.ph202bs.unit-1",
+                  "title": "Crystallography & Materials Characterization",
+                  "sourcePage": 24,
+                  "academicDepth": 0.4,
+                  "estimatedAcademicHours": 9,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            },
+            {
+              "number": 2,
+              "title": "Quantum Mechanics",
+              "topics": [
+                {
+                  "key": "jntuh.r25.cse.ph202bs.unit-2",
+                  "title": "Quantum Mechanics",
+                  "sourcePage": 24,
+                  "academicDepth": 0.4,
+                  "estimatedAcademicHours": 9,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            },
+            {
+              "number": 3,
+              "title": "Quantum Computing",
+              "topics": [
+                {
+                  "key": "jntuh.r25.cse.ph202bs.unit-3",
+                  "title": "Quantum Computing",
+                  "sourcePage": 24,
+                  "academicDepth": 0.4,
+                  "estimatedAcademicHours": 9,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            },
+            {
+              "number": 4,
+              "title": "Magnetic and Dielectric Materials",
+              "topics": [
+                {
+                  "key": "jntuh.r25.cse.ph202bs.unit-4",
+                  "title": "Magnetic and Dielectric Materials",
+                  "sourcePage": 24,
+                  "academicDepth": 0.4,
+                  "estimatedAcademicHours": 9,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            },
+            {
+              "number": 5,
+              "title": "Laser and Fibre Optics",
+              "topics": [
+                {
+                  "key": "jntuh.r25.cse.ph202bs.unit-5",
+                  "title": "Laser and Fibre Optics",
+                  "sourcePage": 25,
+                  "academicDepth": 0.4,
+                  "estimatedAcademicHours": 9,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "ME203ES",
+          "title": "Engineering Drawing and Computer Aided Drafting",
+          "credits": 3,
+          "type": "INTEGRATED",
+          "contactHoursPerWeek": 4,
+          "units": [
+            {
+              "number": 1,
+              "title": "Introduction to Engineering Graphics (Conventional)",
+              "topics": [
+                {
+                  "key": "jntuh.r25.cse.me203es.unit-1",
+                  "title": "Introduction to Engineering Graphics (Conventional)",
+                  "sourcePage": 26,
+                  "academicDepth": 0.4,
+                  "estimatedAcademicHours": 9,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            },
+            {
+              "number": 2,
+              "title": "Orthographic Projections (Conventional and Computer Aided)",
+              "topics": [
+                {
+                  "key": "jntuh.r25.cse.me203es.unit-2",
+                  "title": "Orthographic Projections (Conventional and Computer Aided)",
+                  "sourcePage": 26,
+                  "academicDepth": 0.4,
+                  "estimatedAcademicHours": 9,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            },
+            {
+              "number": 3,
+              "title": "Projections of Regular Solids (Conventional and Computer Aided)",
+              "topics": [
+                {
+                  "key": "jntuh.r25.cse.me203es.unit-3",
+                  "title": "Projections of Regular Solids (Conventional and Computer Aided)",
+                  "sourcePage": 26,
+                  "academicDepth": 0.4,
+                  "estimatedAcademicHours": 9,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            },
+            {
+              "number": 4,
+              "title": "Development of Surfaces (Conventional): Prism, Cylinder, Pyramid and Cone.",
+              "topics": [
+                {
+                  "key": "jntuh.r25.cse.me203es.unit-4",
+                  "title": "Development of Surfaces (Conventional): Prism, Cylinder, Pyramid and Cone.",
+                  "sourcePage": 26,
+                  "academicDepth": 0.4,
+                  "estimatedAcademicHours": 9,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            },
+            {
+              "number": 5,
+              "title": "Isometric Projections (Conventional and Computer Aided)",
+              "topics": [
+                {
+                  "key": "jntuh.r25.cse.me203es.unit-5",
+                  "title": "Isometric Projections (Conventional and Computer Aided)",
+                  "sourcePage": 26,
+                  "academicDepth": 0.4,
+                  "estimatedAcademicHours": 9,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "EE204ES",
+          "title": "Basic Electrical Engineering",
+          "credits": 3,
+          "type": "THEORY",
+          "contactHoursPerWeek": 3,
+          "units": [
+            {
+              "number": 1,
+              "title": "D.C. Circuits: Electrical circuit elements (R, L and C), voltage and current sources, KVL&KCL, analysis",
+              "topics": [
+                {
+                  "key": "jntuh.r25.cse.ee204es.unit-1",
+                  "title": "D.C. Circuits: Electrical circuit elements (R, L and C), voltage and current sources, KVL&KCL, analysis",
+                  "sourcePage": 28,
+                  "academicDepth": 0.4,
+                  "estimatedAcademicHours": 9,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            },
+            {
+              "number": 2,
+              "title": "A.C. Circuits: Representation of sinusoidal waveforms, peak and rms values, phasor representation,",
+              "topics": [
+                {
+                  "key": "jntuh.r25.cse.ee204es.unit-2",
+                  "title": "A.C. Circuits: Representation of sinusoidal waveforms, peak and rms values, phasor representation,",
+                  "sourcePage": 28,
+                  "academicDepth": 0.4,
+                  "estimatedAcademicHours": 9,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            },
+            {
+              "number": 3,
+              "title": "Transformers: Ideal and practical transformer, equivalent circuit, losses in transformers, regulation and",
+              "topics": [
+                {
+                  "key": "jntuh.r25.cse.ee204es.unit-3",
+                  "title": "Transformers: Ideal and practical transformer, equivalent circuit, losses in transformers, regulation and",
+                  "sourcePage": 28,
+                  "academicDepth": 0.4,
+                  "estimatedAcademicHours": 9,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            },
+            {
+              "number": 4,
+              "title": "Electrical Machines: Construction and working principle of dc machine, performance characteristics",
+              "topics": [
+                {
+                  "key": "jntuh.r25.cse.ee204es.unit-4",
+                  "title": "Electrical Machines: Construction and working principle of dc machine, performance characteristics",
+                  "sourcePage": 28,
+                  "academicDepth": 0.4,
+                  "estimatedAcademicHours": 9,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            },
+            {
+              "number": 5,
+              "title": "Electrical Installations: Components of LT Switchgear: Switch Fuse Unit (SFU), MCB, ELCB, MCCB,",
+              "topics": [
+                {
+                  "key": "jntuh.r25.cse.ee204es.unit-5",
+                  "title": "Electrical Installations: Components of LT Switchgear: Switch Fuse Unit (SFU), MCB, ELCB, MCCB,",
+                  "sourcePage": 28,
+                  "academicDepth": 0.4,
+                  "estimatedAcademicHours": 9,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "CS205ES",
+          "title": "Data Structures",
+          "credits": 3,
+          "type": "THEORY",
+          "contactHoursPerWeek": 3,
+          "units": [
+            {
+              "number": 1,
+              "title": "Introduction to Data Structures: Basic Terminology, Classification of Data Structures, Operation on Data",
+              "topics": [
+                {
+                  "key": "jntuh.r25.cse.cs205es.unit-1",
+                  "title": "Introduction to Data Structures: Basic Terminology, Classification of Data Structures, Operation on Data",
+                  "sourcePage": 29,
+                  "academicDepth": 0.4,
+                  "estimatedAcademicHours": 9,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            },
+            {
+              "number": 2,
+              "title": "Trees: Introduction, Types of Trees, creating a Binary Tree from a General Tree, traversing a Binary",
+              "topics": [
+                {
+                  "key": "jntuh.r25.cse.cs205es.unit-2",
+                  "title": "Trees: Introduction, Types of Trees, creating a Binary Tree from a General Tree, traversing a Binary",
+                  "sourcePage": 29,
+                  "academicDepth": 0.4,
+                  "estimatedAcademicHours": 9,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            },
+            {
+              "number": 3,
+              "title": "Multi way Search Trees: Introduction, B Trees, B Trees ADT, 2-3 Trees, 2-3- Tree, B* Tree, B+ Trees",
+              "topics": [
+                {
+                  "key": "jntuh.r25.cse.cs205es.unit-3",
+                  "title": "Multi way Search Trees: Introduction, B Trees, B Trees ADT, 2-3 Trees, 2-3- Tree, B* Tree, B+ Trees",
+                  "sourcePage": 29,
+                  "academicDepth": 0.4,
+                  "estimatedAcademicHours": 9,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            },
+            {
+              "number": 4,
+              "title": "Graphs: Introduction, Directed Graphs, Bi connected Components, Representation of Graphs, Graph",
+              "topics": [
+                {
+                  "key": "jntuh.r25.cse.cs205es.unit-4",
+                  "title": "Graphs: Introduction, Directed Graphs, Bi connected Components, Representation of Graphs, Graph",
+                  "sourcePage": 29,
+                  "academicDepth": 0.4,
+                  "estimatedAcademicHours": 9,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            },
+            {
+              "number": 5,
+              "title": "Hashing and Collision: Introduction, Hash Tables, Hash Functions, Different Hash Functions: Division",
+              "topics": [
+                {
+                  "key": "jntuh.r25.cse.cs205es.unit-5",
+                  "title": "Hashing and Collision: Introduction, Hash Tables, Hash Functions, Different Hash Functions: Division",
+                  "sourcePage": 29,
+                  "academicDepth": 0.4,
+                  "estimatedAcademicHours": 9,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "PH206BS",
+          "title": "Advanced Engineering Physics Lab",
+          "credits": 1,
+          "type": "LAB",
+          "contactHoursPerWeek": 2,
+          "units": [
+            {
+              "number": 1,
+              "title": "Practical syllabus",
+              "topics": [
+                {
+                  "key": "jntuh.r25.cse.ph206bs.scope",
+                  "title": "Advanced Engineering Physics Lab",
+                  "sourcePage": 30,
+                  "academicDepth": 0.4,
+                  "estimatedAcademicHours": 30,
+                  "prerequisiteTopicKeys": [],
+                  "lab": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "CS207ES",
+          "title": "Data Structures Lab",
+          "credits": 1,
+          "type": "LAB",
+          "contactHoursPerWeek": 2,
+          "units": [
+            {
+              "number": 1,
+              "title": "Practical syllabus",
+              "topics": [
+                {
+                  "key": "jntuh.r25.cse.cs207es.scope",
+                  "title": "Data Structures Lab",
+                  "sourcePage": 31,
+                  "academicDepth": 0.4,
+                  "estimatedAcademicHours": 30,
+                  "prerequisiteTopicKeys": [],
+                  "lab": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "CS208ES",
+          "title": "Python Programming Lab",
+          "credits": 1,
+          "type": "LAB",
+          "contactHoursPerWeek": 2,
+          "units": [
+            {
+              "number": 1,
+              "title": "Practical syllabus",
+              "topics": [
+                {
+                  "key": "jntuh.r25.cse.cs208es.scope",
+                  "title": "Python Programming Lab",
+                  "sourcePage": 32,
+                  "academicDepth": 0.4,
+                  "estimatedAcademicHours": 30,
+                  "prerequisiteTopicKeys": [],
+                  "lab": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "EE209ES",
+          "title": "Basic Electrical Engineering Lab",
+          "credits": 1,
+          "type": "LAB",
+          "contactHoursPerWeek": 2,
+          "units": [
+            {
+              "number": 1,
+              "title": "Practical syllabus",
+              "topics": [
+                {
+                  "key": "jntuh.r25.cse.ee209es.scope",
+                  "title": "Basic Electrical Engineering Lab",
+                  "sourcePage": 34,
+                  "academicDepth": 0.4,
+                  "estimatedAcademicHours": 30,
+                  "prerequisiteTopicKeys": [],
+                  "lab": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "CS210ES",
+          "title": "IT Workshop",
+          "credits": 1,
+          "type": "LAB",
+          "contactHoursPerWeek": 2,
+          "units": [
+            {
+              "number": 1,
+              "title": "Practical syllabus",
+              "topics": [
+                {
+                  "key": "jntuh.r25.cse.cs210es.scope",
+                  "title": "IT Workshop",
+                  "sourcePage": 36,
+                  "academicDepth": 0.4,
+                  "estimatedAcademicHours": 30,
+                  "prerequisiteTopicKeys": [],
+                  "lab": true
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "academicYear": 2,
+      "subjects": [
+        {
+          "code": "CS301PC",
+          "title": "Discrete Mathematics",
+          "credits": 3,
+          "type": "THEORY",
+          "contactHoursPerWeek": 3,
+          "units": [
+            {
+              "number": 1,
+              "title": "Mathematical logic: Introduction, Statements and Notation, Connectives, Normal Forms, Theory of",
+              "topics": [
+                {
+                  "key": "jntuh.r25.cse.cs301pc.unit-1",
+                  "title": "Mathematical logic: Introduction, Statements and Notation, Connectives, Normal Forms, Theory of",
+                  "sourcePage": 38,
+                  "academicDepth": 0.55,
+                  "estimatedAcademicHours": 9,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            },
+            {
+              "number": 2,
+              "title": "Set theory: Introduction, Basic Concepts of Set Theory, Representation of Discrete Structures,",
+              "topics": [
+                {
+                  "key": "jntuh.r25.cse.cs301pc.unit-2",
+                  "title": "Set theory: Introduction, Basic Concepts of Set Theory, Representation of Discrete Structures,",
+                  "sourcePage": 38,
+                  "academicDepth": 0.55,
+                  "estimatedAcademicHours": 9,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            },
+            {
+              "number": 3,
+              "title": "Algebraic Structures: Introduction, Algebraic Systems, Semi groups and Monoids, Lattices as Partially",
+              "topics": [
+                {
+                  "key": "jntuh.r25.cse.cs301pc.unit-3",
+                  "title": "Algebraic Structures: Introduction, Algebraic Systems, Semi groups and Monoids, Lattices as Partially",
+                  "sourcePage": 38,
+                  "academicDepth": 0.55,
+                  "estimatedAcademicHours": 9,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            },
+            {
+              "number": 4,
+              "title": "Elementary Combinatorics: Basics of Counting, Combinations and Permutations, Enumeration of",
+              "topics": [
+                {
+                  "key": "jntuh.r25.cse.cs301pc.unit-4",
+                  "title": "Elementary Combinatorics: Basics of Counting, Combinations and Permutations, Enumeration of",
+                  "sourcePage": 38,
+                  "academicDepth": 0.55,
+                  "estimatedAcademicHours": 9,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            },
+            {
+              "number": 5,
+              "title": "Graph Theory: Basic Concepts, Isomorphism and Subgraphs, Trees and their Properties, Spanning",
+              "topics": [
+                {
+                  "key": "jntuh.r25.cse.cs301pc.unit-5",
+                  "title": "Graph Theory: Basic Concepts, Isomorphism and Subgraphs, Trees and their Properties, Spanning",
+                  "sourcePage": 38,
+                  "academicDepth": 0.55,
+                  "estimatedAcademicHours": 9,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "CS302PC",
+          "title": "Computer Organization and Architecture",
+          "credits": 3,
+          "type": "THEORY",
+          "contactHoursPerWeek": 3,
+          "units": [
+            {
+              "number": 1,
+              "title": "Boolean Algebra and Logic Gates: Binary codes, Binary Storage and Registers, Binary logic.",
+              "topics": [
+                {
+                  "key": "jntuh.r25.cse.cs302pc.unit-1",
+                  "title": "Boolean Algebra and Logic Gates: Binary codes, Binary Storage and Registers, Binary logic.",
+                  "sourcePage": 39,
+                  "academicDepth": 0.55,
+                  "estimatedAcademicHours": 9,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            },
+            {
+              "number": 2,
+              "title": "Combinational Logic: Combinational Circuits, Analysis procedure Design procedure, Binary Adder",
+              "topics": [
+                {
+                  "key": "jntuh.r25.cse.cs302pc.unit-2",
+                  "title": "Combinational Logic: Combinational Circuits, Analysis procedure Design procedure, Binary Adder",
+                  "sourcePage": 39,
+                  "academicDepth": 0.55,
+                  "estimatedAcademicHours": 9,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            },
+            {
+              "number": 3,
+              "title": "Register Transfer Language and Micro operations: Register Transfer language, Register Transfer,",
+              "topics": [
+                {
+                  "key": "jntuh.r25.cse.cs302pc.unit-3",
+                  "title": "Register Transfer Language and Micro operations: Register Transfer language, Register Transfer,",
+                  "sourcePage": 39,
+                  "academicDepth": 0.55,
+                  "estimatedAcademicHours": 9,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            },
+            {
+              "number": 4,
+              "title": "Microprogrammed Control: Control memory, Address sequencing, micro program example, design",
+              "topics": [
+                {
+                  "key": "jntuh.r25.cse.cs302pc.unit-4",
+                  "title": "Microprogrammed Control: Control memory, Address sequencing, micro program example, design",
+                  "sourcePage": 39,
+                  "academicDepth": 0.55,
+                  "estimatedAcademicHours": 9,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            },
+            {
+              "number": 5,
+              "title": "Input-Output Organization: Input-Output Interface, Asynchronous data transfer, Modes of Transfer,",
+              "topics": [
+                {
+                  "key": "jntuh.r25.cse.cs302pc.unit-5",
+                  "title": "Input-Output Organization: Input-Output Interface, Asynchronous data transfer, Modes of Transfer,",
+                  "sourcePage": 40,
+                  "academicDepth": 0.55,
+                  "estimatedAcademicHours": 9,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "CS303PC",
+          "title": "Object Oriented Programming through Java",
+          "credits": 3,
+          "type": "THEORY",
+          "contactHoursPerWeek": 3,
+          "units": [
+            {
+              "number": 1,
+              "title": "Object oriented thinking and Java Basics- Need for oop paradigm, summary of oop concepts, coping",
+              "topics": [
+                {
+                  "key": "jntuh.r25.cse.cs303pc.unit-1",
+                  "title": "Object oriented thinking and Java Basics- Need for oop paradigm, summary of oop concepts, coping",
+                  "sourcePage": 41,
+                  "academicDepth": 0.55,
+                  "estimatedAcademicHours": 9,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            },
+            {
+              "number": 2,
+              "title": "Inheritance, Packages and Interfaces – Hierarchical abstractions, Base class object, subclass, subtype,",
+              "topics": [
+                {
+                  "key": "jntuh.r25.cse.cs303pc.unit-2",
+                  "title": "Inheritance, Packages and Interfaces – Hierarchical abstractions, Base class object, subclass, subtype,",
+                  "sourcePage": 41,
+                  "academicDepth": 0.55,
+                  "estimatedAcademicHours": 9,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            },
+            {
+              "number": 3,
+              "title": "Exception handling and Multithreading-- Concepts of exception handling, benefits of exception",
+              "topics": [
+                {
+                  "key": "jntuh.r25.cse.cs303pc.unit-3",
+                  "title": "Exception handling and Multithreading-- Concepts of exception handling, benefits of exception",
+                  "sourcePage": 41,
+                  "academicDepth": 0.55,
+                  "estimatedAcademicHours": 9,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            },
+            {
+              "number": 4,
+              "title": "Exploring String class, Object class, Exploring java.util package, Exploring java.io package",
+              "topics": [
+                {
+                  "key": "jntuh.r25.cse.cs303pc.unit-4",
+                  "title": "Exploring String class, Object class, Exploring java.util package, Exploring java.io package",
+                  "sourcePage": 41,
+                  "academicDepth": 0.55,
+                  "estimatedAcademicHours": 9,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            },
+            {
+              "number": 5,
+              "title": "Swing – Introduction, limitations of AWT, MVC architecture, components, containers, exploring swing",
+              "topics": [
+                {
+                  "key": "jntuh.r25.cse.cs303pc.unit-5",
+                  "title": "Swing – Introduction, limitations of AWT, MVC architecture, components, containers, exploring swing",
+                  "sourcePage": 42,
+                  "academicDepth": 0.55,
+                  "estimatedAcademicHours": 9,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "CS304PC",
+          "title": "Software Engineering",
+          "credits": 3,
+          "type": "THEORY",
+          "contactHoursPerWeek": 3,
+          "units": [
+            {
+              "number": 1,
+              "title": "Introduction to Software Engineering: The evolving role of software, changing nature of software,",
+              "topics": [
+                {
+                  "key": "jntuh.r25.cse.cs304pc.unit-1",
+                  "title": "Introduction to Software Engineering: The evolving role of software, changing nature of software,",
+                  "sourcePage": 43,
+                  "academicDepth": 0.55,
+                  "estimatedAcademicHours": 9,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            },
+            {
+              "number": 2,
+              "title": "Software Requirements: Functional and non-functional requirements, user requirements, system",
+              "topics": [
+                {
+                  "key": "jntuh.r25.cse.cs304pc.unit-2",
+                  "title": "Software Requirements: Functional and non-functional requirements, user requirements, system",
+                  "sourcePage": 43,
+                  "academicDepth": 0.55,
+                  "estimatedAcademicHours": 9,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            },
+            {
+              "number": 3,
+              "title": "Design Engineering: Design process and design quality, design concepts, the design model.",
+              "topics": [
+                {
+                  "key": "jntuh.r25.cse.cs304pc.unit-3",
+                  "title": "Design Engineering: Design process and design quality, design concepts, the design model.",
+                  "sourcePage": 43,
+                  "academicDepth": 0.55,
+                  "estimatedAcademicHours": 9,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            },
+            {
+              "number": 4,
+              "title": "Testing Strategies: A strategic approach to software testing, test strategies for conventional software,",
+              "topics": [
+                {
+                  "key": "jntuh.r25.cse.cs304pc.unit-4",
+                  "title": "Testing Strategies: A strategic approach to software testing, test strategies for conventional software,",
+                  "sourcePage": 43,
+                  "academicDepth": 0.55,
+                  "estimatedAcademicHours": 9,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            },
+            {
+              "number": 5,
+              "title": "Risk management: Reactive Vs proactive risk strategies, software risks, risk identification, risk",
+              "topics": [
+                {
+                  "key": "jntuh.r25.cse.cs304pc.unit-5",
+                  "title": "Risk management: Reactive Vs proactive risk strategies, software risks, risk identification, risk",
+                  "sourcePage": 43,
+                  "academicDepth": 0.55,
+                  "estimatedAcademicHours": 9,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "CS305PC",
+          "title": "Database Management Systems",
+          "credits": 3,
+          "type": "THEORY",
+          "contactHoursPerWeek": 3,
+          "units": [
+            {
+              "number": 1,
+              "title": "Database System Applications: A Historical Perspective, File Systems versus a DBMS, the Data",
+              "topics": [
+                {
+                  "key": "jntuh.r25.cse.cs305pc.unit-1",
+                  "title": "Database System Applications: A Historical Perspective, File Systems versus a DBMS, the Data",
+                  "sourcePage": 45,
+                  "academicDepth": 0.55,
+                  "estimatedAcademicHours": 9,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            },
+            {
+              "number": 2,
+              "title": "Introduction to the Relational Model: Integrity constraint over relations, enforcing integrity",
+              "topics": [
+                {
+                  "key": "jntuh.r25.cse.cs305pc.unit-2",
+                  "title": "Introduction to the Relational Model: Integrity constraint over relations, enforcing integrity",
+                  "sourcePage": 45,
+                  "academicDepth": 0.55,
+                  "estimatedAcademicHours": 9,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            },
+            {
+              "number": 3,
+              "title": "SQL: QUERIES, CONSTRAINTS, TRIGGERS: form of basic SQL query, UNION, INTERSECT, and",
+              "topics": [
+                {
+                  "key": "jntuh.r25.cse.cs305pc.unit-3",
+                  "title": "SQL: QUERIES, CONSTRAINTS, TRIGGERS: form of basic SQL query, UNION, INTERSECT, and",
+                  "sourcePage": 45,
+                  "academicDepth": 0.55,
+                  "estimatedAcademicHours": 9,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            },
+            {
+              "number": 4,
+              "title": "Transaction Concept, Transaction State, Implementation of Atomicity and Durability, Concurrent",
+              "topics": [
+                {
+                  "key": "jntuh.r25.cse.cs305pc.unit-4",
+                  "title": "Transaction Concept, Transaction State, Implementation of Atomicity and Durability, Concurrent",
+                  "sourcePage": 45,
+                  "academicDepth": 0.55,
+                  "estimatedAcademicHours": 9,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            },
+            {
+              "number": 5,
+              "title": "Data on External Storage, File Organization and Indexing, Cluster Indexes, Primary and Secondary",
+              "topics": [
+                {
+                  "key": "jntuh.r25.cse.cs305pc.unit-5",
+                  "title": "Data on External Storage, File Organization and Indexing, Cluster Indexes, Primary and Secondary",
+                  "sourcePage": 45,
+                  "academicDepth": 0.55,
+                  "estimatedAcademicHours": 9,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "MS306HS",
+          "title": "Innovation and Entrepreneurship",
+          "credits": 2,
+          "type": "THEORY",
+          "contactHoursPerWeek": 2,
+          "units": [
+            {
+              "number": 1,
+              "title": "Fundamentals of Innovation and Entrepreneurship",
+              "topics": [
+                {
+                  "key": "jntuh.r25.cse.ms306hs.unit-1",
+                  "title": "Fundamentals of Innovation and Entrepreneurship",
+                  "sourcePage": 47,
+                  "academicDepth": 0.55,
+                  "estimatedAcademicHours": 6,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            },
+            {
+              "number": 2,
+              "title": "Problem and Customer Identification",
+              "topics": [
+                {
+                  "key": "jntuh.r25.cse.ms306hs.unit-2",
+                  "title": "Problem and Customer Identification",
+                  "sourcePage": 47,
+                  "academicDepth": 0.55,
+                  "estimatedAcademicHours": 6,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            },
+            {
+              "number": 3,
+              "title": "Opportunity assessment and Prototype development",
+              "topics": [
+                {
+                  "key": "jntuh.r25.cse.ms306hs.unit-3",
+                  "title": "Opportunity assessment and Prototype development",
+                  "sourcePage": 47,
+                  "academicDepth": 0.55,
+                  "estimatedAcademicHours": 6,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            },
+            {
+              "number": 4,
+              "title": "Business & Financial Models",
+              "topics": [
+                {
+                  "key": "jntuh.r25.cse.ms306hs.unit-4",
+                  "title": "Business & Financial Models",
+                  "sourcePage": 47,
+                  "academicDepth": 0.55,
+                  "estimatedAcademicHours": 6,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            },
+            {
+              "number": 5,
+              "title": "Startups and IPR",
+              "topics": [
+                {
+                  "key": "jntuh.r25.cse.ms306hs.unit-5",
+                  "title": "Startups and IPR",
+                  "sourcePage": 48,
+                  "academicDepth": 0.55,
+                  "estimatedAcademicHours": 6,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "CS307PC",
+          "title": "Object Oriented Programming through Java Lab",
+          "credits": 1,
+          "type": "LAB",
+          "contactHoursPerWeek": 2,
+          "units": [
+            {
+              "number": 1,
+              "title": "Practical syllabus",
+              "topics": [
+                {
+                  "key": "jntuh.r25.cse.cs307pc.scope",
+                  "title": "Object Oriented Programming through Java Lab",
+                  "sourcePage": 49,
+                  "academicDepth": 0.55,
+                  "estimatedAcademicHours": 30,
+                  "prerequisiteTopicKeys": [],
+                  "lab": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "CS308PC",
+          "title": "Software Engineering Lab",
+          "credits": 1,
+          "type": "LAB",
+          "contactHoursPerWeek": 2,
+          "units": [
+            {
+              "number": 1,
+              "title": "Practical syllabus",
+              "topics": [
+                {
+                  "key": "jntuh.r25.cse.cs308pc.scope",
+                  "title": "Software Engineering Lab",
+                  "sourcePage": 51,
+                  "academicDepth": 0.55,
+                  "estimatedAcademicHours": 30,
+                  "prerequisiteTopicKeys": [],
+                  "lab": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "CS309PC",
+          "title": "Database Management Systems Lab",
+          "credits": 1,
+          "type": "LAB",
+          "contactHoursPerWeek": 2,
+          "units": [
+            {
+              "number": 1,
+              "title": "Practical syllabus",
+              "topics": [
+                {
+                  "key": "jntuh.r25.cse.cs309pc.scope",
+                  "title": "Database Management Systems Lab",
+                  "sourcePage": 52,
+                  "academicDepth": 0.55,
+                  "estimatedAcademicHours": 30,
+                  "prerequisiteTopicKeys": [],
+                  "lab": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "CS310SD",
+          "title": "Node.js, React.js, or Django",
+          "credits": 1,
+          "type": "LAB",
+          "contactHoursPerWeek": 2,
+          "units": [
+            {
+              "number": 1,
+              "title": "Practical syllabus",
+              "topics": [
+                {
+                  "key": "jntuh.r25.cse.cs310sd.scope",
+                  "title": "Node.js, React.js, or Django",
+                  "sourcePage": 53,
+                  "academicDepth": 0.55,
+                  "estimatedAcademicHours": 30,
+                  "prerequisiteTopicKeys": [],
+                  "lab": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "VA300ES",
+          "title": "Environmental Science",
+          "credits": 1,
+          "type": "THEORY",
+          "contactHoursPerWeek": 1,
+          "units": [
+            {
+              "number": 1,
+              "title": "Ecosystems: Definition, Scope, and Importance of ecosystem. Classification, structure, and function",
+              "topics": [
+                {
+                  "key": "jntuh.r25.cse.va300es.unit-1",
+                  "title": "Ecosystems: Definition, Scope, and Importance of ecosystem. Classification, structure, and function",
+                  "sourcePage": 54,
+                  "academicDepth": 0.55,
+                  "estimatedAcademicHours": 3,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            },
+            {
+              "number": 2,
+              "title": "Natural Resources: Classification of Resources: Living and Non-Living resources, water",
+              "topics": [
+                {
+                  "key": "jntuh.r25.cse.va300es.unit-2",
+                  "title": "Natural Resources: Classification of Resources: Living and Non-Living resources, water",
+                  "sourcePage": 54,
+                  "academicDepth": 0.55,
+                  "estimatedAcademicHours": 3,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            },
+            {
+              "number": 3,
+              "title": "Biodiversity and Biotic Resources: Introduction, Definition, genetic, species and ecosystem diversity.",
+              "topics": [
+                {
+                  "key": "jntuh.r25.cse.va300es.unit-3",
+                  "title": "Biodiversity and Biotic Resources: Introduction, Definition, genetic, species and ecosystem diversity.",
+                  "sourcePage": 54,
+                  "academicDepth": 0.55,
+                  "estimatedAcademicHours": 3,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            },
+            {
+              "number": 4,
+              "title": "Environmental Pollution and Control Technologies: Environmental Pollution: Classification of",
+              "topics": [
+                {
+                  "key": "jntuh.r25.cse.va300es.unit-4",
+                  "title": "Environmental Pollution and Control Technologies: Environmental Pollution: Classification of",
+                  "sourcePage": 54,
+                  "academicDepth": 0.55,
+                  "estimatedAcademicHours": 3,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            },
+            {
+              "number": 5,
+              "title": "Environmental Policy, Legislation & EIA: Environmental Protection act, Legal aspects Air Act- 1981,",
+              "topics": [
+                {
+                  "key": "jntuh.r25.cse.va300es.unit-5",
+                  "title": "Environmental Policy, Legislation & EIA: Environmental Protection act, Legal aspects Air Act- 1981,",
+                  "sourcePage": 55,
+                  "academicDepth": 0.55,
+                  "estimatedAcademicHours": 3,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "academicYear": 2,
+      "subjects": [
+        {
+          "code": "MA401PC",
+          "title": "Computer Oriented Statistical Methods",
+          "credits": 3,
+          "type": "THEORY",
+          "contactHoursPerWeek": 3,
+          "units": [
+            {
+              "number": 1,
+              "title": "Random Variables and Probability Distributions",
+              "topics": [
+                {
+                  "key": "jntuh.r25.cse.ma401pc.unit-1",
+                  "title": "Random Variables and Probability Distributions",
+                  "sourcePage": 56,
+                  "academicDepth": 0.55,
+                  "estimatedAcademicHours": 9,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            },
+            {
+              "number": 2,
+              "title": "Continuous Distributions and sampling",
+              "topics": [
+                {
+                  "key": "jntuh.r25.cse.ma401pc.unit-2",
+                  "title": "Continuous Distributions and sampling",
+                  "sourcePage": 56,
+                  "academicDepth": 0.55,
+                  "estimatedAcademicHours": 9,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            },
+            {
+              "number": 3,
+              "title": "Estimation",
+              "topics": [
+                {
+                  "key": "jntuh.r25.cse.ma401pc.unit-3",
+                  "title": "Estimation",
+                  "sourcePage": 56,
+                  "academicDepth": 0.55,
+                  "estimatedAcademicHours": 9,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            },
+            {
+              "number": 4,
+              "title": "Tests of Hypotheses (Large and Small Samples)",
+              "topics": [
+                {
+                  "key": "jntuh.r25.cse.ma401pc.unit-4",
+                  "title": "Tests of Hypotheses (Large and Small Samples)",
+                  "sourcePage": 56,
+                  "academicDepth": 0.55,
+                  "estimatedAcademicHours": 9,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            },
+            {
+              "number": 5,
+              "title": "Stochastic Processes and Markov Chains",
+              "topics": [
+                {
+                  "key": "jntuh.r25.cse.ma401pc.unit-5",
+                  "title": "Stochastic Processes and Markov Chains",
+                  "sourcePage": 56,
+                  "academicDepth": 0.55,
+                  "estimatedAcademicHours": 9,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "CS402PC",
+          "title": "Operating Systems",
+          "credits": 3,
+          "type": "THEORY",
+          "contactHoursPerWeek": 3,
+          "units": [
+            {
+              "number": 1,
+              "title": "Operating System - Introduction, Structures - Simple Batch, Multiprogrammed, Time-shared,",
+              "topics": [
+                {
+                  "key": "jntuh.r25.cse.cs402pc.unit-1",
+                  "title": "Operating System - Introduction, Structures - Simple Batch, Multiprogrammed, Time-shared,",
+                  "sourcePage": 57,
+                  "academicDepth": 0.55,
+                  "estimatedAcademicHours": 9,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            },
+            {
+              "number": 2,
+              "title": "CPU Scheduling - Scheduling Criteria, Scheduling Algorithms, Multiple -Processor Scheduling.",
+              "topics": [
+                {
+                  "key": "jntuh.r25.cse.cs402pc.unit-2",
+                  "title": "CPU Scheduling - Scheduling Criteria, Scheduling Algorithms, Multiple -Processor Scheduling.",
+                  "sourcePage": 57,
+                  "academicDepth": 0.55,
+                  "estimatedAcademicHours": 9,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            },
+            {
+              "number": 3,
+              "title": "Process Management and Synchronization - The Critical Section Problem, Synchronization",
+              "topics": [
+                {
+                  "key": "jntuh.r25.cse.cs402pc.unit-3",
+                  "title": "Process Management and Synchronization - The Critical Section Problem, Synchronization",
+                  "sourcePage": 57,
+                  "academicDepth": 0.55,
+                  "estimatedAcademicHours": 9,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            },
+            {
+              "number": 4,
+              "title": "Memory Management and Virtual Memory - Logical versus Physical Address Space, Swapping,",
+              "topics": [
+                {
+                  "key": "jntuh.r25.cse.cs402pc.unit-4",
+                  "title": "Memory Management and Virtual Memory - Logical versus Physical Address Space, Swapping,",
+                  "sourcePage": 57,
+                  "academicDepth": 0.55,
+                  "estimatedAcademicHours": 9,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            },
+            {
+              "number": 5,
+              "title": "File System Interface and Operations -Access methods, Directory Structure, Protection, File System",
+              "topics": [
+                {
+                  "key": "jntuh.r25.cse.cs402pc.unit-5",
+                  "title": "File System Interface and Operations -Access methods, Directory Structure, Protection, File System",
+                  "sourcePage": 57,
+                  "academicDepth": 0.55,
+                  "estimatedAcademicHours": 9,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "CS403PC",
+          "title": "Algorithm Design and Analysis",
+          "credits": 3,
+          "type": "THEORY",
+          "contactHoursPerWeek": 3,
+          "units": [
+            {
+              "number": 1,
+              "title": "Introduction: Algorithm, Performance Analysis-Space complexity, Time complexity, Asymptotic",
+              "topics": [
+                {
+                  "key": "jntuh.r25.cse.cs403pc.unit-1",
+                  "title": "Introduction: Algorithm, Performance Analysis-Space complexity, Time complexity, Asymptotic",
+                  "sourcePage": 59,
+                  "academicDepth": 0.55,
+                  "estimatedAcademicHours": 9,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            },
+            {
+              "number": 2,
+              "title": "Disjoint Sets: Disjoint set operations, union and find algorithms, Priority Queue- Heaps, Heapsort",
+              "topics": [
+                {
+                  "key": "jntuh.r25.cse.cs403pc.unit-2",
+                  "title": "Disjoint Sets: Disjoint set operations, union and find algorithms, Priority Queue- Heaps, Heapsort",
+                  "sourcePage": 59,
+                  "academicDepth": 0.55,
+                  "estimatedAcademicHours": 9,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            },
+            {
+              "number": 3,
+              "title": "Dynamic Programming: General method, applications- Optimal binary search tree, 0/1 knapsack",
+              "topics": [
+                {
+                  "key": "jntuh.r25.cse.cs403pc.unit-3",
+                  "title": "Dynamic Programming: General method, applications- Optimal binary search tree, 0/1 knapsack",
+                  "sourcePage": 59,
+                  "academicDepth": 0.55,
+                  "estimatedAcademicHours": 9,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            },
+            {
+              "number": 4,
+              "title": "Greedy method: General method, applications- Job sequencing with deadlines, knapsack problem,",
+              "topics": [
+                {
+                  "key": "jntuh.r25.cse.cs403pc.unit-4",
+                  "title": "Greedy method: General method, applications- Job sequencing with deadlines, knapsack problem,",
+                  "sourcePage": 59,
+                  "academicDepth": 0.55,
+                  "estimatedAcademicHours": 9,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            },
+            {
+              "number": 5,
+              "title": "Branch and Bound: General method, applications - Travelling salesperson problem, 0/1 knapsack",
+              "topics": [
+                {
+                  "key": "jntuh.r25.cse.cs403pc.unit-5",
+                  "title": "Branch and Bound: General method, applications - Travelling salesperson problem, 0/1 knapsack",
+                  "sourcePage": 59,
+                  "academicDepth": 0.55,
+                  "estimatedAcademicHours": 9,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "CS404PC",
+          "title": "Computer Networks",
+          "credits": 3,
+          "type": "THEORY",
+          "contactHoursPerWeek": 3,
+          "units": [
+            {
+              "number": 1,
+              "title": "Introduction: The Internet, Protocol, Network Edge, Access Networks, Network Core, Packet",
+              "topics": [
+                {
+                  "key": "jntuh.r25.cse.cs404pc.unit-1",
+                  "title": "Introduction: The Internet, Protocol, Network Edge, Access Networks, Network Core, Packet",
+                  "sourcePage": 61,
+                  "academicDepth": 0.55,
+                  "estimatedAcademicHours": 9,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            },
+            {
+              "number": 2,
+              "title": "Application Layer: Principles of Network Applications, Network Application Architectures, Processes",
+              "topics": [
+                {
+                  "key": "jntuh.r25.cse.cs404pc.unit-2",
+                  "title": "Application Layer: Principles of Network Applications, Network Application Architectures, Processes",
+                  "sourcePage": 61,
+                  "academicDepth": 0.55,
+                  "estimatedAcademicHours": 9,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            },
+            {
+              "number": 3,
+              "title": "Transport Layer: Transport-Layer Services, Multiplexing and Demultiplexing, Connectionless",
+              "topics": [
+                {
+                  "key": "jntuh.r25.cse.cs404pc.unit-3",
+                  "title": "Transport Layer: Transport-Layer Services, Multiplexing and Demultiplexing, Connectionless",
+                  "sourcePage": 61,
+                  "academicDepth": 0.55,
+                  "estimatedAcademicHours": 9,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            },
+            {
+              "number": 4,
+              "title": "Network Layer: Data and Control plane, Forwarding and Routing 308, Network Service",
+              "topics": [
+                {
+                  "key": "jntuh.r25.cse.cs404pc.unit-4",
+                  "title": "Network Layer: Data and Control plane, Forwarding and Routing 308, Network Service",
+                  "sourcePage": 61,
+                  "academicDepth": 0.55,
+                  "estimatedAcademicHours": 9,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            },
+            {
+              "number": 5,
+              "title": "The Link Layer: The Services Provided by the Link Layer, Error-Detection and -Correction Techniques",
+              "topics": [
+                {
+                  "key": "jntuh.r25.cse.cs404pc.unit-5",
+                  "title": "The Link Layer: The Services Provided by the Link Layer, Error-Detection and -Correction Techniques",
+                  "sourcePage": 62,
+                  "academicDepth": 0.55,
+                  "estimatedAcademicHours": 9,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "CS405PC",
+          "title": "Machine Learning",
+          "credits": 3,
+          "type": "THEORY",
+          "contactHoursPerWeek": 3,
+          "units": [
+            {
+              "number": 1,
+              "title": "Introduction to Machine Learning: Types of Human learning, machine learning process, Well-posed",
+              "topics": [
+                {
+                  "key": "jntuh.r25.cse.cs405pc.unit-1",
+                  "title": "Introduction to Machine Learning: Types of Human learning, machine learning process, Well-posed",
+                  "sourcePage": 63,
+                  "academicDepth": 0.55,
+                  "estimatedAcademicHours": 11.25,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            },
+            {
+              "number": 2,
+              "title": "Feature Engineering: Feature transformation - feature construction, feature extraction by PCA, SVD,",
+              "topics": [
+                {
+                  "key": "jntuh.r25.cse.cs405pc.unit-2",
+                  "title": "Feature Engineering: Feature transformation - feature construction, feature extraction by PCA, SVD,",
+                  "sourcePage": 63,
+                  "academicDepth": 0.55,
+                  "estimatedAcademicHours": 11.25,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            },
+            {
+              "number": 3,
+              "title": "Supervised Learning - Introduction to supervised learning,",
+              "topics": [
+                {
+                  "key": "jntuh.r25.cse.cs405pc.unit-3",
+                  "title": "Supervised Learning - Introduction to supervised learning,",
+                  "sourcePage": 63,
+                  "academicDepth": 0.55,
+                  "estimatedAcademicHours": 11.25,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            },
+            {
+              "number": 4,
+              "title": "Unsupervised Learning: Introduction to unsupervised learning, Unsupervised vs supervised learning,",
+              "topics": [
+                {
+                  "key": "jntuh.r25.cse.cs405pc.unit-4",
+                  "title": "Unsupervised Learning: Introduction to unsupervised learning, Unsupervised vs supervised learning,",
+                  "sourcePage": 63,
+                  "academicDepth": 0.55,
+                  "estimatedAcademicHours": 11.25,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "MA406PC",
+          "title": "Computational Mathematics Lab",
+          "credits": 1,
+          "type": "LAB",
+          "contactHoursPerWeek": 2,
+          "units": [
+            {
+              "number": 1,
+              "title": "Eigen values and Eigenvectors: 6P",
+              "topics": [
+                {
+                  "key": "jntuh.r25.cse.ma406pc.unit-1",
+                  "title": "Eigen values and Eigenvectors: 6P",
+                  "sourcePage": 65,
+                  "academicDepth": 0.55,
+                  "estimatedAcademicHours": 6,
+                  "prerequisiteTopicKeys": [],
+                  "lab": true
+                }
+              ]
+            },
+            {
+              "number": 2,
+              "title": "Solution of Algebraic and Transcendental Equations 6P",
+              "topics": [
+                {
+                  "key": "jntuh.r25.cse.ma406pc.unit-2",
+                  "title": "Solution of Algebraic and Transcendental Equations 6P",
+                  "sourcePage": 65,
+                  "academicDepth": 0.55,
+                  "estimatedAcademicHours": 6,
+                  "prerequisiteTopicKeys": [],
+                  "lab": true
+                }
+              ]
+            },
+            {
+              "number": 3,
+              "title": "Linear system of equations: 6P",
+              "topics": [
+                {
+                  "key": "jntuh.r25.cse.ma406pc.unit-3",
+                  "title": "Linear system of equations: 6P",
+                  "sourcePage": 65,
+                  "academicDepth": 0.55,
+                  "estimatedAcademicHours": 6,
+                  "prerequisiteTopicKeys": [],
+                  "lab": true
+                }
+              ]
+            },
+            {
+              "number": 4,
+              "title": "First-Order ODEs 8P",
+              "topics": [
+                {
+                  "key": "jntuh.r25.cse.ma406pc.unit-4",
+                  "title": "First-Order ODEs 8P",
+                  "sourcePage": 65,
+                  "academicDepth": 0.55,
+                  "estimatedAcademicHours": 6,
+                  "prerequisiteTopicKeys": [],
+                  "lab": true
+                }
+              ]
+            },
+            {
+              "number": 5,
+              "title": "Higher order linear differential equations with constant coefficients 6P",
+              "topics": [
+                {
+                  "key": "jntuh.r25.cse.ma406pc.unit-5",
+                  "title": "Higher order linear differential equations with constant coefficients 6P",
+                  "sourcePage": 65,
+                  "academicDepth": 0.55,
+                  "estimatedAcademicHours": 6,
+                  "prerequisiteTopicKeys": [],
+                  "lab": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "CS407PC",
+          "title": "Operating Systems Lab",
+          "credits": 1,
+          "type": "LAB",
+          "contactHoursPerWeek": 2,
+          "units": [
+            {
+              "number": 1,
+              "title": "Practical syllabus",
+              "topics": [
+                {
+                  "key": "jntuh.r25.cse.cs407pc.scope",
+                  "title": "Operating Systems Lab",
+                  "sourcePage": 67,
+                  "academicDepth": 0.55,
+                  "estimatedAcademicHours": 30,
+                  "prerequisiteTopicKeys": [],
+                  "lab": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "CS408PC",
+          "title": "Computer Networks Lab",
+          "credits": 1,
+          "type": "LAB",
+          "contactHoursPerWeek": 2,
+          "units": [
+            {
+              "number": 1,
+              "title": "Practical syllabus",
+              "topics": [
+                {
+                  "key": "jntuh.r25.cse.cs408pc.scope",
+                  "title": "Computer Networks Lab",
+                  "sourcePage": 68,
+                  "academicDepth": 0.55,
+                  "estimatedAcademicHours": 30,
+                  "prerequisiteTopicKeys": [],
+                  "lab": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "CS409PC",
+          "title": "Machine Learning Lab",
+          "credits": 1,
+          "type": "LAB",
+          "contactHoursPerWeek": 2,
+          "units": [
+            {
+              "number": 1,
+              "title": "Practical syllabus",
+              "topics": [
+                {
+                  "key": "jntuh.r25.cse.cs409pc.scope",
+                  "title": "Machine Learning Lab",
+                  "sourcePage": 69,
+                  "academicDepth": 0.55,
+                  "estimatedAcademicHours": 30,
+                  "prerequisiteTopicKeys": [],
+                  "lab": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "CS410SD",
+          "title": "Data Visualization with R, Python, or Power BI",
+          "credits": 1,
+          "type": "LAB",
+          "contactHoursPerWeek": 2,
+          "units": [
+            {
+              "number": 1,
+              "title": "Practical syllabus",
+              "topics": [
+                {
+                  "key": "jntuh.r25.cse.cs410sd.scope",
+                  "title": "Data Visualization with R, Python, or Power BI",
+                  "sourcePage": 70,
+                  "academicDepth": 0.55,
+                  "estimatedAcademicHours": 30,
+                  "prerequisiteTopicKeys": [],
+                  "lab": true
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "academicYear": 3,
+      "subjects": [
+        {
+          "code": "CS501PC",
+          "title": "Automata Theory and Compiler Design",
+          "credits": 3,
+          "type": "THEORY",
+          "contactHoursPerWeek": 3,
+          "units": [
+            {
+              "number": 1,
+              "title": "Official course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.cse.cs501pc.scope",
+                  "title": "Automata Theory and Compiler Design",
+                  "sourcePage": 2,
+                  "academicDepth": 0.7,
+                  "estimatedAcademicHours": 45,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "CS502PC",
+          "title": "Artificial Intelligence",
+          "credits": 3,
+          "type": "THEORY",
+          "contactHoursPerWeek": 3,
+          "units": [
+            {
+              "number": 1,
+              "title": "Official course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.cse.cs502pc.scope",
+                  "title": "Artificial Intelligence",
+                  "sourcePage": 2,
+                  "academicDepth": 0.7,
+                  "estimatedAcademicHours": 45,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "CS503PC",
+          "title": "DevOps",
+          "credits": 3,
+          "type": "THEORY",
+          "contactHoursPerWeek": 3,
+          "units": [
+            {
+              "number": 1,
+              "title": "Official course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.cse.cs503pc.scope",
+                  "title": "DevOps",
+                  "sourcePage": 2,
+                  "academicDepth": 0.7,
+                  "estimatedAcademicHours": 45,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "CSE-PE1",
+          "title": "Professional Elective I",
+          "credits": 3,
+          "type": "ELECTIVE",
+          "contactHoursPerWeek": 3,
+          "units": [
+            {
+              "number": 1,
+              "title": "Official course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.cse.cse.pe1.scope",
+                  "title": "Professional Elective I",
+                  "sourcePage": 2,
+                  "academicDepth": 0.7,
+                  "estimatedAcademicHours": 45,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "CSE-OE1",
+          "title": "Open Elective I",
+          "credits": 2,
+          "type": "ELECTIVE",
+          "contactHoursPerWeek": 2,
+          "units": [
+            {
+              "number": 1,
+              "title": "Official course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.cse.cse.oe1.scope",
+                  "title": "Open Elective I",
+                  "sourcePage": 2,
+                  "academicDepth": 0.7,
+                  "estimatedAcademicHours": 30,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "CS504PC",
+          "title": "Compiler Design Lab",
+          "credits": 1,
+          "type": "LAB",
+          "contactHoursPerWeek": 2,
+          "units": [
+            {
+              "number": 1,
+              "title": "Practical syllabus",
+              "topics": [
+                {
+                  "key": "jntuh.r25.cse.cs504pc.scope",
+                  "title": "Compiler Design Lab",
+                  "sourcePage": 2,
+                  "academicDepth": 0.7,
+                  "estimatedAcademicHours": 30,
+                  "prerequisiteTopicKeys": [],
+                  "lab": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "CS505PC",
+          "title": "Artificial Intelligence with Python Lab",
+          "credits": 1,
+          "type": "LAB",
+          "contactHoursPerWeek": 2,
+          "units": [
+            {
+              "number": 1,
+              "title": "Practical syllabus",
+              "topics": [
+                {
+                  "key": "jntuh.r25.cse.cs505pc.scope",
+                  "title": "Artificial Intelligence with Python Lab",
+                  "sourcePage": 2,
+                  "academicDepth": 0.7,
+                  "estimatedAcademicHours": 30,
+                  "prerequisiteTopicKeys": [],
+                  "lab": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "CS506PC",
+          "title": "DevOps Lab",
+          "credits": 1,
+          "type": "LAB",
+          "contactHoursPerWeek": 2,
+          "units": [
+            {
+              "number": 1,
+              "title": "Practical syllabus",
+              "topics": [
+                {
+                  "key": "jntuh.r25.cse.cs506pc.scope",
+                  "title": "DevOps Lab",
+                  "sourcePage": 2,
+                  "academicDepth": 0.7,
+                  "estimatedAcademicHours": 30,
+                  "prerequisiteTopicKeys": [],
+                  "lab": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "CS507PC",
+          "title": "Field-Based Research Project",
+          "credits": 2,
+          "type": "PROJECT",
+          "contactHoursPerWeek": 4,
+          "units": [
+            {
+              "number": 1,
+              "title": "Practical syllabus",
+              "topics": [
+                {
+                  "key": "jntuh.r25.cse.cs507pc.scope",
+                  "title": "Field-Based Research Project",
+                  "sourcePage": 2,
+                  "academicDepth": 0.7,
+                  "estimatedAcademicHours": 90,
+                  "prerequisiteTopicKeys": [],
+                  "lab": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "CS508SD",
+          "title": "UI Design with Flutter or Android Studio",
+          "credits": 1,
+          "type": "LAB",
+          "contactHoursPerWeek": 2,
+          "units": [
+            {
+              "number": 1,
+              "title": "Practical syllabus",
+              "topics": [
+                {
+                  "key": "jntuh.r25.cse.cs508sd.scope",
+                  "title": "UI Design with Flutter or Android Studio",
+                  "sourcePage": 2,
+                  "academicDepth": 0.7,
+                  "estimatedAcademicHours": 30,
+                  "prerequisiteTopicKeys": [],
+                  "lab": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "VA500HS",
+          "title": "Indian Knowledge System",
+          "credits": 1,
+          "type": "THEORY",
+          "contactHoursPerWeek": 1,
+          "units": [
+            {
+              "number": 1,
+              "title": "Official course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.cse.va500hs.scope",
+                  "title": "Indian Knowledge System",
+                  "sourcePage": 2,
+                  "academicDepth": 0.7,
+                  "estimatedAcademicHours": 15,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 6,
+      "academicYear": 3,
+      "subjects": [
+        {
+          "code": "CS601PC",
+          "title": "Cryptography and Network Security",
+          "credits": 3,
+          "type": "THEORY",
+          "contactHoursPerWeek": 3,
+          "units": [
+            {
+              "number": 1,
+              "title": "Official course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.cse.cs601pc.scope",
+                  "title": "Cryptography and Network Security",
+                  "sourcePage": 2,
+                  "academicDepth": 0.7,
+                  "estimatedAcademicHours": 45,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "CS602PC",
+          "title": "Deep Learning",
+          "credits": 3,
+          "type": "THEORY",
+          "contactHoursPerWeek": 3,
+          "units": [
+            {
+              "number": 1,
+              "title": "Official course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.cse.cs602pc.scope",
+                  "title": "Deep Learning",
+                  "sourcePage": 2,
+                  "academicDepth": 0.7,
+                  "estimatedAcademicHours": 45,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "MS603HS",
+          "title": "Business Economics and Financial Analysis",
+          "credits": 3,
+          "type": "THEORY",
+          "contactHoursPerWeek": 3,
+          "units": [
+            {
+              "number": 1,
+              "title": "Official course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.cse.ms603hs.scope",
+                  "title": "Business Economics and Financial Analysis",
+                  "sourcePage": 2,
+                  "academicDepth": 0.7,
+                  "estimatedAcademicHours": 45,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "CSE-PE2",
+          "title": "Professional Elective II",
+          "credits": 3,
+          "type": "ELECTIVE",
+          "contactHoursPerWeek": 3,
+          "units": [
+            {
+              "number": 1,
+              "title": "Official course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.cse.cse.pe2.scope",
+                  "title": "Professional Elective II",
+                  "sourcePage": 2,
+                  "academicDepth": 0.7,
+                  "estimatedAcademicHours": 45,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "CSE-OE2",
+          "title": "Open Elective II",
+          "credits": 2,
+          "type": "ELECTIVE",
+          "contactHoursPerWeek": 2,
+          "units": [
+            {
+              "number": 1,
+              "title": "Official course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.cse.cse.oe2.scope",
+                  "title": "Open Elective II",
+                  "sourcePage": 2,
+                  "academicDepth": 0.7,
+                  "estimatedAcademicHours": 30,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "CS604PC",
+          "title": "Cryptography and Network Security Lab",
+          "credits": 1,
+          "type": "LAB",
+          "contactHoursPerWeek": 2,
+          "units": [
+            {
+              "number": 1,
+              "title": "Practical syllabus",
+              "topics": [
+                {
+                  "key": "jntuh.r25.cse.cs604pc.scope",
+                  "title": "Cryptography and Network Security Lab",
+                  "sourcePage": 2,
+                  "academicDepth": 0.7,
+                  "estimatedAcademicHours": 30,
+                  "prerequisiteTopicKeys": [],
+                  "lab": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "CS605PC",
+          "title": "Deep Learning Lab",
+          "credits": 1,
+          "type": "LAB",
+          "contactHoursPerWeek": 2,
+          "units": [
+            {
+              "number": 1,
+              "title": "Practical syllabus",
+              "topics": [
+                {
+                  "key": "jntuh.r25.cse.cs605pc.scope",
+                  "title": "Deep Learning Lab",
+                  "sourcePage": 2,
+                  "academicDepth": 0.7,
+                  "estimatedAcademicHours": 30,
+                  "prerequisiteTopicKeys": [],
+                  "lab": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "CS606PC",
+          "title": "Advanced Data Structures using Python Lab",
+          "credits": 1,
+          "type": "LAB",
+          "contactHoursPerWeek": 2,
+          "units": [
+            {
+              "number": 1,
+              "title": "Practical syllabus",
+              "topics": [
+                {
+                  "key": "jntuh.r25.cse.cs606pc.scope",
+                  "title": "Advanced Data Structures using Python Lab",
+                  "sourcePage": 2,
+                  "academicDepth": 0.7,
+                  "estimatedAcademicHours": 30,
+                  "prerequisiteTopicKeys": [],
+                  "lab": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "EN607HS",
+          "title": "English for Employability Skills Lab",
+          "credits": 1,
+          "type": "LAB",
+          "contactHoursPerWeek": 2,
+          "units": [
+            {
+              "number": 1,
+              "title": "Practical syllabus",
+              "topics": [
+                {
+                  "key": "jntuh.r25.cse.en607hs.scope",
+                  "title": "English for Employability Skills Lab",
+                  "sourcePage": 2,
+                  "academicDepth": 0.7,
+                  "estimatedAcademicHours": 30,
+                  "prerequisiteTopicKeys": [],
+                  "lab": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "CS608SD",
+          "title": "Prompt Engineering",
+          "credits": 1,
+          "type": "LAB",
+          "contactHoursPerWeek": 2,
+          "units": [
+            {
+              "number": 1,
+              "title": "Practical syllabus",
+              "topics": [
+                {
+                  "key": "jntuh.r25.cse.cs608sd.scope",
+                  "title": "Prompt Engineering",
+                  "sourcePage": 2,
+                  "academicDepth": 0.7,
+                  "estimatedAcademicHours": 30,
+                  "prerequisiteTopicKeys": [],
+                  "lab": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "VA600HS",
+          "title": "Gender Sensitization and Human Values and Professional Ethics",
+          "credits": 1,
+          "type": "THEORY",
+          "contactHoursPerWeek": 1,
+          "units": [
+            {
+              "number": 1,
+              "title": "Official course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.cse.va600hs.scope",
+                  "title": "Gender Sensitization and Human Values and Professional Ethics",
+                  "sourcePage": 2,
+                  "academicDepth": 0.7,
+                  "estimatedAcademicHours": 15,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 7,
+      "academicYear": 4,
+      "subjects": [
+        {
+          "code": "CS701PC",
+          "title": "Natural Language Processing",
+          "credits": 3,
+          "type": "THEORY",
+          "contactHoursPerWeek": 3,
+          "units": [
+            {
+              "number": 1,
+              "title": "Official course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.cse.cs701pc.scope",
+                  "title": "Natural Language Processing",
+                  "sourcePage": 3,
+                  "academicDepth": 0.7,
+                  "estimatedAcademicHours": 45,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "CS702PC",
+          "title": "Cyber Security",
+          "credits": 3,
+          "type": "THEORY",
+          "contactHoursPerWeek": 3,
+          "units": [
+            {
+              "number": 1,
+              "title": "Official course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.cse.cs702pc.scope",
+                  "title": "Cyber Security",
+                  "sourcePage": 3,
+                  "academicDepth": 0.7,
+                  "estimatedAcademicHours": 45,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "MS703HS",
+          "title": "Fundamentals of Management",
+          "credits": 3,
+          "type": "THEORY",
+          "contactHoursPerWeek": 3,
+          "units": [
+            {
+              "number": 1,
+              "title": "Official course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.cse.ms703hs.scope",
+                  "title": "Fundamentals of Management",
+                  "sourcePage": 3,
+                  "academicDepth": 0.7,
+                  "estimatedAcademicHours": 45,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "CSE-PE3",
+          "title": "Professional Elective III",
+          "credits": 3,
+          "type": "ELECTIVE",
+          "contactHoursPerWeek": 3,
+          "units": [
+            {
+              "number": 1,
+              "title": "Official course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.cse.cse.pe3.scope",
+                  "title": "Professional Elective III",
+                  "sourcePage": 3,
+                  "academicDepth": 0.7,
+                  "estimatedAcademicHours": 45,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "CSE-PE4",
+          "title": "Professional Elective IV",
+          "credits": 3,
+          "type": "ELECTIVE",
+          "contactHoursPerWeek": 3,
+          "units": [
+            {
+              "number": 1,
+              "title": "Official course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.cse.cse.pe4.scope",
+                  "title": "Professional Elective IV",
+                  "sourcePage": 3,
+                  "academicDepth": 0.7,
+                  "estimatedAcademicHours": 45,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "CSE-OE3",
+          "title": "Open Elective III",
+          "credits": 2,
+          "type": "ELECTIVE",
+          "contactHoursPerWeek": 2,
+          "units": [
+            {
+              "number": 1,
+              "title": "Official course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.cse.cse.oe3.scope",
+                  "title": "Open Elective III",
+                  "sourcePage": 3,
+                  "academicDepth": 0.7,
+                  "estimatedAcademicHours": 30,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "CS704PC",
+          "title": "Natural Language Processing Lab",
+          "credits": 1,
+          "type": "LAB",
+          "contactHoursPerWeek": 2,
+          "units": [
+            {
+              "number": 1,
+              "title": "Practical syllabus",
+              "topics": [
+                {
+                  "key": "jntuh.r25.cse.cs704pc.scope",
+                  "title": "Natural Language Processing Lab",
+                  "sourcePage": 3,
+                  "academicDepth": 0.7,
+                  "estimatedAcademicHours": 30,
+                  "prerequisiteTopicKeys": [],
+                  "lab": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "CS705PC",
+          "title": "Cyber Security Lab",
+          "credits": 1,
+          "type": "LAB",
+          "contactHoursPerWeek": 2,
+          "units": [
+            {
+              "number": 1,
+              "title": "Practical syllabus",
+              "topics": [
+                {
+                  "key": "jntuh.r25.cse.cs705pc.scope",
+                  "title": "Cyber Security Lab",
+                  "sourcePage": 3,
+                  "academicDepth": 0.7,
+                  "estimatedAcademicHours": 30,
+                  "prerequisiteTopicKeys": [],
+                  "lab": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "CS706PC",
+          "title": "Industry Oriented Mini Project or Internship",
+          "credits": 2,
+          "type": "PROJECT",
+          "contactHoursPerWeek": 4,
+          "units": [
+            {
+              "number": 1,
+              "title": "Practical syllabus",
+              "topics": [
+                {
+                  "key": "jntuh.r25.cse.cs706pc.scope",
+                  "title": "Industry Oriented Mini Project or Internship",
+                  "sourcePage": 3,
+                  "academicDepth": 0.7,
+                  "estimatedAcademicHours": 90,
+                  "prerequisiteTopicKeys": [],
+                  "lab": true
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 8,
+      "academicYear": 4,
+      "subjects": [
+        {
+          "code": "CSE-PE5",
+          "title": "Professional Elective V",
+          "credits": 3,
+          "type": "ELECTIVE",
+          "contactHoursPerWeek": 3,
+          "units": [
+            {
+              "number": 1,
+              "title": "Official course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.cse.cse.pe5.scope",
+                  "title": "Professional Elective V",
+                  "sourcePage": 3,
+                  "academicDepth": 0.7,
+                  "estimatedAcademicHours": 45,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "CSE-PE6",
+          "title": "Professional Elective VI",
+          "credits": 3,
+          "type": "ELECTIVE",
+          "contactHoursPerWeek": 3,
+          "units": [
+            {
+              "number": 1,
+              "title": "Official course scope",
+              "topics": [
+                {
+                  "key": "jntuh.r25.cse.cse.pe6.scope",
+                  "title": "Professional Elective VI",
+                  "sourcePage": 3,
+                  "academicDepth": 0.7,
+                  "estimatedAcademicHours": 45,
+                  "prerequisiteTopicKeys": [],
+                  "lab": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "CS801PC",
+          "title": "Project Work",
+          "credits": 14,
+          "type": "PROJECT",
+          "units": [
+            {
+              "number": 1,
+              "title": "Practical syllabus",
+              "topics": [
+                {
+                  "key": "jntuh.r25.cse.cs801pc.scope",
+                  "title": "Project Work",
+                  "sourcePage": 3,
+                  "academicDepth": 0.7,
+                  "estimatedAcademicHours": 200,
+                  "prerequisiteTopicKeys": [],
+                  "lab": true
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
