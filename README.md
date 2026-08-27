@@ -38,3 +38,14 @@ pnpm check
 ```
 
 See the local development runbook for API/web startup and authentication smoke testing.
+
+## Deployment targets
+
+This monorepo contains two different Next.js applications:
+
+- `apps/web` is the student-facing StudentOS product.
+- `apps/admin` is the internal content-operations console.
+
+For a Vercel student-frontend project, set **Root Directory** to `apps/web`, keep **Include source files outside of the Root Directory** enabled for workspace packages, and set `NEXT_PUBLIC_API_URL` to the public API URL ending in `/api/v1`. The checked-in `apps/web/vercel.json` supplies the workspace-aware install and build commands.
+
+The frontend is not a standalone deployment. Deploy `apps/api` and PostgreSQL separately, configure the production variables in `.env.production.example`, run database migrations and the release seed, and then point the web project at that API. The complete container deployment is documented in [`docs/runbooks/PRODUCTION_DEPLOYMENT.md`](./docs/runbooks/PRODUCTION_DEPLOYMENT.md).
