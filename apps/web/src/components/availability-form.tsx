@@ -26,6 +26,7 @@ export function AvailabilityForm() {
 
   function submit(event: FormEvent<HTMLFormElement>): void {
     event.preventDefault();
+    if (weeklyMinutes < 30) return;
     const form = new FormData(event.currentTarget);
     setAvailability({
       maxSessionMinutes: Number(form.get("maxSessionMinutes")),
@@ -82,11 +83,18 @@ export function AvailabilityForm() {
           </label>
         ))}
       </fieldset>
-      <p className="form-success" role="status">
-        {weeklyMinutes} minutes declared · {Math.floor(weeklyMinutes * 0.85)}
-        minutes planned after a 15% buffer
+      <p
+        className={weeklyMinutes < 30 ? "form-error" : "form-success"}
+        role="status"
+      >
+        {weeklyMinutes < 30
+          ? "Add at least 30 minutes on one day to create a usable roadmap."
+          : `${weeklyMinutes} minutes declared · ${Math.floor(weeklyMinutes * 0.85)} minutes planned after a 15% buffer`}
       </p>
-      <button className="button button-primary full-button">
+      <button
+        className="button button-primary full-button"
+        disabled={weeklyMinutes < 30}
+      >
         Build my gap report
       </button>
     </form>

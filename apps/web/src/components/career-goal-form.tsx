@@ -39,6 +39,7 @@ export function CareerGoalForm() {
     );
   });
   const target = selected?.targetLevels.find((item) => item.level === level);
+  const today = new Date().toISOString().slice(0, 10);
   const typicalHours = target?.requirements.reduce(
     (total, requirement) => total + requirement.hours.p50,
     0,
@@ -166,6 +167,7 @@ export function CareerGoalForm() {
           <input
             name="deadline"
             type="date"
+            min={today}
             required
             defaultValue={profile.goal?.deadline}
           />

@@ -12,6 +12,7 @@ export function AcademicOnboardingForm() {
     profile.academic?.branchCode ?? "",
   );
   const branch = getBranch(branchCode);
+  const today = new Date().toISOString().slice(0, 10);
 
   function submit(event: FormEvent<HTMLFormElement>): void {
     event.preventDefault();
@@ -78,6 +79,7 @@ export function AcademicOnboardingForm() {
           <input
             name="expectedGraduation"
             type="date"
+            min={today}
             required
             defaultValue={profile.academic?.expectedGraduation}
           />

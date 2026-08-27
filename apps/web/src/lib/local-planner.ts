@@ -111,6 +111,8 @@ export interface LocalPlan {
   weeklyHours: number;
   estimatedWeeks: number;
   estimatedMonths: number;
+  weeksUntilDeadline: number;
+  fitsDeadline: boolean;
   reservePercent: number;
   subjects: Array<{
     code: string | null;
@@ -331,13 +333,20 @@ export function buildLocalPlan(profile: PlannerProfile): LocalPlan | null {
     (total, minutes) => total + minutes,
     0,
   );
-  const weeklyMinutes = Math.max(30, Math.floor(declaredWeeklyMinutes * 0.85));
+  if (declaredWeeklyMinutes < 30) return null;
+  const weeklyMinutes = Math.floor(declaredWeeklyMinutes * 0.85);
   const weeklyHours = Math.round((weeklyMinutes / 60) * 10) / 10;
   const estimatedWeeks = Math.max(
     1,
     Math.ceil((totalHours * 60) / weeklyMinutes),
   );
   const estimatedMonths = Math.max(1, Math.ceil(estimatedWeeks / 4.3));
+  const deadlineTime = new Date(`${profile.goal.deadline}T23:59:59`).getTime();
+  const weeksUntilDeadline = Math.max(
+    0,
+    Math.floor((deadlineTime - Date.now()) / (7 * 24 * 60 * 60 * 1_000)),
+  );
+  const fitsDeadline = estimatedWeeks <= weeksUntilDeadline;
 
   const subjectGroups = new Map<string, LocalPlan["subjects"][number]>();
   for (const skill of skills) {
@@ -391,7 +400,7 @@ export function buildLocalPlan(profile: PlannerProfile): LocalPlan | null {
   );
 
   const monthlyPlan = Array.from(
-    { length: Math.min(estimatedMonths, 12) },
+    { length: Math.min(estimatedMonths, 36) },
     (_, index) => {
       const start = index * 2;
       const names = focusSkills
@@ -428,6 +437,8 @@ export function buildLocalPlan(profile: PlannerProfile): LocalPlan | null {
     weeklyHours,
     estimatedWeeks,
     estimatedMonths,
+    weeksUntilDeadline,
+    fitsDeadline,
     reservePercent: 15,
     subjects: [...subjectGroups.values()].sort(
       (left, right) => (left.semester ?? 99) - (right.semester ?? 99),

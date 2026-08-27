@@ -31,11 +31,19 @@ export function PlannerProvider({ children }: { children: ReactNode }) {
   const value = useMemo<PlannerContextValue>(
     () => ({
       profile,
-      setAcademic: (academic) =>
-        setProfile((current) => ({ ...current, academic })),
-      setGoal: (goal) => setProfile((current) => ({ ...current, goal })),
+      setAcademic: (academic) => setProfile({ academic, skillLevels: {} }),
+      setGoal: (goal) =>
+        setProfile((current) => ({
+          ...(current.academic ? { academic: current.academic } : {}),
+          goal,
+          skillLevels: {},
+        })),
       setSkillLevels: (skillLevels) =>
-        setProfile((current) => ({ ...current, skillLevels })),
+        setProfile((current) => ({
+          ...(current.academic ? { academic: current.academic } : {}),
+          ...(current.goal ? { goal: current.goal } : {}),
+          skillLevels,
+        })),
       setAvailability: (availability) =>
         setProfile((current) => ({ ...current, availability })),
       reset: () => setProfile(emptyProfile()),

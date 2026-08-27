@@ -70,6 +70,17 @@ export function GapReport() {
 
       <RoadmapDownload plan={plan} />
 
+      {!plan.fitsDeadline ? (
+        <div className="form-warning" role="alert">
+          <strong>Your selected deadline is too tight for this pace</strong>
+          <p>
+            The roadmap needs about {plan.estimatedWeeks} weeks, while the
+            selected date leaves {plan.weeksUntilDeadline} weeks. Increase your
+            weekly time or choose a later target date before relying on it.
+          </p>
+        </div>
+      ) : null}
+
       <nav className="gap-section-nav" aria-label="Gap report sections">
         <a href="#skills-needed">Skills needed</a>
         <a href="#subject-roadmaps">Subjects + skills</a>
@@ -296,18 +307,24 @@ export function GapReport() {
           </ol>
         ) : null}
         {planView === "week" ? (
-          <ol className="week-plan-list">
-            {plan.weeklyPlan.map((week) => (
-              <li key={week.week}>
-                <div>
-                  <span>Week {week.week}</span>
-                  <strong>{week.theme}</strong>
-                </div>
-                <p>{week.skills.join(" · ")}</p>
-                <b>{week.outcome}</b>
-              </li>
-            ))}
-          </ol>
+          <>
+            <p className="section-intro">
+              The first 12 weeks are shown; repeat the same learn → practise →
+              prove rhythm for the remaining horizon.
+            </p>
+            <ol className="week-plan-list">
+              {plan.weeklyPlan.map((week) => (
+                <li key={week.week}>
+                  <div>
+                    <span>Week {week.week}</span>
+                    <strong>{week.theme}</strong>
+                  </div>
+                  <p>{week.skills.join(" · ")}</p>
+                  <b>{week.outcome}</b>
+                </li>
+              ))}
+            </ol>
+          </>
         ) : null}
         {planView === "month" ? (
           <ol className="month-plan-list">
@@ -349,7 +366,9 @@ export function GapReport() {
                 <div className="skill-path-chain">
                   <article>
                     <span>1 · Subject</span>
-                    <strong>{skill.subjectTitle ?? "No direct subject"}</strong>
+                    <strong>
+                      {skill.subjectTitle ?? "Independent career track"}
+                    </strong>
                     <p>
                       {skill.subjectCode ?? "Independent learning"}
                       {skill.semester ? ` · Semester ${skill.semester}` : ""}

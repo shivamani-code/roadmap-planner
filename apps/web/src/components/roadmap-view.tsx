@@ -56,6 +56,16 @@ export function RoadmapView() {
 
       <RoadmapDownload plan={plan} />
 
+      {!plan.fitsDeadline ? (
+        <div className="form-warning" role="alert">
+          <strong>Adjust the target date or weekly study time</strong>
+          <p>
+            This plan needs about {plan.estimatedWeeks} weeks, but the target
+            date is only {plan.weeksUntilDeadline} weeks away.
+          </p>
+        </div>
+      ) : null}
+
       <section className="roadmap-guide" aria-labelledby="roadmap-guide-title">
         <p className="eyebrow">How to complete this roadmap</p>
         <h2 id="roadmap-guide-title">Learn, build and prove</h2>
